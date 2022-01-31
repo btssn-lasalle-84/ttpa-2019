@@ -1,0 +1,84 @@
+\hypertarget{statistiquesseance_8h_source}{}\subsection{statistiquesseance.\+h}
+\label{statistiquesseance_8h_source}\index{statistiquesseance.\+h@{statistiquesseance.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef STATISTIQUEDETABLE\_H}
+00002 \textcolor{preprocessor}{#define STATISTIQUEDETABLE\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <qglobal.h>}
+00017 \textcolor{preprocessor}{#include <QObject>}
+00018 \textcolor{preprocessor}{#include <QVector>}
+00019 \textcolor{preprocessor}{#include <QLabel>}
+00020 
+00021 
+\Hypertarget{statistiquesseance_8h_source_l00033}\hyperlink{class_statistiques_seance}{00033} \textcolor{keyword}{class }\hyperlink{class_statistiques_seance}{StatistiquesSeance} : \textcolor{keyword}{public} QObject
+00034 \{
+00035     Q\_OBJECT
+00036     \textcolor{keyword}{public}:
+00037         \hyperlink{class_statistiques_seance_ab4096821bf4cb5fbebcf895b1a70be42}{StatistiquesSeance}(QObject *parent=\textcolor{keyword}{nullptr});
+00038         \hyperlink{class_statistiques_seance_a2e84d125a8d696fa74d9c356eb2b8cab}{~StatistiquesSeance}();
+00039 
+\Hypertarget{statistiquesseance_8h_source_l00044}\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5}{00044}         \textcolor{keyword}{enum} \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5}{Zone}
+00045         \{
+\Hypertarget{statistiquesseance_8h_source_l00046}\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}{00046}             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}{ZoneNonDefinie} = -1,
+\Hypertarget{statistiquesseance_8h_source_l00047}\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{00047}             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{Zone1} = 0,
+\Hypertarget{statistiquesseance_8h_source_l00048}\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727}{00048}             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727}{Zone2},
+\Hypertarget{statistiquesseance_8h_source_l00049}\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb}{00049}             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb}{Zone3},
+\Hypertarget{statistiquesseance_8h_source_l00050}\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c}{00050}             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c}{Zone4},
+\Hypertarget{statistiquesseance_8h_source_l00051}\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344}{00051}             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344}{Zone5},
+\Hypertarget{statistiquesseance_8h_source_l00052}\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343}{00052}             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343}{Zone6},
+\Hypertarget{statistiquesseance_8h_source_l00053}\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64}{00053}             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64}{Zone7},
+\Hypertarget{statistiquesseance_8h_source_l00054}\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736}{00054}             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736}{NbZonesImpact}, \textcolor{comment}{// 7}
+\Hypertarget{statistiquesseance_8h_source_l00055}\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{00055}             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{ZoneHorsTable}, \textcolor{comment}{// 8}
+\Hypertarget{statistiquesseance_8h_source_l00056}\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}{00056}             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}{NbZonesTotales}, \textcolor{comment}{// 9}
+00057         \};
+00058 
+00059         \textcolor{keywordtype}{bool} \hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacterZone}(uint8\_t numeroZone);
+00060         \textcolor{keywordtype}{void} \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiserStatistiques}();
+00061         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}{getBallesBonnes}();
+00062         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_aaefd0b775012ec914a36a262dc14fc66}{getBallesTotal}();
+00063         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_a26b717d40065e7afd80465458f3cb6aa}{getBallesHorsTable}();
+00064         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_a4f0dc4fd1c97787dab03ae5074fb3414}{getballesPrecedentToucheTable}();
+00065         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_a1f956e08733a81d0a86673cae6bc7feb}{getballesToucheTable}();
+00066         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_a1f241d7ef584ebffa2246134c63be53b}{getBallesEnchainees}();
+00067         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_a61c01cb1d35cda871e8243658213ee5b}{getZoneObjectif}();
+00068         \textcolor{keywordtype}{void} \hyperlink{class_statistiques_seance_af7c8281e195c0822463e6747bd0695ef}{setZoneObjectif}(\textcolor{keywordtype}{int} numeroZone);
+00069         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_ad1bdc22fbd9f37fab06d9fc24e9f1bc4}{getZoneRobot}();
+00070         \textcolor{keywordtype}{void} \hyperlink{class_statistiques_seance_a97a0cf5b45add60d7a3e31207fe360a0}{setZoneRobot}(\textcolor{keywordtype}{int} numeroZone);
+00071         \textcolor{keywordtype}{double} \hyperlink{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}{calculerPourcentage}(\textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone});
+00072         \textcolor{keywordtype}{double} \hyperlink{class_statistiques_seance_ad042b683ce7b4db507a443b1b27bfef8}{calculerPourcentageSerieMax}(\textcolor{keywordtype}{int} 
+      \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone});
+00073         \textcolor{keywordtype}{void} \hyperlink{class_statistiques_seance_afd9087c34222c0b2c0db11c5a96459c4}{afficherStatistiquesZones}();
+00074         \textcolor{keywordtype}{void} \hyperlink{class_statistiques_seance_a216b30bcfca71e425073a7ac90e59089}{afficherStatistiquesBallesTotales}();
+00075         \textcolor{keywordtype}{void} \hyperlink{class_statistiques_seance_aebc6dad0ca5e4f99b08378077eae2c20}{afficherStatistiquesBallesTotalesHorsTable}();
+00076         \textcolor{keywordtype}{void} \hyperlink{class_statistiques_seance_a712aad34b7ff7dd550ac6c976f75f416}{afficherStatistiqueBallesBonnes}();
+00077         
+00078     \textcolor{keyword}{private}:
+\Hypertarget{statistiquesseance_8h_source_l00079}\hyperlink{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}{00079}         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}{numeroZoneObjectif}; 
+\Hypertarget{statistiquesseance_8h_source_l00080}\hyperlink{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}{00080}         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}{numeroZoneRobot}; 
+\Hypertarget{statistiquesseance_8h_source_l00081}\hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{00081}         QVector<int> \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone}; 
+\Hypertarget{statistiquesseance_8h_source_l00082}\hyperlink{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}{00082}         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}{nbBallesBonnes}; 
+\Hypertarget{statistiquesseance_8h_source_l00083}\hyperlink{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}{00083}         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}{nbBallesTotales}; 
+\Hypertarget{statistiquesseance_8h_source_l00084}\hyperlink{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}{00084}         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}{nbBallesTotalesTable}; 
+\Hypertarget{statistiquesseance_8h_source_l00085}\hyperlink{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}{00085}         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}{nbBallesEnchainees};  
+\Hypertarget{statistiquesseance_8h_source_l00086}\hyperlink{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}{00086}         \textcolor{keywordtype}{int} \hyperlink{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}{nbBallesEnchaineesMax};  
+\Hypertarget{statistiquesseance_8h_source_l00087}\hyperlink{class_statistiques_seance_ad428a6da4f5615a7682c8fa4fb597ce3}{00087}         \textcolor{keywordtype}{bool} \hyperlink{class_statistiques_seance_ad428a6da4f5615a7682c8fa4fb597ce3}{balleToucheTable}; 
+\Hypertarget{statistiquesseance_8h_source_l00088}\hyperlink{class_statistiques_seance_a36681be0a5a9fc48c4c332606a0418ad}{00088}         \textcolor{keywordtype}{bool} \hyperlink{class_statistiques_seance_a36681be0a5a9fc48c4c332606a0418ad}{ballePrecedenteToucheTable};
+\Hypertarget{statistiquesseance_8h_source_l00089}\hyperlink{class_statistiques_seance_af6747af0965a82d7d59a248682bbb575}{00089}         \textcolor{keywordtype}{bool} \hyperlink{class_statistiques_seance_af6747af0965a82d7d59a248682bbb575}{balleToucheRobot}; 
+00090 
+00091         \textcolor{keywordtype}{void} \hyperlink{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}{calculerStatistiques}(uint8\_t numeroZone);
+00092 
+00093     \textcolor{keyword}{private} slots:
+00094 
+00095     \textcolor{keyword}{public} slots:
+00096         \textcolor{keywordtype}{void} \hyperlink{class_statistiques_seance_a72526ea18d6c534a1cb84576ef3ea28d}{finirSeance}();
+00097 
+00098     signals:
+00099         \textcolor{keywordtype}{void} \hyperlink{class_statistiques_seance_a956ac10424a167d5b64fe13a92fbf121}{affichageZone}(\textcolor{keywordtype}{int} numeroZone, \textcolor{keywordtype}{int} nbImpacts, QString pourcentage);
+00100         \textcolor{keywordtype}{void} \hyperlink{class_statistiques_seance_ac3c52002d12dd7b93e6339126c84190f}{ballesTotales}(\textcolor{keywordtype}{int} nbBallesTotales, \textcolor{keywordtype}{int} nbBallesTotalesTable);
+00101         \textcolor{keywordtype}{void} \hyperlink{class_statistiques_seance_a02a327f2a69eed4208b7b2076c6a67f2}{ballesTotalesHorsTable}(\textcolor{keywordtype}{int} ballesToucheTable);
+00102         \textcolor{keywordtype}{void} \hyperlink{class_statistiques_seance_aa3ee6b00dae44d1f3cf78349ba235b08}{ballesBonnes}(\textcolor{keywordtype}{int} nbBallesBonnes);
+00103 \};
+00104 
+00105 \textcolor{preprocessor}{#endif // STATISTIQUEDETABLE\_H}
+\end{DoxyCode}

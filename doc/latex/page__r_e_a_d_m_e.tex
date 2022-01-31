@@ -1,0 +1,70 @@
+\subsubsection*{Nom \+: Projet T\+T\+PA (Table Tennis Performance Analyser)}
+
+Le système T\+T\+PA doit permettre une analyse des performances du joueur (côté relanceur). Il doit proposer une phase d\textquotesingle{}entraînement adaptée au niveau du joueur, puis de détecter l\textquotesingle{}impact des balles afin d\textquotesingle{}afficher le rythme de jeu, la précision, le pourcentage de réussite. La zone d\textquotesingle{}impact (côté distributeur) est identifiée sur un écran de télévision en fin d\textquotesingle{}exercice. Le pourcentage de balles dans chacune des zones, le rythme de jeu et le pourcentage de réussite sont disponibles en fin d\textquotesingle{}exercice. Le joueur lance un exercice spécifique et pourra connaître son évolution individuelle.
+
+
+\begin{DoxyItemize}
+\item Module Écran \+: Yohann B\+O\+T\+E\+L\+LA--B\+R\+OC
+\item Module Application Mobile \+: {\bfseries Youssef} {\bfseries H\+A\+M\+M\+O\+U\+MA} 
+\end{DoxyItemize}
+
+\subsubsection*{Numéro de version \+: 1.\+3}
+
+\subsubsection*{Auteurs}
+
+\begin{DoxyAuthor}{Auteur}
+{\itshape Yohann} B\+O\+T\+E\+L\+LA--B\+R\+OC \href{mailto:botellabroc.yohann@gmail.com}{\tt botellabroc.\+yohann@gmail.\+com}
+
+{\itshape Youssef} H\+A\+M\+M\+O\+U\+MA \href{mailto:yhammouma@gmail.com}{\tt yhammouma@gmail.\+com}
+\end{DoxyAuthor}
+\subsubsection*{Dépôt S\+VN}
+
+\href{https://svn.riouxsvn.com/ttpa}{\tt https\+://svn.\+riouxsvn.\+com/ttpa}
+
+\subsubsection*{Recette IR}
+
+
+\begin{DoxyItemize}
+\item Étudiant \+: Yohann B\+O\+T\+E\+L\+LA--B\+R\+OC
+\begin{DoxyItemize}
+\item Le système d’exploitation est installé et fonctionnel
+\item L\textquotesingle{}écran est configuré en mode \char`\"{}kiosque\char`\"{}
+\item La zone d’impact est identifiée et affichée en temps réel
+\item Les données de la séance sont affichées en temps réel
+\item Les liaisons sans fil sont opérationnelles
+\item Les informations sont affichées en fin de séquence
+\end{DoxyItemize}
+\item Étudiant \+: Youssef H\+A\+M\+M\+O\+U\+MA
+\begin{DoxyItemize}
+\item La base de données est fonctionnelle et complétée
+\item Le système est paramétrable
+\item La liaison Bluetooth est fonctionnelle
+\item Les informations de paramétrages sont transmises
+\item L\textquotesingle{}application mobile est déployée
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsubsection*{Base de données S\+Q\+Lite}
+
+
+\begin{DoxyCode}
+CREATE TABLE joueurs ( "idJoueur" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nom" VARCHAR(255) NOT NULL
+       UNIQUE )
+
+CREATE TABLE parametres ( "idParametres" INTEGER PRIMARY KEY AUTOINCREMENT, "nbBalles" INTEGER NOT NULL,
+       "nbBallesMinute" INTEGER NOT NULL, "effet" INTEGER NOT NULL, "puissance" INTEGER NOT NULL, "rotation" INTEGER
+       NOT NULL, "zoneObjectif" INTEGER NOT NULL, "zoneRobot" INTEGER NOT NULL )
+
+CREATE TABLE profils ( "idProfil" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "idJoueur" INTEGER NOT NULL,
+       "idParametres" INTEGER NOT NULL, "nom" VARCHAR(255) NOT NULL UNIQUE, CONSTRAINT fk\_profils\_1 FOREIGN KEY
+       (idJoueur) REFERENCES joueurs (idJoueur) ON DELETE CASCADE, CONSTRAINT fk\_profils\_2 FOREIGN KEY (idParametres)
+       REFERENCES parametres (idParametres) ON DELETE CASCADE )
+
+CREATE TABLE seances ( "idSeance" INTEGER PRIMARY KEY AUTOINCREMENT, "idProfil" INTEGER NOT NULL,
+       "reussite" REAL NOT NULL, "horodatage" DATETIME NOT NULL, CONSTRAINT fk\_seances\_1 FOREIGN KEY (idProfil) REFERENCES
+       profils (idProfil) ON DELETE CASCADE )
+
+CREATE TABLE ttpa ( "idTTPA" INTEGER PRIMARY KEY CHECK (idTTPA = 1), "idProfil" INTEGER NOT NULL,
+       CONSTRAINT fk\_ttpa\_1 FOREIGN KEY (idProfil) REFERENCES profils (idProfil) ON DELETE CASCADE )
+\end{DoxyCode}
+ 

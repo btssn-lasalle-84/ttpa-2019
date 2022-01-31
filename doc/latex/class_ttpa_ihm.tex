@@ -1,0 +1,1458 @@
+\hypertarget{class_ttpa_ihm}{}\subsection{Référence de la classe Ttpa\+Ihm}
+\label{class_ttpa_ihm}\index{Ttpa\+Ihm@{Ttpa\+Ihm}}
+
+
+La fenêtre principale de l\textquotesingle{}application.  
+
+
+
+
+{\ttfamily \#include $<$ttpaihm.\+h$>$}
+
+
+
+Graphe de collaboration de Ttpa\+Ihm\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_ttpa_ihm__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ttpa_ihm_ad1fc60bf431308d8e52cbc5e35d0d3de}{afficher\+Heure} ()
+\begin{DoxyCompactList}\small\item\em Affiche l\textquotesingle{}heure périodiquement (slot) \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficher\+Duree\+Seance} ()
+\begin{DoxyCompactList}\small\item\em Affiche la durée d\textquotesingle{}une Seance(slot) \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_a3b00f90707811240c7dcfe8ed3dce783}{afficher\+Zone} (int numero\+Zone, int nb\+Impacts, Q\+String pourcentage)
+\begin{DoxyCompactList}\small\item\em Affiche le nombre d\textquotesingle{}impacts et le pourcentage dans une zone. \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_af14988cbed7051af4eba326123cfb177}{quitter} ()
+\begin{DoxyCompactList}\small\item\em Permet de quitter l\textquotesingle{}application. \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_a7b8784d0550cf910b89006365bc8383a}{afficher\+Balles\+Total\+Ecran\+Seance} (int nombre\+Total\+De\+Balle, int nombre\+Total\+De\+Balle\+Table)
+\begin{DoxyCompactList}\small\item\em Affiche le nombre de balle ayant toucher la table sur le nombre total de balle jouer par le robot sur l\textquotesingle{}écran de séance. \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficher\+Impact\+Couleurs} (int numero\+Zone)
+\begin{DoxyCompactList}\small\item\em Affiche la couleur d\textquotesingle{}une zone lors qu\textquotesingle{}elle est impacter. \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_abe9973c64673cdaa067617f9246781d2}{effacer\+Impact\+Zone} ()
+\begin{DoxyCompactList}\small\item\em Efface la couleur émise par afficher\+Impact\+Couleurs pour la remettre de la couleur habituel au bout de 500 ms(bleu) \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_a6102875b095d99c147e6a71a0dfbfb28}{afficher\+Balles\+Total\+Hors\+Table} (int nombre\+Total\+De\+Balle\+Hors\+Table)
+\begin{DoxyCompactList}\small\item\em Affiche le nombre de balle hors zone durant toute la partie et l\textquotesingle{}affiche sur l\textquotesingle{}écran résultats(surcharge) \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_a92494cbd992da35c40128408fb06e9a1}{afficher\+Balles\+Bonnes} (int nombre\+De\+Balles\+Bonnes)
+\begin{DoxyCompactList}\small\item\em Affiche le nombre de balle ayant atteints l\textquotesingle{}objectifs sur l\textquotesingle{}écran résultats. \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_aa480a02532144d0f99af027b5b201ae1}{afficher\+Statistique\+Ecran\+Resultats} ()
+\begin{DoxyCompactList}\small\item\em Affiche sur l\textquotesingle{}écran résultats toutes les statistique nécessaire comme balles ayant atteint l\textquotesingle{}objectifs, balles hors de la table et le nombre de série de balle sur l\textquotesingle{}objectifs. \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_a58058063eb377b4c4c48048e4bf84e77}{afficher\+Statistique\+Pourcentage\+Balles\+Horstable} ()
+\item 
+void \hyperlink{class_ttpa_ihm_aec988dc2398578eb8e91563d1ba58cde}{afficher\+Statistique\+Pourcentage\+Balles\+Serie} ()
+\item 
+void \hyperlink{class_ttpa_ihm_ac37d57d13301cda22f062219de8731c4}{afficher\+Statistique\+Pourcentage\+Balles\+Objectif} ()
+\item 
+void \hyperlink{class_ttpa_ihm_abda1a93ec09ec404b129e08876faa5f8}{set\+Zone\+Robot} (Q\+String numero\+Zone)
+\begin{DoxyCompactList}\small\item\em Place le robot sur la table. \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_a3fd5b5d097f8a52df6fc8dd6d59b1374}{set\+Zone\+Objectif} (Q\+String numero\+Zone)
+\begin{DoxyCompactList}\small\item\em Place le robot sur la table. \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_a0070bf0027c8a903e5bb5a543533e82c}{recevoir\+Numero\+Zone} (Q\+String numero\+Zone)
+\item 
+void \hyperlink{class_ttpa_ihm_a0ad70018b8aff04ef55a258dfc78ec04}{afficher\+Connexion} ()
+\item 
+void \hyperlink{class_ttpa_ihm_a3b3eaf479e616df033680a4df42da3d7}{connecter\+Joueur} (Q\+String nom\+Joueur)
+\begin{DoxyCompactList}\small\item\em Actions nécéssaires a la connexion du joueur (slot) \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_a86d400f2f250f5d2984c8c36394c2ac2}{deconnecter\+Joueur} ()
+\begin{DoxyCompactList}\small\item\em Actions nécéssaires a la deconnexion du joueur (slot) \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{commencer\+Seance} (Q\+String nom\+Joueur, Q\+String zone\+Objectif, Q\+String zone\+Robot)
+\item 
+void \hyperlink{class_ttpa_ihm_a4888ff555295f4e90e0d42bd87ad2d92}{mettre\+En\+Pause\+Seance} ()
+\item 
+void \hyperlink{class_ttpa_ihm_acf4cf42c5d1481ccda7ae12bace0a6d5}{reprendre\+Seance} ()
+\item 
+void \hyperlink{class_ttpa_ihm_aec3a96864aaa87f245bdafbf7a076a94}{finir\+Seance} ()
+\item 
+void \hyperlink{class_ttpa_ihm_a521fea1cb4384157e5422a033e9a4d4f}{reset\+Seance} ()
+\item 
+void \hyperlink{class_ttpa_ihm_a3a2380e2259f7b5bb1fd4d2ae470e06d}{erreur\+Robot} (Q\+String info\+Du\+Robot)
+\item 
+void \hyperlink{class_ttpa_ihm_a1101f9766b4e90844576c1d6b7e2ea23}{Info\+Robot} (Q\+String info\+Du\+Robot)
+\item 
+void \hyperlink{class_ttpa_ihm_a9b22616e3a4e52ad2ecfe1818d5fadb2}{saisir\+Numero\+Zone} (const Q\+String)
+\begin{DoxyCompactList}\small\item\em Permet de simuler un impact de balle à partir du clavier numérique (mode debug) \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_a647bfb1ce10f8ac4b1294a880a76f3d2}{aller\+Suivant} ()
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}aller à l\textquotesingle{}écran suivant (mode debug) \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_a92bcffa9388cff7b55a52ae36e5d120d}{revenir\+Precedent} ()
+\begin{DoxyCompactList}\small\item\em Permet de revenir à l\textquotesingle{}écran précédent (mode debug) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructeur des statistique d\textquotesingle{}une Seance. \end{DoxyCompactList}\item 
+\hyperlink{class_ttpa_ihm_ae436a774572b54dfa2dac8987fd3bb75}{$\sim$\+Ttpa\+Ihm} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la fenêtre principale. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Types privés}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2b}{Page} \{ \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba94101700630d213692269ca864ff87fe}{Page\+Attente} = 0, 
+\hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba3906edb75bc60b0026a207280c4e41d0}{Page\+Seance}, 
+\hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2bab8d5cb877cbb72b194dbaf4f834fbc23}{Page\+Resultats}, 
+\hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba66041bd2f2e100691c4d94c918e92956}{Nb\+Pages}
+ \}\begin{DoxyCompactList}\small\item\em Enumeration des fenetres de l\textquotesingle{}I\+HM. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_ttpa_ihm_a3b0d10b212527273c03fa8e37543d037}{rafraichir\+Heure} ()
+\item 
+void \hyperlink{class_ttpa_ihm_a5d180e581060b01e028f44ee7bd25290}{initialiser\+Zone} ()
+\begin{DoxyCompactList}\small\item\em Initialise le vecteur des zones de la table. \end{DoxyCompactList}\item 
+void \hyperlink{class_ttpa_ihm_a9d649ace50425bdc2bea311753b4214c}{raccourcis\+Clavier} ()
+\begin{DoxyCompactList}\small\item\em Action crtl+Q pour Quitte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Ttpa\+Ihm $\ast$ \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}
+\begin{DoxyCompactList}\small\item\em agrégation de la partie graphique de l\textquotesingle{}I\+HM \end{DoxyCompactList}\item 
+Q\+Timer $\ast$ \hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timer\+Horloge}
+\begin{DoxyCompactList}\small\item\em temporisateur pour le rafraichissement de l\textquotesingle{}heure \end{DoxyCompactList}\item 
+int \hyperlink{class_ttpa_ihm_abb5ab7cc023685e40cb278f0210f276f}{compteur\+Duree\+Seance}
+\begin{DoxyCompactList}\small\item\em compteur de secondes pour la duréee d\textquotesingle{}une séance \end{DoxyCompactList}\item 
+Q\+Vector$<$ Q\+Label $\ast$ $>$ \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zones\+Table}
+\begin{DoxyCompactList}\small\item\em vecteur pour les labels de zone \end{DoxyCompactList}\item 
+\hyperlink{class_statistiques_seance}{Statistiques\+Seance} $\ast$ \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}
+\begin{DoxyCompactList}\small\item\em les statistiques d\textquotesingle{}une séance \end{DoxyCompactList}\item 
+\hyperlink{class_communication_bluetooth}{Communication\+Bluetooth} $\ast$ \hyperlink{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}{communication\+Bluetooth}
+\begin{DoxyCompactList}\small\item\em pour communiquer en Bluetooth avec la tablette \end{DoxyCompactList}\item 
+int \hyperlink{class_ttpa_ihm_af8fa0aee928ee727f27ff605c0c1d991}{numero\+Zone\+Impacte}
+\begin{DoxyCompactList}\small\item\em le numero de la zone qui a était impacté par la balle \end{DoxyCompactList}\item 
+Q\+Line\+Edit $\ast$ \hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{edit\+Numero\+Zone}
+\begin{DoxyCompactList}\small\item\em pour la simulation d\textquotesingle{}un impact de balle à partir du clavier numérique (mode debug) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Botella-\/\+Broc Yohann
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+4 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2b}\label{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2b}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!Page@{Page}}
+\index{Page@{Page}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{Page}{Page}}
+{\footnotesize\ttfamily enum \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2b}{Ttpa\+Ihm\+::\+Page}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Page\+Attente@{Page\+Attente}!Ttpa\+Ihm@{Ttpa\+Ihm}}\index{Ttpa\+Ihm@{Ttpa\+Ihm}!Page\+Attente@{Page\+Attente}}}\mbox{\Hypertarget{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba94101700630d213692269ca864ff87fe}\label{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba94101700630d213692269ca864ff87fe}} 
+Page\+Attente&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Page\+Seance@{Page\+Seance}!Ttpa\+Ihm@{Ttpa\+Ihm}}\index{Ttpa\+Ihm@{Ttpa\+Ihm}!Page\+Seance@{Page\+Seance}}}\mbox{\Hypertarget{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba3906edb75bc60b0026a207280c4e41d0}\label{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba3906edb75bc60b0026a207280c4e41d0}} 
+Page\+Seance&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Page\+Resultats@{Page\+Resultats}!Ttpa\+Ihm@{Ttpa\+Ihm}}\index{Ttpa\+Ihm@{Ttpa\+Ihm}!Page\+Resultats@{Page\+Resultats}}}\mbox{\Hypertarget{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2bab8d5cb877cbb72b194dbaf4f834fbc23}\label{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2bab8d5cb877cbb72b194dbaf4f834fbc23}} 
+Page\+Resultats&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Nb\+Pages@{Nb\+Pages}!Ttpa\+Ihm@{Ttpa\+Ihm}}\index{Ttpa\+Ihm@{Ttpa\+Ihm}!Nb\+Pages@{Nb\+Pages}}}\mbox{\Hypertarget{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba66041bd2f2e100691c4d94c918e92956}\label{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba66041bd2f2e100691c4d94c918e92956}} 
+Nb\+Pages&\\
+\hline
+
+\end{DoxyEnumFields}
+
+\begin{DoxyCode}
+00069         \{
+00070             \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba94101700630d213692269ca864ff87fe}{PageAttente} = 0,
+00071             \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba3906edb75bc60b0026a207280c4e41d0}{PageSeance},
+00072             \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2bab8d5cb877cbb72b194dbaf4f834fbc23}{PageResultats},
+00073             \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba66041bd2f2e100691c4d94c918e92956}{NbPages}
+00074         \};
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}\label{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{Ttpa\+Ihm()}{TtpaIhm()}}
+{\footnotesize\ttfamily Ttpa\+Ihm\+::\+Ttpa\+Ihm (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructeur de la fenêtre principale.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & Q\+Object Adresse de l\textquotesingle{}objet Qt parent numero\+Zone\+Objectif définit la zone de l\textquotesingle{}objectif numero\+Zone\+Robot définit la zone du robot nb\+Impacts\+Zone définit le nombre d\textquotesingle{}impacte dans une zone (1 à 7) nb\+Balles\+Totales tiré par le robot.\\
+\hline
+{\em parent} & Q\+Object Adresse de l\textquotesingle{}objet Qt parent (ici 0 car c\textquotesingle{}est la fenêtre principale) \\
+\hline
+\end{DoxyParams}
+ajout d\textquotesingle{}un bouton dans chaque écran peut être désactiver avec le .pro
+
+Références \hyperlink{class_ttpa_ihm_a92494cbd992da35c40128408fb06e9a1}{afficher\+Balles\+Bonnes()}, \hyperlink{class_ttpa_ihm_a7b8784d0550cf910b89006365bc8383a}{afficher\+Balles\+Total\+Ecran\+Seance()}, \hyperlink{class_ttpa_ihm_a6102875b095d99c147e6a71a0dfbfb28}{afficher\+Balles\+Total\+Hors\+Table()}, \hyperlink{class_ttpa_ihm_a0ad70018b8aff04ef55a258dfc78ec04}{afficher\+Connexion()}, \hyperlink{class_ttpa_ihm_ad1fc60bf431308d8e52cbc5e35d0d3de}{afficher\+Heure()}, \hyperlink{class_ttpa_ihm_a3b00f90707811240c7dcfe8ed3dce783}{afficher\+Zone()}, \hyperlink{class_ttpa_ihm_a647bfb1ce10f8ac4b1294a880a76f3d2}{aller\+Suivant()}, \hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{commencer\+Seance()}, \hyperlink{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}{communication\+Bluetooth}, \hyperlink{class_ttpa_ihm_a3b3eaf479e616df033680a4df42da3d7}{connecter\+Joueur()}, \hyperlink{class_communication_bluetooth_a056f2cb0ff59757e027a430e356e22bc}{Communication\+Bluetooth\+::demarrer()}, \hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{edit\+Numero\+Zone}, \hyperlink{class_ttpa_ihm_a3a2380e2259f7b5bb1fd4d2ae470e06d}{erreur\+Robot()}, \hyperlink{class_ttpa_ihm_aec3a96864aaa87f245bdafbf7a076a94}{finir\+Seance()}, \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{Statistiques\+Seance\+::initialiser\+Statistiques()}, \hyperlink{class_ttpa_ihm_a4888ff555295f4e90e0d42bd87ad2d92}{mettre\+En\+Pause\+Seance()}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736}{Statistiques\+Seance\+::\+Nb\+Zones\+Impact}, \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba94101700630d213692269ca864ff87fe}{Page\+Attente}, \hyperlink{ttpaihm_8h_abe1de80d8a7149cf82da305f032d7b1e}{P\+E\+R\+I\+O\+D\+E\+\_\+\+H\+O\+R\+L\+O\+GE}, \hyperlink{class_ttpa_ihm_a9d649ace50425bdc2bea311753b4214c}{raccourcis\+Clavier()}, \hyperlink{class_ttpa_ihm_a0070bf0027c8a903e5bb5a543533e82c}{recevoir\+Numero\+Zone()}, \hyperlink{class_ttpa_ihm_acf4cf42c5d1481ccda7ae12bace0a6d5}{reprendre\+Seance()}, \hyperlink{class_ttpa_ihm_a521fea1cb4384157e5422a033e9a4d4f}{reset\+Seance()}, \hyperlink{class_ttpa_ihm_a92bcffa9388cff7b55a52ae36e5d120d}{revenir\+Precedent()}, \hyperlink{class_ttpa_ihm_a9b22616e3a4e52ad2ecfe1818d5fadb2}{saisir\+Numero\+Zone()}, \hyperlink{class_ttpa_ihm_a3fd5b5d097f8a52df6fc8dd6d59b1374}{set\+Zone\+Objectif()}, \hyperlink{class_ttpa_ihm_abda1a93ec09ec404b129e08876faa5f8}{set\+Zone\+Robot()}, \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}, \hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timer\+Horloge}, et \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+\begin{DoxyCode}
+00031                                 : QWidget(parent), \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}(\textcolor{keyword}{new} Ui::TtpaIhm), 
+      \hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timerHorloge}(\textcolor{keyword}{nullptr}), \hyperlink{class_ttpa_ihm_abb5ab7cc023685e40cb278f0210f276f}{compteurDureeSeance}(0), 
+      \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}(\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}{StatistiquesSeance::NbZonesTotales}, \textcolor{keyword}{nullptr})
+00032 \{
+00033     qDebug() << Q\_FUNC\_INFO;
+00034     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->setupUi(\textcolor{keyword}{this});
+00038 \textcolor{preprocessor}{#ifndef QT\_NO\_DEBUG\_OUTPUT}
+00039     \textcolor{comment}{// Pour simuler un impact}
+00040     \hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{editNumeroZone} = \textcolor{keyword}{new} QLineEdit(\textcolor{keyword}{this});
+00041     \hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{editNumeroZone}->setFocus();
+00042     \hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{editNumeroZone}->setFixedSize(0,0);
+00043     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->hLayoutVersEcranResultats->addWidget(\hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{editNumeroZone});
+00044 \textcolor{preprocessor}{#endif}
+00045     \textcolor{comment}{// Choix de l'écran de départ}
+00046     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->ecranTtpa->setCurrentIndex(\hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba94101700630d213692269ca864ff87fe}{TtpaIhm::PageAttente});
+00047     \textcolor{comment}{//ui->ecranTtpa->setCurrentIndex(TtpaIhm::PageSeance);}
+00048     \textcolor{comment}{//ui->ecranTtpa->setCurrentIndex(TtpaIhm::PageResultats);}
+00049 
+00050     \textcolor{comment}{//Plein écran}
+00051     \textcolor{comment}{//const int largeur = qApp->desktop()->availableGeometry(this).width();}
+00052     \textcolor{comment}{//const int hauteur = qApp->desktop()->availableGeometry(this).height();}
+00053     \textcolor{comment}{//resize(largeur, hauteur);}
+00054     \textcolor{comment}{//showMaximized();}
+00055     showFullScreen();
+00056 
+00057     \hyperlink{class_ttpa_ihm_a9d649ace50425bdc2bea311753b4214c}{raccourcisClavier}();
+00058 
+00059     \textcolor{comment}{//Timer}
+00060     \hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timerHorloge} = \textcolor{keyword}{new} QTimer(\textcolor{keyword}{this}); \textcolor{comment}{// Instancie dynamiquement le temporisateur du
+       rafraichissement de l'heure}
+00061     connect(\hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timerHorloge}, SIGNAL(timeout()),\textcolor{keyword}{this},SLOT(\hyperlink{class_ttpa_ihm_ad1fc60bf431308d8e52cbc5e35d0d3de}{afficherHeure}())); \textcolor{comment}{// Pour
+       le déclenchement périodique de l'affichage de l'heure    }
+00062     \hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timerHorloge}->start(\hyperlink{ttpaihm_8h_abe1de80d8a7149cf82da305f032d7b1e}{PERIODE\_HORLOGE}); \textcolor{comment}{// Toutes les secondes (1000 ms)}
+00063 
+00064 \textcolor{preprocessor}{#ifndef QT\_NO\_DEBUG\_OUTPUT}
+00065     QAction *actionAllerDroite = \textcolor{keyword}{new} QAction(\textcolor{keyword}{this});
+00066     actionAllerDroite->setShortcut(QKeySequence(Qt::Key\_F3));
+00067     addAction(actionAllerDroite);
+00068     connect(actionAllerDroite, SIGNAL(triggered()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_ttpa_ihm_a647bfb1ce10f8ac4b1294a880a76f3d2}{allerSuivant}()));\textcolor{comment}{// Pour passer
+       à l'écran suivant}
+00069     QAction *actionAllerGauche = \textcolor{keyword}{new} QAction(\textcolor{keyword}{this});
+00070     actionAllerGauche->setShortcut(QKeySequence(Qt::SHIFT + Qt::Key\_F3));
+00071     addAction(actionAllerGauche);
+00072     connect(actionAllerGauche, SIGNAL(triggered()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_ttpa_ihm_a92bcffa9388cff7b55a52ae36e5d120d}{revenirPrecedent}()));\textcolor{comment}{// Pour
+       revenir à l'écran précédent}
+00073 \textcolor{preprocessor}{#endif}
+00074 
+00075     \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance} = \textcolor{keyword}{new} \hyperlink{class_statistiques_seance}{StatistiquesSeance}(\textcolor{keyword}{this});
+00076     connect(\hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}, SIGNAL(affichageZone(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}, QString)), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ttpa_ihm_a3b00f90707811240c7dcfe8ed3dce783}{afficherZone}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}, QString)));
+00077     connect(\hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}, SIGNAL(ballesTotales(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int})), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ttpa_ihm_a7b8784d0550cf910b89006365bc8383a}{afficherBallesTotalEcranSeance}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int})));
+00078     connect(\hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}, SIGNAL(ballesTotalesHorsTable(\textcolor{keywordtype}{int})),\textcolor{keyword}{this} ,SLOT(
+      \hyperlink{class_ttpa_ihm_a6102875b095d99c147e6a71a0dfbfb28}{afficherBallesTotalHorsTable}(\textcolor{keywordtype}{int})));
+00079     connect(\hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}, SIGNAL(ballesBonnes(\textcolor{keywordtype}{int})), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ttpa_ihm_a92494cbd992da35c40128408fb06e9a1}{afficherBallesBonnes}(\textcolor{keywordtype}{int})));
+00080 
+00081     \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiserStatistiques}();
+00082 \textcolor{preprocessor}{#ifdef BLUETOOTH}
+00083     \hyperlink{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}{communicationBluetooth} = \textcolor{keyword}{new} \hyperlink{class_communication_bluetooth}{CommunicationBluetooth}(\textcolor{keyword}{this});
+00084     \hyperlink{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}{communicationBluetooth}->\hyperlink{class_communication_bluetooth_a056f2cb0ff59757e027a430e356e22bc}{demarrer}();
+00085     connect(\hyperlink{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}{communicationBluetooth}, SIGNAL(impactZone(QString)), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ttpa_ihm_a0070bf0027c8a903e5bb5a543533e82c}{recevoirNumeroZone}(QString)));
+00086     connect(\hyperlink{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}{communicationBluetooth}, SIGNAL(departSeance(QString,QString,QString)), \textcolor{keyword}{
+      this}, SLOT(\hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{commencerSeance}(QString,QString,QString)));\textcolor{comment}{// Pour commencer la seance}
+00087     connect(\hyperlink{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}{communicationBluetooth}, SIGNAL(
+      \hyperlink{class_ttpa_ihm_a4888ff555295f4e90e0d42bd87ad2d92}{mettreEnPauseSeance}()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_ttpa_ihm_a4888ff555295f4e90e0d42bd87ad2d92}{mettreEnPauseSeance}()));
+00088     connect(\hyperlink{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}{communicationBluetooth}, SIGNAL(repriseSeance()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ttpa_ihm_acf4cf42c5d1481ccda7ae12bace0a6d5}{reprendreSeance}()));
+00089     connect(\hyperlink{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}{communicationBluetooth}, SIGNAL(finSeance()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ttpa_ihm_aec3a96864aaa87f245bdafbf7a076a94}{finirSeance}()));
+00090     connect(\hyperlink{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}{communicationBluetooth}, SIGNAL(\hyperlink{class_ttpa_ihm_a521fea1cb4384157e5422a033e9a4d4f}{resetSeance}()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ttpa_ihm_a521fea1cb4384157e5422a033e9a4d4f}{resetSeance}()));
+00091     connect(\hyperlink{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}{communicationBluetooth}, SIGNAL(\hyperlink{class_ttpa_ihm_a3a2380e2259f7b5bb1fd4d2ae470e06d}{erreurRobot}(QString)), \textcolor{keyword}{this}, 
+      SLOT(\hyperlink{class_ttpa_ihm_a3a2380e2259f7b5bb1fd4d2ae470e06d}{erreurRobot}(QString)));
+00092     connect(\hyperlink{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}{communicationBluetooth}, SIGNAL(connecte()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ttpa_ihm_a0ad70018b8aff04ef55a258dfc78ec04}{afficherConnexion}()));
+00093 \textcolor{preprocessor}{#else}
+00094     \hyperlink{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}{communicationBluetooth} = \textcolor{keyword}{nullptr};
+00095 \textcolor{preprocessor}{#endif}
+00096 
+00097     \textcolor{comment}{// slot pour les boutons dans chaque écran peut être désactiver avec le .pro ou rajouter le ifndef}
+00098 \textcolor{preprocessor}{#ifndef QT\_NO\_DEBUG\_OUTPUT}
+00099     connect(\hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{editNumeroZone}, SIGNAL(textChanged(\textcolor{keyword}{const} QString)), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ttpa_ihm_a9b22616e3a4e52ad2ecfe1818d5fadb2}{saisirNumeroZone}(\textcolor{keyword}{const} QString)));
+00100     \textcolor{comment}{//editNumeroZone->setFocus();}
+00101 \textcolor{preprocessor}{#endif}
+00102 \textcolor{preprocessor}{#ifdef SIMULATION}
+00103     \textcolor{comment}{// Simulation en attendant la communication avec le terminal mobile}
+00104     qsrand(QTime::currentTime().msec());
+00105     \hyperlink{class_ttpa_ihm_a3b3eaf479e616df033680a4df42da3d7}{connecterJoueur}(\textcolor{stringliteral}{"Simon GAUZY"});
+00106     \hyperlink{class_ttpa_ihm_abda1a93ec09ec404b129e08876faa5f8}{setZoneRobot}(qrand()%\textcolor{keywordtype}{int}(\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736}{StatistiquesSeance::NbZonesImpact}
+      ));
+00107     \hyperlink{class_ttpa_ihm_a3fd5b5d097f8a52df6fc8dd6d59b1374}{setZoneObjectif}(qrand()%\textcolor{keywordtype}{int}(\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736}{StatistiquesSeance::NbZonesImpact}
+      ));
+00108 \textcolor{preprocessor}{#endif}
+00109 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_ae436a774572b54dfa2dac8987fd3bb75}\label{class_ttpa_ihm_ae436a774572b54dfa2dac8987fd3bb75}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!````~Ttpa\+Ihm@{$\sim$\+Ttpa\+Ihm}}
+\index{````~Ttpa\+Ihm@{$\sim$\+Ttpa\+Ihm}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{$\sim$\+Ttpa\+Ihm()}{~TtpaIhm()}}
+{\footnotesize\ttfamily Ttpa\+Ihm\+::$\sim$\+Ttpa\+Ihm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+\begin{DoxyCode}
+00118 \{
+00119     \textcolor{comment}{// arrêt du timerSequence}
+00120     \textcolor{comment}{//emit arret();}
+00121     \textcolor{keyword}{delete} \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui};
+00122     qDebug() << Q\_FUNC\_INFO;
+00123 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_ttpa_ihm_a92494cbd992da35c40128408fb06e9a1}\label{class_ttpa_ihm_a92494cbd992da35c40128408fb06e9a1}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!afficher\+Balles\+Bonnes@{afficher\+Balles\+Bonnes}}
+\index{afficher\+Balles\+Bonnes@{afficher\+Balles\+Bonnes}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{afficher\+Balles\+Bonnes}{afficherBallesBonnes}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::afficher\+Balles\+Bonnes (\begin{DoxyParamCaption}\item[{int}]{nombre\+De\+Balles\+Bonnes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nombre\+De\+Balles\+Bonnes} & et le nombre total ayant atteint la zone objectif \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00414 \{
+00415     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelZoneObjectifs->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00416     QString nbBallesBonnes = QString::number(nombreDeBallesBonnes);
+00417     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"nbBallesBonnes="} << nbBallesBonnes;
+00418     QString affichageBallesBonnes = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"} + nbBallesBonnes + \textcolor{stringliteral}{
+      "</span>"};
+00419     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelZoneObjectifs->setText(affichageBallesBonnes);
+00420     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelZoneObjectifs->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00421 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a7b8784d0550cf910b89006365bc8383a}\label{class_ttpa_ihm_a7b8784d0550cf910b89006365bc8383a}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!afficher\+Balles\+Total\+Ecran\+Seance@{afficher\+Balles\+Total\+Ecran\+Seance}}
+\index{afficher\+Balles\+Total\+Ecran\+Seance@{afficher\+Balles\+Total\+Ecran\+Seance}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{afficher\+Balles\+Total\+Ecran\+Seance}{afficherBallesTotalEcranSeance}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::afficher\+Balles\+Total\+Ecran\+Seance (\begin{DoxyParamCaption}\item[{int}]{nombre\+Total\+De\+Balle,  }\item[{int}]{nombre\+Total\+De\+Balle\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nombre\+Total\+De\+Balle} & et le nombre total jouer par le robot \\
+\hline
+{\em nombre\+Total\+De\+Balle\+Table} & et le nombre total ayant toucher la table (hors table et zone\+Robot non comprise) \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00380 \{
+00381     QString nbBallesTotales = QString::number(nombreTotalDeBalle);
+00382     QString nbBallesTotalesTable = QString::number(nombreTotalDeBalleTable);
+00383     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"nbBallesTotales="} << nbBallesTotales  << \textcolor{stringliteral}{"nbBallesTotalesTable="} << 
+      nbBallesTotalesTable;
+00384     QString affichage = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"} + nbBallesTotalesTable + \textcolor{stringliteral}{" / "} 
+      + nbBallesTotales + \textcolor{stringliteral}{"</span>"};
+00385     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelNbBallesTotales->setText(affichage);
+00386     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelNbBallesTotales->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00387 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a6102875b095d99c147e6a71a0dfbfb28}\label{class_ttpa_ihm_a6102875b095d99c147e6a71a0dfbfb28}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!afficher\+Balles\+Total\+Hors\+Table@{afficher\+Balles\+Total\+Hors\+Table}}
+\index{afficher\+Balles\+Total\+Hors\+Table@{afficher\+Balles\+Total\+Hors\+Table}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{afficher\+Balles\+Total\+Hors\+Table}{afficherBallesTotalHorsTable}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::afficher\+Balles\+Total\+Hors\+Table (\begin{DoxyParamCaption}\item[{int}]{nombre\+Total\+De\+Balle\+Hors\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nombre\+Total\+De\+Balle\+Hors\+Table} & et le nombre total de balle hors table (zone\+Robot + hors table) \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00397 \{    
+00398     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelNbBallesHorsTable->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00399     QString nbBallesTotalesHorsTable = QString::number(nombreTotalDeBalleHorsTable);
+00400     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"nbBallesTotalesTable="} << nbBallesTotalesHorsTable;
+00401     QString affichage = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"} + nbBallesTotalesHorsTable + \textcolor{stringliteral}{"
+      </span>"};
+00402     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelNbBallesHorsTable->setText(affichage);
+00403     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelNbBallesHorsTable->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00404 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a0ad70018b8aff04ef55a258dfc78ec04}\label{class_ttpa_ihm_a0ad70018b8aff04ef55a258dfc78ec04}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!afficher\+Connexion@{afficher\+Connexion}}
+\index{afficher\+Connexion@{afficher\+Connexion}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{afficher\+Connexion}{afficherConnexion}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::afficher\+Connexion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00225 \{
+00226     QString etat;
+00227     etat = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">Connecté</span>"};
+00228     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelEtatConnexion->setText(etat);
+00229 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}\label{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!afficher\+Duree\+Seance@{afficher\+Duree\+Seance}}
+\index{afficher\+Duree\+Seance@{afficher\+Duree\+Seance}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{afficher\+Duree\+Seance}{afficherDureeSeance}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::afficher\+Duree\+Seance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_abb5ab7cc023685e40cb278f0210f276f}{compteur\+Duree\+Seance}, et \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{commencer\+Seance()}, \hyperlink{class_ttpa_ihm_a3a2380e2259f7b5bb1fd4d2ae470e06d}{erreur\+Robot()}, \hyperlink{class_ttpa_ihm_aec3a96864aaa87f245bdafbf7a076a94}{finir\+Seance()}, \hyperlink{class_ttpa_ihm_a4888ff555295f4e90e0d42bd87ad2d92}{mettre\+En\+Pause\+Seance()}, \hyperlink{class_ttpa_ihm_acf4cf42c5d1481ccda7ae12bace0a6d5}{reprendre\+Seance()}, et \hyperlink{class_ttpa_ihm_a521fea1cb4384157e5422a033e9a4d4f}{reset\+Seance()}.
+
+
+\begin{DoxyCode}
+00262 \{
+00263     QString affichageDuree;
+00264     QString affichageFinDuree;
+00265     QTime duree(0, 0);
+00266     \hyperlink{class_ttpa_ihm_abb5ab7cc023685e40cb278f0210f276f}{compteurDureeSeance}++;
+00267     QTime dureeSeance = duree.addSecs(\hyperlink{class_ttpa_ihm_abb5ab7cc023685e40cb278f0210f276f}{compteurDureeSeance});
+00268     \textcolor{keywordflow}{if}(\hyperlink{class_ttpa_ihm_abb5ab7cc023685e40cb278f0210f276f}{compteurDureeSeance} >= 3600)
+00269     \{
+00270         affichageDuree = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"} + dureeSeance.toString(\textcolor{stringliteral}{"hh :
+       mm : ss"}) + \textcolor{stringliteral}{"</span>"};
+00271         affichageFinDuree = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"} \textcolor{comment}{/*+
+       QString::fromUtf8("Durée de la séance")*/} + dureeSeance.toString(\textcolor{stringliteral}{"mm : ss"}) + \textcolor{stringliteral}{"</span>"};
+00272         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelDureeSeance->setText(affichageDuree);
+00273         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelDureeSeance->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00274         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelTimeFinSeance->setText(affichageFinDuree);
+00275         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelTimeFinSeance->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00276     \}
+00277     \textcolor{keywordflow}{else}
+00278     \{
+00279         affichageDuree = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"}  + dureeSeance.toString(\textcolor{stringliteral}{"mm :
+       ss"}) + \textcolor{stringliteral}{"</span>"};
+00280         affichageFinDuree = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"} \textcolor{comment}{/*+
+       QString::fromUtf8("Durée de la séance : ")*/} + dureeSeance.toString(\textcolor{stringliteral}{"mm : ss"}) + \textcolor{stringliteral}{"</span>"};
+00281         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelDureeSeance->setText(affichageDuree);
+00282         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelDureeSeance->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00283         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelTimeFinSeance->setText(affichageFinDuree);
+00284         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelTimeFinSeance->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00285     \}
+00286 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_ad1fc60bf431308d8e52cbc5e35d0d3de}\label{class_ttpa_ihm_ad1fc60bf431308d8e52cbc5e35d0d3de}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!afficher\+Heure@{afficher\+Heure}}
+\index{afficher\+Heure@{afficher\+Heure}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{afficher\+Heure}{afficherHeure}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::afficher\+Heure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00197 \{
+00198     QString affichageHeure;
+00199     QTime heure = QTime::currentTime();
+00200     affichageHeure = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:42pt; font-weight:600;\(\backslash\)">"} + heure.toString(\textcolor{stringliteral}{"hh : mm : ss"}) +
+       \textcolor{stringliteral}{"</span>"};
+00201     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelHorlogeEcranSeance->setText(affichageHeure);
+00202     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelHorlogeEcranResultats->setText(affichageHeure);
+00203     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelHorlogeEcranSeance->setStyleSheet(\textcolor{stringliteral}{"color: rgb(250, 142, 7)"});
+00204     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelHorlogeEcranResultats->setStyleSheet(\textcolor{stringliteral}{"color: rgb(250, 142, 7)"});
+00205     \textcolor{comment}{//ui->labelHorlogeEcranSeance->setText(heure.toString("hh : mm : ss"));}
+00206     \textcolor{comment}{//ui->labelHorlogeEcranResultats->setText(heure.toString("hh : mm : ss"));}
+00207 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}\label{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!afficher\+Impact\+Couleurs@{afficher\+Impact\+Couleurs}}
+\index{afficher\+Impact\+Couleurs@{afficher\+Impact\+Couleurs}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{afficher\+Impact\+Couleurs}{afficherImpactCouleurs}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::afficher\+Impact\+Couleurs (\begin{DoxyParamCaption}\item[{int}]{numero\+Zone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em numero\+Zone} & et le numéro de la zone toucher par Impacter\+Zone et l\textquotesingle{}affiche en couleur en temps réel écran Seance \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_ttpa_ihm_abe9973c64673cdaa067617f9246781d2}{effacer\+Impact\+Zone()}, \hyperlink{class_statistiques_seance_a61c01cb1d35cda871e8243658213ee5b}{Statistiques\+Seance\+::get\+Zone\+Objectif()}, \hyperlink{class_statistiques_seance_ad1bdc22fbd9f37fab06d9fc24e9f1bc4}{Statistiques\+Seance\+::get\+Zone\+Robot()}, \hyperlink{class_ttpa_ihm_af8fa0aee928ee727f27ff605c0c1d991}{numero\+Zone\+Impacte}, \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}, \hyperlink{ttpaihm_8h_a9b6e17fdcabfecc63689f88d52e369ad}{T\+E\+M\+P\+S\+\_\+\+I\+M\+P\+A\+C\+T\+\_\+\+Z\+O\+NE}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{Statistiques\+Seance\+::\+Zone\+Hors\+Table}, et \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zones\+Table}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a0070bf0027c8a903e5bb5a543533e82c}{recevoir\+Numero\+Zone()}, et \hyperlink{class_ttpa_ihm_a9b22616e3a4e52ad2ecfe1818d5fadb2}{saisir\+Numero\+Zone()}.
+
+
+\begin{DoxyCode}
+00431 \{
+00432     \textcolor{comment}{// TODO vérifier validité du numeroZone}
+00433     \textcolor{keywordflow}{if}(numeroZone == \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a61c01cb1d35cda871e8243658213ee5b}{getZoneObjectif}())
+00434         \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[numeroZone]->setStyleSheet(\textcolor{stringliteral}{"background-color: rgb(3, 254, 7);color: rgb(255,
+       255, 255);border: 2px solid rgb(255, 255, 255);"});
+00435     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(numeroZone == \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_ad1bdc22fbd9f37fab06d9fc24e9f1bc4}{getZoneRobot}())        
+00436         \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[numeroZone]->setStyleSheet(\textcolor{stringliteral}{"background-color: rgb(250, 254, 125);color:
+       rgb(255, 255, 255);border: 2px solid rgb(255, 255, 255);"});
+00437     \textcolor{keywordflow}{else}        
+00438         \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[numeroZone]->setStyleSheet(\textcolor{stringliteral}{"background-color: #ff5e30;color: rgb(255, 255,
+       255);border: 2px solid rgb(255, 255, 255);"});
+00439     \textcolor{keywordflow}{if}(numeroZone == \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_ad1bdc22fbd9f37fab06d9fc24e9f1bc4}{getZoneRobot}())        
+00440         \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{StatistiquesSeance::ZoneHorsTable}]->
+      setStyleSheet(\textcolor{stringliteral}{"background-color: rgb(250, 254, 125);rgb(255, 255, 255);border: 2px solid rgb(255, 255, 255);"});
+00441     \hyperlink{class_ttpa_ihm_af8fa0aee928ee727f27ff605c0c1d991}{numeroZoneImpacte} = numeroZone;
+00442     QTimer::singleShot(\hyperlink{ttpaihm_8h_a9b6e17fdcabfecc63689f88d52e369ad}{TEMPS\_IMPACT\_ZONE}, \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_ttpa_ihm_abe9973c64673cdaa067617f9246781d2}{effacerImpactZone}()));
+00443 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_aa480a02532144d0f99af027b5b201ae1}\label{class_ttpa_ihm_aa480a02532144d0f99af027b5b201ae1}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!afficher\+Statistique\+Ecran\+Resultats@{afficher\+Statistique\+Ecran\+Resultats}}
+\index{afficher\+Statistique\+Ecran\+Resultats@{afficher\+Statistique\+Ecran\+Resultats}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{afficher\+Statistique\+Ecran\+Resultats}{afficherStatistiqueEcranResultats}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::afficher\+Statistique\+Ecran\+Resultats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_a58058063eb377b4c4c48048e4bf84e77}{afficher\+Statistique\+Pourcentage\+Balles\+Horstable()}, \hyperlink{class_ttpa_ihm_ac37d57d13301cda22f062219de8731c4}{afficher\+Statistique\+Pourcentage\+Balles\+Objectif()}, \hyperlink{class_ttpa_ihm_aec988dc2398578eb8e91563d1ba58cde}{afficher\+Statistique\+Pourcentage\+Balles\+Serie()}, \hyperlink{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}{Statistiques\+Seance\+::get\+Balles\+Bonnes()}, \hyperlink{class_statistiques_seance_a1f241d7ef584ebffa2246134c63be53b}{Statistiques\+Seance\+::get\+Balles\+Enchainees()}, \hyperlink{class_statistiques_seance_a26b717d40065e7afd80465458f3cb6aa}{Statistiques\+Seance\+::get\+Balles\+Hors\+Table()}, \hyperlink{class_statistiques_seance_aaefd0b775012ec914a36a262dc14fc66}{Statistiques\+Seance\+::get\+Balles\+Total()}, \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}, et \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_aec3a96864aaa87f245bdafbf7a076a94}{finir\+Seance()}.
+
+
+\begin{DoxyCode}
+00464 \{
+00465     QString finSeance;
+00466     QString zoneObjectif;
+00467     QString balleObjectif;
+00468     QString zoneHorsTable;
+00469     QString balleHorsTable;
+00470     QString serieMax;
+00471     QString balleEnchainees;
+00472     QString dureeSeance;
+00473 
+00474     dureeSeance = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"} + QString::fromUtf8(\textcolor{stringliteral}{"Durée de la
+       séance "}) + \textcolor{stringliteral}{"</span>"};
+00475     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelDureeSeanceEcrie->setText(dureeSeance);
+00476     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelDureeSeanceEcrie->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00477     finSeance =  \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:42pt; font-weight:600;\(\backslash\)">"} + QString::fromUtf8(\textcolor{stringliteral}{" Fin de la Séance
+       "}) + \textcolor{stringliteral}{"</span>"};
+00478     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelNbBallesTotalesFin->setText(finSeance);
+00479     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelNbBallesTotalesFin->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00480     zoneObjectif = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"} + QString::number(
+      \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}{getBallesBonnes}())  + \textcolor{stringliteral}{" / "} + QString::number(
+      \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_aaefd0b775012ec914a36a262dc14fc66}{getBallesTotal}()) + \textcolor{stringliteral}{"</span>"};
+00481     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelZoneObjectifs->setText(zoneObjectif);
+00482     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelZoneObjectifs->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00483     balleObjectif = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"} + QString::fromUtf8(\textcolor{stringliteral}{"Balles ayant
+       atteint l'objectif "}) + \textcolor{stringliteral}{"</span>"};
+00484     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelBallesObjectifs->setText(balleObjectif);
+00485     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelBallesObjectifs->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00486     zoneHorsTable = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"}+ QString::number(
+      \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a26b717d40065e7afd80465458f3cb6aa}{getBallesHorsTable}()) + \textcolor{stringliteral}{" / "} + QString::number(
+      \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_aaefd0b775012ec914a36a262dc14fc66}{getBallesTotal}()) + \textcolor{stringliteral}{"</span>"};
+00487     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelNbBallesHorsTable->setText(zoneHorsTable);
+00488     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelNbBallesHorsTable->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00489     balleHorsTable = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"} + QString::fromUtf8(\textcolor{stringliteral}{"Balles Hors
+       de la Table "}) + \textcolor{stringliteral}{"</span>"};
+00490     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelBallesHorsTable->setText(balleHorsTable);
+00491     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelBallesHorsTable->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00492     balleEnchainees = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"}+ QString::number(
+      \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a1f241d7ef584ebffa2246134c63be53b}{getBallesEnchainees}()) + \textcolor{stringliteral}{" / "} + QString::number(
+      \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}{getBallesBonnes}()) + \textcolor{stringliteral}{"</span>"};
+00493     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labeltNbSerieMax->setText(balleEnchainees);
+00494     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labeltNbSerieMax->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00495     serieMax =  \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"} + QString::fromUtf8(\textcolor{stringliteral}{"Nombre série de
+       balles sur l'objectif "}) + \textcolor{stringliteral}{"</span>"};
+00496     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labeltSerieMax->setText(serieMax);
+00497     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labeltSerieMax->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00498     \hyperlink{class_ttpa_ihm_ac37d57d13301cda22f062219de8731c4}{afficherStatistiquePourcentageBallesObjectif}();
+00499     \hyperlink{class_ttpa_ihm_a58058063eb377b4c4c48048e4bf84e77}{afficherStatistiquePourcentageBallesHorstable}();
+00500     \hyperlink{class_ttpa_ihm_aec988dc2398578eb8e91563d1ba58cde}{afficherStatistiquePourcentageBallesSerie}();
+00501 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a58058063eb377b4c4c48048e4bf84e77}\label{class_ttpa_ihm_a58058063eb377b4c4c48048e4bf84e77}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!afficher\+Statistique\+Pourcentage\+Balles\+Horstable@{afficher\+Statistique\+Pourcentage\+Balles\+Horstable}}
+\index{afficher\+Statistique\+Pourcentage\+Balles\+Horstable@{afficher\+Statistique\+Pourcentage\+Balles\+Horstable}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{afficher\+Statistique\+Pourcentage\+Balles\+Horstable}{afficherStatistiquePourcentageBallesHorstable}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::afficher\+Statistique\+Pourcentage\+Balles\+Horstable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}{Statistiques\+Seance\+::calculer\+Pourcentage()}, \hyperlink{class_statistiques_seance_a26b717d40065e7afd80465458f3cb6aa}{Statistiques\+Seance\+::get\+Balles\+Hors\+Table()}, \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}, et \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_aa480a02532144d0f99af027b5b201ae1}{afficher\+Statistique\+Ecran\+Resultats()}.
+
+
+\begin{DoxyCode}
+00522 \{
+00523     QString pourcentageBallesHorsTable;
+00524 
+00525     pourcentageBallesHorsTable = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"} + QString::number((
+      \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}{calculerPourcentage}(
+      \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a26b717d40065e7afd80465458f3cb6aa}{getBallesHorsTable}())),\textcolor{charliteral}{'f'},0) + \textcolor{stringliteral}{"%</    span>"};
+00526     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"pourcentageBallesHorsTable="} << pourcentageBallesHorsTable;
+00527     \textcolor{keywordflow}{if}(\hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}{calculerPourcentage}(
+      \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a26b717d40065e7afd80465458f3cb6aa}{getBallesHorsTable}()) >= 50.)
+00528     \{
+00529         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelPourcentageBallesHorsTable->setText(pourcentageBallesHorsTable);
+00530         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelPourcentageBallesHorsTable->setStyleSheet(\textcolor{stringliteral}{"color: #FF0000;"});
+00531     \}
+00532     \textcolor{keywordflow}{else}
+00533     \{
+00534         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelPourcentageBallesHorsTable->setText(pourcentageBallesHorsTable);
+00535         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelPourcentageBallesHorsTable->setStyleSheet(\textcolor{stringliteral}{"color: #00FF00;"});
+00536     \}
+00537 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_ac37d57d13301cda22f062219de8731c4}\label{class_ttpa_ihm_ac37d57d13301cda22f062219de8731c4}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!afficher\+Statistique\+Pourcentage\+Balles\+Objectif@{afficher\+Statistique\+Pourcentage\+Balles\+Objectif}}
+\index{afficher\+Statistique\+Pourcentage\+Balles\+Objectif@{afficher\+Statistique\+Pourcentage\+Balles\+Objectif}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{afficher\+Statistique\+Pourcentage\+Balles\+Objectif}{afficherStatistiquePourcentageBallesObjectif}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::afficher\+Statistique\+Pourcentage\+Balles\+Objectif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}{Statistiques\+Seance\+::calculer\+Pourcentage()}, \hyperlink{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}{Statistiques\+Seance\+::get\+Balles\+Bonnes()}, \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}, et \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_aa480a02532144d0f99af027b5b201ae1}{afficher\+Statistique\+Ecran\+Resultats()}.
+
+
+\begin{DoxyCode}
+00504 \{
+00505     QString pourcentageBallesObjectif;
+00506 
+00507     pourcentageBallesObjectif = QString(\textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"}) +             
+           QString::number(\hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}{calculerPourcentage}(
+      \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}{getBallesBonnes}()),\textcolor{charliteral}{'f'},0) + \textcolor{stringliteral}{" %</span>"};
+00508     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"pourcentageBallesObjectif="} << pourcentageBallesObjectif;
+00509     \textcolor{keywordflow}{if}(\hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}{calculerPourcentage}(
+      \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}{getBallesBonnes}()) >= 50.)
+00510     \{
+00511         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelPourcentageBallesObjectif->setText(pourcentageBallesObjectif);
+00512         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelPourcentageBallesObjectif->setStyleSheet(\textcolor{stringliteral}{"color: #00FF00;"});
+00513     \}
+00514     \textcolor{keywordflow}{else}
+00515     \{
+00516         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelPourcentageBallesObjectif->setText(pourcentageBallesObjectif);
+00517         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelPourcentageBallesObjectif->setStyleSheet(\textcolor{stringliteral}{"color: #FF0000;"});
+00518     \}
+00519 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_aec988dc2398578eb8e91563d1ba58cde}\label{class_ttpa_ihm_aec988dc2398578eb8e91563d1ba58cde}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!afficher\+Statistique\+Pourcentage\+Balles\+Serie@{afficher\+Statistique\+Pourcentage\+Balles\+Serie}}
+\index{afficher\+Statistique\+Pourcentage\+Balles\+Serie@{afficher\+Statistique\+Pourcentage\+Balles\+Serie}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{afficher\+Statistique\+Pourcentage\+Balles\+Serie}{afficherStatistiquePourcentageBallesSerie}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::afficher\+Statistique\+Pourcentage\+Balles\+Serie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}{Statistiques\+Seance\+::calculer\+Pourcentage()}, \hyperlink{class_statistiques_seance_ad042b683ce7b4db507a443b1b27bfef8}{Statistiques\+Seance\+::calculer\+Pourcentage\+Serie\+Max()}, \hyperlink{class_statistiques_seance_a1f241d7ef584ebffa2246134c63be53b}{Statistiques\+Seance\+::get\+Balles\+Enchainees()}, \hyperlink{class_statistiques_seance_a26b717d40065e7afd80465458f3cb6aa}{Statistiques\+Seance\+::get\+Balles\+Hors\+Table()}, \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}, et \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_aa480a02532144d0f99af027b5b201ae1}{afficher\+Statistique\+Ecran\+Resultats()}.
+
+
+\begin{DoxyCode}
+00540 \{
+00541     QString pourcentageBallesSerie;
+00542 
+00543     pourcentageBallesSerie = QString(\textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"}) + QString::number
+      ((\hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_ad042b683ce7b4db507a443b1b27bfef8}{calculerPourcentageSerieMax}(
+      \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a1f241d7ef584ebffa2246134c63be53b}{getBallesEnchainees}())),\textcolor{charliteral}{'f'},0) +\textcolor{stringliteral}{"%</span>"};
+00544     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"pourcentageBallesHorsTable="} << pourcentageBallesSerie;
+00545     \textcolor{keywordflow}{if}(\hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}{calculerPourcentage}(
+      \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a26b717d40065e7afd80465458f3cb6aa}{getBallesHorsTable}()) >= 50.)
+00546     \{
+00547         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelPourcentageBallesSerie->setText(pourcentageBallesSerie);
+00548         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelPourcentageBallesSerie->setStyleSheet(\textcolor{stringliteral}{"color: #00FF00;"});
+00549     \}
+00550     \textcolor{keywordflow}{else}
+00551     \{
+00552         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelPourcentageBallesSerie->setText(pourcentageBallesSerie);
+00553         \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelPourcentageBallesSerie->setStyleSheet(\textcolor{stringliteral}{"color: #FF0000;"});
+00554     \}
+00555 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a3b00f90707811240c7dcfe8ed3dce783}\label{class_ttpa_ihm_a3b00f90707811240c7dcfe8ed3dce783}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!afficher\+Zone@{afficher\+Zone}}
+\index{afficher\+Zone@{afficher\+Zone}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{afficher\+Zone}{afficherZone}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::afficher\+Zone (\begin{DoxyParamCaption}\item[{int}]{numero\+Zone,  }\item[{int}]{nb\+Impacts,  }\item[{Q\+String}]{pourcentage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em numero\+Zone} & int numéro de la zone compris entre 1 et 7 \\
+\hline
+{\em nb\+Impacts} & int nombre d\textquotesingle{}impacts dans la zone \\
+\hline
+{\em pourcentage} & Q\+String calculer pour chaque zone \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_statistiques_seance_ad1bdc22fbd9f37fab06d9fc24e9f1bc4}{Statistiques\+Seance\+::get\+Zone\+Robot()}, \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{Statistiques\+Seance\+::\+Zone1}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64}{Statistiques\+Seance\+::\+Zone7}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{Statistiques\+Seance\+::\+Zone\+Hors\+Table}, et \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zones\+Table}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00328 \{
+00329     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"numeroZone="} << numeroZone << \textcolor{stringliteral}{"pourcentage"} << pourcentage;
+00330     \textcolor{keywordflow}{if}(numeroZone == \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_ad1bdc22fbd9f37fab06d9fc24e9f1bc4}{getZoneRobot}())
+00331         \textcolor{keywordflow}{return};
+00332 
+00333     \textcolor{keywordflow}{if}(numeroZone >= \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{StatistiquesSeance::Zone1} && numeroZone <= 
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64}{StatistiquesSeance::Zone7})
+00334     \{
+00335         QString affichageZone = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"} + QString::number(
+      nbImpacts) + \textcolor{stringliteral}{"<br />"} + pourcentage + \textcolor{stringliteral}{"</span>"};
+00336         \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[numeroZone]->setText(affichageZone);
+00337     \}
+00338     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(numeroZone == \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{StatistiquesSeance::ZoneHorsTable})
+00339     \{
+00340         QString affichageZone = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">Hors Table : "} + 
+      QString::number(nbImpacts) + \textcolor{stringliteral}{" ("} + pourcentage + \textcolor{stringliteral}{")</span>"};
+00341         \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[numeroZone]->setText(affichageZone);
+00342     \}
+00343 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a647bfb1ce10f8ac4b1294a880a76f3d2}\label{class_ttpa_ihm_a647bfb1ce10f8ac4b1294a880a76f3d2}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!aller\+Suivant@{aller\+Suivant}}
+\index{aller\+Suivant@{aller\+Suivant}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{aller\+Suivant}{allerSuivant}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::aller\+Suivant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba66041bd2f2e100691c4d94c918e92956}{Nb\+Pages}, et \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00686 \{
+00687     \textcolor{keywordtype}{int} ecranCourant = \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2b}{Page}(\hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->ecranTtpa->currentIndex());
+00688     \textcolor{keywordtype}{int} ecranSuivant = (ecranCourant+1)%\textcolor{keywordtype}{int}(\hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba66041bd2f2e100691c4d94c918e92956}{TtpaIhm::NbPages});
+00689     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->ecranTtpa->setCurrentIndex(ecranSuivant);
+00690 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}\label{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!commencer\+Seance@{commencer\+Seance}}
+\index{commencer\+Seance@{commencer\+Seance}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{commencer\+Seance}{commencerSeance}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::commencer\+Seance (\begin{DoxyParamCaption}\item[{Q\+String}]{nom\+Joueur,  }\item[{Q\+String}]{zone\+Objectif,  }\item[{Q\+String}]{zone\+Robot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficher\+Duree\+Seance()}, \hyperlink{class_statistiques_seance_a216b30bcfca71e425073a7ac90e59089}{Statistiques\+Seance\+::afficher\+Statistiques\+Balles\+Totales()}, \hyperlink{class_statistiques_seance_afd9087c34222c0b2c0db11c5a96459c4}{Statistiques\+Seance\+::afficher\+Statistiques\+Zones()}, \hyperlink{class_ttpa_ihm_abb5ab7cc023685e40cb278f0210f276f}{compteur\+Duree\+Seance}, \hyperlink{class_ttpa_ihm_a3b3eaf479e616df033680a4df42da3d7}{connecter\+Joueur()}, \hyperlink{class_ttpa_ihm_a5d180e581060b01e028f44ee7bd25290}{initialiser\+Zone()}, \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba3906edb75bc60b0026a207280c4e41d0}{Page\+Seance}, \hyperlink{class_ttpa_ihm_a521fea1cb4384157e5422a033e9a4d4f}{reset\+Seance()}, \hyperlink{class_ttpa_ihm_a3fd5b5d097f8a52df6fc8dd6d59b1374}{set\+Zone\+Objectif()}, \hyperlink{class_ttpa_ihm_abda1a93ec09ec404b129e08876faa5f8}{set\+Zone\+Robot()}, \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}, \hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timer\+Horloge}, et \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00126 \{
+00127     qDebug() << Q\_FUNC\_INFO;
+00128     \hyperlink{class_ttpa_ihm_a521fea1cb4384157e5422a033e9a4d4f}{resetSeance}();
+00129     \hyperlink{class_ttpa_ihm_a5d180e581060b01e028f44ee7bd25290}{initialiserZone}();
+00130     \hyperlink{class_ttpa_ihm_a3b3eaf479e616df033680a4df42da3d7}{connecterJoueur}(nomJoueur);
+00131     \hyperlink{class_ttpa_ihm_a3fd5b5d097f8a52df6fc8dd6d59b1374}{setZoneObjectif}(zoneObjectif);
+00132     \hyperlink{class_ttpa_ihm_abda1a93ec09ec404b129e08876faa5f8}{setZoneRobot}(zoneRobot);
+00133     \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_afd9087c34222c0b2c0db11c5a96459c4}{afficherStatistiquesZones}();
+00134     \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a216b30bcfca71e425073a7ac90e59089}{afficherStatistiquesBallesTotales}
+      ();
+00135     \hyperlink{class_ttpa_ihm_abb5ab7cc023685e40cb278f0210f276f}{compteurDureeSeance} = 0;
+00136     connect(\hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timerHorloge}, SIGNAL(timeout()),\textcolor{keyword}{this},SLOT(
+      \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficherDureeSeance}())); \textcolor{comment}{// Pour le comptage et l'affichage de la durée d'une séance}
+00137     \textcolor{comment}{//QPixmap SystemeOn(":play-button.png" );}
+00138     \textcolor{comment}{//ui->labelSystemeOn->setPixmap(SystemeOn);}
+00139     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->ecranTtpa->setCurrentIndex(\hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba3906edb75bc60b0026a207280c4e41d0}{TtpaIhm::PageSeance});
+00140 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a3b3eaf479e616df033680a4df42da3d7}\label{class_ttpa_ihm_a3b3eaf479e616df033680a4df42da3d7}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!connecter\+Joueur@{connecter\+Joueur}}
+\index{connecter\+Joueur@{connecter\+Joueur}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{connecter\+Joueur}{connecterJoueur}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::connecter\+Joueur (\begin{DoxyParamCaption}\item[{Q\+String}]{nom\+Joueur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{commencer\+Seance()}, et \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00238 \{
+00239     QString nomDuJoueur;    
+00240     nomDuJoueur = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:32pt; font-weight:600;\(\backslash\)">"} + QString::fromUtf8(\textcolor{stringliteral}{"Joueur :  %1"}).
+      arg(nomJoueur) + \textcolor{stringliteral}{"</span>"};
+00241     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelNomJoueur->setText(nomDuJoueur.toUtf8());
+00242     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelNomJoueur->setStyleSheet(\textcolor{stringliteral}{"color: rgb(250, 142, 7);"});
+00243     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelNomJoueur\_2->setText(nomDuJoueur.toUtf8());
+00244     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelNomJoueur\_2->setStyleSheet(\textcolor{stringliteral}{"color: rgb(250, 142, 7);"});
+00245 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a86d400f2f250f5d2984c8c36394c2ac2}\label{class_ttpa_ihm_a86d400f2f250f5d2984c8c36394c2ac2}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!deconnecter\+Joueur@{deconnecter\+Joueur}}
+\index{deconnecter\+Joueur@{deconnecter\+Joueur}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{deconnecter\+Joueur}{deconnecterJoueur}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::deconnecter\+Joueur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a521fea1cb4384157e5422a033e9a4d4f}{reset\+Seance()}.
+
+
+\begin{DoxyCode}
+00217 \{
+00218     qDebug() << Q\_FUNC\_INFO;
+00219     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelEtatConnexion->setText(\textcolor{stringliteral}{"En attente de connexion"});
+00220     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelNomJoueur->setText(\textcolor{stringliteral}{""});
+00221     \textcolor{comment}{//resetSeance();}
+00222 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_abe9973c64673cdaa067617f9246781d2}\label{class_ttpa_ihm_abe9973c64673cdaa067617f9246781d2}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!effacer\+Impact\+Zone@{effacer\+Impact\+Zone}}
+\index{effacer\+Impact\+Zone@{effacer\+Impact\+Zone}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{effacer\+Impact\+Zone}{effacerImpactZone}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::effacer\+Impact\+Zone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_statistiques_seance_a61c01cb1d35cda871e8243658213ee5b}{Statistiques\+Seance\+::get\+Zone\+Objectif()}, \hyperlink{class_ttpa_ihm_af8fa0aee928ee727f27ff605c0c1d991}{numero\+Zone\+Impacte}, \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{Statistiques\+Seance\+::\+Zone\+Hors\+Table}, et \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zones\+Table}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficher\+Impact\+Couleurs()}.
+
+
+\begin{DoxyCode}
+00451 \{
+00452     \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[\hyperlink{class_ttpa_ihm_af8fa0aee928ee727f27ff605c0c1d991}{numeroZoneImpacte}]->setStyleSheet(\textcolor{stringliteral}{"color: rgb(255, 255,
+       255);background-color: rgb(35, 93,166);border: 2px solid rgb(255, 255, 255);"});
+00453     \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{StatistiquesSeance::ZoneHorsTable}]->setStyleSheet
+      (\textcolor{stringliteral}{"color: #FFFFFF;background-color : rgb(35, 93,166);"});
+00454     \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[\hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a61c01cb1d35cda871e8243658213ee5b}{getZoneObjectif}()]->
+      setStyleSheet((\textcolor{stringliteral}{"background-color: rgb(25,25,255);color: rgb(110, 254, 7);border: 2px solid rgb(255, 255, 255);"}));
+00455 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a3a2380e2259f7b5bb1fd4d2ae470e06d}\label{class_ttpa_ihm_a3a2380e2259f7b5bb1fd4d2ae470e06d}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!erreur\+Robot@{erreur\+Robot}}
+\index{erreur\+Robot@{erreur\+Robot}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{erreur\+Robot}{erreurRobot}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::erreur\+Robot (\begin{DoxyParamCaption}\item[{Q\+String}]{info\+Du\+Robot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficher\+Duree\+Seance()}, \hyperlink{class_ttpa_ihm_a1101f9766b4e90844576c1d6b7e2ea23}{Info\+Robot()}, \hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timer\+Horloge}, et \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00180 \{
+00181     qDebug() << Q\_FUNC\_INFO;
+00182     disconnect(\hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timerHorloge}, SIGNAL(timeout()),\textcolor{keyword}{this},SLOT(
+      \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficherDureeSeance}())); \textcolor{comment}{// Pour le comptage et l'affichage de la durée d'une séance}
+00183     QPixmap systemeOff(\textcolor{stringliteral}{":pause.png"} );
+00184     \hyperlink{class_ttpa_ihm_a1101f9766b4e90844576c1d6b7e2ea23}{InfoRobot}(infoDuRobot);
+00185     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelErreurRobot->setVisible(\textcolor{keyword}{true});
+00186     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelSystemeOff->setPixmap(systemeOff);
+00187     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelSystemeOff->setVisible(\textcolor{keyword}{true});
+00188     \textcolor{comment}{//ui->labelErreurRobot->setCurrentIndex(TtpaIhm::PageAttente);}
+00189 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_aec3a96864aaa87f245bdafbf7a076a94}\label{class_ttpa_ihm_aec3a96864aaa87f245bdafbf7a076a94}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!finir\+Seance@{finir\+Seance}}
+\index{finir\+Seance@{finir\+Seance}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{finir\+Seance}{finirSeance}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::finir\+Seance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficher\+Duree\+Seance()}, \hyperlink{class_ttpa_ihm_aa480a02532144d0f99af027b5b201ae1}{afficher\+Statistique\+Ecran\+Resultats()}, \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2bab8d5cb877cbb72b194dbaf4f834fbc23}{Page\+Resultats}, \hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timer\+Horloge}, et \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00163 \{
+00164     qDebug() << Q\_FUNC\_INFO;
+00165     disconnect(\hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timerHorloge}, SIGNAL(timeout()),\textcolor{keyword}{this},SLOT(
+      \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficherDureeSeance}())); \textcolor{comment}{// Pour le comptage et l'affichage de la durée d'une séance}
+00166     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->ecranTtpa->setCurrentIndex(\hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2bab8d5cb877cbb72b194dbaf4f834fbc23}{TtpaIhm::PageResultats});
+00167     \hyperlink{class_ttpa_ihm_aa480a02532144d0f99af027b5b201ae1}{afficherStatistiqueEcranResultats}();
+00168 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a1101f9766b4e90844576c1d6b7e2ea23}\label{class_ttpa_ihm_a1101f9766b4e90844576c1d6b7e2ea23}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!Info\+Robot@{Info\+Robot}}
+\index{Info\+Robot@{Info\+Robot}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{Info\+Robot}{InfoRobot}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::\+Info\+Robot (\begin{DoxyParamCaption}\item[{Q\+String}]{info\+Du\+Robot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a3a2380e2259f7b5bb1fd4d2ae470e06d}{erreur\+Robot()}.
+
+
+\begin{DoxyCode}
+00248 \{
+00249     QString infoRobot;
+00250     infoRobot = \textcolor{stringliteral}{"<span style=\(\backslash\)"font-size:18pt; font-weight:600;\(\backslash\)">"} + QString::fromUtf8(\textcolor{stringliteral}{"Info :  %1"}).arg(
+      infoDuRobot) + \textcolor{stringliteral}{"</span>"};
+00251     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelErreurRobot->setText(infoRobot.toUtf8());
+00252     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelErreurRobot->setStyleSheet(\textcolor{stringliteral}{"color: rgb(250, 0, 0);"});
+00253 
+00254 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a5d180e581060b01e028f44ee7bd25290}\label{class_ttpa_ihm_a5d180e581060b01e028f44ee7bd25290}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!initialiser\+Zone@{initialiser\+Zone}}
+\index{initialiser\+Zone@{initialiser\+Zone}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{initialiser\+Zone()}{initialiserZone()}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::initialiser\+Zone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{Statistiques\+Seance\+::\+Zone1}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727}{Statistiques\+Seance\+::\+Zone2}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb}{Statistiques\+Seance\+::\+Zone3}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c}{Statistiques\+Seance\+::\+Zone4}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344}{Statistiques\+Seance\+::\+Zone5}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343}{Statistiques\+Seance\+::\+Zone6}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64}{Statistiques\+Seance\+::\+Zone7}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{Statistiques\+Seance\+::\+Zone\+Hors\+Table}, et \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zones\+Table}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{commencer\+Seance()}.
+
+
+\begin{DoxyCode}
+00295 \{
+00296     \textcolor{comment}{// Initialise le vecteur des zones de la table}
+00297     \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{StatistiquesSeance::Zone1}] = 
+      \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelZone1;
+00298     \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727}{StatistiquesSeance::Zone2}] = 
+      \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelZone2;
+00299     \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb}{StatistiquesSeance::Zone3}] = 
+      \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelZone3;
+00300     \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c}{StatistiquesSeance::Zone4}] = 
+      \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelZone4;
+00301     \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344}{StatistiquesSeance::Zone5}] = 
+      \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelZone5;
+00302     \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343}{StatistiquesSeance::Zone6}] = 
+      \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelZone6;
+00303     \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64}{StatistiquesSeance::Zone7}] = 
+      \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelZone7;
+00304     \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{StatistiquesSeance::ZoneHorsTable}] = 
+      \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelZoneHorsTable;
+00305 
+00306     QPixmap aucune;
+00307     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i <= \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64}{StatistiquesSeance::Zone7}; i++)
+00308     \{
+00309         \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[i]->clear();
+00310         \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[i]->setPixmap(aucune);
+00311         \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[i]->setStyleSheet(\textcolor{stringliteral}{"color: rgb(255, 255, 255);background-color: rgb(35,
+       93,166);border: 2px solid rgb(255, 255, 255);"});
+00312     \}
+00313     \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{StatistiquesSeance::ZoneHorsTable}]->setStyleSheet
+      (\textcolor{stringliteral}{"color: #FFFFFF;"});
+00314 
+00315     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelDureeSeance->setStyleSheet(\textcolor{stringliteral}{"color: #FFFFFF;"});
+00316 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a4888ff555295f4e90e0d42bd87ad2d92}\label{class_ttpa_ihm_a4888ff555295f4e90e0d42bd87ad2d92}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!mettre\+En\+Pause\+Seance@{mettre\+En\+Pause\+Seance}}
+\index{mettre\+En\+Pause\+Seance@{mettre\+En\+Pause\+Seance}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{mettre\+En\+Pause\+Seance}{mettreEnPauseSeance}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::mettre\+En\+Pause\+Seance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficher\+Duree\+Seance()}, \hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timer\+Horloge}, et \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00143 \{
+00144     qDebug() << Q\_FUNC\_INFO;
+00145     disconnect(\hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timerHorloge}, SIGNAL(timeout()),\textcolor{keyword}{this},SLOT(
+      \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficherDureeSeance}())); \textcolor{comment}{// Pour le comptage et l'affichage de la durée d'une séance}
+00146     QPixmap systemeOff(\textcolor{stringliteral}{":pause.png"} );
+00147     \textcolor{comment}{//ui->labelSystemeOff->setAlignment(Qt::AlignHCenter);}
+00148     \textcolor{comment}{//ui->labelSystemeOff->setAlignment(Qt::AlignRight);}
+00149     \textcolor{comment}{//SystemeOff = SystemeOff.scaled(QSize(150, 150),Qt::IgnoreAspectRatio);}
+00150     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelSystemeOff->setPixmap(systemeOff);
+00151     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelSystemeOff->setVisible(\textcolor{keyword}{true});
+00152 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_af14988cbed7051af4eba326123cfb177}\label{class_ttpa_ihm_af14988cbed7051af4eba326123cfb177}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!quitter@{quitter}}
+\index{quitter@{quitter}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{quitter}{quitter}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::quitter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a9d649ace50425bdc2bea311753b4214c}{raccourcis\+Clavier()}.
+
+
+\begin{DoxyCode}
+00366 \{
+00367     \textcolor{comment}{// on ferme la fenêtre}
+00368     close();
+00369 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a9d649ace50425bdc2bea311753b4214c}\label{class_ttpa_ihm_a9d649ace50425bdc2bea311753b4214c}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!raccourcis\+Clavier@{raccourcis\+Clavier}}
+\index{raccourcis\+Clavier@{raccourcis\+Clavier}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{raccourcis\+Clavier()}{raccourcisClavier()}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::raccourcis\+Clavier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_af14988cbed7051af4eba326123cfb177}{quitter()}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00352 \{
+00353     QAction *actionQuitter = \textcolor{keyword}{new} QAction(\textcolor{stringliteral}{"&Quitter"}, \textcolor{keyword}{this});
+00354     actionQuitter->setShortcut(QKeySequence(QKeySequence::Quit)); \textcolor{comment}{// Ctrl+Q}
+00355     addAction(actionQuitter);
+00356     connect(actionQuitter, SIGNAL(triggered()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_ttpa_ihm_af14988cbed7051af4eba326123cfb177}{quitter}()));\textcolor{comment}{// Pour le déclenchement
+       Ctrl+Q pour quitter l'application}
+00357 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a3b0d10b212527273c03fa8e37543d037}\label{class_ttpa_ihm_a3b0d10b212527273c03fa8e37543d037}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!rafraichir\+Heure@{rafraichir\+Heure}}
+\index{rafraichir\+Heure@{rafraichir\+Heure}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{rafraichir\+Heure()}{rafraichirHeure()}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::rafraichir\+Heure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_ttpa_ihm_a0070bf0027c8a903e5bb5a543533e82c}\label{class_ttpa_ihm_a0070bf0027c8a903e5bb5a543533e82c}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!recevoir\+Numero\+Zone@{recevoir\+Numero\+Zone}}
+\index{recevoir\+Numero\+Zone@{recevoir\+Numero\+Zone}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{recevoir\+Numero\+Zone}{recevoirNumeroZone}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::recevoir\+Numero\+Zone (\begin{DoxyParamCaption}\item[{Q\+String}]{numero\+Zone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficher\+Impact\+Couleurs()}, \hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{Statistiques\+Seance\+::impacter\+Zone()}, et \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00607 \{
+00608     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{false};
+00609     \textcolor{keywordtype}{int} valeur = numeroZone.toInt(&ok);
+00610     \textcolor{comment}{// une valeur entière seulement pour la simulation ?}
+00611     \textcolor{keywordflow}{if}(!ok)
+00612         \textcolor{keywordflow}{return};
+00613     \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacterZone}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5}{StatistiquesSeance::Zone}(valeur));
+00614     \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficherImpactCouleurs}(\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5}{StatistiquesSeance::Zone}(valeur));
+00615 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_acf4cf42c5d1481ccda7ae12bace0a6d5}\label{class_ttpa_ihm_acf4cf42c5d1481ccda7ae12bace0a6d5}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!reprendre\+Seance@{reprendre\+Seance}}
+\index{reprendre\+Seance@{reprendre\+Seance}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{reprendre\+Seance}{reprendreSeance}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::reprendre\+Seance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficher\+Duree\+Seance()}, \hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timer\+Horloge}, et \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00155 \{
+00156     qDebug() << Q\_FUNC\_INFO;
+00157     connect(\hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timerHorloge}, SIGNAL(timeout()),\textcolor{keyword}{this},SLOT(
+      \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficherDureeSeance}())); \textcolor{comment}{// Pour le comptage et l'affichage de la durée d'une séance}
+00158     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelSystemeOff->setVisible(\textcolor{keyword}{false});
+00159     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelErreurRobot->setVisible(\textcolor{keyword}{false});
+00160 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a521fea1cb4384157e5422a033e9a4d4f}\label{class_ttpa_ihm_a521fea1cb4384157e5422a033e9a4d4f}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!reset\+Seance@{reset\+Seance}}
+\index{reset\+Seance@{reset\+Seance}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{reset\+Seance}{resetSeance}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::reset\+Seance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficher\+Duree\+Seance()}, \hyperlink{class_ttpa_ihm_a86d400f2f250f5d2984c8c36394c2ac2}{deconnecter\+Joueur()}, \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{Statistiques\+Seance\+::initialiser\+Statistiques()}, \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba94101700630d213692269ca864ff87fe}{Page\+Attente}, \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}, \hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timer\+Horloge}, et \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{commencer\+Seance()}, et \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00170 \{
+00171     \hyperlink{class_ttpa_ihm_a86d400f2f250f5d2984c8c36394c2ac2}{deconnecterJoueur}();
+00172     disconnect(\hyperlink{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}{timerHorloge}, SIGNAL(timeout()),\textcolor{keyword}{this},SLOT(
+      \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficherDureeSeance}())); \textcolor{comment}{// Pour le comptage et l'affichage de la durée d'une séance}
+00173     \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiserStatistiques}();
+00174     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelSystemeOff->setVisible(\textcolor{keyword}{false});
+00175     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->labelErreurRobot->setVisible(\textcolor{keyword}{false});
+00176     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->ecranTtpa->setCurrentIndex(\hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba94101700630d213692269ca864ff87fe}{TtpaIhm::PageAttente});
+00177 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a92bcffa9388cff7b55a52ae36e5d120d}\label{class_ttpa_ihm_a92bcffa9388cff7b55a52ae36e5d120d}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!revenir\+Precedent@{revenir\+Precedent}}
+\index{revenir\+Precedent@{revenir\+Precedent}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{revenir\+Precedent}{revenirPrecedent}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::revenir\+Precedent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba66041bd2f2e100691c4d94c918e92956}{Nb\+Pages}, et \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00699 \{
+00700     \textcolor{keywordtype}{int} ecranCourant = \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->ecranTtpa->currentIndex();
+00701     \textcolor{keywordtype}{int} ecranPrecedent = (ecranCourant-1)%\textcolor{keywordtype}{int}(\hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba66041bd2f2e100691c4d94c918e92956}{TtpaIhm::NbPages});
+00702     \textcolor{keywordflow}{if}(ecranPrecedent == -1)
+00703         ecranPrecedent = \hyperlink{class_ttpa_ihm_aad886f2c7b90b4f990492092f0be9c2ba66041bd2f2e100691c4d94c918e92956}{NbPages}-1;
+00704     \hyperlink{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}{ui}->ecranTtpa->setCurrentIndex(ecranPrecedent);
+00705 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a9b22616e3a4e52ad2ecfe1818d5fadb2}\label{class_ttpa_ihm_a9b22616e3a4e52ad2ecfe1818d5fadb2}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!saisir\+Numero\+Zone@{saisir\+Numero\+Zone}}
+\index{saisir\+Numero\+Zone@{saisir\+Numero\+Zone}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{saisir\+Numero\+Zone}{saisirNumeroZone}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::saisir\+Numero\+Zone (\begin{DoxyParamCaption}\item[{const Q\+String}]{numero\+Zone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em numero\+Zone} & Q\+String \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficher\+Impact\+Couleurs()}, \hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{edit\+Numero\+Zone}, \hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{Statistiques\+Seance\+::impacter\+Zone()}, \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{Statistiques\+Seance\+::\+Zone1}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727}{Statistiques\+Seance\+::\+Zone2}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb}{Statistiques\+Seance\+::\+Zone3}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c}{Statistiques\+Seance\+::\+Zone4}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344}{Statistiques\+Seance\+::\+Zone5}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343}{Statistiques\+Seance\+::\+Zone6}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64}{Statistiques\+Seance\+::\+Zone7}, et \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{Statistiques\+Seance\+::\+Zone\+Hors\+Table}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00625 \{
+00626     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{false};
+00627     \textcolor{keywordtype}{int} valeur = numeroZone.toInt(&ok);
+00628     \textcolor{comment}{// une valeur entière seulement pour la simulation ?}
+00629     \textcolor{keywordflow}{if}(!ok)
+00630         \textcolor{keywordflow}{return};
+00631 
+00632     \textcolor{keywordflow}{switch}(valeur)
+00633     \{
+00634         \textcolor{keywordflow}{case} 7:
+00635             \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacterZone}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{StatistiquesSeance::Zone1});
+00636             \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficherImpactCouleurs}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{StatistiquesSeance::Zone1});
+00637             \hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{editNumeroZone}->clear();
+00638         \textcolor{keywordflow}{break};
+00639         \textcolor{keywordflow}{case} 8:
+00640             \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacterZone}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727}{StatistiquesSeance::Zone2});
+00641             \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficherImpactCouleurs}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727}{StatistiquesSeance::Zone2});
+00642             \hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{editNumeroZone}->clear();
+00643         \textcolor{keywordflow}{break};
+00644         \textcolor{keywordflow}{case} 9:
+00645             \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacterZone}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb}{StatistiquesSeance::Zone3});
+00646             \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficherImpactCouleurs}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb}{StatistiquesSeance::Zone3});
+00647             \hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{editNumeroZone}->clear();
+00648         \textcolor{keywordflow}{break};
+00649         \textcolor{keywordflow}{case} 4:
+00650         \textcolor{keywordflow}{case} 5:
+00651         \textcolor{keywordflow}{case} 6:
+00652             \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacterZone}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c}{StatistiquesSeance::Zone4});
+00653             \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficherImpactCouleurs}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c}{StatistiquesSeance::Zone4});
+00654             \hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{editNumeroZone}->clear();
+00655         \textcolor{keywordflow}{break};
+00656         \textcolor{keywordflow}{case} 1:
+00657             \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacterZone}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344}{StatistiquesSeance::Zone5});
+00658             \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficherImpactCouleurs}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344}{StatistiquesSeance::Zone5});
+00659             \hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{editNumeroZone}->clear();
+00660         \textcolor{keywordflow}{break};
+00661         \textcolor{keywordflow}{case} 2:
+00662             \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacterZone}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343}{StatistiquesSeance::Zone6});
+00663             \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficherImpactCouleurs}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343}{StatistiquesSeance::Zone6});
+00664             \hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{editNumeroZone}->clear();
+00665         \textcolor{keywordflow}{break};
+00666         \textcolor{keywordflow}{case} 3:
+00667             \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacterZone}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64}{StatistiquesSeance::Zone7});
+00668             \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficherImpactCouleurs}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64}{StatistiquesSeance::Zone7});
+00669             \hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{editNumeroZone}->clear();
+00670         \textcolor{keywordflow}{break};
+00671         \textcolor{keywordflow}{case} 0:
+00672             \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacterZone}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{StatistiquesSeance::ZoneHorsTable});
+00673             \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficherImpactCouleurs}(
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{StatistiquesSeance::ZoneHorsTable});
+00674             \hyperlink{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}{editNumeroZone}->clear();
+00675         \textcolor{keywordflow}{break};
+00676     \}
+00677 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_a3fd5b5d097f8a52df6fc8dd6d59b1374}\label{class_ttpa_ihm_a3fd5b5d097f8a52df6fc8dd6d59b1374}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!set\+Zone\+Objectif@{set\+Zone\+Objectif}}
+\index{set\+Zone\+Objectif@{set\+Zone\+Objectif}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{set\+Zone\+Objectif}{setZoneObjectif}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::set\+Zone\+Objectif (\begin{DoxyParamCaption}\item[{Q\+String}]{numero\+Zone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em numero\+Zone} & indique le numéro de la zone \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}{Statistiques\+Seance\+::\+Nb\+Zones\+Totales}, \hyperlink{class_statistiques_seance_af7c8281e195c0822463e6747bd0695ef}{Statistiques\+Seance\+::set\+Zone\+Objectif()}, \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}{Statistiques\+Seance\+::\+Zone\+Non\+Definie}, et \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zones\+Table}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{commencer\+Seance()}, et \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00564 \{
+00565     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{false};
+00566     \textcolor{keywordtype}{int} valeur = numeroZone.toInt(&ok);
+00567     \textcolor{comment}{// une valeur entière seulement pour la simulation ?}
+00568     \textcolor{keywordflow}{if}(!ok)
+00569         \textcolor{keywordflow}{return};
+00570     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"numeroZoneObjectif"} << valeur;
+00571     \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_af7c8281e195c0822463e6747bd0695ef}{setZoneObjectif}(valeur);
+00572     \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[valeur]->setStyleSheet(\textcolor{stringliteral}{"background-color: rgb(25,25,255);color: rgb(110, 254,
+       7);border: 2px solid rgb(255, 255, 255);"});
+00573     \textcolor{keywordflow}{if} (((valeur) >= \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}{StatistiquesSeance::NbZonesTotales} && (valeur) != 
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}{StatistiquesSeance::ZoneNonDefinie}))
+00574     \{
+00575         qDebug() << \textcolor{stringliteral}{" /!\(\backslash\)\(\backslash\) Erreur Zone /!\(\backslash\)\(\backslash\) "};
+00576         \textcolor{keywordflow}{return};
+00577     \}
+00578 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ttpa_ihm_abda1a93ec09ec404b129e08876faa5f8}\label{class_ttpa_ihm_abda1a93ec09ec404b129e08876faa5f8}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!set\+Zone\+Robot@{set\+Zone\+Robot}}
+\index{set\+Zone\+Robot@{set\+Zone\+Robot}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{set\+Zone\+Robot}{setZoneRobot}}
+{\footnotesize\ttfamily void Ttpa\+Ihm\+::set\+Zone\+Robot (\begin{DoxyParamCaption}\item[{Q\+String}]{numero\+Zone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em numero\+Zone} & indique le numéro de la zone \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}{Statistiques\+Seance\+::\+Nb\+Zones\+Totales}, \hyperlink{class_statistiques_seance_a97a0cf5b45add60d7a3e31207fe360a0}{Statistiques\+Seance\+::set\+Zone\+Robot()}, \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiques\+Seance}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}{Statistiques\+Seance\+::\+Zone\+Non\+Definie}, et \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zones\+Table}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{commencer\+Seance()}, et \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00588 \{
+00589     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{false};
+00590     \textcolor{keywordtype}{int} valeur = numeroZone.toInt(&ok);
+00591     \textcolor{comment}{// une valeur entière seulement pour la simulation ?}
+00592     \textcolor{keywordflow}{if}(!ok)
+00593         \textcolor{keywordflow}{return};
+00594     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"numeroZoneRobot"} << valeur;
+00595     \hyperlink{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}{statistiquesSeance}->\hyperlink{class_statistiques_seance_a97a0cf5b45add60d7a3e31207fe360a0}{setZoneRobot}(valeur);
+00596     QPixmap imgRobot(\textcolor{stringliteral}{":robot.png"} );
+00597     QPixmap imageRobot = imgRobot.scaled(QSize(170, 170),Qt::IgnoreAspectRatio);
+00598     \hyperlink{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}{zonesTable}[valeur]->setPixmap(imageRobot);
+00599     \textcolor{keywordflow}{if} (((valeur) >= \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}{StatistiquesSeance::NbZonesTotales} && (valeur) != 
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}{StatistiquesSeance::ZoneNonDefinie}))
+00600     \{
+00601         qDebug() << \textcolor{stringliteral}{" /!\(\backslash\)\(\backslash\) Erreur Zone /!\(\backslash\)\(\backslash\) "};
+00602         \textcolor{keywordflow}{return};
+00603     \}
+00604 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}\label{class_ttpa_ihm_a477c64fe999f4dec468fca9b04c5d842}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!communication\+Bluetooth@{communication\+Bluetooth}}
+\index{communication\+Bluetooth@{communication\+Bluetooth}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{communication\+Bluetooth}{communicationBluetooth}}
+{\footnotesize\ttfamily \hyperlink{class_communication_bluetooth}{Communication\+Bluetooth}$\ast$ Ttpa\+Ihm\+::communication\+Bluetooth\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+\mbox{\Hypertarget{class_ttpa_ihm_abb5ab7cc023685e40cb278f0210f276f}\label{class_ttpa_ihm_abb5ab7cc023685e40cb278f0210f276f}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!compteur\+Duree\+Seance@{compteur\+Duree\+Seance}}
+\index{compteur\+Duree\+Seance@{compteur\+Duree\+Seance}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{compteur\+Duree\+Seance}{compteurDureeSeance}}
+{\footnotesize\ttfamily int Ttpa\+Ihm\+::compteur\+Duree\+Seance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficher\+Duree\+Seance()}, et \hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{commencer\+Seance()}.
+
+\mbox{\Hypertarget{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}\label{class_ttpa_ihm_a843f5742ec2289d08e2be94dda2c9128}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!edit\+Numero\+Zone@{edit\+Numero\+Zone}}
+\index{edit\+Numero\+Zone@{edit\+Numero\+Zone}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{edit\+Numero\+Zone}{editNumeroZone}}
+{\footnotesize\ttfamily Q\+Line\+Edit$\ast$ Ttpa\+Ihm\+::edit\+Numero\+Zone\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a9b22616e3a4e52ad2ecfe1818d5fadb2}{saisir\+Numero\+Zone()}, et \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+\mbox{\Hypertarget{class_ttpa_ihm_af8fa0aee928ee727f27ff605c0c1d991}\label{class_ttpa_ihm_af8fa0aee928ee727f27ff605c0c1d991}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!numero\+Zone\+Impacte@{numero\+Zone\+Impacte}}
+\index{numero\+Zone\+Impacte@{numero\+Zone\+Impacte}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{numero\+Zone\+Impacte}{numeroZoneImpacte}}
+{\footnotesize\ttfamily int Ttpa\+Ihm\+::numero\+Zone\+Impacte\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficher\+Impact\+Couleurs()}, et \hyperlink{class_ttpa_ihm_abe9973c64673cdaa067617f9246781d2}{effacer\+Impact\+Zone()}.
+
+\mbox{\Hypertarget{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}\label{class_ttpa_ihm_abed6897d6f7b4d3a5eb8dcc07651e740}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!statistiques\+Seance@{statistiques\+Seance}}
+\index{statistiques\+Seance@{statistiques\+Seance}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{statistiques\+Seance}{statistiquesSeance}}
+{\footnotesize\ttfamily \hyperlink{class_statistiques_seance}{Statistiques\+Seance}$\ast$ Ttpa\+Ihm\+::statistiques\+Seance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficher\+Impact\+Couleurs()}, \hyperlink{class_ttpa_ihm_aa480a02532144d0f99af027b5b201ae1}{afficher\+Statistique\+Ecran\+Resultats()}, \hyperlink{class_ttpa_ihm_a58058063eb377b4c4c48048e4bf84e77}{afficher\+Statistique\+Pourcentage\+Balles\+Horstable()}, \hyperlink{class_ttpa_ihm_ac37d57d13301cda22f062219de8731c4}{afficher\+Statistique\+Pourcentage\+Balles\+Objectif()}, \hyperlink{class_ttpa_ihm_aec988dc2398578eb8e91563d1ba58cde}{afficher\+Statistique\+Pourcentage\+Balles\+Serie()}, \hyperlink{class_ttpa_ihm_a3b00f90707811240c7dcfe8ed3dce783}{afficher\+Zone()}, \hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{commencer\+Seance()}, \hyperlink{class_ttpa_ihm_abe9973c64673cdaa067617f9246781d2}{effacer\+Impact\+Zone()}, \hyperlink{class_ttpa_ihm_a0070bf0027c8a903e5bb5a543533e82c}{recevoir\+Numero\+Zone()}, \hyperlink{class_ttpa_ihm_a521fea1cb4384157e5422a033e9a4d4f}{reset\+Seance()}, \hyperlink{class_ttpa_ihm_a9b22616e3a4e52ad2ecfe1818d5fadb2}{saisir\+Numero\+Zone()}, \hyperlink{class_ttpa_ihm_a3fd5b5d097f8a52df6fc8dd6d59b1374}{set\+Zone\+Objectif()}, \hyperlink{class_ttpa_ihm_abda1a93ec09ec404b129e08876faa5f8}{set\+Zone\+Robot()}, et \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+\mbox{\Hypertarget{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}\label{class_ttpa_ihm_a447ad7262efa01d22bc3222e0e470087}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!timer\+Horloge@{timer\+Horloge}}
+\index{timer\+Horloge@{timer\+Horloge}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{timer\+Horloge}{timerHorloge}}
+{\footnotesize\ttfamily Q\+Timer$\ast$ Ttpa\+Ihm\+::timer\+Horloge\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{commencer\+Seance()}, \hyperlink{class_ttpa_ihm_a3a2380e2259f7b5bb1fd4d2ae470e06d}{erreur\+Robot()}, \hyperlink{class_ttpa_ihm_aec3a96864aaa87f245bdafbf7a076a94}{finir\+Seance()}, \hyperlink{class_ttpa_ihm_a4888ff555295f4e90e0d42bd87ad2d92}{mettre\+En\+Pause\+Seance()}, \hyperlink{class_ttpa_ihm_acf4cf42c5d1481ccda7ae12bace0a6d5}{reprendre\+Seance()}, \hyperlink{class_ttpa_ihm_a521fea1cb4384157e5422a033e9a4d4f}{reset\+Seance()}, et \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}.
+
+\mbox{\Hypertarget{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}\label{class_ttpa_ihm_ad5fae1222a667da158c26f3d0f0dce23}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!ui@{ui}}
+\index{ui@{ui}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Ttpa\+Ihm$\ast$ Ttpa\+Ihm\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a92494cbd992da35c40128408fb06e9a1}{afficher\+Balles\+Bonnes()}, \hyperlink{class_ttpa_ihm_a7b8784d0550cf910b89006365bc8383a}{afficher\+Balles\+Total\+Ecran\+Seance()}, \hyperlink{class_ttpa_ihm_a6102875b095d99c147e6a71a0dfbfb28}{afficher\+Balles\+Total\+Hors\+Table()}, \hyperlink{class_ttpa_ihm_a0ad70018b8aff04ef55a258dfc78ec04}{afficher\+Connexion()}, \hyperlink{class_ttpa_ihm_a266897eb263e584b40fc2b7c26347623}{afficher\+Duree\+Seance()}, \hyperlink{class_ttpa_ihm_ad1fc60bf431308d8e52cbc5e35d0d3de}{afficher\+Heure()}, \hyperlink{class_ttpa_ihm_aa480a02532144d0f99af027b5b201ae1}{afficher\+Statistique\+Ecran\+Resultats()}, \hyperlink{class_ttpa_ihm_a58058063eb377b4c4c48048e4bf84e77}{afficher\+Statistique\+Pourcentage\+Balles\+Horstable()}, \hyperlink{class_ttpa_ihm_ac37d57d13301cda22f062219de8731c4}{afficher\+Statistique\+Pourcentage\+Balles\+Objectif()}, \hyperlink{class_ttpa_ihm_aec988dc2398578eb8e91563d1ba58cde}{afficher\+Statistique\+Pourcentage\+Balles\+Serie()}, \hyperlink{class_ttpa_ihm_a647bfb1ce10f8ac4b1294a880a76f3d2}{aller\+Suivant()}, \hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{commencer\+Seance()}, \hyperlink{class_ttpa_ihm_a3b3eaf479e616df033680a4df42da3d7}{connecter\+Joueur()}, \hyperlink{class_ttpa_ihm_a86d400f2f250f5d2984c8c36394c2ac2}{deconnecter\+Joueur()}, \hyperlink{class_ttpa_ihm_a3a2380e2259f7b5bb1fd4d2ae470e06d}{erreur\+Robot()}, \hyperlink{class_ttpa_ihm_aec3a96864aaa87f245bdafbf7a076a94}{finir\+Seance()}, \hyperlink{class_ttpa_ihm_a1101f9766b4e90844576c1d6b7e2ea23}{Info\+Robot()}, \hyperlink{class_ttpa_ihm_a5d180e581060b01e028f44ee7bd25290}{initialiser\+Zone()}, \hyperlink{class_ttpa_ihm_a4888ff555295f4e90e0d42bd87ad2d92}{mettre\+En\+Pause\+Seance()}, \hyperlink{class_ttpa_ihm_acf4cf42c5d1481ccda7ae12bace0a6d5}{reprendre\+Seance()}, \hyperlink{class_ttpa_ihm_a521fea1cb4384157e5422a033e9a4d4f}{reset\+Seance()}, \hyperlink{class_ttpa_ihm_a92bcffa9388cff7b55a52ae36e5d120d}{revenir\+Precedent()}, \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm()}, et \hyperlink{class_ttpa_ihm_ae436a774572b54dfa2dac8987fd3bb75}{$\sim$\+Ttpa\+Ihm()}.
+
+\mbox{\Hypertarget{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}\label{class_ttpa_ihm_af77d75f1aa3eb901b9410e5fc465ece8}} 
+\index{Ttpa\+Ihm@{Ttpa\+Ihm}!zones\+Table@{zones\+Table}}
+\index{zones\+Table@{zones\+Table}!Ttpa\+Ihm@{Ttpa\+Ihm}}
+\paragraph{\texorpdfstring{zones\+Table}{zonesTable}}
+{\footnotesize\ttfamily Q\+Vector$<$Q\+Label $\ast$$>$ Ttpa\+Ihm\+::zones\+Table\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{afficher\+Impact\+Couleurs()}, \hyperlink{class_ttpa_ihm_a3b00f90707811240c7dcfe8ed3dce783}{afficher\+Zone()}, \hyperlink{class_ttpa_ihm_abe9973c64673cdaa067617f9246781d2}{effacer\+Impact\+Zone()}, \hyperlink{class_ttpa_ihm_a5d180e581060b01e028f44ee7bd25290}{initialiser\+Zone()}, \hyperlink{class_ttpa_ihm_a3fd5b5d097f8a52df6fc8dd6d59b1374}{set\+Zone\+Objectif()}, et \hyperlink{class_ttpa_ihm_abda1a93ec09ec404b129e08876faa5f8}{set\+Zone\+Robot()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ttpaihm_8h}{ttpaihm.\+h}\item 
+\hyperlink{statistiquesseance_8cpp}{statistiquesseance.\+cpp}\item 
+\hyperlink{ttpaihm_8cpp}{ttpaihm.\+cpp}\end{DoxyCompactItemize}

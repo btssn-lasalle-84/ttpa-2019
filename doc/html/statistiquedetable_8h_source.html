@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet TTPA (Table Tennis Performance Analyser):  Fichier source de statistiquedetable.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-ttpa.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet TTPA (Table Tennis Performance Analyser)
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_58c8990be155aa26a3fb035f1bbe4ab6.html">ecran-TTPA</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">statistiquedetable.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="statistiquedetable_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef STATISTIQUEDETABLE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define STATISTIQUEDETABLE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;qglobal.h&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_statistique_de_table.html">StatistiqueDeTable</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="class_statistique_de_table.html#ade999ffc698b130b71b9eaf9059b82db">StatistiqueDeTable</a>(QObject *parent=0);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="class_statistique_de_table.html#a296ba520146b387f1ddb13841af05b0f">~StatistiqueDeTable</a>();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">long</span> <a class="code" href="class_statistique_de_table.html#a765dfab2cd2c943b76b574970041264c">getSeconde</a>();</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">long</span> <a class="code" href="class_statistique_de_table.html#a47dbb1e4335b2da4d661442ec9bfc508">getMinute</a>();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">long</span> <a class="code" href="class_statistique_de_table.html#adb0f58fd69a82cfeb112d1beefee2f69">getHeure</a>();</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_statistique_de_table.html#adfb486a263bdce97c3cfb1ea2075d5e7">fixer</a>(<span class="keywordtype">int</span> h, <span class="keywordtype">int</span> m, <span class="keywordtype">int</span> s);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163">   24</a></span>&#160;        <span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        {</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163adae9ee540d7f5ee25b8cfc628cce108a">   26</a></span>&#160;            <a class="code" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163adae9ee540d7f5ee25b8cfc628cce108a">coterJoueur</a> = 0,</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163a88729e9ea769e9226cef3cd83f85611d">   27</a></span>&#160;            <a class="code" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163a88729e9ea769e9226cef3cd83f85611d">hautGauche</a> = 1,</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163ad5f15575fff0875c900a3d821a02e106">   28</a></span>&#160;            <a class="code" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163ad5f15575fff0875c900a3d821a02e106">hautMilieu</a> = 2,</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163a9a59922597bec09f35351c26900ed802">   29</a></span>&#160;            <a class="code" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163a9a59922597bec09f35351c26900ed802">hautDroit</a> = 3,</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163adefc389770a9806f2b786340a67ffc29">   30</a></span>&#160;            <a class="code" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163adefc389770a9806f2b786340a67ffc29">milieu</a> = 4,</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163ab08da07881f3232ba0b6e24fc7c29dc6">   31</a></span>&#160;            <a class="code" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163ab08da07881f3232ba0b6e24fc7c29dc6">basGauche</a> = 5,</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163aa76bee6801ac7b96b5d49f499d144af9">   32</a></span>&#160;            <a class="code" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163aa76bee6801ac7b96b5d49f499d144af9">basMilieu</a> = 6,</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163a7e19e5d7535d0cb97ccfe1a874e59e6d">   33</a></span>&#160;            <a class="code" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163a7e19e5d7535d0cb97ccfe1a874e59e6d">basDroit</a> = 7,</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        } <a class="code" href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163">Zone</a>;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#ab40647f546426c74ce450cdebb25cf49">   36</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_statistique_de_table.html#ab40647f546426c74ce450cdebb25cf49">ballesMini</a>;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#a0b13500b7580bade5f308419f7be226b">   37</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_statistique_de_table.html#a0b13500b7580bade5f308419f7be226b">ballesObjectif</a>;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#a938ff19b2e5708fb3bd8306f508c87cb">   38</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_statistique_de_table.html#a938ff19b2e5708fb3bd8306f508c87cb">ballesMaxi</a>;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#aecffda76a90062c5f2d8013800852c96">   39</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_statistique_de_table.html#aecffda76a90062c5f2d8013800852c96">ballesBonne</a>;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#af94d55a2d359b6f7ac922106239ae441">   40</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_statistique_de_table.html#af94d55a2d359b6f7ac922106239ae441">horsTable</a>;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_statistique_de_table.html#a9f3dbbb738258c0d53a25e99a2fedae4">   41</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_statistique_de_table.html#a9f3dbbb738258c0d53a25e99a2fedae4">ballesTotal</a>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">private</span> slots:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">public</span> slots:</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif // STATISTIQUEDETABLE_H</span></div><div class="ttc" id="class_statistique_de_table_html_aecffda76a90062c5f2d8013800852c96"><div class="ttname"><a href="class_statistique_de_table.html#aecffda76a90062c5f2d8013800852c96">StatistiqueDeTable::ballesBonne</a></div><div class="ttdeci">int ballesBonne</div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:39</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a28128348241db8b6c591f9394e391163ad5f15575fff0875c900a3d821a02e106"><div class="ttname"><a href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163ad5f15575fff0875c900a3d821a02e106">StatistiqueDeTable::hautMilieu</a></div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:28</div></div>
+<div class="ttc" id="class_statistique_de_table_html_ade999ffc698b130b71b9eaf9059b82db"><div class="ttname"><a href="class_statistique_de_table.html#ade999ffc698b130b71b9eaf9059b82db">StatistiqueDeTable::StatistiqueDeTable</a></div><div class="ttdeci">StatistiqueDeTable(QObject *parent=0)</div><div class="ttdef"><b>Definition:</b> statistiquedetable.cpp:4</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a47dbb1e4335b2da4d661442ec9bfc508"><div class="ttname"><a href="class_statistique_de_table.html#a47dbb1e4335b2da4d661442ec9bfc508">StatistiqueDeTable::getMinute</a></div><div class="ttdeci">long getMinute()</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a9f3dbbb738258c0d53a25e99a2fedae4"><div class="ttname"><a href="class_statistique_de_table.html#a9f3dbbb738258c0d53a25e99a2fedae4">StatistiqueDeTable::ballesTotal</a></div><div class="ttdeci">int ballesTotal</div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:41</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a28128348241db8b6c591f9394e391163ab08da07881f3232ba0b6e24fc7c29dc6"><div class="ttname"><a href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163ab08da07881f3232ba0b6e24fc7c29dc6">StatistiqueDeTable::basGauche</a></div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:31</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a765dfab2cd2c943b76b574970041264c"><div class="ttname"><a href="class_statistique_de_table.html#a765dfab2cd2c943b76b574970041264c">StatistiqueDeTable::getSeconde</a></div><div class="ttdeci">long getSeconde()</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a938ff19b2e5708fb3bd8306f508c87cb"><div class="ttname"><a href="class_statistique_de_table.html#a938ff19b2e5708fb3bd8306f508c87cb">StatistiqueDeTable::ballesMaxi</a></div><div class="ttdeci">int ballesMaxi</div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:38</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a0b13500b7580bade5f308419f7be226b"><div class="ttname"><a href="class_statistique_de_table.html#a0b13500b7580bade5f308419f7be226b">StatistiqueDeTable::ballesObjectif</a></div><div class="ttdeci">int ballesObjectif</div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:37</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a28128348241db8b6c591f9394e391163a7e19e5d7535d0cb97ccfe1a874e59e6d"><div class="ttname"><a href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163a7e19e5d7535d0cb97ccfe1a874e59e6d">StatistiqueDeTable::basDroit</a></div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:33</div></div>
+<div class="ttc" id="class_statistique_de_table_html_adb0f58fd69a82cfeb112d1beefee2f69"><div class="ttname"><a href="class_statistique_de_table.html#adb0f58fd69a82cfeb112d1beefee2f69">StatistiqueDeTable::getHeure</a></div><div class="ttdeci">long getHeure()</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a28128348241db8b6c591f9394e391163adefc389770a9806f2b786340a67ffc29"><div class="ttname"><a href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163adefc389770a9806f2b786340a67ffc29">StatistiqueDeTable::milieu</a></div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:30</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a28128348241db8b6c591f9394e391163aa76bee6801ac7b96b5d49f499d144af9"><div class="ttname"><a href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163aa76bee6801ac7b96b5d49f499d144af9">StatistiqueDeTable::basMilieu</a></div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:32</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a28128348241db8b6c591f9394e391163"><div class="ttname"><a href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163">StatistiqueDeTable::Zone</a></div><div class="ttdeci">Zone</div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:24</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a28128348241db8b6c591f9394e391163adae9ee540d7f5ee25b8cfc628cce108a"><div class="ttname"><a href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163adae9ee540d7f5ee25b8cfc628cce108a">StatistiqueDeTable::coterJoueur</a></div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:26</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a28128348241db8b6c591f9394e391163a9a59922597bec09f35351c26900ed802"><div class="ttname"><a href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163a9a59922597bec09f35351c26900ed802">StatistiqueDeTable::hautDroit</a></div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:29</div></div>
+<div class="ttc" id="class_statistique_de_table_html_ab40647f546426c74ce450cdebb25cf49"><div class="ttname"><a href="class_statistique_de_table.html#ab40647f546426c74ce450cdebb25cf49">StatistiqueDeTable::ballesMini</a></div><div class="ttdeci">int ballesMini</div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:36</div></div>
+<div class="ttc" id="class_statistique_de_table_html_adfb486a263bdce97c3cfb1ea2075d5e7"><div class="ttname"><a href="class_statistique_de_table.html#adfb486a263bdce97c3cfb1ea2075d5e7">StatistiqueDeTable::fixer</a></div><div class="ttdeci">void fixer(int h, int m, int s)</div></div>
+<div class="ttc" id="class_statistique_de_table_html"><div class="ttname"><a href="class_statistique_de_table.html">StatistiqueDeTable</a></div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:11</div></div>
+<div class="ttc" id="class_statistique_de_table_html_af94d55a2d359b6f7ac922106239ae441"><div class="ttname"><a href="class_statistique_de_table.html#af94d55a2d359b6f7ac922106239ae441">StatistiqueDeTable::horsTable</a></div><div class="ttdeci">int horsTable</div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:40</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a28128348241db8b6c591f9394e391163a88729e9ea769e9226cef3cd83f85611d"><div class="ttname"><a href="class_statistique_de_table.html#a28128348241db8b6c591f9394e391163a88729e9ea769e9226cef3cd83f85611d">StatistiqueDeTable::hautGauche</a></div><div class="ttdef"><b>Definition:</b> statistiquedetable.h:27</div></div>
+<div class="ttc" id="class_statistique_de_table_html_a296ba520146b387f1ddb13841af05b0f"><div class="ttname"><a href="class_statistique_de_table.html#a296ba520146b387f1ddb13841af05b0f">StatistiqueDeTable::~StatistiqueDeTable</a></div><div class="ttdeci">~StatistiqueDeTable()</div><div class="ttdef"><b>Definition:</b> statistiquedetable.cpp:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 17 Mars 2019 07:29:48 pour Projet TTPA (Table Tennis Performance Analyser) par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

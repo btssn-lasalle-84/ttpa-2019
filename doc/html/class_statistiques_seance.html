@@ -1,0 +1,1259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet TTPA (Table Tennis Performance Analyser): Référence de la classe StatistiquesSeance</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-ttpa.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet TTPA (Table Tennis Performance Analyser)
+   &#160;<span id="projectnumber">1.4</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Types publics</a> &#124;
+<a href="#pub-slots">Connecteurs publics</a> &#124;
+<a href="#signals">Signaux</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-methods">Fonctions membres privées</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_statistiques_seance-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe StatistiquesSeance</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Déclaration de la classe <a class="el" href="class_statistiques_seance.html" title="Déclaration de la classe StatistiquesSeance. ">StatistiquesSeance</a>.  
+ <a href="class_statistiques_seance.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="statistiquesseance_8h_source.html">statistiquesseance.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de StatistiquesSeance:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_statistiques_seance__coll__graph.png" border="0" usemap="#_statistiques_seance_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Types publics</h2></td></tr>
+<tr class="memitem:aa839f5192cbadd7c3fb3651d62eff8b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5">Zone</a> { <br />
+&#160;&#160;<a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28">ZoneNonDefinie</a> = -1, 
+<a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac">Zone1</a> = 0, 
+<a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727">Zone2</a>, 
+<a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb">Zone3</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c">Zone4</a>, 
+<a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344">Zone5</a>, 
+<a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343">Zone6</a>, 
+<a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64">Zone7</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736">NbZonesImpact</a>, 
+<a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3">ZoneHorsTable</a>, 
+<a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4">NbZonesTotales</a>
+<br />
+ }<tr class="memdesc:aa839f5192cbadd7c3fb3651d62eff8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">les zones numérotés de 1 à 7 de la table plus une zone non définie et le nombre de zone total  <a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5">Plus de détails...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aa839f5192cbadd7c3fb3651d62eff8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Connecteurs publics</h2></td></tr>
+<tr class="memitem:a72526ea18d6c534a1cb84576ef3ea28d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a72526ea18d6c534a1cb84576ef3ea28d">finirSeance</a> ()</td></tr>
+<tr class="memdesc:a72526ea18d6c534a1cb84576ef3ea28d"><td class="mdescLeft">&#160;</td><td class="mdescRight">fini la seance  <a href="#a72526ea18d6c534a1cb84576ef3ea28d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a72526ea18d6c534a1cb84576ef3ea28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signaux</h2></td></tr>
+<tr class="memitem:a956ac10424a167d5b64fe13a92fbf121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a956ac10424a167d5b64fe13a92fbf121">affichageZone</a> (int numeroZone, int nbImpacts, QString pourcentage)</td></tr>
+<tr class="separator:a956ac10424a167d5b64fe13a92fbf121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c52002d12dd7b93e6339126c84190f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#ac3c52002d12dd7b93e6339126c84190f">ballesTotales</a> (int <a class="el" href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">nbBallesTotales</a>, int <a class="el" href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">nbBallesTotalesTable</a>)</td></tr>
+<tr class="separator:ac3c52002d12dd7b93e6339126c84190f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02a327f2a69eed4208b7b2076c6a67f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a02a327f2a69eed4208b7b2076c6a67f2">ballesTotalesHorsTable</a> (int ballesToucheTable)</td></tr>
+<tr class="separator:a02a327f2a69eed4208b7b2076c6a67f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ee6b00dae44d1f3cf78349ba235b08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#aa3ee6b00dae44d1f3cf78349ba235b08">ballesBonnes</a> (int <a class="el" href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">nbBallesBonnes</a>)</td></tr>
+<tr class="separator:aa3ee6b00dae44d1f3cf78349ba235b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:ab4096821bf4cb5fbebcf895b1a70be42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#ab4096821bf4cb5fbebcf895b1a70be42">StatistiquesSeance</a> (QObject *parent=nullptr)</td></tr>
+<tr class="separator:ab4096821bf4cb5fbebcf895b1a70be42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e84d125a8d696fa74d9c356eb2b8cab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a2e84d125a8d696fa74d9c356eb2b8cab">~StatistiquesSeance</a> ()</td></tr>
+<tr class="memdesc:a2e84d125a8d696fa74d9c356eb2b8cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur de la seance.  <a href="#a2e84d125a8d696fa74d9c356eb2b8cab">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2e84d125a8d696fa74d9c356eb2b8cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf93738ca1b6b117ac91b68772d2c4c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#adf93738ca1b6b117ac91b68772d2c4c8">impacterZone</a> (uint8_t numeroZone)</td></tr>
+<tr class="memdesc:adf93738ca1b6b117ac91b68772d2c4c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcul et affiche l'impact sur l'IHM et la table.  <a href="#adf93738ca1b6b117ac91b68772d2c4c8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:adf93738ca1b6b117ac91b68772d2c4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e1c49e2986a8490ff96e4bd7733291"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">initialiserStatistiques</a> ()</td></tr>
+<tr class="memdesc:a17e1c49e2986a8490ff96e4bd7733291"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialise les statistiques  <a href="#a17e1c49e2986a8490ff96e4bd7733291">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a17e1c49e2986a8490ff96e4bd7733291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dad2ceb22672adf343548b35bf86ba1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a0dad2ceb22672adf343548b35bf86ba1">getBallesBonnes</a> ()</td></tr>
+<tr class="separator:a0dad2ceb22672adf343548b35bf86ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaefd0b775012ec914a36a262dc14fc66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#aaefd0b775012ec914a36a262dc14fc66">getBallesTotal</a> ()</td></tr>
+<tr class="memdesc:aaefd0b775012ec914a36a262dc14fc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">récupère les donnésde la zone du robot  <a href="#aaefd0b775012ec914a36a262dc14fc66">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aaefd0b775012ec914a36a262dc14fc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b717d40065e7afd80465458f3cb6aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a26b717d40065e7afd80465458f3cb6aa">getBallesHorsTable</a> ()</td></tr>
+<tr class="memdesc:a26b717d40065e7afd80465458f3cb6aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">récupère les donnés des balles hors table  <a href="#a26b717d40065e7afd80465458f3cb6aa">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a26b717d40065e7afd80465458f3cb6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0dc4fd1c97787dab03ae5074fb3414"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a4f0dc4fd1c97787dab03ae5074fb3414">getballesPrecedentToucheTable</a> ()</td></tr>
+<tr class="memdesc:a4f0dc4fd1c97787dab03ae5074fb3414"><td class="mdescLeft">&#160;</td><td class="mdescRight">récupère les donnés des balles ayant touché précédament la table  <a href="#a4f0dc4fd1c97787dab03ae5074fb3414">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4f0dc4fd1c97787dab03ae5074fb3414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f956e08733a81d0a86673cae6bc7feb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a1f956e08733a81d0a86673cae6bc7feb">getballesToucheTable</a> ()</td></tr>
+<tr class="memdesc:a1f956e08733a81d0a86673cae6bc7feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">récupère les donnés des balles récupère les donnés des balles ayant touché la table  <a href="#a1f956e08733a81d0a86673cae6bc7feb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1f956e08733a81d0a86673cae6bc7feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f241d7ef584ebffa2246134c63be53b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a1f241d7ef584ebffa2246134c63be53b">getBallesEnchainees</a> ()</td></tr>
+<tr class="separator:a1f241d7ef584ebffa2246134c63be53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c01cb1d35cda871e8243658213ee5b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a61c01cb1d35cda871e8243658213ee5b">getZoneObjectif</a> ()</td></tr>
+<tr class="memdesc:a61c01cb1d35cda871e8243658213ee5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">récupère les donnés de la zone de l'objectif  <a href="#a61c01cb1d35cda871e8243658213ee5b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a61c01cb1d35cda871e8243658213ee5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c8281e195c0822463e6747bd0695ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#af7c8281e195c0822463e6747bd0695ef">setZoneObjectif</a> (int numeroZone)</td></tr>
+<tr class="memdesc:af7c8281e195c0822463e6747bd0695ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">définie la Zone où sera la zone objectif  <a href="#af7c8281e195c0822463e6747bd0695ef">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af7c8281e195c0822463e6747bd0695ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1bdc22fbd9f37fab06d9fc24e9f1bc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#ad1bdc22fbd9f37fab06d9fc24e9f1bc4">getZoneRobot</a> ()</td></tr>
+<tr class="separator:ad1bdc22fbd9f37fab06d9fc24e9f1bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a0cf5b45add60d7a3e31207fe360a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a97a0cf5b45add60d7a3e31207fe360a0">setZoneRobot</a> (int numeroZone)</td></tr>
+<tr class="memdesc:a97a0cf5b45add60d7a3e31207fe360a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">définie la Zone où sera la zone robot  <a href="#a97a0cf5b45add60d7a3e31207fe360a0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a97a0cf5b45add60d7a3e31207fe360a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67759edd6c296bd6b66f7860dbac130e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a67759edd6c296bd6b66f7860dbac130e">calculerPourcentage</a> (int <a class="el" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>)</td></tr>
+<tr class="memdesc:a67759edd6c296bd6b66f7860dbac130e"><td class="mdescLeft">&#160;</td><td class="mdescRight">calcul le pourcentage de chaque zone sur le nombre de balle  <a href="#a67759edd6c296bd6b66f7860dbac130e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a67759edd6c296bd6b66f7860dbac130e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad042b683ce7b4db507a443b1b27bfef8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#ad042b683ce7b4db507a443b1b27bfef8">calculerPourcentageSerieMax</a> (int <a class="el" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>)</td></tr>
+<tr class="memdesc:ad042b683ce7b4db507a443b1b27bfef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">calcul le pourcentage du nombre de série max sur le nombre de bale dans l'objectif  <a href="#ad042b683ce7b4db507a443b1b27bfef8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad042b683ce7b4db507a443b1b27bfef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd9087c34222c0b2c0db11c5a96459c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#afd9087c34222c0b2c0db11c5a96459c4">afficherStatistiquesZones</a> ()</td></tr>
+<tr class="memdesc:afd9087c34222c0b2c0db11c5a96459c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche les statistiques (impact et pourcentage) de toutes les zones  <a href="#afd9087c34222c0b2c0db11c5a96459c4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afd9087c34222c0b2c0db11c5a96459c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a216b30bcfca71e425073a7ac90e59089"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a216b30bcfca71e425073a7ac90e59089">afficherStatistiquesBallesTotales</a> ()</td></tr>
+<tr class="memdesc:a216b30bcfca71e425073a7ac90e59089"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche le nombre de balle total et nombre total de balle ayant touché la table  <a href="#a216b30bcfca71e425073a7ac90e59089">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a216b30bcfca71e425073a7ac90e59089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc6dad0ca5e4f99b08378077eae2c20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#aebc6dad0ca5e4f99b08378077eae2c20">afficherStatistiquesBallesTotalesHorsTable</a> ()</td></tr>
+<tr class="memdesc:aebc6dad0ca5e4f99b08378077eae2c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche le nombre de balle hors table  <a href="#aebc6dad0ca5e4f99b08378077eae2c20">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aebc6dad0ca5e4f99b08378077eae2c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712aad34b7ff7dd550ac6c976f75f416"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a712aad34b7ff7dd550ac6c976f75f416">afficherStatistiqueBallesBonnes</a> ()</td></tr>
+<tr class="memdesc:a712aad34b7ff7dd550ac6c976f75f416"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche le nombre de balle ayant atteint la zone objectifs  <a href="#a712aad34b7ff7dd550ac6c976f75f416">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a712aad34b7ff7dd550ac6c976f75f416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Fonctions membres privées</h2></td></tr>
+<tr class="memitem:a8bf60224113e3697adfe0a4f8f22ab7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a8bf60224113e3697adfe0a4f8f22ab7b">calculerStatistiques</a> (uint8_t numeroZone)</td></tr>
+<tr class="separator:a8bf60224113e3697adfe0a4f8f22ab7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a23226867e4a34cb41f8c07f3d8d42e49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">numeroZoneObjectif</a></td></tr>
+<tr class="memdesc:a23226867e4a34cb41f8c07f3d8d42e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Placement de la zone de l'objectif.  <a href="#a23226867e4a34cb41f8c07f3d8d42e49">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a23226867e4a34cb41f8c07f3d8d42e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea50e7fc9b2308e365f77f27e3f86ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">numeroZoneRobot</a></td></tr>
+<tr class="memdesc:aeea50e7fc9b2308e365f77f27e3f86ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Placement de la zone d'objectif.  <a href="#aeea50e7fc9b2308e365f77f27e3f86ee">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aeea50e7fc9b2308e365f77f27e3f86ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a040cda282d5b1c250025f8e191e20"><td class="memItemLeft" align="right" valign="top">QVector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a></td></tr>
+<tr class="memdesc:aa4a040cda282d5b1c250025f8e191e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Un vecteur avec le nombre d'impacts dans chaque zone.  <a href="#aa4a040cda282d5b1c250025f8e191e20">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa4a040cda282d5b1c250025f8e191e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af62043be598fd6b7cd7ddbc37eadf967"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">nbBallesBonnes</a></td></tr>
+<tr class="memdesc:af62043be598fd6b7cd7ddbc37eadf967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre de balles ayant touché la zone objetifs.  <a href="#af62043be598fd6b7cd7ddbc37eadf967">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af62043be598fd6b7cd7ddbc37eadf967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27eb3965bbe304700d3254534c5e4ed3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">nbBallesTotales</a></td></tr>
+<tr class="memdesc:a27eb3965bbe304700d3254534c5e4ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre de balles total tirées par le robot et jouables.  <a href="#a27eb3965bbe304700d3254534c5e4ed3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a27eb3965bbe304700d3254534c5e4ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa152a6f154cc832c3355342ecf94162a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">nbBallesTotalesTable</a></td></tr>
+<tr class="memdesc:aa152a6f154cc832c3355342ecf94162a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre de balles totales tirées par le robot et ayant impacté la table.  <a href="#aa152a6f154cc832c3355342ecf94162a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa152a6f154cc832c3355342ecf94162a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f71fc7b017bb17d4576f954120c7a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#ac7f71fc7b017bb17d4576f954120c7a0">nbBallesEnchainees</a></td></tr>
+<tr class="memdesc:ac7f71fc7b017bb17d4576f954120c7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Série de balles dans la zone objectif.  <a href="#ac7f71fc7b017bb17d4576f954120c7a0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac7f71fc7b017bb17d4576f954120c7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e64397e87d453efb42b2545df1a8e90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">nbBallesEnchaineesMax</a></td></tr>
+<tr class="memdesc:a3e64397e87d453efb42b2545df1a8e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Série max de balles dans la zone objectif.  <a href="#a3e64397e87d453efb42b2545df1a8e90">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3e64397e87d453efb42b2545df1a8e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad428a6da4f5615a7682c8fa4fb597ce3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#ad428a6da4f5615a7682c8fa4fb597ce3">balleToucheTable</a></td></tr>
+<tr class="memdesc:ad428a6da4f5615a7682c8fa4fb597ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Balle ayant touché la table.  <a href="#ad428a6da4f5615a7682c8fa4fb597ce3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad428a6da4f5615a7682c8fa4fb597ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36681be0a5a9fc48c4c332606a0418ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#a36681be0a5a9fc48c4c332606a0418ad">ballePrecedenteToucheTable</a></td></tr>
+<tr class="memdesc:a36681be0a5a9fc48c4c332606a0418ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Balle précédente qui a touché la table.  <a href="#a36681be0a5a9fc48c4c332606a0418ad">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a36681be0a5a9fc48c4c332606a0418ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6747af0965a82d7d59a248682bbb575"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statistiques_seance.html#af6747af0965a82d7d59a248682bbb575">balleToucheRobot</a></td></tr>
+<tr class="memdesc:af6747af0965a82d7d59a248682bbb575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Balle ayant touché la table du robot.  <a href="#af6747af0965a82d7d59a248682bbb575">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af6747af0965a82d7d59a248682bbb575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><dl class="section author"><dt>Auteur</dt><dd>Botella-Broc Yohann</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.4 </dd></dl>
+</div><h2 class="groupheader">Documentation des énumérations membres</h2>
+<a id="aa839f5192cbadd7c3fb3651d62eff8b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa839f5192cbadd7c3fb3651d62eff8b5">&#9670;&nbsp;</a></span>Zone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5">StatistiquesSeance::Zone</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28"></a>ZoneNonDefinie&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac"></a>Zone1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727"></a>Zone2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb"></a>Zone3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c"></a>Zone4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344"></a>Zone5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343"></a>Zone6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64"></a>Zone7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736"></a>NbZonesImpact&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3"></a>ZoneHorsTable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4"></a>NbZonesTotales&#160;</td><td class="fielddoc"></td></tr>
+</table>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28">ZoneNonDefinie</a> = -1,</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac">Zone1</a> = 0,</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727">Zone2</a>,</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb">Zone3</a>,</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c">Zone4</a>,</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344">Zone5</a>,</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343">Zone6</a>,</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64">Zone7</a>,</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736">NbZonesImpact</a>, <span class="comment">// 7</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3">ZoneHorsTable</a>, <span class="comment">// 8</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4">NbZonesTotales</a>, <span class="comment">// 9</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        };</div><div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64">StatistiquesSeance::Zone7</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:53</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28">StatistiquesSeance::ZoneNonDefinie</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:46</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c">StatistiquesSeance::Zone4</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:50</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4">StatistiquesSeance::NbZonesTotales</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:56</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3">StatistiquesSeance::ZoneHorsTable</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:55</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343">StatistiquesSeance::Zone6</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:52</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727">StatistiquesSeance::Zone2</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:48</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb">StatistiquesSeance::Zone3</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:49</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344">StatistiquesSeance::Zone5</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:51</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac">StatistiquesSeance::Zone1</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:47</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736">StatistiquesSeance::NbZonesImpact</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:54</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="ab4096821bf4cb5fbebcf895b1a70be42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4096821bf4cb5fbebcf895b1a70be42">&#9670;&nbsp;</a></span>StatistiquesSeance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">StatistiquesSeance::StatistiquesSeance </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">initialiserStatistiques()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                                      : QObject(parent), <a class="code" href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">numeroZoneObjectif</a>(<a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28">StatistiquesSeance::ZoneNonDefinie</a>), <a class="code" href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">numeroZoneRobot</a>(<a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28">StatistiquesSeance::ZoneNonDefinie</a>), <a class="code" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>(<a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4">StatistiquesSeance::NbZonesTotales</a>, 0), <a class="code" href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">nbBallesBonnes</a>(0), <a class="code" href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">nbBallesTotales</a>(0), <a class="code" href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">nbBallesTotalesTable</a>(0), <a class="code" href="class_statistiques_seance.html#ac7f71fc7b017bb17d4576f954120c7a0">nbBallesEnchainees</a>(0), <a class="code" href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">nbBallesEnchaineesMax</a>(0)</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">initialiserStatistiques</a>();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28">StatistiquesSeance::ZoneNonDefinie</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:46</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a23226867e4a34cb41f8c07f3d8d42e49"><div class="ttname"><a href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">StatistiquesSeance::numeroZoneObjectif</a></div><div class="ttdeci">int numeroZoneObjectif</div><div class="ttdoc">Placement de la zone de l&amp;#39;objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:79</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4">StatistiquesSeance::NbZonesTotales</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:56</div></div>
+<div class="ttc" id="class_statistiques_seance_html_af62043be598fd6b7cd7ddbc37eadf967"><div class="ttname"><a href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">StatistiquesSeance::nbBallesBonnes</a></div><div class="ttdeci">int nbBallesBonnes</div><div class="ttdoc">Nombre de balles ayant touché la zone objetifs. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:82</div></div>
+<div class="ttc" id="class_statistiques_seance_html_ac7f71fc7b017bb17d4576f954120c7a0"><div class="ttname"><a href="class_statistiques_seance.html#ac7f71fc7b017bb17d4576f954120c7a0">StatistiquesSeance::nbBallesEnchainees</a></div><div class="ttdeci">int nbBallesEnchainees</div><div class="ttdoc">Série de balles dans la zone objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:85</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa4a040cda282d5b1c250025f8e191e20"><div class="ttname"><a href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">StatistiquesSeance::nbImpactsZone</a></div><div class="ttdeci">QVector&lt; int &gt; nbImpactsZone</div><div class="ttdoc">Un vecteur avec le nombre d&amp;#39;impacts dans chaque zone. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:81</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa152a6f154cc832c3355342ecf94162a"><div class="ttname"><a href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">StatistiquesSeance::nbBallesTotalesTable</a></div><div class="ttdeci">int nbBallesTotalesTable</div><div class="ttdoc">Nombre de balles totales tirées par le robot et ayant impacté la table. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:84</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aeea50e7fc9b2308e365f77f27e3f86ee"><div class="ttname"><a href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">StatistiquesSeance::numeroZoneRobot</a></div><div class="ttdeci">int numeroZoneRobot</div><div class="ttdoc">Placement de la zone d&amp;#39;objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:80</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a27eb3965bbe304700d3254534c5e4ed3"><div class="ttname"><a href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">StatistiquesSeance::nbBallesTotales</a></div><div class="ttdeci">int nbBallesTotales</div><div class="ttdoc">Nombre de balles total tirées par le robot et jouables. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:83</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a3e64397e87d453efb42b2545df1a8e90"><div class="ttname"><a href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">StatistiquesSeance::nbBallesEnchaineesMax</a></div><div class="ttdeci">int nbBallesEnchaineesMax</div><div class="ttdoc">Série max de balles dans la zone objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:86</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a17e1c49e2986a8490ff96e4bd7733291"><div class="ttname"><a href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">StatistiquesSeance::initialiserStatistiques</a></div><div class="ttdeci">void initialiserStatistiques()</div><div class="ttdoc">initialise les statistiques </div><div class="ttdef"><b>Definition:</b> statistiquesseance.cpp:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2e84d125a8d696fa74d9c356eb2b8cab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e84d125a8d696fa74d9c356eb2b8cab">&#9670;&nbsp;</a></span>~StatistiquesSeance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">StatistiquesSeance::~StatistiquesSeance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a956ac10424a167d5b64fe13a92fbf121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956ac10424a167d5b64fe13a92fbf121">&#9670;&nbsp;</a></span>affichageZone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatistiquesSeance::affichageZone </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numeroZone</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbImpacts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>pourcentage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#afd9087c34222c0b2c0db11c5a96459c4">afficherStatistiquesZones()</a>.</p>
+
+</div>
+</div>
+<a id="a712aad34b7ff7dd550ac6c976f75f416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a712aad34b7ff7dd550ac6c976f75f416">&#9670;&nbsp;</a></span>afficherStatistiqueBallesBonnes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatistiquesSeance::afficherStatistiqueBallesBonnes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#aa3ee6b00dae44d1f3cf78349ba235b08">ballesBonnes()</a>, et <a class="el" href="class_statistiques_seance.html#a0dad2ceb22672adf343548b35bf86ba1">getBallesBonnes()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#adf93738ca1b6b117ac91b68772d2c4c8">impacterZone()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;{</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    emit <a class="code" href="class_statistiques_seance.html#aa3ee6b00dae44d1f3cf78349ba235b08">ballesBonnes</a>(<a class="code" href="class_statistiques_seance.html#a0dad2ceb22672adf343548b35bf86ba1">getBallesBonnes</a>());</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_a0dad2ceb22672adf343548b35bf86ba1"><div class="ttname"><a href="class_statistiques_seance.html#a0dad2ceb22672adf343548b35bf86ba1">StatistiquesSeance::getBallesBonnes</a></div><div class="ttdeci">int getBallesBonnes()</div><div class="ttdef"><b>Definition:</b> statistiquesseance.cpp:316</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa3ee6b00dae44d1f3cf78349ba235b08"><div class="ttname"><a href="class_statistiques_seance.html#aa3ee6b00dae44d1f3cf78349ba235b08">StatistiquesSeance::ballesBonnes</a></div><div class="ttdeci">void ballesBonnes(int nbBallesBonnes)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a216b30bcfca71e425073a7ac90e59089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a216b30bcfca71e425073a7ac90e59089">&#9670;&nbsp;</a></span>afficherStatistiquesBallesTotales()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatistiquesSeance::afficherStatistiquesBallesTotales </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#ac3c52002d12dd7b93e6339126c84190f">ballesTotales()</a>, <a class="el" href="class_statistiques_seance.html#aaefd0b775012ec914a36a262dc14fc66">getBallesTotal()</a>, et <a class="el" href="class_statistiques_seance.html#a1f956e08733a81d0a86673cae6bc7feb">getballesToucheTable()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ttpa_ihm.html#a9bf7a4cddbdbf786d781e4d084409068">TtpaIhm::commencerSeance()</a>, et <a class="el" href="class_statistiques_seance.html#adf93738ca1b6b117ac91b68772d2c4c8">impacterZone()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;{</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    emit <a class="code" href="class_statistiques_seance.html#ac3c52002d12dd7b93e6339126c84190f">ballesTotales</a>(<a class="code" href="class_statistiques_seance.html#aaefd0b775012ec914a36a262dc14fc66">getBallesTotal</a>(), <a class="code" href="class_statistiques_seance.html#a1f956e08733a81d0a86673cae6bc7feb">getballesToucheTable</a>());</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_a1f956e08733a81d0a86673cae6bc7feb"><div class="ttname"><a href="class_statistiques_seance.html#a1f956e08733a81d0a86673cae6bc7feb">StatistiquesSeance::getballesToucheTable</a></div><div class="ttdeci">int getballesToucheTable()</div><div class="ttdoc">récupère les donnés des balles récupère les donnés des balles ayant touché la table ...</div><div class="ttdef"><b>Definition:</b> statistiquesseance.cpp:289</div></div>
+<div class="ttc" id="class_statistiques_seance_html_ac3c52002d12dd7b93e6339126c84190f"><div class="ttname"><a href="class_statistiques_seance.html#ac3c52002d12dd7b93e6339126c84190f">StatistiquesSeance::ballesTotales</a></div><div class="ttdeci">void ballesTotales(int nbBallesTotales, int nbBallesTotalesTable)</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aaefd0b775012ec914a36a262dc14fc66"><div class="ttname"><a href="class_statistiques_seance.html#aaefd0b775012ec914a36a262dc14fc66">StatistiquesSeance::getBallesTotal</a></div><div class="ttdeci">int getBallesTotal()</div><div class="ttdoc">récupère les donnésde la zone du robot </div><div class="ttdef"><b>Definition:</b> statistiquesseance.cpp:256</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aebc6dad0ca5e4f99b08378077eae2c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc6dad0ca5e4f99b08378077eae2c20">&#9670;&nbsp;</a></span>afficherStatistiquesBallesTotalesHorsTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatistiquesSeance::afficherStatistiquesBallesTotalesHorsTable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#a02a327f2a69eed4208b7b2076c6a67f2">ballesTotalesHorsTable()</a>, et <a class="el" href="class_statistiques_seance.html#a1f956e08733a81d0a86673cae6bc7feb">getballesToucheTable()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;{</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    emit <a class="code" href="class_statistiques_seance.html#a02a327f2a69eed4208b7b2076c6a67f2">ballesTotalesHorsTable</a>(<a class="code" href="class_statistiques_seance.html#a1f956e08733a81d0a86673cae6bc7feb">getballesToucheTable</a>());</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_a02a327f2a69eed4208b7b2076c6a67f2"><div class="ttname"><a href="class_statistiques_seance.html#a02a327f2a69eed4208b7b2076c6a67f2">StatistiquesSeance::ballesTotalesHorsTable</a></div><div class="ttdeci">void ballesTotalesHorsTable(int ballesToucheTable)</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a1f956e08733a81d0a86673cae6bc7feb"><div class="ttname"><a href="class_statistiques_seance.html#a1f956e08733a81d0a86673cae6bc7feb">StatistiquesSeance::getballesToucheTable</a></div><div class="ttdeci">int getballesToucheTable()</div><div class="ttdoc">récupère les donnés des balles récupère les donnés des balles ayant touché la table ...</div><div class="ttdef"><b>Definition:</b> statistiquesseance.cpp:289</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afd9087c34222c0b2c0db11c5a96459c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd9087c34222c0b2c0db11c5a96459c4">&#9670;&nbsp;</a></span>afficherStatistiquesZones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatistiquesSeance::afficherStatistiquesZones </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#a956ac10424a167d5b64fe13a92fbf121">affichageZone()</a>, <a class="el" href="class_statistiques_seance.html#a67759edd6c296bd6b66f7860dbac130e">calculerPourcentage()</a>, <a class="el" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>, <a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736">NbZonesImpact</a>, <a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4">NbZonesTotales</a>, et <a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac">Zone1</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ttpa_ihm.html#a9bf7a4cddbdbf786d781e4d084409068">TtpaIhm::commencerSeance()</a>, et <a class="el" href="class_statistiques_seance.html#adf93738ca1b6b117ac91b68772d2c4c8">impacterZone()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;{    </div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordtype">double</span> pourcentage;</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">for</span>(uint8_t numeroZone = <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac">Zone1</a>; numeroZone &lt; <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4">NbZonesTotales</a>; ++numeroZone)</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    {</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">if</span>(numeroZone == <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736">NbZonesImpact</a>)</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        pourcentage = <a class="code" href="class_statistiques_seance.html#a67759edd6c296bd6b66f7860dbac130e">calculerPourcentage</a>(<a class="code" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>[numeroZone]);</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        emit <a class="code" href="class_statistiques_seance.html#a956ac10424a167d5b64fe13a92fbf121">affichageZone</a>(numeroZone, <a class="code" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>[numeroZone], QString::number(pourcentage,<span class="charliteral">&#39;f&#39;</span>,0) + <span class="stringliteral">&quot; %&quot;</span>);</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;numeroZone=&quot;</span> &lt;&lt; numeroZone &lt;&lt; <span class="stringliteral">&quot;nbImpactsZone&quot;</span> &lt;&lt; <a class="code" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>[numeroZone] &lt;&lt; <span class="stringliteral">&quot;pourcentage&quot;</span> &lt;&lt; pourcentage;</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4">StatistiquesSeance::NbZonesTotales</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:56</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a956ac10424a167d5b64fe13a92fbf121"><div class="ttname"><a href="class_statistiques_seance.html#a956ac10424a167d5b64fe13a92fbf121">StatistiquesSeance::affichageZone</a></div><div class="ttdeci">void affichageZone(int numeroZone, int nbImpacts, QString pourcentage)</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa4a040cda282d5b1c250025f8e191e20"><div class="ttname"><a href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">StatistiquesSeance::nbImpactsZone</a></div><div class="ttdeci">QVector&lt; int &gt; nbImpactsZone</div><div class="ttdoc">Un vecteur avec le nombre d&amp;#39;impacts dans chaque zone. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:81</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a67759edd6c296bd6b66f7860dbac130e"><div class="ttname"><a href="class_statistiques_seance.html#a67759edd6c296bd6b66f7860dbac130e">StatistiquesSeance::calculerPourcentage</a></div><div class="ttdeci">double calculerPourcentage(int nbImpactsZone)</div><div class="ttdoc">calcul le pourcentage de chaque zone sur le nombre de balle </div><div class="ttdef"><b>Definition:</b> statistiquesseance.cpp:154</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac">StatistiquesSeance::Zone1</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:47</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736">StatistiquesSeance::NbZonesImpact</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:54</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa3ee6b00dae44d1f3cf78349ba235b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ee6b00dae44d1f3cf78349ba235b08">&#9670;&nbsp;</a></span>ballesBonnes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatistiquesSeance::ballesBonnes </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbBallesBonnes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#a712aad34b7ff7dd550ac6c976f75f416">afficherStatistiqueBallesBonnes()</a>, et <a class="el" href="class_statistiques_seance.html#a72526ea18d6c534a1cb84576ef3ea28d">finirSeance()</a>.</p>
+
+</div>
+</div>
+<a id="ac3c52002d12dd7b93e6339126c84190f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3c52002d12dd7b93e6339126c84190f">&#9670;&nbsp;</a></span>ballesTotales</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatistiquesSeance::ballesTotales </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbBallesTotales</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbBallesTotalesTable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#a216b30bcfca71e425073a7ac90e59089">afficherStatistiquesBallesTotales()</a>.</p>
+
+</div>
+</div>
+<a id="a02a327f2a69eed4208b7b2076c6a67f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02a327f2a69eed4208b7b2076c6a67f2">&#9670;&nbsp;</a></span>ballesTotalesHorsTable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatistiquesSeance::ballesTotalesHorsTable </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ballesToucheTable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#aebc6dad0ca5e4f99b08378077eae2c20">afficherStatistiquesBallesTotalesHorsTable()</a>, et <a class="el" href="class_statistiques_seance.html#a72526ea18d6c534a1cb84576ef3ea28d">finirSeance()</a>.</p>
+
+</div>
+</div>
+<a id="a67759edd6c296bd6b66f7860dbac130e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67759edd6c296bd6b66f7860dbac130e">&#9670;&nbsp;</a></span>calculerPourcentage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double StatistiquesSeance::calculerPourcentage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbImpactsZone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nbImpactsZone</td><td>int le numéro de zone impacté </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>double le pourcentage calculé </dd></dl>
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">nbBallesTotales</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ttpa_ihm.html#a58058063eb377b4c4c48048e4bf84e77">TtpaIhm::afficherStatistiquePourcentageBallesHorstable()</a>, <a class="el" href="class_ttpa_ihm.html#ac37d57d13301cda22f062219de8731c4">TtpaIhm::afficherStatistiquePourcentageBallesObjectif()</a>, <a class="el" href="class_ttpa_ihm.html#aec988dc2398578eb8e91563d1ba58cde">TtpaIhm::afficherStatistiquePourcentageBallesSerie()</a>, et <a class="el" href="class_statistiques_seance.html#afd9087c34222c0b2c0db11c5a96459c4">afficherStatistiquesZones()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;{</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a> == 0)</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">return</span> 0.;</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">double</span>(<a class="code" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>) / <span class="keywordtype">double</span>(<a class="code" href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">nbBallesTotales</a>))*100.;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_aa4a040cda282d5b1c250025f8e191e20"><div class="ttname"><a href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">StatistiquesSeance::nbImpactsZone</a></div><div class="ttdeci">QVector&lt; int &gt; nbImpactsZone</div><div class="ttdoc">Un vecteur avec le nombre d&amp;#39;impacts dans chaque zone. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:81</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a27eb3965bbe304700d3254534c5e4ed3"><div class="ttname"><a href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">StatistiquesSeance::nbBallesTotales</a></div><div class="ttdeci">int nbBallesTotales</div><div class="ttdoc">Nombre de balles total tirées par le robot et jouables. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:83</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad042b683ce7b4db507a443b1b27bfef8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad042b683ce7b4db507a443b1b27bfef8">&#9670;&nbsp;</a></span>calculerPourcentageSerieMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double StatistiquesSeance::calculerPourcentageSerieMax </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbImpactsZone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nbImpactsZone</td><td>int le numéro de zone impacté </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>QString le pourcentage formaté pour l'affichage "X%" </dd></dl>
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">nbBallesBonnes</a>, et <a class="el" href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">nbBallesEnchaineesMax</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ttpa_ihm.html#aec988dc2398578eb8e91563d1ba58cde">TtpaIhm::afficherStatistiquePourcentageBallesSerie()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;{</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a> == 0)</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">return</span> 0.;</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">double</span>(<a class="code" href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">nbBallesEnchaineesMax</a>) / <span class="keywordtype">double</span>(<a class="code" href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">nbBallesBonnes</a>))*100.;</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_af62043be598fd6b7cd7ddbc37eadf967"><div class="ttname"><a href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">StatistiquesSeance::nbBallesBonnes</a></div><div class="ttdeci">int nbBallesBonnes</div><div class="ttdoc">Nombre de balles ayant touché la zone objetifs. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:82</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa4a040cda282d5b1c250025f8e191e20"><div class="ttname"><a href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">StatistiquesSeance::nbImpactsZone</a></div><div class="ttdeci">QVector&lt; int &gt; nbImpactsZone</div><div class="ttdoc">Un vecteur avec le nombre d&amp;#39;impacts dans chaque zone. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:81</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a3e64397e87d453efb42b2545df1a8e90"><div class="ttname"><a href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">StatistiquesSeance::nbBallesEnchaineesMax</a></div><div class="ttdeci">int nbBallesEnchaineesMax</div><div class="ttdoc">Série max de balles dans la zone objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:86</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8bf60224113e3697adfe0a4f8f22ab7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf60224113e3697adfe0a4f8f22ab7b">&#9670;&nbsp;</a></span>calculerStatistiques()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatistiquesSeance::calculerStatistiques </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>numeroZone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#a36681be0a5a9fc48c4c332606a0418ad">ballePrecedenteToucheTable</a>, <a class="el" href="class_statistiques_seance.html#ad428a6da4f5615a7682c8fa4fb597ce3">balleToucheTable</a>, <a class="el" href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">nbBallesBonnes</a>, <a class="el" href="class_statistiques_seance.html#ac7f71fc7b017bb17d4576f954120c7a0">nbBallesEnchainees</a>, <a class="el" href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">nbBallesEnchaineesMax</a>, <a class="el" href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">nbBallesTotales</a>, <a class="el" href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">nbBallesTotalesTable</a>, <a class="el" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>, <a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736">NbZonesImpact</a>, <a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4">NbZonesTotales</a>, <a class="el" href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">numeroZoneObjectif</a>, <a class="el" href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">numeroZoneRobot</a>, <a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac">Zone1</a>, <a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3">ZoneHorsTable</a>, et <a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28">ZoneNonDefinie</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#adf93738ca1b6b117ac91b68772d2c4c8">impacterZone()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;numeroZone = &quot;</span> &lt;&lt; numeroZone &lt;&lt; <span class="stringliteral">&quot;numeroZoneObjectif = &quot;</span> &lt;&lt; <a class="code" href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">numeroZoneObjectif</a>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span>(numeroZone == <a class="code" href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">numeroZoneRobot</a>)</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>[<a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3">ZoneHorsTable</a>] += 1;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>[numeroZone] += 1;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span>(numeroZone == numeroZoneObjectif)</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">nbBallesBonnes</a>++;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;nbBalles zone = &quot;</span> &lt;&lt; <a class="code" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>[numeroZone];</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="class_statistiques_seance.html#a36681be0a5a9fc48c4c332606a0418ad">ballePrecedenteToucheTable</a> = <a class="code" href="class_statistiques_seance.html#ad428a6da4f5615a7682c8fa4fb597ce3">balleToucheTable</a>;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="class_statistiques_seance.html#ad428a6da4f5615a7682c8fa4fb597ce3">balleToucheTable</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="class_statistiques_seance.html#a36681be0a5a9fc48c4c332606a0418ad">ballePrecedenteToucheTable</a> = <a class="code" href="class_statistiques_seance.html#ad428a6da4f5615a7682c8fa4fb597ce3">balleToucheTable</a>;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="class_statistiques_seance.html#ad428a6da4f5615a7682c8fa4fb597ce3">balleToucheTable</a> = numeroZone;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">nbBallesTotales</a>++;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;nbBallesTotales = &quot;</span> &lt;&lt; <a class="code" href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">nbBallesTotales</a>;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">nbBallesTotalesTable</a> = 0;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> numeroZone = <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac">Zone1</a>; numeroZone &lt; <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4">NbZonesTotales</a>; ++numeroZone)</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">if</span>(numeroZone == <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736">NbZonesImpact</a>)</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">continue</span>;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">if</span>(numeroZone &lt; <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736">NbZonesImpact</a>)</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">nbBallesTotalesTable</a> += nbImpactsZone[numeroZone];</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;nbBallesTotalesTable = &quot;</span> &lt;&lt; <a class="code" href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">nbBallesTotalesTable</a> &lt;&lt; <span class="stringliteral">&quot;nbBallesBonnes= &quot;</span> &lt;&lt; <a class="code" href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">nbBallesBonnes</a>;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span> (numeroZone != <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28">ZoneNonDefinie</a>)</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;       <span class="keywordflow">if</span> (numeroZone == numeroZoneObjectif <span class="comment">/*|| numeroZoneObjectif == ZoneNonDefinie*/</span>)</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;       {</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;           <a class="code" href="class_statistiques_seance.html#ac7f71fc7b017bb17d4576f954120c7a0">nbBallesEnchainees</a>++;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;       }</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;       <span class="keywordflow">else</span></div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;       {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;           <a class="code" href="class_statistiques_seance.html#ac7f71fc7b017bb17d4576f954120c7a0">nbBallesEnchainees</a> = 0;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;       }</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;       <a class="code" href="class_statistiques_seance.html#ac7f71fc7b017bb17d4576f954120c7a0">nbBallesEnchainees</a> = 0;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_statistiques_seance.html#ac7f71fc7b017bb17d4576f954120c7a0">nbBallesEnchainees</a> &gt; <a class="code" href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">nbBallesEnchaineesMax</a>)</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;       <a class="code" href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">nbBallesEnchaineesMax</a> = <a class="code" href="class_statistiques_seance.html#ac7f71fc7b017bb17d4576f954120c7a0">nbBallesEnchainees</a>;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;nbBallesEnchainees = &quot;</span> &lt;&lt; <a class="code" href="class_statistiques_seance.html#ac7f71fc7b017bb17d4576f954120c7a0">nbBallesEnchainees</a> &lt;&lt; <span class="stringliteral">&quot;nbBallesEnchaineesMax = &quot;</span> &lt;&lt; <a class="code" href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">nbBallesEnchaineesMax</a>;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_a36681be0a5a9fc48c4c332606a0418ad"><div class="ttname"><a href="class_statistiques_seance.html#a36681be0a5a9fc48c4c332606a0418ad">StatistiquesSeance::ballePrecedenteToucheTable</a></div><div class="ttdeci">bool ballePrecedenteToucheTable</div><div class="ttdoc">Balle précédente qui a touché la table. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:88</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28">StatistiquesSeance::ZoneNonDefinie</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:46</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a23226867e4a34cb41f8c07f3d8d42e49"><div class="ttname"><a href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">StatistiquesSeance::numeroZoneObjectif</a></div><div class="ttdeci">int numeroZoneObjectif</div><div class="ttdoc">Placement de la zone de l&amp;#39;objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:79</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4">StatistiquesSeance::NbZonesTotales</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:56</div></div>
+<div class="ttc" id="class_statistiques_seance_html_af62043be598fd6b7cd7ddbc37eadf967"><div class="ttname"><a href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">StatistiquesSeance::nbBallesBonnes</a></div><div class="ttdeci">int nbBallesBonnes</div><div class="ttdoc">Nombre de balles ayant touché la zone objetifs. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:82</div></div>
+<div class="ttc" id="class_statistiques_seance_html_ac7f71fc7b017bb17d4576f954120c7a0"><div class="ttname"><a href="class_statistiques_seance.html#ac7f71fc7b017bb17d4576f954120c7a0">StatistiquesSeance::nbBallesEnchainees</a></div><div class="ttdeci">int nbBallesEnchainees</div><div class="ttdoc">Série de balles dans la zone objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:85</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3">StatistiquesSeance::ZoneHorsTable</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:55</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa4a040cda282d5b1c250025f8e191e20"><div class="ttname"><a href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">StatistiquesSeance::nbImpactsZone</a></div><div class="ttdeci">QVector&lt; int &gt; nbImpactsZone</div><div class="ttdoc">Un vecteur avec le nombre d&amp;#39;impacts dans chaque zone. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:81</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa152a6f154cc832c3355342ecf94162a"><div class="ttname"><a href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">StatistiquesSeance::nbBallesTotalesTable</a></div><div class="ttdeci">int nbBallesTotalesTable</div><div class="ttdoc">Nombre de balles totales tirées par le robot et ayant impacté la table. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:84</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aeea50e7fc9b2308e365f77f27e3f86ee"><div class="ttname"><a href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">StatistiquesSeance::numeroZoneRobot</a></div><div class="ttdeci">int numeroZoneRobot</div><div class="ttdoc">Placement de la zone d&amp;#39;objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:80</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac">StatistiquesSeance::Zone1</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:47</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736">StatistiquesSeance::NbZonesImpact</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:54</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a27eb3965bbe304700d3254534c5e4ed3"><div class="ttname"><a href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">StatistiquesSeance::nbBallesTotales</a></div><div class="ttdeci">int nbBallesTotales</div><div class="ttdoc">Nombre de balles total tirées par le robot et jouables. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:83</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a3e64397e87d453efb42b2545df1a8e90"><div class="ttname"><a href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">StatistiquesSeance::nbBallesEnchaineesMax</a></div><div class="ttdeci">int nbBallesEnchaineesMax</div><div class="ttdoc">Série max de balles dans la zone objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:86</div></div>
+<div class="ttc" id="class_statistiques_seance_html_ad428a6da4f5615a7682c8fa4fb597ce3"><div class="ttname"><a href="class_statistiques_seance.html#ad428a6da4f5615a7682c8fa4fb597ce3">StatistiquesSeance::balleToucheTable</a></div><div class="ttdeci">bool balleToucheTable</div><div class="ttdoc">Balle ayant touché la table. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:87</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a72526ea18d6c534a1cb84576ef3ea28d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72526ea18d6c534a1cb84576ef3ea28d">&#9670;&nbsp;</a></span>finirSeance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatistiquesSeance::finirSeance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#aa3ee6b00dae44d1f3cf78349ba235b08">ballesBonnes()</a>, <a class="el" href="class_statistiques_seance.html#a02a327f2a69eed4208b7b2076c6a67f2">ballesTotalesHorsTable()</a>, <a class="el" href="class_statistiques_seance.html#a0dad2ceb22672adf343548b35bf86ba1">getBallesBonnes()</a>, et <a class="el" href="class_statistiques_seance.html#a26b717d40065e7afd80465458f3cb6aa">getBallesHorsTable()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;{</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="comment">//...</span></div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    emit <a class="code" href="class_statistiques_seance.html#aa3ee6b00dae44d1f3cf78349ba235b08">ballesBonnes</a>(<a class="code" href="class_statistiques_seance.html#a0dad2ceb22672adf343548b35bf86ba1">getBallesBonnes</a>());</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    emit <a class="code" href="class_statistiques_seance.html#a02a327f2a69eed4208b7b2076c6a67f2">ballesTotalesHorsTable</a>(<a class="code" href="class_statistiques_seance.html#a26b717d40065e7afd80465458f3cb6aa">getBallesHorsTable</a>());</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_a02a327f2a69eed4208b7b2076c6a67f2"><div class="ttname"><a href="class_statistiques_seance.html#a02a327f2a69eed4208b7b2076c6a67f2">StatistiquesSeance::ballesTotalesHorsTable</a></div><div class="ttdeci">void ballesTotalesHorsTable(int ballesToucheTable)</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a26b717d40065e7afd80465458f3cb6aa"><div class="ttname"><a href="class_statistiques_seance.html#a26b717d40065e7afd80465458f3cb6aa">StatistiquesSeance::getBallesHorsTable</a></div><div class="ttdeci">int getBallesHorsTable()</div><div class="ttdoc">récupère les donnés des balles hors table </div><div class="ttdef"><b>Definition:</b> statistiquesseance.cpp:267</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a0dad2ceb22672adf343548b35bf86ba1"><div class="ttname"><a href="class_statistiques_seance.html#a0dad2ceb22672adf343548b35bf86ba1">StatistiquesSeance::getBallesBonnes</a></div><div class="ttdeci">int getBallesBonnes()</div><div class="ttdef"><b>Definition:</b> statistiquesseance.cpp:316</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa3ee6b00dae44d1f3cf78349ba235b08"><div class="ttname"><a href="class_statistiques_seance.html#aa3ee6b00dae44d1f3cf78349ba235b08">StatistiquesSeance::ballesBonnes</a></div><div class="ttdeci">void ballesBonnes(int nbBallesBonnes)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0dad2ceb22672adf343548b35bf86ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dad2ceb22672adf343548b35bf86ba1">&#9670;&nbsp;</a></span>getBallesBonnes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::getBallesBonnes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">nbBallesBonnes</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#a712aad34b7ff7dd550ac6c976f75f416">afficherStatistiqueBallesBonnes()</a>, <a class="el" href="class_ttpa_ihm.html#aa480a02532144d0f99af027b5b201ae1">TtpaIhm::afficherStatistiqueEcranResultats()</a>, <a class="el" href="class_ttpa_ihm.html#ac37d57d13301cda22f062219de8731c4">TtpaIhm::afficherStatistiquePourcentageBallesObjectif()</a>, et <a class="el" href="class_statistiques_seance.html#a72526ea18d6c534a1cb84576ef3ea28d">finirSeance()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;{</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">nbBallesBonnes</a>;</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_af62043be598fd6b7cd7ddbc37eadf967"><div class="ttname"><a href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">StatistiquesSeance::nbBallesBonnes</a></div><div class="ttdeci">int nbBallesBonnes</div><div class="ttdoc">Nombre de balles ayant touché la zone objetifs. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:82</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1f241d7ef584ebffa2246134c63be53b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f241d7ef584ebffa2246134c63be53b">&#9670;&nbsp;</a></span>getBallesEnchainees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::getBallesEnchainees </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">nbBallesEnchaineesMax</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ttpa_ihm.html#aa480a02532144d0f99af027b5b201ae1">TtpaIhm::afficherStatistiqueEcranResultats()</a>, et <a class="el" href="class_ttpa_ihm.html#aec988dc2398578eb8e91563d1ba58cde">TtpaIhm::afficherStatistiquePourcentageBallesSerie()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;{</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">nbBallesEnchaineesMax</a>;</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_a3e64397e87d453efb42b2545df1a8e90"><div class="ttname"><a href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">StatistiquesSeance::nbBallesEnchaineesMax</a></div><div class="ttdeci">int nbBallesEnchaineesMax</div><div class="ttdoc">Série max de balles dans la zone objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:86</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a26b717d40065e7afd80465458f3cb6aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b717d40065e7afd80465458f3cb6aa">&#9670;&nbsp;</a></span>getBallesHorsTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::getBallesHorsTable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>, et <a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3">ZoneHorsTable</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ttpa_ihm.html#aa480a02532144d0f99af027b5b201ae1">TtpaIhm::afficherStatistiqueEcranResultats()</a>, <a class="el" href="class_ttpa_ihm.html#a58058063eb377b4c4c48048e4bf84e77">TtpaIhm::afficherStatistiquePourcentageBallesHorstable()</a>, <a class="el" href="class_ttpa_ihm.html#aec988dc2398578eb8e91563d1ba58cde">TtpaIhm::afficherStatistiquePourcentageBallesSerie()</a>, et <a class="el" href="class_statistiques_seance.html#a72526ea18d6c534a1cb84576ef3ea28d">finirSeance()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;{</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>[<a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3">ZoneHorsTable</a>];</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3">StatistiquesSeance::ZoneHorsTable</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:55</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa4a040cda282d5b1c250025f8e191e20"><div class="ttname"><a href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">StatistiquesSeance::nbImpactsZone</a></div><div class="ttdeci">QVector&lt; int &gt; nbImpactsZone</div><div class="ttdoc">Un vecteur avec le nombre d&amp;#39;impacts dans chaque zone. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:81</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4f0dc4fd1c97787dab03ae5074fb3414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f0dc4fd1c97787dab03ae5074fb3414">&#9670;&nbsp;</a></span>getballesPrecedentToucheTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::getballesPrecedentToucheTable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#a36681be0a5a9fc48c4c332606a0418ad">ballePrecedenteToucheTable</a>.</p>
+<div class="fragment"><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;{</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_statistiques_seance.html#a36681be0a5a9fc48c4c332606a0418ad">ballePrecedenteToucheTable</a>;</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_a36681be0a5a9fc48c4c332606a0418ad"><div class="ttname"><a href="class_statistiques_seance.html#a36681be0a5a9fc48c4c332606a0418ad">StatistiquesSeance::ballePrecedenteToucheTable</a></div><div class="ttdeci">bool ballePrecedenteToucheTable</div><div class="ttdoc">Balle précédente qui a touché la table. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:88</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaefd0b775012ec914a36a262dc14fc66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaefd0b775012ec914a36a262dc14fc66">&#9670;&nbsp;</a></span>getBallesTotal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::getBallesTotal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>récupère les donnés des balles tiré</p>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">nbBallesTotales</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ttpa_ihm.html#aa480a02532144d0f99af027b5b201ae1">TtpaIhm::afficherStatistiqueEcranResultats()</a>, et <a class="el" href="class_statistiques_seance.html#a216b30bcfca71e425073a7ac90e59089">afficherStatistiquesBallesTotales()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;{</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">nbBallesTotales</a>;</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_a27eb3965bbe304700d3254534c5e4ed3"><div class="ttname"><a href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">StatistiquesSeance::nbBallesTotales</a></div><div class="ttdeci">int nbBallesTotales</div><div class="ttdoc">Nombre de balles total tirées par le robot et jouables. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:83</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1f956e08733a81d0a86673cae6bc7feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f956e08733a81d0a86673cae6bc7feb">&#9670;&nbsp;</a></span>getballesToucheTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::getballesToucheTable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">nbBallesTotalesTable</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#a216b30bcfca71e425073a7ac90e59089">afficherStatistiquesBallesTotales()</a>, et <a class="el" href="class_statistiques_seance.html#aebc6dad0ca5e4f99b08378077eae2c20">afficherStatistiquesBallesTotalesHorsTable()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;{</div><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">nbBallesTotalesTable</a>;</div><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_aa152a6f154cc832c3355342ecf94162a"><div class="ttname"><a href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">StatistiquesSeance::nbBallesTotalesTable</a></div><div class="ttdeci">int nbBallesTotalesTable</div><div class="ttdoc">Nombre de balles totales tirées par le robot et ayant impacté la table. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:84</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a61c01cb1d35cda871e8243658213ee5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61c01cb1d35cda871e8243658213ee5b">&#9670;&nbsp;</a></span>getZoneObjectif()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::getZoneObjectif </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">numeroZoneObjectif</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ttpa_ihm.html#a6e3cd3828ce5d165497e343bdb15cd87">TtpaIhm::afficherImpactCouleurs()</a>, et <a class="el" href="class_ttpa_ihm.html#abe9973c64673cdaa067617f9246781d2">TtpaIhm::effacerImpactZone()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;{</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">numeroZoneObjectif</a>;</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_a23226867e4a34cb41f8c07f3d8d42e49"><div class="ttname"><a href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">StatistiquesSeance::numeroZoneObjectif</a></div><div class="ttdeci">int numeroZoneObjectif</div><div class="ttdoc">Placement de la zone de l&amp;#39;objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:79</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad1bdc22fbd9f37fab06d9fc24e9f1bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1bdc22fbd9f37fab06d9fc24e9f1bc4">&#9670;&nbsp;</a></span>getZoneRobot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::getZoneRobot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">numeroZoneRobot</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ttpa_ihm.html#a6e3cd3828ce5d165497e343bdb15cd87">TtpaIhm::afficherImpactCouleurs()</a>, et <a class="el" href="class_ttpa_ihm.html#a3b00f90707811240c7dcfe8ed3dce783">TtpaIhm::afficherZone()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;{</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">numeroZoneRobot</a>;</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_aeea50e7fc9b2308e365f77f27e3f86ee"><div class="ttname"><a href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">StatistiquesSeance::numeroZoneRobot</a></div><div class="ttdeci">int numeroZoneRobot</div><div class="ttdoc">Placement de la zone d&amp;#39;objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:80</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adf93738ca1b6b117ac91b68772d2c4c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf93738ca1b6b117ac91b68772d2c4c8">&#9670;&nbsp;</a></span>impacterZone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StatistiquesSeance::impacterZone </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>numeroZone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numeroZone</td><td>int le numéro de zone de l'impact </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#a712aad34b7ff7dd550ac6c976f75f416">afficherStatistiqueBallesBonnes()</a>, <a class="el" href="class_statistiques_seance.html#a216b30bcfca71e425073a7ac90e59089">afficherStatistiquesBallesTotales()</a>, <a class="el" href="class_statistiques_seance.html#afd9087c34222c0b2c0db11c5a96459c4">afficherStatistiquesZones()</a>, et <a class="el" href="class_statistiques_seance.html#a8bf60224113e3697adfe0a4f8f22ab7b">calculerStatistiques()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ttpa_ihm.html#a0070bf0027c8a903e5bb5a543533e82c">TtpaIhm::recevoirNumeroZone()</a>, et <a class="el" href="class_ttpa_ihm.html#a9b22616e3a4e52ad2ecfe1818d5fadb2">TtpaIhm::saisirNumeroZone()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;numeroZone=&quot;</span> &lt;&lt; numeroZone <span class="comment">/*&lt;&lt; &quot;numeroZoneRobot&quot; &lt;&lt; numeroZoneRobot*/</span>;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="class_statistiques_seance.html#a8bf60224113e3697adfe0a4f8f22ab7b">calculerStatistiques</a>(numeroZone);</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="class_statistiques_seance.html#afd9087c34222c0b2c0db11c5a96459c4">afficherStatistiquesZones</a>();</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="class_statistiques_seance.html#a216b30bcfca71e425073a7ac90e59089">afficherStatistiquesBallesTotales</a>();</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="class_statistiques_seance.html#a712aad34b7ff7dd550ac6c976f75f416">afficherStatistiqueBallesBonnes</a>();</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_a8bf60224113e3697adfe0a4f8f22ab7b"><div class="ttname"><a href="class_statistiques_seance.html#a8bf60224113e3697adfe0a4f8f22ab7b">StatistiquesSeance::calculerStatistiques</a></div><div class="ttdeci">void calculerStatistiques(uint8_t numeroZone)</div><div class="ttdef"><b>Definition:</b> statistiquesseance.cpp:71</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a216b30bcfca71e425073a7ac90e59089"><div class="ttname"><a href="class_statistiques_seance.html#a216b30bcfca71e425073a7ac90e59089">StatistiquesSeance::afficherStatistiquesBallesTotales</a></div><div class="ttdeci">void afficherStatistiquesBallesTotales()</div><div class="ttdoc">affiche le nombre de balle total et nombre total de balle ayant touché la table </div><div class="ttdef"><b>Definition:</b> statistiquesseance.cpp:202</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a712aad34b7ff7dd550ac6c976f75f416"><div class="ttname"><a href="class_statistiques_seance.html#a712aad34b7ff7dd550ac6c976f75f416">StatistiquesSeance::afficherStatistiqueBallesBonnes</a></div><div class="ttdeci">void afficherStatistiqueBallesBonnes()</div><div class="ttdoc">affiche le nombre de balle ayant atteint la zone objectifs </div><div class="ttdef"><b>Definition:</b> statistiquesseance.cpp:224</div></div>
+<div class="ttc" id="class_statistiques_seance_html_afd9087c34222c0b2c0db11c5a96459c4"><div class="ttname"><a href="class_statistiques_seance.html#afd9087c34222c0b2c0db11c5a96459c4">StatistiquesSeance::afficherStatistiquesZones</a></div><div class="ttdeci">void afficherStatistiquesZones()</div><div class="ttdoc">affiche les statistiques (impact et pourcentage) de toutes les zones </div><div class="ttdef"><b>Definition:</b> statistiquesseance.cpp:182</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a17e1c49e2986a8490ff96e4bd7733291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e1c49e2986a8490ff96e4bd7733291">&#9670;&nbsp;</a></span>initialiserStatistiques()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatistiquesSeance::initialiserStatistiques </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#a36681be0a5a9fc48c4c332606a0418ad">ballePrecedenteToucheTable</a>, <a class="el" href="class_statistiques_seance.html#af6747af0965a82d7d59a248682bbb575">balleToucheRobot</a>, <a class="el" href="class_statistiques_seance.html#ad428a6da4f5615a7682c8fa4fb597ce3">balleToucheTable</a>, <a class="el" href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">nbBallesBonnes</a>, <a class="el" href="class_statistiques_seance.html#ac7f71fc7b017bb17d4576f954120c7a0">nbBallesEnchainees</a>, <a class="el" href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">nbBallesEnchaineesMax</a>, <a class="el" href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">nbBallesTotales</a>, <a class="el" href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">nbBallesTotalesTable</a>, <a class="el" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>, <a class="el" href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">numeroZoneObjectif</a>, <a class="el" href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">numeroZoneRobot</a>, et <a class="el" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28">ZoneNonDefinie</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ttpa_ihm.html#a521fea1cb4384157e5422a033e9a4d4f">TtpaIhm::resetSeance()</a>, <a class="el" href="class_statistiques_seance.html#ab4096821bf4cb5fbebcf895b1a70be42">StatistiquesSeance()</a>, et <a class="el" href="class_ttpa_ihm.html#ab3ed4b37a93ff04842414d4a98861d66">TtpaIhm::TtpaIhm()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i &lt; <a class="code" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>.size(); i++)</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">nbImpactsZone</a>[i] = 0;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">numeroZoneObjectif</a> = <a class="code" href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">numeroZoneRobot</a> = <a class="code" href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28">StatistiquesSeance::ZoneNonDefinie</a>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">nbBallesBonnes</a> = 0;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">nbBallesTotales</a> = 0;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">nbBallesTotalesTable</a> = 0;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_statistiques_seance.html#ac7f71fc7b017bb17d4576f954120c7a0">nbBallesEnchainees</a> = 0;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">nbBallesEnchaineesMax</a> = 0;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_statistiques_seance.html#ad428a6da4f5615a7682c8fa4fb597ce3">balleToucheTable</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_statistiques_seance.html#a36681be0a5a9fc48c4c332606a0418ad">ballePrecedenteToucheTable</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_statistiques_seance.html#af6747af0965a82d7d59a248682bbb575">balleToucheRobot</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_a36681be0a5a9fc48c4c332606a0418ad"><div class="ttname"><a href="class_statistiques_seance.html#a36681be0a5a9fc48c4c332606a0418ad">StatistiquesSeance::ballePrecedenteToucheTable</a></div><div class="ttdeci">bool ballePrecedenteToucheTable</div><div class="ttdoc">Balle précédente qui a touché la table. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:88</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28"><div class="ttname"><a href="class_statistiques_seance.html#aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28">StatistiquesSeance::ZoneNonDefinie</a></div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:46</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a23226867e4a34cb41f8c07f3d8d42e49"><div class="ttname"><a href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">StatistiquesSeance::numeroZoneObjectif</a></div><div class="ttdeci">int numeroZoneObjectif</div><div class="ttdoc">Placement de la zone de l&amp;#39;objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:79</div></div>
+<div class="ttc" id="class_statistiques_seance_html_af62043be598fd6b7cd7ddbc37eadf967"><div class="ttname"><a href="class_statistiques_seance.html#af62043be598fd6b7cd7ddbc37eadf967">StatistiquesSeance::nbBallesBonnes</a></div><div class="ttdeci">int nbBallesBonnes</div><div class="ttdoc">Nombre de balles ayant touché la zone objetifs. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:82</div></div>
+<div class="ttc" id="class_statistiques_seance_html_ac7f71fc7b017bb17d4576f954120c7a0"><div class="ttname"><a href="class_statistiques_seance.html#ac7f71fc7b017bb17d4576f954120c7a0">StatistiquesSeance::nbBallesEnchainees</a></div><div class="ttdeci">int nbBallesEnchainees</div><div class="ttdoc">Série de balles dans la zone objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:85</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa4a040cda282d5b1c250025f8e191e20"><div class="ttname"><a href="class_statistiques_seance.html#aa4a040cda282d5b1c250025f8e191e20">StatistiquesSeance::nbImpactsZone</a></div><div class="ttdeci">QVector&lt; int &gt; nbImpactsZone</div><div class="ttdoc">Un vecteur avec le nombre d&amp;#39;impacts dans chaque zone. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:81</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aa152a6f154cc832c3355342ecf94162a"><div class="ttname"><a href="class_statistiques_seance.html#aa152a6f154cc832c3355342ecf94162a">StatistiquesSeance::nbBallesTotalesTable</a></div><div class="ttdeci">int nbBallesTotalesTable</div><div class="ttdoc">Nombre de balles totales tirées par le robot et ayant impacté la table. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:84</div></div>
+<div class="ttc" id="class_statistiques_seance_html_aeea50e7fc9b2308e365f77f27e3f86ee"><div class="ttname"><a href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">StatistiquesSeance::numeroZoneRobot</a></div><div class="ttdeci">int numeroZoneRobot</div><div class="ttdoc">Placement de la zone d&amp;#39;objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:80</div></div>
+<div class="ttc" id="class_statistiques_seance_html_af6747af0965a82d7d59a248682bbb575"><div class="ttname"><a href="class_statistiques_seance.html#af6747af0965a82d7d59a248682bbb575">StatistiquesSeance::balleToucheRobot</a></div><div class="ttdeci">bool balleToucheRobot</div><div class="ttdoc">Balle ayant touché la table du robot. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:89</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a27eb3965bbe304700d3254534c5e4ed3"><div class="ttname"><a href="class_statistiques_seance.html#a27eb3965bbe304700d3254534c5e4ed3">StatistiquesSeance::nbBallesTotales</a></div><div class="ttdeci">int nbBallesTotales</div><div class="ttdoc">Nombre de balles total tirées par le robot et jouables. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:83</div></div>
+<div class="ttc" id="class_statistiques_seance_html_a3e64397e87d453efb42b2545df1a8e90"><div class="ttname"><a href="class_statistiques_seance.html#a3e64397e87d453efb42b2545df1a8e90">StatistiquesSeance::nbBallesEnchaineesMax</a></div><div class="ttdeci">int nbBallesEnchaineesMax</div><div class="ttdoc">Série max de balles dans la zone objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:86</div></div>
+<div class="ttc" id="class_statistiques_seance_html_ad428a6da4f5615a7682c8fa4fb597ce3"><div class="ttname"><a href="class_statistiques_seance.html#ad428a6da4f5615a7682c8fa4fb597ce3">StatistiquesSeance::balleToucheTable</a></div><div class="ttdeci">bool balleToucheTable</div><div class="ttdoc">Balle ayant touché la table. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:87</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af7c8281e195c0822463e6747bd0695ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7c8281e195c0822463e6747bd0695ef">&#9670;&nbsp;</a></span>setZoneObjectif()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatistiquesSeance::setZoneObjectif </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numeroZone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">numeroZoneObjectif</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ttpa_ihm.html#a3fd5b5d097f8a52df6fc8dd6d59b1374">TtpaIhm::setZoneObjectif()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;{</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <a class="code" href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">numeroZoneObjectif</a> = numeroZone;</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;numeroZoneObjectif&quot;</span> &lt;&lt; <a class="code" href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">numeroZoneObjectif</a>;</div><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_a23226867e4a34cb41f8c07f3d8d42e49"><div class="ttname"><a href="class_statistiques_seance.html#a23226867e4a34cb41f8c07f3d8d42e49">StatistiquesSeance::numeroZoneObjectif</a></div><div class="ttdeci">int numeroZoneObjectif</div><div class="ttdoc">Placement de la zone de l&amp;#39;objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:79</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a97a0cf5b45add60d7a3e31207fe360a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97a0cf5b45add60d7a3e31207fe360a0">&#9670;&nbsp;</a></span>setZoneRobot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void StatistiquesSeance::setZoneRobot </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numeroZone</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">numeroZoneRobot</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_ttpa_ihm.html#abda1a93ec09ec404b129e08876faa5f8">TtpaIhm::setZoneRobot()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;{</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <a class="code" href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">numeroZoneRobot</a> = numeroZone;</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;numeroZoneRobot&quot;</span> &lt;&lt; <a class="code" href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">numeroZoneRobot</a>;</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;}</div><div class="ttc" id="class_statistiques_seance_html_aeea50e7fc9b2308e365f77f27e3f86ee"><div class="ttname"><a href="class_statistiques_seance.html#aeea50e7fc9b2308e365f77f27e3f86ee">StatistiquesSeance::numeroZoneRobot</a></div><div class="ttdeci">int numeroZoneRobot</div><div class="ttdoc">Placement de la zone d&amp;#39;objectif. </div><div class="ttdef"><b>Definition:</b> statistiquesseance.h:80</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a36681be0a5a9fc48c4c332606a0418ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36681be0a5a9fc48c4c332606a0418ad">&#9670;&nbsp;</a></span>ballePrecedenteToucheTable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StatistiquesSeance::ballePrecedenteToucheTable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#a8bf60224113e3697adfe0a4f8f22ab7b">calculerStatistiques()</a>, <a class="el" href="class_statistiques_seance.html#a4f0dc4fd1c97787dab03ae5074fb3414">getballesPrecedentToucheTable()</a>, et <a class="el" href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">initialiserStatistiques()</a>.</p>
+
+</div>
+</div>
+<a id="af6747af0965a82d7d59a248682bbb575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6747af0965a82d7d59a248682bbb575">&#9670;&nbsp;</a></span>balleToucheRobot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StatistiquesSeance::balleToucheRobot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">initialiserStatistiques()</a>.</p>
+
+</div>
+</div>
+<a id="ad428a6da4f5615a7682c8fa4fb597ce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad428a6da4f5615a7682c8fa4fb597ce3">&#9670;&nbsp;</a></span>balleToucheTable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool StatistiquesSeance::balleToucheTable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#a8bf60224113e3697adfe0a4f8f22ab7b">calculerStatistiques()</a>, et <a class="el" href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">initialiserStatistiques()</a>.</p>
+
+</div>
+</div>
+<a id="af62043be598fd6b7cd7ddbc37eadf967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af62043be598fd6b7cd7ddbc37eadf967">&#9670;&nbsp;</a></span>nbBallesBonnes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::nbBallesBonnes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#ad042b683ce7b4db507a443b1b27bfef8">calculerPourcentageSerieMax()</a>, <a class="el" href="class_statistiques_seance.html#a8bf60224113e3697adfe0a4f8f22ab7b">calculerStatistiques()</a>, <a class="el" href="class_statistiques_seance.html#a0dad2ceb22672adf343548b35bf86ba1">getBallesBonnes()</a>, et <a class="el" href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">initialiserStatistiques()</a>.</p>
+
+</div>
+</div>
+<a id="ac7f71fc7b017bb17d4576f954120c7a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f71fc7b017bb17d4576f954120c7a0">&#9670;&nbsp;</a></span>nbBallesEnchainees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::nbBallesEnchainees</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#a8bf60224113e3697adfe0a4f8f22ab7b">calculerStatistiques()</a>, et <a class="el" href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">initialiserStatistiques()</a>.</p>
+
+</div>
+</div>
+<a id="a3e64397e87d453efb42b2545df1a8e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e64397e87d453efb42b2545df1a8e90">&#9670;&nbsp;</a></span>nbBallesEnchaineesMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::nbBallesEnchaineesMax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#ad042b683ce7b4db507a443b1b27bfef8">calculerPourcentageSerieMax()</a>, <a class="el" href="class_statistiques_seance.html#a8bf60224113e3697adfe0a4f8f22ab7b">calculerStatistiques()</a>, <a class="el" href="class_statistiques_seance.html#a1f241d7ef584ebffa2246134c63be53b">getBallesEnchainees()</a>, et <a class="el" href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">initialiserStatistiques()</a>.</p>
+
+</div>
+</div>
+<a id="a27eb3965bbe304700d3254534c5e4ed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27eb3965bbe304700d3254534c5e4ed3">&#9670;&nbsp;</a></span>nbBallesTotales</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::nbBallesTotales</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#a67759edd6c296bd6b66f7860dbac130e">calculerPourcentage()</a>, <a class="el" href="class_statistiques_seance.html#a8bf60224113e3697adfe0a4f8f22ab7b">calculerStatistiques()</a>, <a class="el" href="class_statistiques_seance.html#aaefd0b775012ec914a36a262dc14fc66">getBallesTotal()</a>, et <a class="el" href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">initialiserStatistiques()</a>.</p>
+
+</div>
+</div>
+<a id="aa152a6f154cc832c3355342ecf94162a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa152a6f154cc832c3355342ecf94162a">&#9670;&nbsp;</a></span>nbBallesTotalesTable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::nbBallesTotalesTable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#a8bf60224113e3697adfe0a4f8f22ab7b">calculerStatistiques()</a>, <a class="el" href="class_statistiques_seance.html#a1f956e08733a81d0a86673cae6bc7feb">getballesToucheTable()</a>, et <a class="el" href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">initialiserStatistiques()</a>.</p>
+
+</div>
+</div>
+<a id="aa4a040cda282d5b1c250025f8e191e20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a040cda282d5b1c250025f8e191e20">&#9670;&nbsp;</a></span>nbImpactsZone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;int&gt; StatistiquesSeance::nbImpactsZone</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#afd9087c34222c0b2c0db11c5a96459c4">afficherStatistiquesZones()</a>, <a class="el" href="class_statistiques_seance.html#a8bf60224113e3697adfe0a4f8f22ab7b">calculerStatistiques()</a>, <a class="el" href="class_statistiques_seance.html#a26b717d40065e7afd80465458f3cb6aa">getBallesHorsTable()</a>, et <a class="el" href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">initialiserStatistiques()</a>.</p>
+
+</div>
+</div>
+<a id="a23226867e4a34cb41f8c07f3d8d42e49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23226867e4a34cb41f8c07f3d8d42e49">&#9670;&nbsp;</a></span>numeroZoneObjectif</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::numeroZoneObjectif</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#a8bf60224113e3697adfe0a4f8f22ab7b">calculerStatistiques()</a>, <a class="el" href="class_statistiques_seance.html#a61c01cb1d35cda871e8243658213ee5b">getZoneObjectif()</a>, <a class="el" href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">initialiserStatistiques()</a>, et <a class="el" href="class_statistiques_seance.html#af7c8281e195c0822463e6747bd0695ef">setZoneObjectif()</a>.</p>
+
+</div>
+</div>
+<a id="aeea50e7fc9b2308e365f77f27e3f86ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeea50e7fc9b2308e365f77f27e3f86ee">&#9670;&nbsp;</a></span>numeroZoneRobot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatistiquesSeance::numeroZoneRobot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_statistiques_seance.html#a8bf60224113e3697adfe0a4f8f22ab7b">calculerStatistiques()</a>, <a class="el" href="class_statistiques_seance.html#ad1bdc22fbd9f37fab06d9fc24e9f1bc4">getZoneRobot()</a>, <a class="el" href="class_statistiques_seance.html#a17e1c49e2986a8490ff96e4bd7733291">initialiserStatistiques()</a>, et <a class="el" href="class_statistiques_seance.html#a97a0cf5b45add60d7a3e31207fe360a0">setZoneRobot()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="statistiquesseance_8h_source.html">statistiquesseance.h</a></li>
+<li><a class="el" href="statistiquesseance_8cpp.html">statistiquesseance.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 19:34:28 pour Projet TTPA (Table Tennis Performance Analyser) par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,37 @@
+\hypertarget{_profils_8h_source}{}\subsection{Profils.\+h}
+\label{_profils_8h_source}\index{Profils.\+h@{Profils.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef PROFILS\_H}
+00002 \textcolor{preprocessor}{#define PROFILS\_H}
+00003 
+00015 \textcolor{preprocessor}{#include <QObject>}
+00016 \textcolor{preprocessor}{#include <QVariant>}
+00017 
+00018 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00019 
+\Hypertarget{_profils_8h_source_l00031}\hyperlink{class_profils}{00031} \textcolor{keyword}{class }\hyperlink{class_profils}{Profils} : \textcolor{keyword}{public} QObject
+00032 \{
+00033     Q\_OBJECT
+\Hypertarget{_profils_8h_source_l00034}\hyperlink{class_profils_a0aac746ed598eec04e440e0825a191a1}{00034}     Q\_PROPERTY(QVariant \hyperlink{class_profils_a0aac746ed598eec04e440e0825a191a1}{listeProfils} READ \hyperlink{class_profils_aca3d2255478f977eaa84ffa3eea920b1}{getListeProfils} NOTIFY 
+      \hyperlink{class_profils_a8facf83b130f6583c9a29670faca948b}{listeProfilsUpdated})
+00035 \textcolor{keyword}{public}:
+00036     \textcolor{keyword}{explicit} \hyperlink{class_profils_abe936fbdac7c189d93aca3fcd8f6c7e6}{Profils}(QObject *parent = \textcolor{keyword}{nullptr});
+00037     \hyperlink{class_profils_a71dfd5d2637dd4020a75e18fe08a8d5a}{~Profils}();
+00038 
+00039     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_profils_afe85f77aead9a7ea2f09f676d6e2c663}{recupererNomProfils}(QString idJoueur=\textcolor{stringliteral}{""});
+00040     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_profils_ae560041d0af81c5b77a8448d78122d04}{insererProfil}(QString nom, QString idJoueur, QString idParametres);
+00041     QVariant \hyperlink{class_profils_aca3d2255478f977eaa84ffa3eea920b1}{getListeProfils}();
+00042 
+00043 \textcolor{keyword}{private}:
+\Hypertarget{_profils_8h_source_l00044}\hyperlink{class_profils_ae5de1fe3b6121bec80e3def390b5df15}{00044}     QList<QObject*> \hyperlink{class_profils_ae5de1fe3b6121bec80e3def390b5df15}{profils};
+\Hypertarget{_profils_8h_source_l00045}\hyperlink{class_profils_a3703186987f1cd98ec9ca85d43f63fb7}{00045}     \hyperlink{class_base_de_donnees}{BaseDeDonnees}* \hyperlink{class_profils_a3703186987f1cd98ec9ca85d43f63fb7}{bdd};
+00046 
+00047 signals:
+00048     \textcolor{keywordtype}{void} \hyperlink{class_profils_a8facf83b130f6583c9a29670faca948b}{listeProfilsUpdated}();
+00049 
+00050 \textcolor{keyword}{public} slots:
+00051 \};
+00052 
+00053 \textcolor{preprocessor}{#endif // PROFILS\_H}
+\end{DoxyCode}

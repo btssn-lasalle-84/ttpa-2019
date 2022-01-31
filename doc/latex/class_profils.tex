@@ -1,0 +1,235 @@
+\hypertarget{class_profils}{}\subsection{Référence de la classe Profils}
+\label{class_profils}\index{Profils@{Profils}}
+
+
+Déclaration de la classe \hyperlink{class_profils}{Profils}.  
+
+
+
+
+{\ttfamily \#include $<$Profils.\+h$>$}
+
+
+
+Graphe de collaboration de Profils\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_profils__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_profils_a8facf83b130f6583c9a29670faca948b}{liste\+Profils\+Updated} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_profils_abe936fbdac7c189d93aca3fcd8f6c7e6}{Profils} (Q\+Object $\ast$parent=nullptr)
+\item 
+\hyperlink{class_profils_a71dfd5d2637dd4020a75e18fe08a8d5a}{$\sim$\+Profils} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_profils_afe85f77aead9a7ea2f09f676d6e2c663}{recuperer\+Nom\+Profils} (Q\+String id\+Joueur=\char`\"{}\char`\"{})
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_profils_ae560041d0af81c5b77a8448d78122d04}{inserer\+Profil} (Q\+String nom, Q\+String id\+Joueur, Q\+String id\+Parametres)
+\item 
+Q\+Variant \hyperlink{class_profils_aca3d2255478f977eaa84ffa3eea920b1}{get\+Liste\+Profils} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Variant \hyperlink{class_profils_a0aac746ed598eec04e440e0825a191a1}{liste\+Profils}
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ Q\+Object $\ast$ $>$ \hyperlink{class_profils_ae5de1fe3b6121bec80e3def390b5df15}{profils}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_profils_a3703186987f1cd98ec9ca85d43f63fb7}{bdd}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Hammouma Youssef
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+4 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_profils_abe936fbdac7c189d93aca3fcd8f6c7e6}\label{class_profils_abe936fbdac7c189d93aca3fcd8f6c7e6}} 
+\index{Profils@{Profils}!Profils@{Profils}}
+\index{Profils@{Profils}!Profils@{Profils}}
+\paragraph{\texorpdfstring{Profils()}{Profils()}}
+{\footnotesize\ttfamily Profils\+::\+Profils (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Références \hyperlink{class_profils_a3703186987f1cd98ec9ca85d43f63fb7}{bdd}, \hyperlink{class_base_de_donnees_a1cea5a739386ba076c7f265205e82608}{Base\+De\+Donnees\+::get\+Instance()}, et \hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{Base\+De\+Donnees\+::ouvrir()}.
+
+
+\begin{DoxyCode}
+00018                                 : QObject(parent)
+00019 \{
+00020     \hyperlink{class_profils_a3703186987f1cd98ec9ca85d43f63fb7}{bdd} = \hyperlink{class_base_de_donnees_a1cea5a739386ba076c7f265205e82608}{BaseDeDonnees::getInstance}();
+00021     \hyperlink{class_profils_a3703186987f1cd98ec9ca85d43f63fb7}{bdd}->\hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{ouvrir}(\textcolor{stringliteral}{"ttpa.sqlite"});
+00022 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_profils_a71dfd5d2637dd4020a75e18fe08a8d5a}\label{class_profils_a71dfd5d2637dd4020a75e18fe08a8d5a}} 
+\index{Profils@{Profils}!````~Profils@{$\sim$\+Profils}}
+\index{````~Profils@{$\sim$\+Profils}!Profils@{Profils}}
+\paragraph{\texorpdfstring{$\sim$\+Profils()}{~Profils()}}
+{\footnotesize\ttfamily Profils\+::$\sim$\+Profils (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00025 \{
+00026     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00027 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_profils_aca3d2255478f977eaa84ffa3eea920b1}\label{class_profils_aca3d2255478f977eaa84ffa3eea920b1}} 
+\index{Profils@{Profils}!get\+Liste\+Profils@{get\+Liste\+Profils}}
+\index{get\+Liste\+Profils@{get\+Liste\+Profils}!Profils@{Profils}}
+\paragraph{\texorpdfstring{get\+Liste\+Profils()}{getListeProfils()}}
+{\footnotesize\ttfamily Q\+Variant Profils\+::get\+Liste\+Profils (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_profils_ae5de1fe3b6121bec80e3def390b5df15}{profils}.
+
+
+\begin{DoxyCode}
+00073 \{
+00074     \textcolor{keywordflow}{return} QVariant::fromValue(\hyperlink{class_profils_ae5de1fe3b6121bec80e3def390b5df15}{profils});
+00075 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_profils_ae560041d0af81c5b77a8448d78122d04}\label{class_profils_ae560041d0af81c5b77a8448d78122d04}} 
+\index{Profils@{Profils}!inserer\+Profil@{inserer\+Profil}}
+\index{inserer\+Profil@{inserer\+Profil}!Profils@{Profils}}
+\paragraph{\texorpdfstring{inserer\+Profil()}{insererProfil()}}
+{\footnotesize\ttfamily bool Profils\+::inserer\+Profil (\begin{DoxyParamCaption}\item[{Q\+String}]{nom,  }\item[{Q\+String}]{id\+Joueur,  }\item[{Q\+String}]{id\+Parametres }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_profils_a3703186987f1cd98ec9ca85d43f63fb7}{bdd}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, et \hyperlink{class_profils_afe85f77aead9a7ea2f09f676d6e2c663}{recuperer\+Nom\+Profils()}.
+
+
+\begin{DoxyCode}
+00059 \{
+00060     qDebug() << Q\_FUNC\_INFO ;
+00061     QString requete = \textcolor{stringliteral}{"INSERT INTO profils(idJoueur,idParametres,nom) VALUES('"} + idJoueur + \textcolor{stringliteral}{"', '"} + 
+      idParametres + \textcolor{stringliteral}{"', '"} + nom + \textcolor{stringliteral}{"')"};
+00062     \textcolor{keywordtype}{bool} etat = \hyperlink{class_profils_a3703186987f1cd98ec9ca85d43f63fb7}{bdd}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requete);
+00063     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"requete"} << requete;
+00064     \textcolor{keywordflow}{if}(etat)
+00065     \{
+00066         \hyperlink{class_profils_afe85f77aead9a7ea2f09f676d6e2c663}{recupererNomProfils}(idJoueur);
+00067         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00068     \}
+00069     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00070 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_profils_a8facf83b130f6583c9a29670faca948b}\label{class_profils_a8facf83b130f6583c9a29670faca948b}} 
+\index{Profils@{Profils}!liste\+Profils\+Updated@{liste\+Profils\+Updated}}
+\index{liste\+Profils\+Updated@{liste\+Profils\+Updated}!Profils@{Profils}}
+\paragraph{\texorpdfstring{liste\+Profils\+Updated}{listeProfilsUpdated}}
+{\footnotesize\ttfamily void Profils\+::liste\+Profils\+Updated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_profils_afe85f77aead9a7ea2f09f676d6e2c663}{recuperer\+Nom\+Profils()}.
+
+\mbox{\Hypertarget{class_profils_afe85f77aead9a7ea2f09f676d6e2c663}\label{class_profils_afe85f77aead9a7ea2f09f676d6e2c663}} 
+\index{Profils@{Profils}!recuperer\+Nom\+Profils@{recuperer\+Nom\+Profils}}
+\index{recuperer\+Nom\+Profils@{recuperer\+Nom\+Profils}!Profils@{Profils}}
+\paragraph{\texorpdfstring{recuperer\+Nom\+Profils()}{recupererNomProfils()}}
+{\footnotesize\ttfamily bool Profils\+::recuperer\+Nom\+Profils (\begin{DoxyParamCaption}\item[{Q\+String}]{id\+Joueur = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_profils_a3703186987f1cd98ec9ca85d43f63fb7}{bdd}, \hyperlink{class_profils_a8facf83b130f6583c9a29670faca948b}{liste\+Profils\+Updated()}, \hyperlink{class_profils_ae5de1fe3b6121bec80e3def390b5df15}{profils}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_profils_ae560041d0af81c5b77a8448d78122d04}{inserer\+Profil()}.
+
+
+\begin{DoxyCode}
+00030 \{
+00031     QString requete = \textcolor{stringliteral}{"SELECT idProfil, idJoueur, idParametres, nom FROM profils WHERE idJoueur ='"} + 
+      idJoueur + \textcolor{stringliteral}{"'"};
+00032     QVector<QStringList> lesProfils;
+00033 
+00034     \textcolor{keywordflow}{if}(idJoueur.isEmpty())
+00035     \{
+00036         \hyperlink{class_profils_ae5de1fe3b6121bec80e3def390b5df15}{profils}.clear();
+00037         emit \hyperlink{class_profils_a8facf83b130f6583c9a29670faca948b}{listeProfilsUpdated}();
+00038         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00039     \}
+00040 
+00041     \textcolor{keywordtype}{bool} etat = \hyperlink{class_profils_a3703186987f1cd98ec9ca85d43f63fb7}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, lesProfils);
+00042     \textcolor{keywordflow}{if}(etat)
+00043     \{
+00044         qDebug() << Q\_FUNC\_INFO << lesProfils;
+00045         \hyperlink{class_profils_ae5de1fe3b6121bec80e3def390b5df15}{profils}.clear();
+00046         \hyperlink{class_profils_ae5de1fe3b6121bec80e3def390b5df15}{profils}.append(\textcolor{keyword}{new} \hyperlink{class_profil}{Profil}());
+00047         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < lesProfils.size(); i++)
+00048         \{
+00049             \hyperlink{class_profil}{Profil} *profil = \textcolor{keyword}{new} \hyperlink{class_profil}{Profil}(lesProfils.at(i).at(0), lesProfils.at(i).at(1), 
+      lesProfils.at(i).at(2), lesProfils.at(i).at(3), \textcolor{keyword}{this});
+00050             \hyperlink{class_profils_ae5de1fe3b6121bec80e3def390b5df15}{profils}.append(profil);
+00051         \}
+00052         emit \hyperlink{class_profils_a8facf83b130f6583c9a29670faca948b}{listeProfilsUpdated}();
+00053         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00054     \}
+00055     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00056 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_profils_a3703186987f1cd98ec9ca85d43f63fb7}\label{class_profils_a3703186987f1cd98ec9ca85d43f63fb7}} 
+\index{Profils@{Profils}!bdd@{bdd}}
+\index{bdd@{bdd}!Profils@{Profils}}
+\paragraph{\texorpdfstring{bdd}{bdd}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Profils\+::bdd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_profils_ae560041d0af81c5b77a8448d78122d04}{inserer\+Profil()}, \hyperlink{class_profils_abe936fbdac7c189d93aca3fcd8f6c7e6}{Profils()}, et \hyperlink{class_profils_afe85f77aead9a7ea2f09f676d6e2c663}{recuperer\+Nom\+Profils()}.
+
+\mbox{\Hypertarget{class_profils_ae5de1fe3b6121bec80e3def390b5df15}\label{class_profils_ae5de1fe3b6121bec80e3def390b5df15}} 
+\index{Profils@{Profils}!profils@{profils}}
+\index{profils@{profils}!Profils@{Profils}}
+\paragraph{\texorpdfstring{profils}{profils}}
+{\footnotesize\ttfamily Q\+List$<$Q\+Object$\ast$$>$ Profils\+::profils\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_profils_aca3d2255478f977eaa84ffa3eea920b1}{get\+Liste\+Profils()}, et \hyperlink{class_profils_afe85f77aead9a7ea2f09f676d6e2c663}{recuperer\+Nom\+Profils()}.
+
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_profils_a0aac746ed598eec04e440e0825a191a1}\label{class_profils_a0aac746ed598eec04e440e0825a191a1}} 
+\index{Profils@{Profils}!liste\+Profils@{liste\+Profils}}
+\index{liste\+Profils@{liste\+Profils}!Profils@{Profils}}
+\paragraph{\texorpdfstring{liste\+Profils}{listeProfils}}
+{\footnotesize\ttfamily Q\+Variant Profils\+::liste\+Profils\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_profils_8h}{Profils.\+h}\item 
+\hyperlink{_profils_8cpp}{Profils.\+cpp}\end{DoxyCompactItemize}

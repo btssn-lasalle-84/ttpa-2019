@@ -1,0 +1,173 @@
+\hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source}{}\subsection{terminal-\/\+T\+T\+P\+A/communicationbluetooth.h}
+\label{terminal-_t_t_p_a_2communicationbluetooth_8h_source}\index{Communication\+Bluetooth.\+h@{Communication\+Bluetooth.\+h}}
+
+\begin{DoxyCode}
+00001 
+00012 \textcolor{preprocessor}{#ifndef CommunicationBluetooth\_H}
+00013 \textcolor{preprocessor}{#define CommunicationBluetooth\_H}
+00014 
+00015 \textcolor{preprocessor}{#include <QBluetoothLocalDevice>}
+00016 \textcolor{preprocessor}{#include <QBluetoothAddress>}
+00017 \textcolor{preprocessor}{#include <QBluetoothUuid>}
+00018 \textcolor{preprocessor}{#include <QBluetoothDeviceInfo>}
+00019 \textcolor{preprocessor}{#include <QBluetoothServiceInfo>}
+00020 \textcolor{preprocessor}{#include <QBluetoothDeviceDiscoveryAgent>}
+00021 
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00022}\hyperlink{terminal-_t_t_p_a_2communicationbluetooth_8h_a445125ee8c34695376c85f10b38844d6}{00022} \textcolor{preprocessor}{#define SERVICE\_UUID      "\{00001101-0000-1000-8000-00805F9B34FB\}"}
+00023 
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00024}\hyperlink{terminal-_t_t_p_a_2communicationbluetooth_8h_a47332bb9b30ed8b0f38fa7b5bd11fd47}{00024} \textcolor{preprocessor}{#define NOM\_BLUETOOTH\_ROBOT "robot-ttpa-"}
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00025}\hyperlink{terminal-_t_t_p_a_2communicationbluetooth_8h_aa416b2be7573de0d7832248a27ba09a8}{00025} \textcolor{preprocessor}{#define NOM\_BLUETOOTH\_TABLE "table-ttpa-"}
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00026}\hyperlink{terminal-_t_t_p_a_2communicationbluetooth_8h_a2bd8beaaf0c4b59979a3f78d4c134ec8}{00026} \textcolor{preprocessor}{#define NOM\_BLUETOOTH\_ECRAN "ecran-ttpa-"}
+00027 
+00028 \textcolor{keyword}{class }\hyperlink{class_peripherique_t_t_p_a}{PeripheriqueTTPA};
+00029 
+00040 \textcolor{keyword}{class }\hyperlink{class_communication_bluetooth}{CommunicationBluetooth} : \textcolor{keyword}{public} QObject
+00041 \{
+00042     Q\_OBJECT
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00043}\hyperlink{class_communication_bluetooth_a6781eed73c4b5db0fe7ff94c034f2cf5}{00043}     Q\_PROPERTY(QString \hyperlink{class_communication_bluetooth_a6781eed73c4b5db0fe7ff94c034f2cf5}{nomPeripheriqueBluetoothLocal} MEMBER 
+      \hyperlink{class_communication_bluetooth_a6781eed73c4b5db0fe7ff94c034f2cf5}{nomPeripheriqueBluetoothLocal} NOTIFY \hyperlink{class_communication_bluetooth_a27ecb0427e1d2a6c936294e8a68e511f}{detecte})
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00044}\hyperlink{class_communication_bluetooth_a972265a71842606740b53560a7fc0e53}{00044}     Q\_PROPERTY(QString \hyperlink{class_communication_bluetooth_a972265a71842606740b53560a7fc0e53}{adressePeripheriqueBluetoothLocal} MEMBER 
+      \hyperlink{class_communication_bluetooth_a972265a71842606740b53560a7fc0e53}{adressePeripheriqueBluetoothLocal} NOTIFY detecte)
+00045 
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00046}\hyperlink{class_communication_bluetooth_a2027c09adf569761c9a0500ab00f14fa}{00046}     Q\_PROPERTY(\textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a2027c09adf569761c9a0500ab00f14fa}{peripheriqueEcranTTPADetecte} MEMBER 
+      \hyperlink{class_communication_bluetooth_a2027c09adf569761c9a0500ab00f14fa}{peripheriqueEcranTTPADetecte} NOTIFY detecte)
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00047}\hyperlink{class_communication_bluetooth_ace9f69a994a3e9bbaab18ef48ff0f6a3}{00047}     Q\_PROPERTY(\textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_ace9f69a994a3e9bbaab18ef48ff0f6a3}{peripheriqueEcranTTPAConnecte} MEMBER 
+      \hyperlink{class_communication_bluetooth_ace9f69a994a3e9bbaab18ef48ff0f6a3}{peripheriqueEcranTTPAConnecte} NOTIFY \hyperlink{class_communication_bluetooth_a76f44488775d68071d43b418a7a1c75e}{connecte})
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00048}\hyperlink{class_communication_bluetooth_ac08fb857ef766c65aa87a4f3788f4592}{00048}     Q\_PROPERTY(\textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_ac08fb857ef766c65aa87a4f3788f4592}{peripheriqueEcranTTPADeconnecte} MEMBER 
+      \hyperlink{class_communication_bluetooth_ac08fb857ef766c65aa87a4f3788f4592}{peripheriqueEcranTTPADeconnecte} NOTIFY \hyperlink{class_communication_bluetooth_abab4c8889f42c8b818895af96863480e}{deconnecte})
+00049 
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00050}\hyperlink{class_communication_bluetooth_a1b4f8cfa7d15ede41c4a6f5c9521e955}{00050}     Q\_PROPERTY(\textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a1b4f8cfa7d15ede41c4a6f5c9521e955}{peripheriqueTableTTPADetecte} MEMBER 
+      \hyperlink{class_communication_bluetooth_a1b4f8cfa7d15ede41c4a6f5c9521e955}{peripheriqueTableTTPADetecte} NOTIFY detecte)
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00051}\hyperlink{class_communication_bluetooth_a3b2e75b95ad66dd46d6b1268694c74dc}{00051}     Q\_PROPERTY(\textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a3b2e75b95ad66dd46d6b1268694c74dc}{peripheriqueTableTTPAConnecte} MEMBER 
+      \hyperlink{class_communication_bluetooth_a3b2e75b95ad66dd46d6b1268694c74dc}{peripheriqueTableTTPAConnecte} NOTIFY \hyperlink{class_communication_bluetooth_a76f44488775d68071d43b418a7a1c75e}{connecte})
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00052}\hyperlink{class_communication_bluetooth_af19f121ae4dcfe52d4c06893e88cec80}{00052}     Q\_PROPERTY(\textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_af19f121ae4dcfe52d4c06893e88cec80}{peripheriqueTableTTPADeconnecte} MEMBER 
+      \hyperlink{class_communication_bluetooth_af19f121ae4dcfe52d4c06893e88cec80}{peripheriqueTableTTPADeconnecte} NOTIFY \hyperlink{class_communication_bluetooth_abab4c8889f42c8b818895af96863480e}{deconnecte})
+00053 
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00054}\hyperlink{class_communication_bluetooth_ac4bf43e3da4748c8fa25e0ac1d3cf849}{00054}     Q\_PROPERTY(\textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_ac4bf43e3da4748c8fa25e0ac1d3cf849}{peripheriqueRobotTTPADetecte} MEMBER 
+      \hyperlink{class_communication_bluetooth_ac4bf43e3da4748c8fa25e0ac1d3cf849}{peripheriqueRobotTTPADetecte} NOTIFY detecte)
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00055}\hyperlink{class_communication_bluetooth_a451b47553dd5cf716e8825c0fc0c203b}{00055}     Q\_PROPERTY(\textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a451b47553dd5cf716e8825c0fc0c203b}{peripheriqueRobotTTPAConnecte} MEMBER 
+      \hyperlink{class_communication_bluetooth_a451b47553dd5cf716e8825c0fc0c203b}{peripheriqueRobotTTPAConnecte} NOTIFY \hyperlink{class_communication_bluetooth_a76f44488775d68071d43b418a7a1c75e}{connecte})
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00056}\hyperlink{class_communication_bluetooth_aaebda45ba1821d9b15ed957926954ddc}{00056}     Q\_PROPERTY(\textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_aaebda45ba1821d9b15ed957926954ddc}{peripheriqueRobotTTPADeconnecte} MEMBER 
+      \hyperlink{class_communication_bluetooth_aaebda45ba1821d9b15ed957926954ddc}{peripheriqueRobotTTPADeconnecte} NOTIFY \hyperlink{class_communication_bluetooth_abab4c8889f42c8b818895af96863480e}{deconnecte})
+00057 
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00058}\hyperlink{class_communication_bluetooth_a9e252653d4d3c6fa9c772b35bf0eb02f}{00058}     Q\_PROPERTY(\textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a9e252653d4d3c6fa9c772b35bf0eb02f}{etatRecherche} MEMBER \hyperlink{class_communication_bluetooth_a9e252653d4d3c6fa9c772b35bf0eb02f}{etatRecherche} NOTIFY 
+      \hyperlink{class_communication_bluetooth_a51ea5f21cc952cabc02c0a0f364b69d9}{recherche})
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00059}\hyperlink{class_communication_bluetooth_a656a80f8216d2a4db7cf2f865365e562}{00059}     Q\_PROPERTY(QVariant \hyperlink{class_communication_bluetooth_a656a80f8216d2a4db7cf2f865365e562}{peripheriquesTTPA} READ 
+      \hyperlink{class_communication_bluetooth_a08f0efb9f8a5a9f0660aad870032b9d3}{getPeripheriquesTTPA} NOTIFY \hyperlink{class_communication_bluetooth_aab8b17e2574afe3ea0ee390a7d63c7a4}{peripheriquesTTPAUpdated})
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00060}\hyperlink{class_communication_bluetooth_a0ceb51c44da6c7479b46ae8e737e1541}{00060}     Q\_PROPERTY(\textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a0ceb51c44da6c7479b46ae8e737e1541}{erreurRobotDetecte} MEMBER 
+      \hyperlink{class_communication_bluetooth_a0ceb51c44da6c7479b46ae8e737e1541}{erreurRobotDetecte} NOTIFY \hyperlink{class_communication_bluetooth_a74bc2dc753fa3490a2847f3c9497e147}{erreurRobot})
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00061}\hyperlink{class_communication_bluetooth_a80ddad176c95b72e083c32b39b4454cc}{00061}     Q\_PROPERTY(\textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a80ddad176c95b72e083c32b39b4454cc}{seanceTerminee} MEMBER \hyperlink{class_communication_bluetooth_a80ddad176c95b72e083c32b39b4454cc}{seanceTerminee} NOTIFY 
+      \hyperlink{class_communication_bluetooth_aa35ab06e34cf7571c815f63af91c44a7}{seanceFinie})
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00062}\hyperlink{class_communication_bluetooth_a9428f8261f0cc055e9c6fed9a61cb595}{00062}     Q\_PROPERTY(\textcolor{keywordtype}{int} \hyperlink{class_communication_bluetooth_a9428f8261f0cc055e9c6fed9a61cb595}{numeroTable} MEMBER \hyperlink{class_communication_bluetooth_a9428f8261f0cc055e9c6fed9a61cb595}{numeroTable} NOTIFY 
+      \hyperlink{class_communication_bluetooth_af17d5f3fa7f55dc02d6f4a6680ec0450}{numeroTableUpdated})
+00063 
+00064 public:
+00065     \hyperlink{class_communication_bluetooth}{CommunicationBluetooth}();
+00066     ~CommunicationBluetooth();
+00067 
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00068}\hyperlink{class_communication_bluetooth_a414353c68cf4b316937d7c929f20d22a}{00068}     enum \hyperlink{class_communication_bluetooth_a414353c68cf4b316937d7c929f20d22a}{EtatDeLaSeance}
+00069     \{
+00070         \hyperlink{class_communication_bluetooth_a414353c68cf4b316937d7c929f20d22aa487b75f166d1b0c9b3f47fab1692c024}{Initial} = 0,
+00071         \hyperlink{class_communication_bluetooth_a414353c68cf4b316937d7c929f20d22aaec5ed2b91d232473baf3b48bcbdae105}{EnCours} = 1,
+00072         \hyperlink{class_communication_bluetooth_a414353c68cf4b316937d7c929f20d22aa4ffcbfe989b2cd0e899ddb8063da6631}{EnPause} = 2,
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00073}\hyperlink{class_communication_bluetooth_a414353c68cf4b316937d7c929f20d22aa2a83dc5f13728b426bcae82c33190f2c}{00073}         \hyperlink{class_communication_bluetooth_a414353c68cf4b316937d7c929f20d22aa2a83dc5f13728b426bcae82c33190f2c}{Arretee}
+00074     \};
+00075 
+00076     \hyperlink{class_communication_bluetooth_a414353c68cf4b316937d7c929f20d22a}{EtatDeLaSeance} \hyperlink{class_communication_bluetooth_a20e0994e602bb0faa73111c9f10ccbe5}{getEtatSeance}();
+00077 
+00084     Q\_INVOKABLE \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_a4c2e2d557728c227faeb247cb8a9c482}{rechercherPeripheriquesTTPA}();
+00085 
+00092     Q\_INVOKABLE \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_ab9993bd24a2f0c8254564a36cdf16069}{arreterRecherche}();
+00093 
+00101     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a69f544bb71f5287689ee051511811669}{estValide}();
+00102 
+00108     Q\_INVOKABLE \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_a321073d9dc26aad4b34ecf41a1dee8a4}{connecterPeripheriquesTTPA}();
+00109 
+00115     Q\_INVOKABLE \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_aacfffa47d72f3ab5ab554001d5f38fd1}{deconnecterPeripheriquesTTPA}();
+00116 
+00125     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a73d95b841bf64a4463760435a41fc219}{envoyerPeripheriqueTTPA}(QString \hyperlink{class_communication_bluetooth_a320cc60a0cb6b4ea9e009fef2853f1d2}{nom}, QString message);
+00126 
+00127 
+00128     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a546aae742ba77e90f99c4f12fbff908a}{demarrerSeance}(QString nomJoueur, QString zoneObjectif, QString 
+      zoneRobot, \textcolor{keywordtype}{int} frequenceBalle, \textcolor{keywordtype}{int} nbBalles, \textcolor{keywordtype}{int} effet, \textcolor{keywordtype}{int} puissance, \textcolor{keywordtype}{bool} rotation);
+00129 
+00141     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a02e74da6910804557f31e81f26201f89}{demarrerSeanceRobot}(\textcolor{keywordtype}{int} frequenceBalle, \textcolor{keywordtype}{int} nbBalles, \textcolor{keywordtype}{int} effet, \textcolor{keywordtype}{
+      int} puissance, \textcolor{keywordtype}{bool} rotation);
+00142 
+00152     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a024493f537e8501a813e1555716cf7ad}{demarrerSeanceEcran}(QString nomJoueur, QString zoneObjectif, 
+      QString zoneRobot);
+00153 
+00161     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_abb71c8f555c64d1791d330955ace417c}{demarrerSeanceTable}(\textcolor{keywordtype}{int} nbBalles);
+00162 
+00169     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a8572b6316814e3d226ce7acc754f0c4d}{mettreEnPauseSeance}();
+00170 
+00177     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a1bcf85f34d2902ba6fe3b6929b409272}{reprendreLaSeance}();
+00178 
+00185     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a4b0e71c1f161c14278f3ab55b1910c64}{arreterSeance}();
+00186 
+00192     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_ab2170ef9c868ac2a26b76675c71f770e}{finirSeance}();
+00193 
+00200     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a5906cd18db7ce9467452acf0ed845f23}{envoyerZoneImpactee}(QString zone);
+00201 
+00207     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a891295407273a810ef9300e743bc34f9}{envoyerErreurRobot}();
+00208 
+00216     Q\_INVOKABLE QString \hyperlink{class_communication_bluetooth_a6fcee1677888958590d5f80a5149aabf}{getZoneObjectif}(QString zoneObjectif);
+00217 
+00225     Q\_INVOKABLE QString \hyperlink{class_communication_bluetooth_a1660fbcba9b118755a57e46543868f80}{getZoneRobot}(QString zoneRobot);
+00226 
+00227     Q\_INVOKABLE \hyperlink{class_peripherique_t_t_p_a}{PeripheriqueTTPA}* \hyperlink{class_communication_bluetooth_a1baec10cc16afe1a87cbad635a82c323}{getPeripheriqueTTPA}(QString 
+      \hyperlink{class_communication_bluetooth_a320cc60a0cb6b4ea9e009fef2853f1d2}{nom});
+00228 
+00229     QString \hyperlink{class_communication_bluetooth_a20694d5121f78fe4b83b1ef93a2dd5d1}{getNomPeripheriqueBluetoothLocal}();
+00230     QString \hyperlink{class_communication_bluetooth_affe39c52a35aec101c04d333b6249162}{getAdressePeripheriqueBluetoothLocal}();
+00231     QVariant \hyperlink{class_communication_bluetooth_a08f0efb9f8a5a9f0660aad870032b9d3}{getPeripheriquesTTPA}();
+00232 
+00233 \textcolor{keyword}{private}:
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00234}\hyperlink{class_communication_bluetooth_a03c857db65a9ea5a0b944844f675e6fa}{00234}     QBluetoothLocalDevice \hyperlink{class_communication_bluetooth_a03c857db65a9ea5a0b944844f675e6fa}{peripheriqueBluetoothLocal}; 
+00235     QString \hyperlink{class_communication_bluetooth_a6781eed73c4b5db0fe7ff94c034f2cf5}{nomPeripheriqueBluetoothLocal}; 
+00236     QString \hyperlink{class_communication_bluetooth_a972265a71842606740b53560a7fc0e53}{adressePeripheriqueBluetoothLocal}; 
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00237}\hyperlink{class_communication_bluetooth_ad3032be59818aac8923565f0db6bf7c3}{00237}     QList<QObject*> \hyperlink{class_communication_bluetooth_ad3032be59818aac8923565f0db6bf7c3}{peripheriquesTTPA}; 
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00238}\hyperlink{class_communication_bluetooth_a9e04dbd88ba090525d6691cc1a4237b6}{00238}     QBluetoothDeviceDiscoveryAgent *\hyperlink{class_communication_bluetooth_a9e04dbd88ba090525d6691cc1a4237b6}{discoveryAgentDevice}; 
+00239     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a9e252653d4d3c6fa9c772b35bf0eb02f}{etatRecherche}; 
+00240     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_ac4bf43e3da4748c8fa25e0ac1d3cf849}{peripheriqueRobotTTPADetecte}; 
+00241     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a451b47553dd5cf716e8825c0fc0c203b}{peripheriqueRobotTTPAConnecte}; 
+00242     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_aaebda45ba1821d9b15ed957926954ddc}{peripheriqueRobotTTPADeconnecte}; 
+00243 
+00244     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a2027c09adf569761c9a0500ab00f14fa}{peripheriqueEcranTTPADetecte}; 
+00245     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_ace9f69a994a3e9bbaab18ef48ff0f6a3}{peripheriqueEcranTTPAConnecte}; 
+00246     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_ac08fb857ef766c65aa87a4f3788f4592}{peripheriqueEcranTTPADeconnecte}; 
+00247 
+00248     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a1b4f8cfa7d15ede41c4a6f5c9521e955}{peripheriqueTableTTPADetecte}; 
+00249     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a3b2e75b95ad66dd46d6b1268694c74dc}{peripheriqueTableTTPAConnecte}; 
+00250     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_af19f121ae4dcfe52d4c06893e88cec80}{peripheriqueTableTTPADeconnecte}; 
+00251     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a0ceb51c44da6c7479b46ae8e737e1541}{erreurRobotDetecte}; 
+00252     \textcolor{keywordtype}{bool} \hyperlink{class_communication_bluetooth_a80ddad176c95b72e083c32b39b4454cc}{seanceTerminee}; 
+\Hypertarget{terminal-_t_t_p_a_2communicationbluetooth_8h_source_l00253}\hyperlink{class_communication_bluetooth_a15d0846d427f9d652c54d46d18f9bccb}{00253}     \hyperlink{class_communication_bluetooth_a414353c68cf4b316937d7c929f20d22a}{EtatDeLaSeance} \hyperlink{class_communication_bluetooth_a15d0846d427f9d652c54d46d18f9bccb}{etatSeance}; 
+00254     \textcolor{keywordtype}{int} \hyperlink{class_communication_bluetooth_a9428f8261f0cc055e9c6fed9a61cb595}{numeroTable}; 
+00255 
+00256 \textcolor{keyword}{public} slots:
+00257     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_a53bc4772892ec57f030600e49fa0b6ff}{ajouterPeripheriqueTTPA}(\textcolor{keyword}{const} QBluetoothDeviceInfo&);
+00258     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_a79ee5a5bcaaf265048f1213b5504f146}{rechercheTerminee}();
+00259     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_ad9abca9e2e3fa0115cc92458a357e04d}{rechercheErreur}(QBluetoothDeviceDiscoveryAgent::Error 
+      \hyperlink{class_communication_bluetooth_a90c5c3c42145bad0f80a7a75d98dc253}{erreur});
+00260     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_ae50bbbf70a5afdea0a0c4d3322e90e40}{recevoirTramePeripheriqueTTPA}(QString nomPeripherique, QString trame)
+      ;
+00261     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_aee7edc20fc1fdfd5a5a1c228c1319531}{recevoirConnecte}();
+00262     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_af187cbc294befb656070f9817763104b}{recevoirDeconnecte}();
+00263 
+00264 signals:
+00265     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_a51ea5f21cc952cabc02c0a0f364b69d9}{recherche}(); 
+00266     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_a27ecb0427e1d2a6c936294e8a68e511f}{detecte}();
+00267     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_a76f44488775d68071d43b418a7a1c75e}{connecte}();
+00268     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_abab4c8889f42c8b818895af96863480e}{deconnecte}();
+00269     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_ad70dc7bbbf69314ae8cd9cc6460a3690}{robotDetecte}();
+00270     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_a580660d99ee817b993fc5bd1ec9d973f}{ecranDetecte}();
+00271     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_af586bcef345357d838c7ed280df191ea}{tableDetecte}();
+00272     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_aab8b17e2574afe3ea0ee390a7d63c7a4}{peripheriquesTTPAUpdated}();
+00273     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_a74bc2dc753fa3490a2847f3c9497e147}{erreurRobot}();
+00274     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_aa35ab06e34cf7571c815f63af91c44a7}{seanceFinie}();
+00275     \textcolor{keywordtype}{void} \hyperlink{class_communication_bluetooth_af17d5f3fa7f55dc02d6f4a6680ec0450}{numeroTableUpdated}();
+00276 \};
+00277 
+00278 \textcolor{preprocessor}{#endif // CommunicationBluetooth\_H}
+\end{DoxyCode}

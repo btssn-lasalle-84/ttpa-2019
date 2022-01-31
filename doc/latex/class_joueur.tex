@@ -1,0 +1,149 @@
+\hypertarget{class_joueur}{}\subsection{Référence de la classe Joueur}
+\label{class_joueur}\index{Joueur@{Joueur}}
+
+
+Déclaration de la classe \hyperlink{class_joueur}{Joueur}.  
+
+
+
+
+{\ttfamily \#include $<$Joueur.\+h$>$}
+
+
+
+Graphe de collaboration de Joueur\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{class_joueur__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_joueur_ad1e3e8841ef26f9d6e01217c4722aea6}{nom\+Changed} ()
+\item 
+void \hyperlink{class_joueur_ada9bb10936494693e15861020ad07ab2}{id\+Changed} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_joueur_a36774818f07cf7a06681250dca1fdd81}{Joueur} (Q\+String \hyperlink{class_joueur_a99c42cd3be344a1348064aca8619c82b}{id}=\char`\"{}\char`\"{}, Q\+String \hyperlink{class_joueur_ab06d7f1e6b482299bb03919e0cd2166d}{nom}=\char`\"{}\char`\"{}, Q\+Object $\ast$parent=nullptr)
+\item 
+Q\+String \hyperlink{class_joueur_a0a9e2adb0d6816def1d5894c389dac96}{get\+Nom} ()
+\item 
+Q\+String \hyperlink{class_joueur_a51dd9768967c044036b7d1405370b99d}{get\+Id} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_joueur_a99c42cd3be344a1348064aca8619c82b}{id}
+\item 
+Q\+String \hyperlink{class_joueur_ab06d7f1e6b482299bb03919e0cd2166d}{nom}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Hammouma Youssef
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+4 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_joueur_a36774818f07cf7a06681250dca1fdd81}\label{class_joueur_a36774818f07cf7a06681250dca1fdd81}} 
+\index{Joueur@{Joueur}!Joueur@{Joueur}}
+\index{Joueur@{Joueur}!Joueur@{Joueur}}
+\paragraph{\texorpdfstring{Joueur()}{Joueur()}}
+{\footnotesize\ttfamily Joueur\+::\+Joueur (\begin{DoxyParamCaption}\item[{Q\+String}]{id = {\ttfamily \char`\"{}\char`\"{}},  }\item[{Q\+String}]{nom = {\ttfamily \char`\"{}\char`\"{}},  }\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Références \hyperlink{class_joueur_ab06d7f1e6b482299bb03919e0cd2166d}{nom}.
+
+
+\begin{DoxyCode}
+00016                                                        : QObject(parent), \hyperlink{class_joueur_a99c42cd3be344a1348064aca8619c82b}{id}(\textcolor{keywordtype}{id}), 
+      \hyperlink{class_joueur_ab06d7f1e6b482299bb03919e0cd2166d}{nom}(\hyperlink{class_joueur_ab06d7f1e6b482299bb03919e0cd2166d}{nom})
+00017 \{
+00018     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"id"} << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{"nom"} << \hyperlink{class_joueur_ab06d7f1e6b482299bb03919e0cd2166d}{nom};
+00019 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_joueur_a51dd9768967c044036b7d1405370b99d}\label{class_joueur_a51dd9768967c044036b7d1405370b99d}} 
+\index{Joueur@{Joueur}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Joueur@{Joueur}}
+\paragraph{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily Q\+String Joueur\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_joueur_a99c42cd3be344a1348064aca8619c82b}{id}.
+
+
+\begin{DoxyCode}
+00027 \{
+00028     \textcolor{keywordflow}{return} \hyperlink{class_joueur_a99c42cd3be344a1348064aca8619c82b}{id};
+00029 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_joueur_a0a9e2adb0d6816def1d5894c389dac96}\label{class_joueur_a0a9e2adb0d6816def1d5894c389dac96}} 
+\index{Joueur@{Joueur}!get\+Nom@{get\+Nom}}
+\index{get\+Nom@{get\+Nom}!Joueur@{Joueur}}
+\paragraph{\texorpdfstring{get\+Nom()}{getNom()}}
+{\footnotesize\ttfamily Q\+String Joueur\+::get\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_joueur_ab06d7f1e6b482299bb03919e0cd2166d}{nom}.
+
+
+\begin{DoxyCode}
+00022 \{
+00023     \textcolor{keywordflow}{return} \hyperlink{class_joueur_ab06d7f1e6b482299bb03919e0cd2166d}{nom};
+00024 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_joueur_ada9bb10936494693e15861020ad07ab2}\label{class_joueur_ada9bb10936494693e15861020ad07ab2}} 
+\index{Joueur@{Joueur}!id\+Changed@{id\+Changed}}
+\index{id\+Changed@{id\+Changed}!Joueur@{Joueur}}
+\paragraph{\texorpdfstring{id\+Changed}{idChanged}}
+{\footnotesize\ttfamily void Joueur\+::id\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_joueur_ad1e3e8841ef26f9d6e01217c4722aea6}\label{class_joueur_ad1e3e8841ef26f9d6e01217c4722aea6}} 
+\index{Joueur@{Joueur}!nom\+Changed@{nom\+Changed}}
+\index{nom\+Changed@{nom\+Changed}!Joueur@{Joueur}}
+\paragraph{\texorpdfstring{nom\+Changed}{nomChanged}}
+{\footnotesize\ttfamily void Joueur\+::nom\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_joueur_a99c42cd3be344a1348064aca8619c82b}\label{class_joueur_a99c42cd3be344a1348064aca8619c82b}} 
+\index{Joueur@{Joueur}!id@{id}}
+\index{id@{id}!Joueur@{Joueur}}
+\paragraph{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily Q\+String Joueur\+::id\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+Référencé par \hyperlink{class_joueur_a51dd9768967c044036b7d1405370b99d}{get\+Id()}.
+
+\mbox{\Hypertarget{class_joueur_ab06d7f1e6b482299bb03919e0cd2166d}\label{class_joueur_ab06d7f1e6b482299bb03919e0cd2166d}} 
+\index{Joueur@{Joueur}!nom@{nom}}
+\index{nom@{nom}!Joueur@{Joueur}}
+\paragraph{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily Q\+String Joueur\+::nom\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+Référencé par \hyperlink{class_joueur_a0a9e2adb0d6816def1d5894c389dac96}{get\+Nom()}, et \hyperlink{class_joueur_a36774818f07cf7a06681250dca1fdd81}{Joueur()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_joueur_8h}{Joueur.\+h}\item 
+\hyperlink{_joueur_8cpp}{Joueur.\+cpp}\end{DoxyCompactItemize}

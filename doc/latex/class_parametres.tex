@@ -1,0 +1,266 @@
+\hypertarget{class_parametres}{}\subsection{Référence de la classe Parametres}
+\label{class_parametres}\index{Parametres@{Parametres}}
+
+
+Déclaration de la classe \hyperlink{class_parametres}{Parametres}.  
+
+
+
+
+{\ttfamily \#include $<$Parametres.\+h$>$}
+
+
+
+Graphe de collaboration de Parametres\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_parametres__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_parametres_aa6649347b6e61f767dc14346f2ea858e}{liste\+Parametres\+Updated} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_parametres_a5197a69e0f07e253e6119b4af95344f4}{Parametres} (Q\+Object $\ast$parent=nullptr)
+\item 
+\hyperlink{class_parametres_a83068e95596ef05b4307b43b67ffc24d}{$\sim$\+Parametres} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_parametres_a853872796d32655f3f1ffc090b6d076a}{recuperer\+Parametres} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE Q\+String\+List \hyperlink{class_parametres_ac91b8cb3a293f27eeb7d87673889de15}{recuperer\+Parametres\+Profil} (Q\+String id\+Parametres)
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE Q\+String \hyperlink{class_parametres_a0102cadfb1bce5a8e82d6c12661fccf8}{inserer\+Parametres} (Q\+String nb\+Balles, Q\+String nb\+Balles\+Minute, Q\+String effet, Q\+String puissance, Q\+String rotation, Q\+String zone\+Objectif, Q\+String zone\+Robot)
+\item 
+Q\+Variant \hyperlink{class_parametres_a1cd756fd21518bcec9349c08a2a3b08f}{get\+Liste\+Parametres} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Variant \hyperlink{class_parametres_ab37e24ed02c5ff1ffc7bea41016c93ca}{liste\+Parametres}
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ Q\+Object $\ast$ $>$ \hyperlink{class_parametres_a3bff192351dd25f4109b258e954cecbf}{parametres}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_parametres_a1e21034f7e758d93974e0dc070d47dee}{bdd}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Hammouma Youssef
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+4 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_parametres_a5197a69e0f07e253e6119b4af95344f4}\label{class_parametres_a5197a69e0f07e253e6119b4af95344f4}} 
+\index{Parametres@{Parametres}!Parametres@{Parametres}}
+\index{Parametres@{Parametres}!Parametres@{Parametres}}
+\paragraph{\texorpdfstring{Parametres()}{Parametres()}}
+{\footnotesize\ttfamily Parametres\+::\+Parametres (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Références \hyperlink{class_parametres_a1e21034f7e758d93974e0dc070d47dee}{bdd}, \hyperlink{class_base_de_donnees_a1cea5a739386ba076c7f265205e82608}{Base\+De\+Donnees\+::get\+Instance()}, \hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{Base\+De\+Donnees\+::ouvrir()}, et \hyperlink{class_parametres_a853872796d32655f3f1ffc090b6d076a}{recuperer\+Parametres()}.
+
+
+\begin{DoxyCode}
+00017                                       : QObject(parent)
+00018 \{
+00019     \hyperlink{class_parametres_a1e21034f7e758d93974e0dc070d47dee}{bdd} = \hyperlink{class_base_de_donnees_a1cea5a739386ba076c7f265205e82608}{BaseDeDonnees::getInstance}();
+00020     \hyperlink{class_parametres_a1e21034f7e758d93974e0dc070d47dee}{bdd}->\hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{ouvrir}(\textcolor{stringliteral}{"ttpa.sqlite"});
+00021     \hyperlink{class_parametres_a853872796d32655f3f1ffc090b6d076a}{recupererParametres}();
+00022 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_parametres_a83068e95596ef05b4307b43b67ffc24d}\label{class_parametres_a83068e95596ef05b4307b43b67ffc24d}} 
+\index{Parametres@{Parametres}!````~Parametres@{$\sim$\+Parametres}}
+\index{````~Parametres@{$\sim$\+Parametres}!Parametres@{Parametres}}
+\paragraph{\texorpdfstring{$\sim$\+Parametres()}{~Parametres()}}
+{\footnotesize\ttfamily Parametres\+::$\sim$\+Parametres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00025 \{
+00026     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00027 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_parametres_a1cd756fd21518bcec9349c08a2a3b08f}\label{class_parametres_a1cd756fd21518bcec9349c08a2a3b08f}} 
+\index{Parametres@{Parametres}!get\+Liste\+Parametres@{get\+Liste\+Parametres}}
+\index{get\+Liste\+Parametres@{get\+Liste\+Parametres}!Parametres@{Parametres}}
+\paragraph{\texorpdfstring{get\+Liste\+Parametres()}{getListeParametres()}}
+{\footnotesize\ttfamily Q\+Variant Parametres\+::get\+Liste\+Parametres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_parametres_a3bff192351dd25f4109b258e954cecbf}{parametres}.
+
+
+\begin{DoxyCode}
+00086 \{
+00087     \textcolor{keywordflow}{return} QVariant::fromValue(\hyperlink{class_parametres_a3bff192351dd25f4109b258e954cecbf}{parametres});
+00088 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_parametres_a0102cadfb1bce5a8e82d6c12661fccf8}\label{class_parametres_a0102cadfb1bce5a8e82d6c12661fccf8}} 
+\index{Parametres@{Parametres}!inserer\+Parametres@{inserer\+Parametres}}
+\index{inserer\+Parametres@{inserer\+Parametres}!Parametres@{Parametres}}
+\paragraph{\texorpdfstring{inserer\+Parametres()}{insererParametres()}}
+{\footnotesize\ttfamily Q\+String Parametres\+::inserer\+Parametres (\begin{DoxyParamCaption}\item[{Q\+String}]{nb\+Balles,  }\item[{Q\+String}]{nb\+Balles\+Minute,  }\item[{Q\+String}]{effet,  }\item[{Q\+String}]{puissance,  }\item[{Q\+String}]{rotation,  }\item[{Q\+String}]{zone\+Objectif,  }\item[{Q\+String}]{zone\+Robot }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_parametres_a1e21034f7e758d93974e0dc070d47dee}{bdd}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, et \hyperlink{class_parametres_a853872796d32655f3f1ffc090b6d076a}{recuperer\+Parametres()}.
+
+
+\begin{DoxyCode}
+00068 \{
+00069     \textcolor{keywordflow}{if}(nbBalles.isEmpty() || nbBallesMinute.isEmpty() || effet.isEmpty() || puissance.isEmpty() || rotation
+      .isEmpty() || zoneObjectif.isEmpty() || zoneRobot.isEmpty())
+00070         \textcolor{keywordflow}{return} QString(\textcolor{stringliteral}{""});
+00071 
+00072     QString idParametres;
+00073     QString requete = \textcolor{stringliteral}{"INSERT INTO parametres(nbBalles, nbBallesMinute, effet, puissance, rotation,
+       zoneObjectif, zoneRobot) VALUES("}+ nbBalles + \textcolor{stringliteral}{","} + nbBallesMinute + \textcolor{stringliteral}{","} + effet + \textcolor{stringliteral}{","} + puissance + \textcolor{stringliteral}{","} + rotation
+       + \textcolor{stringliteral}{","} + zoneObjectif + \textcolor{stringliteral}{","} + zoneRobot + \textcolor{stringliteral}{")"};
+00074 
+00075     \textcolor{keywordtype}{bool} etat = \hyperlink{class_parametres_a1e21034f7e758d93974e0dc070d47dee}{bdd}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requete);
+00076     \textcolor{keywordflow}{if}(etat)
+00077     \{
+00078         requete = \textcolor{stringliteral}{"SELECT last\_insert\_rowid() FROM parametres"};
+00079         etat = \hyperlink{class_parametres_a1e21034f7e758d93974e0dc070d47dee}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, idParametres);
+00080         \hyperlink{class_parametres_a853872796d32655f3f1ffc090b6d076a}{recupererParametres}();
+00081     \}
+00082     \textcolor{keywordflow}{return} idParametres;
+00083 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_parametres_aa6649347b6e61f767dc14346f2ea858e}\label{class_parametres_aa6649347b6e61f767dc14346f2ea858e}} 
+\index{Parametres@{Parametres}!liste\+Parametres\+Updated@{liste\+Parametres\+Updated}}
+\index{liste\+Parametres\+Updated@{liste\+Parametres\+Updated}!Parametres@{Parametres}}
+\paragraph{\texorpdfstring{liste\+Parametres\+Updated}{listeParametresUpdated}}
+{\footnotesize\ttfamily void Parametres\+::liste\+Parametres\+Updated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_parametres_a853872796d32655f3f1ffc090b6d076a}{recuperer\+Parametres()}.
+
+\mbox{\Hypertarget{class_parametres_a853872796d32655f3f1ffc090b6d076a}\label{class_parametres_a853872796d32655f3f1ffc090b6d076a}} 
+\index{Parametres@{Parametres}!recuperer\+Parametres@{recuperer\+Parametres}}
+\index{recuperer\+Parametres@{recuperer\+Parametres}!Parametres@{Parametres}}
+\paragraph{\texorpdfstring{recuperer\+Parametres()}{recupererParametres()}}
+{\footnotesize\ttfamily bool Parametres\+::recuperer\+Parametres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_parametres_a1e21034f7e758d93974e0dc070d47dee}{bdd}, \hyperlink{class_parametres_aa6649347b6e61f767dc14346f2ea858e}{liste\+Parametres\+Updated()}, \hyperlink{class_parametres_a3bff192351dd25f4109b258e954cecbf}{parametres}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_parametres_a0102cadfb1bce5a8e82d6c12661fccf8}{inserer\+Parametres()}, et \hyperlink{class_parametres_a5197a69e0f07e253e6119b4af95344f4}{Parametres()}.
+
+
+\begin{DoxyCode}
+00030 \{
+00031     QString requete = \textcolor{stringliteral}{"SELECT idParametres, nbBalles, nbBallesMinute, effet, puissance, rotation,
+       zoneObjectif, zoneRobot FROM parametres"};
+00032     QVector<QStringList> lesParametres;
+00033 
+00034     \textcolor{keywordtype}{bool} etat = \hyperlink{class_parametres_a1e21034f7e758d93974e0dc070d47dee}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, lesParametres);
+00035     \textcolor{keywordflow}{if}(etat)
+00036     \{
+00037         qDebug() << Q\_FUNC\_INFO << lesParametres;
+00038         lesParametres.clear();
+00039         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i < lesParametres.size(); i++)
+00040         \{
+00041             \hyperlink{class_parametre}{Parametre} *parametre = \textcolor{keyword}{new} \hyperlink{class_parametre}{Parametre}(lesParametres.at(i).at(0), lesParametres
+      .at(i).at(1),
+00042                                                  lesParametres.at(i).at(2), lesParametres.at(i).at(3),
+00043                                                  lesParametres.at(i).at(4), lesParametres.at(i).at(5),
+00044                                                  lesParametres.at(i).at(6), lesParametres.at(i).at(7));
+00045             \hyperlink{class_parametres_a3bff192351dd25f4109b258e954cecbf}{parametres}.append(parametre);
+00046         \}
+00047         emit \hyperlink{class_parametres_aa6649347b6e61f767dc14346f2ea858e}{listeParametresUpdated}();
+00048         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00049     \}
+00050     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00051 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_parametres_ac91b8cb3a293f27eeb7d87673889de15}\label{class_parametres_ac91b8cb3a293f27eeb7d87673889de15}} 
+\index{Parametres@{Parametres}!recuperer\+Parametres\+Profil@{recuperer\+Parametres\+Profil}}
+\index{recuperer\+Parametres\+Profil@{recuperer\+Parametres\+Profil}!Parametres@{Parametres}}
+\paragraph{\texorpdfstring{recuperer\+Parametres\+Profil()}{recupererParametresProfil()}}
+{\footnotesize\ttfamily Q\+String\+List Parametres\+::recuperer\+Parametres\+Profil (\begin{DoxyParamCaption}\item[{Q\+String}]{id\+Parametres }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_parametres_a1e21034f7e758d93974e0dc070d47dee}{bdd}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+\begin{DoxyCode}
+00054 \{
+00055     QString requete = \textcolor{stringliteral}{"SELECT parametres.nbBalles, parametres.nbBallesMinute, parametres.effet,
+       parametres.puissance, parametres.rotation, parametres.zoneObjectif, parametres.zoneRobot FROM parametres INNER JOIN
+       profils ON parametres.idParametres = profils.idParametres WHERE parametres.idParametres ="} + idParametres;
+00056 
+00057     QStringList lesParametres;
+00058 
+00059     \textcolor{keywordtype}{bool} etat = \hyperlink{class_parametres_a1e21034f7e758d93974e0dc070d47dee}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, lesParametres);
+00060     \textcolor{keywordflow}{if}(etat)
+00061     \{
+00062         qDebug() << Q\_FUNC\_INFO << lesParametres;
+00063     \}
+00064     \textcolor{keywordflow}{return} lesParametres;
+00065 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_parametres_a1e21034f7e758d93974e0dc070d47dee}\label{class_parametres_a1e21034f7e758d93974e0dc070d47dee}} 
+\index{Parametres@{Parametres}!bdd@{bdd}}
+\index{bdd@{bdd}!Parametres@{Parametres}}
+\paragraph{\texorpdfstring{bdd}{bdd}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Parametres\+::bdd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_parametres_a0102cadfb1bce5a8e82d6c12661fccf8}{inserer\+Parametres()}, \hyperlink{class_parametres_a5197a69e0f07e253e6119b4af95344f4}{Parametres()}, \hyperlink{class_parametres_a853872796d32655f3f1ffc090b6d076a}{recuperer\+Parametres()}, et \hyperlink{class_parametres_ac91b8cb3a293f27eeb7d87673889de15}{recuperer\+Parametres\+Profil()}.
+
+\mbox{\Hypertarget{class_parametres_a3bff192351dd25f4109b258e954cecbf}\label{class_parametres_a3bff192351dd25f4109b258e954cecbf}} 
+\index{Parametres@{Parametres}!parametres@{parametres}}
+\index{parametres@{parametres}!Parametres@{Parametres}}
+\paragraph{\texorpdfstring{parametres}{parametres}}
+{\footnotesize\ttfamily Q\+List$<$Q\+Object$\ast$$>$ Parametres\+::parametres\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_parametres_a1cd756fd21518bcec9349c08a2a3b08f}{get\+Liste\+Parametres()}, et \hyperlink{class_parametres_a853872796d32655f3f1ffc090b6d076a}{recuperer\+Parametres()}.
+
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_parametres_ab37e24ed02c5ff1ffc7bea41016c93ca}\label{class_parametres_ab37e24ed02c5ff1ffc7bea41016c93ca}} 
+\index{Parametres@{Parametres}!liste\+Parametres@{liste\+Parametres}}
+\index{liste\+Parametres@{liste\+Parametres}!Parametres@{Parametres}}
+\paragraph{\texorpdfstring{liste\+Parametres}{listeParametres}}
+{\footnotesize\ttfamily Q\+Variant Parametres\+::liste\+Parametres\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_parametres_8h}{Parametres.\+h}\item 
+\hyperlink{_parametres_8cpp}{Parametres.\+cpp}\end{DoxyCompactItemize}

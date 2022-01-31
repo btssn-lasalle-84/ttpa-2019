@@ -1,0 +1,930 @@
+\hypertarget{class_statistiques_seance}{}\subsection{Référence de la classe Statistiques\+Seance}
+\label{class_statistiques_seance}\index{Statistiques\+Seance@{Statistiques\+Seance}}
+
+
+Déclaration de la classe \hyperlink{class_statistiques_seance}{Statistiques\+Seance}.  
+
+
+
+
+{\ttfamily \#include $<$statistiquesseance.\+h$>$}
+
+
+
+Graphe de collaboration de Statistiques\+Seance\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_statistiques_seance__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5}{Zone} \{ \newline
+\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}{Zone\+Non\+Definie} = -\/1, 
+\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{Zone1} = 0, 
+\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727}{Zone2}, 
+\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb}{Zone3}, 
+\newline
+\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c}{Zone4}, 
+\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344}{Zone5}, 
+\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343}{Zone6}, 
+\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64}{Zone7}, 
+\newline
+\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736}{Nb\+Zones\+Impact}, 
+\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{Zone\+Hors\+Table}, 
+\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}{Nb\+Zones\+Totales}
+ \}\begin{DoxyCompactList}\small\item\em les zones numérotés de 1 à 7 de la table plus une zone non définie et le nombre de zone total \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_statistiques_seance_a72526ea18d6c534a1cb84576ef3ea28d}{finir\+Seance} ()
+\begin{DoxyCompactList}\small\item\em fini la seance \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_statistiques_seance_a956ac10424a167d5b64fe13a92fbf121}{affichage\+Zone} (int numero\+Zone, int nb\+Impacts, Q\+String pourcentage)
+\item 
+void \hyperlink{class_statistiques_seance_ac3c52002d12dd7b93e6339126c84190f}{balles\+Totales} (int \hyperlink{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}{nb\+Balles\+Totales}, int \hyperlink{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}{nb\+Balles\+Totales\+Table})
+\item 
+void \hyperlink{class_statistiques_seance_a02a327f2a69eed4208b7b2076c6a67f2}{balles\+Totales\+Hors\+Table} (int balles\+Touche\+Table)
+\item 
+void \hyperlink{class_statistiques_seance_aa3ee6b00dae44d1f3cf78349ba235b08}{balles\+Bonnes} (int \hyperlink{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}{nb\+Balles\+Bonnes})
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_statistiques_seance_ab4096821bf4cb5fbebcf895b1a70be42}{Statistiques\+Seance} (Q\+Object $\ast$parent=nullptr)
+\item 
+\hyperlink{class_statistiques_seance_a2e84d125a8d696fa74d9c356eb2b8cab}{$\sim$\+Statistiques\+Seance} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la seance. \end{DoxyCompactList}\item 
+bool \hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacter\+Zone} (uint8\+\_\+t numero\+Zone)
+\begin{DoxyCompactList}\small\item\em Calcul et affiche l\textquotesingle{}impact sur l\textquotesingle{}I\+HM et la table. \end{DoxyCompactList}\item 
+void \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiser\+Statistiques} ()
+\begin{DoxyCompactList}\small\item\em initialise les statistiques \end{DoxyCompactList}\item 
+int \hyperlink{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}{get\+Balles\+Bonnes} ()
+\item 
+int \hyperlink{class_statistiques_seance_aaefd0b775012ec914a36a262dc14fc66}{get\+Balles\+Total} ()
+\begin{DoxyCompactList}\small\item\em récupère les donnésde la zone du robot \end{DoxyCompactList}\item 
+int \hyperlink{class_statistiques_seance_a26b717d40065e7afd80465458f3cb6aa}{get\+Balles\+Hors\+Table} ()
+\begin{DoxyCompactList}\small\item\em récupère les donnés des balles hors table \end{DoxyCompactList}\item 
+int \hyperlink{class_statistiques_seance_a4f0dc4fd1c97787dab03ae5074fb3414}{getballes\+Precedent\+Touche\+Table} ()
+\begin{DoxyCompactList}\small\item\em récupère les donnés des balles ayant touché précédament la table \end{DoxyCompactList}\item 
+int \hyperlink{class_statistiques_seance_a1f956e08733a81d0a86673cae6bc7feb}{getballes\+Touche\+Table} ()
+\begin{DoxyCompactList}\small\item\em récupère les donnés des balles récupère les donnés des balles ayant touché la table \end{DoxyCompactList}\item 
+int \hyperlink{class_statistiques_seance_a1f241d7ef584ebffa2246134c63be53b}{get\+Balles\+Enchainees} ()
+\item 
+int \hyperlink{class_statistiques_seance_a61c01cb1d35cda871e8243658213ee5b}{get\+Zone\+Objectif} ()
+\begin{DoxyCompactList}\small\item\em récupère les donnés de la zone de l\textquotesingle{}objectif \end{DoxyCompactList}\item 
+void \hyperlink{class_statistiques_seance_af7c8281e195c0822463e6747bd0695ef}{set\+Zone\+Objectif} (int numero\+Zone)
+\begin{DoxyCompactList}\small\item\em définie la Zone où sera la zone objectif \end{DoxyCompactList}\item 
+int \hyperlink{class_statistiques_seance_ad1bdc22fbd9f37fab06d9fc24e9f1bc4}{get\+Zone\+Robot} ()
+\item 
+void \hyperlink{class_statistiques_seance_a97a0cf5b45add60d7a3e31207fe360a0}{set\+Zone\+Robot} (int numero\+Zone)
+\begin{DoxyCompactList}\small\item\em définie la Zone où sera la zone robot \end{DoxyCompactList}\item 
+double \hyperlink{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}{calculer\+Pourcentage} (int \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nb\+Impacts\+Zone})
+\begin{DoxyCompactList}\small\item\em calcul le pourcentage de chaque zone sur le nombre de balle \end{DoxyCompactList}\item 
+double \hyperlink{class_statistiques_seance_ad042b683ce7b4db507a443b1b27bfef8}{calculer\+Pourcentage\+Serie\+Max} (int \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nb\+Impacts\+Zone})
+\begin{DoxyCompactList}\small\item\em calcul le pourcentage du nombre de série max sur le nombre de bale dans l\textquotesingle{}objectif \end{DoxyCompactList}\item 
+void \hyperlink{class_statistiques_seance_afd9087c34222c0b2c0db11c5a96459c4}{afficher\+Statistiques\+Zones} ()
+\begin{DoxyCompactList}\small\item\em affiche les statistiques (impact et pourcentage) de toutes les zones \end{DoxyCompactList}\item 
+void \hyperlink{class_statistiques_seance_a216b30bcfca71e425073a7ac90e59089}{afficher\+Statistiques\+Balles\+Totales} ()
+\begin{DoxyCompactList}\small\item\em affiche le nombre de balle total et nombre total de balle ayant touché la table \end{DoxyCompactList}\item 
+void \hyperlink{class_statistiques_seance_aebc6dad0ca5e4f99b08378077eae2c20}{afficher\+Statistiques\+Balles\+Totales\+Hors\+Table} ()
+\begin{DoxyCompactList}\small\item\em affiche le nombre de balle hors table \end{DoxyCompactList}\item 
+void \hyperlink{class_statistiques_seance_a712aad34b7ff7dd550ac6c976f75f416}{afficher\+Statistique\+Balles\+Bonnes} ()
+\begin{DoxyCompactList}\small\item\em affiche le nombre de balle ayant atteint la zone objectifs \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}{calculer\+Statistiques} (uint8\+\_\+t numero\+Zone)
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}{numero\+Zone\+Objectif}
+\begin{DoxyCompactList}\small\item\em Placement de la zone de l\textquotesingle{}objectif. \end{DoxyCompactList}\item 
+int \hyperlink{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}{numero\+Zone\+Robot}
+\begin{DoxyCompactList}\small\item\em Placement de la zone d\textquotesingle{}objectif. \end{DoxyCompactList}\item 
+Q\+Vector$<$ int $>$ \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nb\+Impacts\+Zone}
+\begin{DoxyCompactList}\small\item\em Un vecteur avec le nombre d\textquotesingle{}impacts dans chaque zone. \end{DoxyCompactList}\item 
+int \hyperlink{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}{nb\+Balles\+Bonnes}
+\begin{DoxyCompactList}\small\item\em Nombre de balles ayant touché la zone objetifs. \end{DoxyCompactList}\item 
+int \hyperlink{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}{nb\+Balles\+Totales}
+\begin{DoxyCompactList}\small\item\em Nombre de balles total tirées par le robot et jouables. \end{DoxyCompactList}\item 
+int \hyperlink{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}{nb\+Balles\+Totales\+Table}
+\begin{DoxyCompactList}\small\item\em Nombre de balles totales tirées par le robot et ayant impacté la table. \end{DoxyCompactList}\item 
+int \hyperlink{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}{nb\+Balles\+Enchainees}
+\begin{DoxyCompactList}\small\item\em Série de balles dans la zone objectif. \end{DoxyCompactList}\item 
+int \hyperlink{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}{nb\+Balles\+Enchainees\+Max}
+\begin{DoxyCompactList}\small\item\em Série max de balles dans la zone objectif. \end{DoxyCompactList}\item 
+bool \hyperlink{class_statistiques_seance_ad428a6da4f5615a7682c8fa4fb597ce3}{balle\+Touche\+Table}
+\begin{DoxyCompactList}\small\item\em Balle ayant touché la table. \end{DoxyCompactList}\item 
+bool \hyperlink{class_statistiques_seance_a36681be0a5a9fc48c4c332606a0418ad}{balle\+Precedente\+Touche\+Table}
+\begin{DoxyCompactList}\small\item\em Balle précédente qui a touché la table. \end{DoxyCompactList}\item 
+bool \hyperlink{class_statistiques_seance_af6747af0965a82d7d59a248682bbb575}{balle\+Touche\+Robot}
+\begin{DoxyCompactList}\small\item\em Balle ayant touché la table du robot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Botella-\/\+Broc Yohann
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+4 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5}\label{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!Zone@{Zone}}
+\index{Zone@{Zone}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{Zone}{Zone}}
+{\footnotesize\ttfamily enum \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5}{Statistiques\+Seance\+::\+Zone}}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Zone\+Non\+Definie@{Zone\+Non\+Definie}!Statistiques\+Seance@{Statistiques\+Seance}}\index{Statistiques\+Seance@{Statistiques\+Seance}!Zone\+Non\+Definie@{Zone\+Non\+Definie}}}\mbox{\Hypertarget{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}\label{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}} 
+Zone\+Non\+Definie&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Zone1@{Zone1}!Statistiques\+Seance@{Statistiques\+Seance}}\index{Statistiques\+Seance@{Statistiques\+Seance}!Zone1@{Zone1}}}\mbox{\Hypertarget{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}\label{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}} 
+Zone1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Zone2@{Zone2}!Statistiques\+Seance@{Statistiques\+Seance}}\index{Statistiques\+Seance@{Statistiques\+Seance}!Zone2@{Zone2}}}\mbox{\Hypertarget{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727}\label{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727}} 
+Zone2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Zone3@{Zone3}!Statistiques\+Seance@{Statistiques\+Seance}}\index{Statistiques\+Seance@{Statistiques\+Seance}!Zone3@{Zone3}}}\mbox{\Hypertarget{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb}\label{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb}} 
+Zone3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Zone4@{Zone4}!Statistiques\+Seance@{Statistiques\+Seance}}\index{Statistiques\+Seance@{Statistiques\+Seance}!Zone4@{Zone4}}}\mbox{\Hypertarget{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c}\label{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c}} 
+Zone4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Zone5@{Zone5}!Statistiques\+Seance@{Statistiques\+Seance}}\index{Statistiques\+Seance@{Statistiques\+Seance}!Zone5@{Zone5}}}\mbox{\Hypertarget{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344}\label{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344}} 
+Zone5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Zone6@{Zone6}!Statistiques\+Seance@{Statistiques\+Seance}}\index{Statistiques\+Seance@{Statistiques\+Seance}!Zone6@{Zone6}}}\mbox{\Hypertarget{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343}\label{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343}} 
+Zone6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Zone7@{Zone7}!Statistiques\+Seance@{Statistiques\+Seance}}\index{Statistiques\+Seance@{Statistiques\+Seance}!Zone7@{Zone7}}}\mbox{\Hypertarget{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64}\label{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64}} 
+Zone7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Nb\+Zones\+Impact@{Nb\+Zones\+Impact}!Statistiques\+Seance@{Statistiques\+Seance}}\index{Statistiques\+Seance@{Statistiques\+Seance}!Nb\+Zones\+Impact@{Nb\+Zones\+Impact}}}\mbox{\Hypertarget{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736}\label{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736}} 
+Nb\+Zones\+Impact&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Zone\+Hors\+Table@{Zone\+Hors\+Table}!Statistiques\+Seance@{Statistiques\+Seance}}\index{Statistiques\+Seance@{Statistiques\+Seance}!Zone\+Hors\+Table@{Zone\+Hors\+Table}}}\mbox{\Hypertarget{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}\label{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}} 
+Zone\+Hors\+Table&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Nb\+Zones\+Totales@{Nb\+Zones\+Totales}!Statistiques\+Seance@{Statistiques\+Seance}}\index{Statistiques\+Seance@{Statistiques\+Seance}!Nb\+Zones\+Totales@{Nb\+Zones\+Totales}}}\mbox{\Hypertarget{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}\label{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}} 
+Nb\+Zones\+Totales&\\
+\hline
+
+\end{DoxyEnumFields}
+
+\begin{DoxyCode}
+00045         \{
+00046             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}{ZoneNonDefinie} = -1,
+00047             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{Zone1} = 0,
+00048             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acf74b44f34352af881c12d4fb4698727}{Zone2},
+00049             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5acdc3da6ca403f3a4ae3e11a10e7d9bbb}{Zone3},
+00050             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5abbf773e4fc35c934fee03e377f89e84c}{Zone4},
+00051             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a0ed753df79f18c07d46dfc3afeb8a344}{Zone5},
+00052             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a012027bd30be4ea847690179ba948343}{Zone6},
+00053             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a196adb885d7fd7109e451e759564ea64}{Zone7},
+00054             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736}{NbZonesImpact}, \textcolor{comment}{// 7}
+00055             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{ZoneHorsTable}, \textcolor{comment}{// 8}
+00056             \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}{NbZonesTotales}, \textcolor{comment}{// 9}
+00057         \};
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_statistiques_seance_ab4096821bf4cb5fbebcf895b1a70be42}\label{class_statistiques_seance_ab4096821bf4cb5fbebcf895b1a70be42}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!Statistiques\+Seance@{Statistiques\+Seance}}
+\index{Statistiques\+Seance@{Statistiques\+Seance}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{Statistiques\+Seance()}{StatistiquesSeance()}}
+{\footnotesize\ttfamily Statistiques\+Seance\+::\+Statistiques\+Seance (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiser\+Statistiques()}.
+
+
+\begin{DoxyCode}
+00023                                                       : QObject(parent), 
+      \hyperlink{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}{numeroZoneObjectif}(\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}{StatistiquesSeance::ZoneNonDefinie}),
+       \hyperlink{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}{numeroZoneRobot}(\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}{StatistiquesSeance::ZoneNonDefinie}), 
+      \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone}(\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}{StatistiquesSeance::NbZonesTotales}, 0), 
+      \hyperlink{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}{nbBallesBonnes}(0), \hyperlink{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}{nbBallesTotales}(0), 
+      \hyperlink{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}{nbBallesTotalesTable}(0), \hyperlink{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}{nbBallesEnchainees}(0), 
+      \hyperlink{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}{nbBallesEnchaineesMax}(0)
+00024 \{
+00025     qDebug() << Q\_FUNC\_INFO;
+00026     \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiserStatistiques}();
+00027 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_a2e84d125a8d696fa74d9c356eb2b8cab}\label{class_statistiques_seance_a2e84d125a8d696fa74d9c356eb2b8cab}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!````~Statistiques\+Seance@{$\sim$\+Statistiques\+Seance}}
+\index{````~Statistiques\+Seance@{$\sim$\+Statistiques\+Seance}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{$\sim$\+Statistiques\+Seance()}{~StatistiquesSeance()}}
+{\footnotesize\ttfamily Statistiques\+Seance\+::$\sim$\+Statistiques\+Seance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00036 \{
+00037     qDebug() << Q\_FUNC\_INFO;
+00038 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_statistiques_seance_a956ac10424a167d5b64fe13a92fbf121}\label{class_statistiques_seance_a956ac10424a167d5b64fe13a92fbf121}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!affichage\+Zone@{affichage\+Zone}}
+\index{affichage\+Zone@{affichage\+Zone}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{affichage\+Zone}{affichageZone}}
+{\footnotesize\ttfamily void Statistiques\+Seance\+::affichage\+Zone (\begin{DoxyParamCaption}\item[{int}]{numero\+Zone,  }\item[{int}]{nb\+Impacts,  }\item[{Q\+String}]{pourcentage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_afd9087c34222c0b2c0db11c5a96459c4}{afficher\+Statistiques\+Zones()}.
+
+\mbox{\Hypertarget{class_statistiques_seance_a712aad34b7ff7dd550ac6c976f75f416}\label{class_statistiques_seance_a712aad34b7ff7dd550ac6c976f75f416}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!afficher\+Statistique\+Balles\+Bonnes@{afficher\+Statistique\+Balles\+Bonnes}}
+\index{afficher\+Statistique\+Balles\+Bonnes@{afficher\+Statistique\+Balles\+Bonnes}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{afficher\+Statistique\+Balles\+Bonnes()}{afficherStatistiqueBallesBonnes()}}
+{\footnotesize\ttfamily void Statistiques\+Seance\+::afficher\+Statistique\+Balles\+Bonnes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_statistiques_seance_aa3ee6b00dae44d1f3cf78349ba235b08}{balles\+Bonnes()}, et \hyperlink{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}{get\+Balles\+Bonnes()}.
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacter\+Zone()}.
+
+
+\begin{DoxyCode}
+00225 \{
+00226     emit \hyperlink{class_statistiques_seance_aa3ee6b00dae44d1f3cf78349ba235b08}{ballesBonnes}(\hyperlink{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}{getBallesBonnes}());
+00227 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_a216b30bcfca71e425073a7ac90e59089}\label{class_statistiques_seance_a216b30bcfca71e425073a7ac90e59089}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!afficher\+Statistiques\+Balles\+Totales@{afficher\+Statistiques\+Balles\+Totales}}
+\index{afficher\+Statistiques\+Balles\+Totales@{afficher\+Statistiques\+Balles\+Totales}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{afficher\+Statistiques\+Balles\+Totales()}{afficherStatistiquesBallesTotales()}}
+{\footnotesize\ttfamily void Statistiques\+Seance\+::afficher\+Statistiques\+Balles\+Totales (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_statistiques_seance_ac3c52002d12dd7b93e6339126c84190f}{balles\+Totales()}, \hyperlink{class_statistiques_seance_aaefd0b775012ec914a36a262dc14fc66}{get\+Balles\+Total()}, et \hyperlink{class_statistiques_seance_a1f956e08733a81d0a86673cae6bc7feb}{getballes\+Touche\+Table()}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{Ttpa\+Ihm\+::commencer\+Seance()}, et \hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacter\+Zone()}.
+
+
+\begin{DoxyCode}
+00203 \{
+00204     emit \hyperlink{class_statistiques_seance_ac3c52002d12dd7b93e6339126c84190f}{ballesTotales}(\hyperlink{class_statistiques_seance_aaefd0b775012ec914a36a262dc14fc66}{getBallesTotal}(), 
+      \hyperlink{class_statistiques_seance_a1f956e08733a81d0a86673cae6bc7feb}{getballesToucheTable}());
+00205 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_aebc6dad0ca5e4f99b08378077eae2c20}\label{class_statistiques_seance_aebc6dad0ca5e4f99b08378077eae2c20}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!afficher\+Statistiques\+Balles\+Totales\+Hors\+Table@{afficher\+Statistiques\+Balles\+Totales\+Hors\+Table}}
+\index{afficher\+Statistiques\+Balles\+Totales\+Hors\+Table@{afficher\+Statistiques\+Balles\+Totales\+Hors\+Table}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{afficher\+Statistiques\+Balles\+Totales\+Hors\+Table()}{afficherStatistiquesBallesTotalesHorsTable()}}
+{\footnotesize\ttfamily void Statistiques\+Seance\+::afficher\+Statistiques\+Balles\+Totales\+Hors\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_statistiques_seance_a02a327f2a69eed4208b7b2076c6a67f2}{balles\+Totales\+Hors\+Table()}, et \hyperlink{class_statistiques_seance_a1f956e08733a81d0a86673cae6bc7feb}{getballes\+Touche\+Table()}.
+
+
+\begin{DoxyCode}
+00214 \{
+00215     emit \hyperlink{class_statistiques_seance_a02a327f2a69eed4208b7b2076c6a67f2}{ballesTotalesHorsTable}(\hyperlink{class_statistiques_seance_a1f956e08733a81d0a86673cae6bc7feb}{getballesToucheTable}());
+00216 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_afd9087c34222c0b2c0db11c5a96459c4}\label{class_statistiques_seance_afd9087c34222c0b2c0db11c5a96459c4}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!afficher\+Statistiques\+Zones@{afficher\+Statistiques\+Zones}}
+\index{afficher\+Statistiques\+Zones@{afficher\+Statistiques\+Zones}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{afficher\+Statistiques\+Zones()}{afficherStatistiquesZones()}}
+{\footnotesize\ttfamily void Statistiques\+Seance\+::afficher\+Statistiques\+Zones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_statistiques_seance_a956ac10424a167d5b64fe13a92fbf121}{affichage\+Zone()}, \hyperlink{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}{calculer\+Pourcentage()}, \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nb\+Impacts\+Zone}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736}{Nb\+Zones\+Impact}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}{Nb\+Zones\+Totales}, et \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{Zone1}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a9bf7a4cddbdbf786d781e4d084409068}{Ttpa\+Ihm\+::commencer\+Seance()}, et \hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacter\+Zone()}.
+
+
+\begin{DoxyCode}
+00183 \{    
+00184     \textcolor{keywordtype}{double} pourcentage;
+00185     \textcolor{keywordflow}{for}(uint8\_t numeroZone = \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{Zone1}; numeroZone < \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}{NbZonesTotales}; ++numeroZone)
+00186     \{
+00187         \textcolor{keywordflow}{if}(numeroZone == \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736}{NbZonesImpact})
+00188             \textcolor{keywordflow}{continue};
+00189 
+00190         pourcentage = \hyperlink{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}{calculerPourcentage}(\hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone}[numeroZone]);
+00191         emit \hyperlink{class_statistiques_seance_a956ac10424a167d5b64fe13a92fbf121}{affichageZone}(numeroZone, \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone}[numeroZone], QString::number
+      (pourcentage,\textcolor{charliteral}{'f'},0) + \textcolor{stringliteral}{" %"});
+00192         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"numeroZone="} << numeroZone << \textcolor{stringliteral}{"nbImpactsZone"} << 
+      \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone}[numeroZone] << \textcolor{stringliteral}{"pourcentage"} << pourcentage;
+00193     \}
+00194 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_aa3ee6b00dae44d1f3cf78349ba235b08}\label{class_statistiques_seance_aa3ee6b00dae44d1f3cf78349ba235b08}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!balles\+Bonnes@{balles\+Bonnes}}
+\index{balles\+Bonnes@{balles\+Bonnes}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{balles\+Bonnes}{ballesBonnes}}
+{\footnotesize\ttfamily void Statistiques\+Seance\+::balles\+Bonnes (\begin{DoxyParamCaption}\item[{int}]{nb\+Balles\+Bonnes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_a712aad34b7ff7dd550ac6c976f75f416}{afficher\+Statistique\+Balles\+Bonnes()}, et \hyperlink{class_statistiques_seance_a72526ea18d6c534a1cb84576ef3ea28d}{finir\+Seance()}.
+
+\mbox{\Hypertarget{class_statistiques_seance_ac3c52002d12dd7b93e6339126c84190f}\label{class_statistiques_seance_ac3c52002d12dd7b93e6339126c84190f}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!balles\+Totales@{balles\+Totales}}
+\index{balles\+Totales@{balles\+Totales}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{balles\+Totales}{ballesTotales}}
+{\footnotesize\ttfamily void Statistiques\+Seance\+::balles\+Totales (\begin{DoxyParamCaption}\item[{int}]{nb\+Balles\+Totales,  }\item[{int}]{nb\+Balles\+Totales\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_a216b30bcfca71e425073a7ac90e59089}{afficher\+Statistiques\+Balles\+Totales()}.
+
+\mbox{\Hypertarget{class_statistiques_seance_a02a327f2a69eed4208b7b2076c6a67f2}\label{class_statistiques_seance_a02a327f2a69eed4208b7b2076c6a67f2}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!balles\+Totales\+Hors\+Table@{balles\+Totales\+Hors\+Table}}
+\index{balles\+Totales\+Hors\+Table@{balles\+Totales\+Hors\+Table}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{balles\+Totales\+Hors\+Table}{ballesTotalesHorsTable}}
+{\footnotesize\ttfamily void Statistiques\+Seance\+::balles\+Totales\+Hors\+Table (\begin{DoxyParamCaption}\item[{int}]{balles\+Touche\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_aebc6dad0ca5e4f99b08378077eae2c20}{afficher\+Statistiques\+Balles\+Totales\+Hors\+Table()}, et \hyperlink{class_statistiques_seance_a72526ea18d6c534a1cb84576ef3ea28d}{finir\+Seance()}.
+
+\mbox{\Hypertarget{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}\label{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!calculer\+Pourcentage@{calculer\+Pourcentage}}
+\index{calculer\+Pourcentage@{calculer\+Pourcentage}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{calculer\+Pourcentage()}{calculerPourcentage()}}
+{\footnotesize\ttfamily double Statistiques\+Seance\+::calculer\+Pourcentage (\begin{DoxyParamCaption}\item[{int}]{nb\+Impacts\+Zone }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nb\+Impacts\+Zone} & int le numéro de zone impacté \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+double le pourcentage calculé 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}{nb\+Balles\+Totales}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a58058063eb377b4c4c48048e4bf84e77}{Ttpa\+Ihm\+::afficher\+Statistique\+Pourcentage\+Balles\+Horstable()}, \hyperlink{class_ttpa_ihm_ac37d57d13301cda22f062219de8731c4}{Ttpa\+Ihm\+::afficher\+Statistique\+Pourcentage\+Balles\+Objectif()}, \hyperlink{class_ttpa_ihm_aec988dc2398578eb8e91563d1ba58cde}{Ttpa\+Ihm\+::afficher\+Statistique\+Pourcentage\+Balles\+Serie()}, et \hyperlink{class_statistiques_seance_afd9087c34222c0b2c0db11c5a96459c4}{afficher\+Statistiques\+Zones()}.
+
+
+\begin{DoxyCode}
+00155 \{
+00156     \textcolor{keywordflow}{if} (\hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone} == 0)
+00157         \textcolor{keywordflow}{return} 0.;
+00158 
+00159     \textcolor{keywordflow}{return} (\textcolor{keywordtype}{double}(\hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone}) / \textcolor{keywordtype}{double}(\hyperlink{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}{nbBallesTotales}))*100.;
+00160 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_ad042b683ce7b4db507a443b1b27bfef8}\label{class_statistiques_seance_ad042b683ce7b4db507a443b1b27bfef8}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!calculer\+Pourcentage\+Serie\+Max@{calculer\+Pourcentage\+Serie\+Max}}
+\index{calculer\+Pourcentage\+Serie\+Max@{calculer\+Pourcentage\+Serie\+Max}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{calculer\+Pourcentage\+Serie\+Max()}{calculerPourcentageSerieMax()}}
+{\footnotesize\ttfamily double Statistiques\+Seance\+::calculer\+Pourcentage\+Serie\+Max (\begin{DoxyParamCaption}\item[{int}]{nb\+Impacts\+Zone }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nb\+Impacts\+Zone} & int le numéro de zone impacté \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Q\+String le pourcentage formaté pour l\textquotesingle{}affichage \char`\"{}\+X\%\char`\"{} 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}{nb\+Balles\+Bonnes}, et \hyperlink{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}{nb\+Balles\+Enchainees\+Max}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_aec988dc2398578eb8e91563d1ba58cde}{Ttpa\+Ihm\+::afficher\+Statistique\+Pourcentage\+Balles\+Serie()}.
+
+
+\begin{DoxyCode}
+00170 \{
+00171     \textcolor{keywordflow}{if} (\hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone} == 0)
+00172         \textcolor{keywordflow}{return} 0.;
+00173 
+00174     \textcolor{keywordflow}{return} (\textcolor{keywordtype}{double}(\hyperlink{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}{nbBallesEnchaineesMax}) / \textcolor{keywordtype}{double}(
+      \hyperlink{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}{nbBallesBonnes}))*100.;
+00175 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}\label{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!calculer\+Statistiques@{calculer\+Statistiques}}
+\index{calculer\+Statistiques@{calculer\+Statistiques}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{calculer\+Statistiques()}{calculerStatistiques()}}
+{\footnotesize\ttfamily void Statistiques\+Seance\+::calculer\+Statistiques (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{numero\+Zone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_statistiques_seance_a36681be0a5a9fc48c4c332606a0418ad}{balle\+Precedente\+Touche\+Table}, \hyperlink{class_statistiques_seance_ad428a6da4f5615a7682c8fa4fb597ce3}{balle\+Touche\+Table}, \hyperlink{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}{nb\+Balles\+Bonnes}, \hyperlink{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}{nb\+Balles\+Enchainees}, \hyperlink{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}{nb\+Balles\+Enchainees\+Max}, \hyperlink{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}{nb\+Balles\+Totales}, \hyperlink{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}{nb\+Balles\+Totales\+Table}, \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nb\+Impacts\+Zone}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736}{Nb\+Zones\+Impact}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}{Nb\+Zones\+Totales}, \hyperlink{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}{numero\+Zone\+Objectif}, \hyperlink{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}{numero\+Zone\+Robot}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{Zone1}, \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{Zone\+Hors\+Table}, et \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}{Zone\+Non\+Definie}.
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}{impacter\+Zone()}.
+
+
+\begin{DoxyCode}
+00072 \{
+00073     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"numeroZone = "} << numeroZone << \textcolor{stringliteral}{"numeroZoneObjectif = "} << 
+      \hyperlink{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}{numeroZoneObjectif};
+00074 
+00075     \textcolor{keywordflow}{if}(numeroZone == \hyperlink{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}{numeroZoneRobot})
+00076         \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone}[\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{ZoneHorsTable}] += 1;
+00077     \textcolor{keywordflow}{else}
+00078         \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone}[numeroZone] += 1;
+00079     \textcolor{keywordflow}{if}(numeroZone == numeroZoneObjectif)
+00080     \{
+00081         \hyperlink{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}{nbBallesBonnes}++;
+00082     \}
+00083     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"nbBalles zone = "} << \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone}[numeroZone];
+00084 
+00085     \hyperlink{class_statistiques_seance_a36681be0a5a9fc48c4c332606a0418ad}{ballePrecedenteToucheTable} = \hyperlink{class_statistiques_seance_ad428a6da4f5615a7682c8fa4fb597ce3}{balleToucheTable};
+00086     \hyperlink{class_statistiques_seance_ad428a6da4f5615a7682c8fa4fb597ce3}{balleToucheTable} = \textcolor{keyword}{false};
+00087     \hyperlink{class_statistiques_seance_a36681be0a5a9fc48c4c332606a0418ad}{ballePrecedenteToucheTable} = \hyperlink{class_statistiques_seance_ad428a6da4f5615a7682c8fa4fb597ce3}{balleToucheTable};
+00088     \hyperlink{class_statistiques_seance_ad428a6da4f5615a7682c8fa4fb597ce3}{balleToucheTable} = numeroZone;
+00089 
+00090     \hyperlink{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}{nbBallesTotales}++;
+00091     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"nbBallesTotales = "} << \hyperlink{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}{nbBallesTotales};
+00092 
+00093     \hyperlink{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}{nbBallesTotalesTable} = 0;
+00094     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} numeroZone = \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a3aa1c8dd53092c489bf5b27952c898ac}{Zone1}; numeroZone < \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afe19f73563963b5160847cdd8c2260c4}{NbZonesTotales}; ++numeroZone)
+00095     \{
+00096         \textcolor{keywordflow}{if}(numeroZone == \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736}{NbZonesImpact})
+00097             \textcolor{keywordflow}{continue};
+00098         \textcolor{keywordflow}{if}(numeroZone < \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5a4623fc9051358f3d82fdccd5047d3736}{NbZonesImpact})
+00099             \hyperlink{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}{nbBallesTotalesTable} += nbImpactsZone[numeroZone];
+00100     \}
+00101     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"nbBallesTotalesTable = "} << \hyperlink{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}{nbBallesTotalesTable} << \textcolor{stringliteral}{"
+      nbBallesBonnes= "} << \hyperlink{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}{nbBallesBonnes};
+00102 
+00103     \textcolor{keywordflow}{if} (numeroZone != \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}{ZoneNonDefinie})
+00104     \{
+00105        \textcolor{keywordflow}{if} (numeroZone == numeroZoneObjectif \textcolor{comment}{/*|| numeroZoneObjectif == ZoneNonDefinie*/})
+00106        \{
+00107            \hyperlink{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}{nbBallesEnchainees}++;
+00108        \}
+00109        \textcolor{keywordflow}{else}
+00110        \{
+00111            \hyperlink{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}{nbBallesEnchainees} = 0;
+00112        \}
+00113     \}
+00114     \textcolor{keywordflow}{else}
+00115        \hyperlink{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}{nbBallesEnchainees} = 0;
+00116 
+00117     \textcolor{keywordflow}{if} (\hyperlink{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}{nbBallesEnchainees} > \hyperlink{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}{nbBallesEnchaineesMax})
+00118        \hyperlink{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}{nbBallesEnchaineesMax} = \hyperlink{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}{nbBallesEnchainees};
+00119     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"nbBallesEnchainees = "} << \hyperlink{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}{nbBallesEnchainees} << \textcolor{stringliteral}{"
+      nbBallesEnchaineesMax = "} << \hyperlink{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}{nbBallesEnchaineesMax};
+00120 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_a72526ea18d6c534a1cb84576ef3ea28d}\label{class_statistiques_seance_a72526ea18d6c534a1cb84576ef3ea28d}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!finir\+Seance@{finir\+Seance}}
+\index{finir\+Seance@{finir\+Seance}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{finir\+Seance}{finirSeance}}
+{\footnotesize\ttfamily void Statistiques\+Seance\+::finir\+Seance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_statistiques_seance_aa3ee6b00dae44d1f3cf78349ba235b08}{balles\+Bonnes()}, \hyperlink{class_statistiques_seance_a02a327f2a69eed4208b7b2076c6a67f2}{balles\+Totales\+Hors\+Table()}, \hyperlink{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}{get\+Balles\+Bonnes()}, et \hyperlink{class_statistiques_seance_a26b717d40065e7afd80465458f3cb6aa}{get\+Balles\+Hors\+Table()}.
+
+
+\begin{DoxyCode}
+00141 \{
+00142     \textcolor{comment}{//...}
+00143     emit \hyperlink{class_statistiques_seance_aa3ee6b00dae44d1f3cf78349ba235b08}{ballesBonnes}(\hyperlink{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}{getBallesBonnes}());
+00144     emit \hyperlink{class_statistiques_seance_a02a327f2a69eed4208b7b2076c6a67f2}{ballesTotalesHorsTable}(\hyperlink{class_statistiques_seance_a26b717d40065e7afd80465458f3cb6aa}{getBallesHorsTable}());
+00145 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}\label{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!get\+Balles\+Bonnes@{get\+Balles\+Bonnes}}
+\index{get\+Balles\+Bonnes@{get\+Balles\+Bonnes}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{get\+Balles\+Bonnes()}{getBallesBonnes()}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::get\+Balles\+Bonnes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}{nb\+Balles\+Bonnes}.
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_a712aad34b7ff7dd550ac6c976f75f416}{afficher\+Statistique\+Balles\+Bonnes()}, \hyperlink{class_ttpa_ihm_aa480a02532144d0f99af027b5b201ae1}{Ttpa\+Ihm\+::afficher\+Statistique\+Ecran\+Resultats()}, \hyperlink{class_ttpa_ihm_ac37d57d13301cda22f062219de8731c4}{Ttpa\+Ihm\+::afficher\+Statistique\+Pourcentage\+Balles\+Objectif()}, et \hyperlink{class_statistiques_seance_a72526ea18d6c534a1cb84576ef3ea28d}{finir\+Seance()}.
+
+
+\begin{DoxyCode}
+00317 \{
+00318     \textcolor{keywordflow}{return} \hyperlink{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}{nbBallesBonnes};
+00319 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_a1f241d7ef584ebffa2246134c63be53b}\label{class_statistiques_seance_a1f241d7ef584ebffa2246134c63be53b}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!get\+Balles\+Enchainees@{get\+Balles\+Enchainees}}
+\index{get\+Balles\+Enchainees@{get\+Balles\+Enchainees}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{get\+Balles\+Enchainees()}{getBallesEnchainees()}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::get\+Balles\+Enchainees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}{nb\+Balles\+Enchainees\+Max}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_aa480a02532144d0f99af027b5b201ae1}{Ttpa\+Ihm\+::afficher\+Statistique\+Ecran\+Resultats()}, et \hyperlink{class_ttpa_ihm_aec988dc2398578eb8e91563d1ba58cde}{Ttpa\+Ihm\+::afficher\+Statistique\+Pourcentage\+Balles\+Serie()}.
+
+
+\begin{DoxyCode}
+00322 \{
+00323     \textcolor{keywordflow}{return} \hyperlink{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}{nbBallesEnchaineesMax};
+00324 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_a26b717d40065e7afd80465458f3cb6aa}\label{class_statistiques_seance_a26b717d40065e7afd80465458f3cb6aa}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!get\+Balles\+Hors\+Table@{get\+Balles\+Hors\+Table}}
+\index{get\+Balles\+Hors\+Table@{get\+Balles\+Hors\+Table}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{get\+Balles\+Hors\+Table()}{getBallesHorsTable()}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::get\+Balles\+Hors\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nb\+Impacts\+Zone}, et \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{Zone\+Hors\+Table}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_aa480a02532144d0f99af027b5b201ae1}{Ttpa\+Ihm\+::afficher\+Statistique\+Ecran\+Resultats()}, \hyperlink{class_ttpa_ihm_a58058063eb377b4c4c48048e4bf84e77}{Ttpa\+Ihm\+::afficher\+Statistique\+Pourcentage\+Balles\+Horstable()}, \hyperlink{class_ttpa_ihm_aec988dc2398578eb8e91563d1ba58cde}{Ttpa\+Ihm\+::afficher\+Statistique\+Pourcentage\+Balles\+Serie()}, et \hyperlink{class_statistiques_seance_a72526ea18d6c534a1cb84576ef3ea28d}{finir\+Seance()}.
+
+
+\begin{DoxyCode}
+00268 \{
+00269     \textcolor{keywordflow}{return} \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone}[\hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5aeb6ef225df9153e1f46a968ae71bf2f3}{ZoneHorsTable}];
+00270 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_a4f0dc4fd1c97787dab03ae5074fb3414}\label{class_statistiques_seance_a4f0dc4fd1c97787dab03ae5074fb3414}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!getballes\+Precedent\+Touche\+Table@{getballes\+Precedent\+Touche\+Table}}
+\index{getballes\+Precedent\+Touche\+Table@{getballes\+Precedent\+Touche\+Table}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{getballes\+Precedent\+Touche\+Table()}{getballesPrecedentToucheTable()}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::getballes\+Precedent\+Touche\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_statistiques_seance_a36681be0a5a9fc48c4c332606a0418ad}{balle\+Precedente\+Touche\+Table}.
+
+
+\begin{DoxyCode}
+00279 \{
+00280     \textcolor{keywordflow}{return} \hyperlink{class_statistiques_seance_a36681be0a5a9fc48c4c332606a0418ad}{ballePrecedenteToucheTable};
+00281 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_aaefd0b775012ec914a36a262dc14fc66}\label{class_statistiques_seance_aaefd0b775012ec914a36a262dc14fc66}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!get\+Balles\+Total@{get\+Balles\+Total}}
+\index{get\+Balles\+Total@{get\+Balles\+Total}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{get\+Balles\+Total()}{getBallesTotal()}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::get\+Balles\+Total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+récupère les donnés des balles tiré
+
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}{nb\+Balles\+Totales}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_aa480a02532144d0f99af027b5b201ae1}{Ttpa\+Ihm\+::afficher\+Statistique\+Ecran\+Resultats()}, et \hyperlink{class_statistiques_seance_a216b30bcfca71e425073a7ac90e59089}{afficher\+Statistiques\+Balles\+Totales()}.
+
+
+\begin{DoxyCode}
+00257 \{
+00258     \textcolor{keywordflow}{return} \hyperlink{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}{nbBallesTotales};
+00259 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_a1f956e08733a81d0a86673cae6bc7feb}\label{class_statistiques_seance_a1f956e08733a81d0a86673cae6bc7feb}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!getballes\+Touche\+Table@{getballes\+Touche\+Table}}
+\index{getballes\+Touche\+Table@{getballes\+Touche\+Table}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{getballes\+Touche\+Table()}{getballesToucheTable()}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::getballes\+Touche\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}{nb\+Balles\+Totales\+Table}.
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_a216b30bcfca71e425073a7ac90e59089}{afficher\+Statistiques\+Balles\+Totales()}, et \hyperlink{class_statistiques_seance_aebc6dad0ca5e4f99b08378077eae2c20}{afficher\+Statistiques\+Balles\+Totales\+Hors\+Table()}.
+
+
+\begin{DoxyCode}
+00290 \{
+00291     \textcolor{keywordflow}{return} \hyperlink{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}{nbBallesTotalesTable};
+00292 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_a61c01cb1d35cda871e8243658213ee5b}\label{class_statistiques_seance_a61c01cb1d35cda871e8243658213ee5b}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!get\+Zone\+Objectif@{get\+Zone\+Objectif}}
+\index{get\+Zone\+Objectif@{get\+Zone\+Objectif}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{get\+Zone\+Objectif()}{getZoneObjectif()}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::get\+Zone\+Objectif (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}{numero\+Zone\+Objectif}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{Ttpa\+Ihm\+::afficher\+Impact\+Couleurs()}, et \hyperlink{class_ttpa_ihm_abe9973c64673cdaa067617f9246781d2}{Ttpa\+Ihm\+::effacer\+Impact\+Zone()}.
+
+
+\begin{DoxyCode}
+00301 \{
+00302     \textcolor{keywordflow}{return} \hyperlink{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}{numeroZoneObjectif};
+00303 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_ad1bdc22fbd9f37fab06d9fc24e9f1bc4}\label{class_statistiques_seance_ad1bdc22fbd9f37fab06d9fc24e9f1bc4}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!get\+Zone\+Robot@{get\+Zone\+Robot}}
+\index{get\+Zone\+Robot@{get\+Zone\+Robot}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{get\+Zone\+Robot()}{getZoneRobot()}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::get\+Zone\+Robot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}{numero\+Zone\+Robot}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a6e3cd3828ce5d165497e343bdb15cd87}{Ttpa\+Ihm\+::afficher\+Impact\+Couleurs()}, et \hyperlink{class_ttpa_ihm_a3b00f90707811240c7dcfe8ed3dce783}{Ttpa\+Ihm\+::afficher\+Zone()}.
+
+
+\begin{DoxyCode}
+00235 \{
+00236     \textcolor{keywordflow}{return} \hyperlink{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}{numeroZoneRobot};
+00237 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}\label{class_statistiques_seance_adf93738ca1b6b117ac91b68772d2c4c8}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!impacter\+Zone@{impacter\+Zone}}
+\index{impacter\+Zone@{impacter\+Zone}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{impacter\+Zone()}{impacterZone()}}
+{\footnotesize\ttfamily bool Statistiques\+Seance\+::impacter\+Zone (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{numero\+Zone }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em numero\+Zone} & int le numéro de zone de l\textquotesingle{}impact \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_statistiques_seance_a712aad34b7ff7dd550ac6c976f75f416}{afficher\+Statistique\+Balles\+Bonnes()}, \hyperlink{class_statistiques_seance_a216b30bcfca71e425073a7ac90e59089}{afficher\+Statistiques\+Balles\+Totales()}, \hyperlink{class_statistiques_seance_afd9087c34222c0b2c0db11c5a96459c4}{afficher\+Statistiques\+Zones()}, et \hyperlink{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}{calculer\+Statistiques()}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a0070bf0027c8a903e5bb5a543533e82c}{Ttpa\+Ihm\+::recevoir\+Numero\+Zone()}, et \hyperlink{class_ttpa_ihm_a9b22616e3a4e52ad2ecfe1818d5fadb2}{Ttpa\+Ihm\+::saisir\+Numero\+Zone()}.
+
+
+\begin{DoxyCode}
+00123 \{
+00124     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"numeroZone="} << numeroZone \textcolor{comment}{/*<< "numeroZoneRobot" << numeroZoneRobot*/};
+00125 
+00126     \hyperlink{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}{calculerStatistiques}(numeroZone);
+00127     \hyperlink{class_statistiques_seance_afd9087c34222c0b2c0db11c5a96459c4}{afficherStatistiquesZones}();
+00128     \hyperlink{class_statistiques_seance_a216b30bcfca71e425073a7ac90e59089}{afficherStatistiquesBallesTotales}();
+00129     \hyperlink{class_statistiques_seance_a712aad34b7ff7dd550ac6c976f75f416}{afficherStatistiqueBallesBonnes}();
+00130 
+00131     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00132 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}\label{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!initialiser\+Statistiques@{initialiser\+Statistiques}}
+\index{initialiser\+Statistiques@{initialiser\+Statistiques}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{initialiser\+Statistiques()}{initialiserStatistiques()}}
+{\footnotesize\ttfamily void Statistiques\+Seance\+::initialiser\+Statistiques (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_statistiques_seance_a36681be0a5a9fc48c4c332606a0418ad}{balle\+Precedente\+Touche\+Table}, \hyperlink{class_statistiques_seance_af6747af0965a82d7d59a248682bbb575}{balle\+Touche\+Robot}, \hyperlink{class_statistiques_seance_ad428a6da4f5615a7682c8fa4fb597ce3}{balle\+Touche\+Table}, \hyperlink{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}{nb\+Balles\+Bonnes}, \hyperlink{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}{nb\+Balles\+Enchainees}, \hyperlink{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}{nb\+Balles\+Enchainees\+Max}, \hyperlink{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}{nb\+Balles\+Totales}, \hyperlink{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}{nb\+Balles\+Totales\+Table}, \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nb\+Impacts\+Zone}, \hyperlink{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}{numero\+Zone\+Objectif}, \hyperlink{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}{numero\+Zone\+Robot}, et \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}{Zone\+Non\+Definie}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a521fea1cb4384157e5422a033e9a4d4f}{Ttpa\+Ihm\+::reset\+Seance()}, \hyperlink{class_statistiques_seance_ab4096821bf4cb5fbebcf895b1a70be42}{Statistiques\+Seance()}, et \hyperlink{class_ttpa_ihm_ab3ed4b37a93ff04842414d4a98861d66}{Ttpa\+Ihm\+::\+Ttpa\+Ihm()}.
+
+
+\begin{DoxyCode}
+00047 \{
+00048     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i < \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone}.size(); i++)
+00049     \{
+00050         \hyperlink{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}{nbImpactsZone}[i] = 0;
+00051     \}
+00052     \hyperlink{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}{numeroZoneObjectif} = \hyperlink{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}{numeroZoneRobot} = 
+      \hyperlink{class_statistiques_seance_aa839f5192cbadd7c3fb3651d62eff8b5afaee4b0051f413cbba9651905daeba28}{StatistiquesSeance::ZoneNonDefinie};
+00053     \hyperlink{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}{nbBallesBonnes} = 0;
+00054     \hyperlink{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}{nbBallesTotales} = 0;
+00055     \hyperlink{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}{nbBallesTotalesTable} = 0;
+00056     \hyperlink{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}{nbBallesEnchainees} = 0;
+00057     \hyperlink{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}{nbBallesEnchaineesMax} = 0;
+00058     \hyperlink{class_statistiques_seance_ad428a6da4f5615a7682c8fa4fb597ce3}{balleToucheTable} = \textcolor{keyword}{true};
+00059     \hyperlink{class_statistiques_seance_a36681be0a5a9fc48c4c332606a0418ad}{ballePrecedenteToucheTable} = \textcolor{keyword}{true};
+00060     \hyperlink{class_statistiques_seance_af6747af0965a82d7d59a248682bbb575}{balleToucheRobot} = \textcolor{keyword}{true};
+00061 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_af7c8281e195c0822463e6747bd0695ef}\label{class_statistiques_seance_af7c8281e195c0822463e6747bd0695ef}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!set\+Zone\+Objectif@{set\+Zone\+Objectif}}
+\index{set\+Zone\+Objectif@{set\+Zone\+Objectif}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{set\+Zone\+Objectif()}{setZoneObjectif()}}
+{\footnotesize\ttfamily void Statistiques\+Seance\+::set\+Zone\+Objectif (\begin{DoxyParamCaption}\item[{int}]{numero\+Zone }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}{numero\+Zone\+Objectif}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_a3fd5b5d097f8a52df6fc8dd6d59b1374}{Ttpa\+Ihm\+::set\+Zone\+Objectif()}.
+
+
+\begin{DoxyCode}
+00311 \{
+00312     \hyperlink{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}{numeroZoneObjectif} = numeroZone;
+00313     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"numeroZoneObjectif"} << \hyperlink{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}{numeroZoneObjectif};
+00314 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_statistiques_seance_a97a0cf5b45add60d7a3e31207fe360a0}\label{class_statistiques_seance_a97a0cf5b45add60d7a3e31207fe360a0}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!set\+Zone\+Robot@{set\+Zone\+Robot}}
+\index{set\+Zone\+Robot@{set\+Zone\+Robot}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{set\+Zone\+Robot()}{setZoneRobot()}}
+{\footnotesize\ttfamily void Statistiques\+Seance\+::set\+Zone\+Robot (\begin{DoxyParamCaption}\item[{int}]{numero\+Zone }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}{numero\+Zone\+Robot}.
+
+
+
+Référencé par \hyperlink{class_ttpa_ihm_abda1a93ec09ec404b129e08876faa5f8}{Ttpa\+Ihm\+::set\+Zone\+Robot()}.
+
+
+\begin{DoxyCode}
+00245 \{
+00246     \hyperlink{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}{numeroZoneRobot} = numeroZone;
+00247     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"numeroZoneRobot"} << \hyperlink{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}{numeroZoneRobot};
+00248 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_statistiques_seance_a36681be0a5a9fc48c4c332606a0418ad}\label{class_statistiques_seance_a36681be0a5a9fc48c4c332606a0418ad}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!balle\+Precedente\+Touche\+Table@{balle\+Precedente\+Touche\+Table}}
+\index{balle\+Precedente\+Touche\+Table@{balle\+Precedente\+Touche\+Table}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{balle\+Precedente\+Touche\+Table}{ballePrecedenteToucheTable}}
+{\footnotesize\ttfamily bool Statistiques\+Seance\+::balle\+Precedente\+Touche\+Table\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}{calculer\+Statistiques()}, \hyperlink{class_statistiques_seance_a4f0dc4fd1c97787dab03ae5074fb3414}{getballes\+Precedent\+Touche\+Table()}, et \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiser\+Statistiques()}.
+
+\mbox{\Hypertarget{class_statistiques_seance_af6747af0965a82d7d59a248682bbb575}\label{class_statistiques_seance_af6747af0965a82d7d59a248682bbb575}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!balle\+Touche\+Robot@{balle\+Touche\+Robot}}
+\index{balle\+Touche\+Robot@{balle\+Touche\+Robot}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{balle\+Touche\+Robot}{balleToucheRobot}}
+{\footnotesize\ttfamily bool Statistiques\+Seance\+::balle\+Touche\+Robot\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiser\+Statistiques()}.
+
+\mbox{\Hypertarget{class_statistiques_seance_ad428a6da4f5615a7682c8fa4fb597ce3}\label{class_statistiques_seance_ad428a6da4f5615a7682c8fa4fb597ce3}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!balle\+Touche\+Table@{balle\+Touche\+Table}}
+\index{balle\+Touche\+Table@{balle\+Touche\+Table}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{balle\+Touche\+Table}{balleToucheTable}}
+{\footnotesize\ttfamily bool Statistiques\+Seance\+::balle\+Touche\+Table\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}{calculer\+Statistiques()}, et \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiser\+Statistiques()}.
+
+\mbox{\Hypertarget{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}\label{class_statistiques_seance_af62043be598fd6b7cd7ddbc37eadf967}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!nb\+Balles\+Bonnes@{nb\+Balles\+Bonnes}}
+\index{nb\+Balles\+Bonnes@{nb\+Balles\+Bonnes}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{nb\+Balles\+Bonnes}{nbBallesBonnes}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::nb\+Balles\+Bonnes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_ad042b683ce7b4db507a443b1b27bfef8}{calculer\+Pourcentage\+Serie\+Max()}, \hyperlink{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}{calculer\+Statistiques()}, \hyperlink{class_statistiques_seance_a0dad2ceb22672adf343548b35bf86ba1}{get\+Balles\+Bonnes()}, et \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiser\+Statistiques()}.
+
+\mbox{\Hypertarget{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}\label{class_statistiques_seance_ac7f71fc7b017bb17d4576f954120c7a0}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!nb\+Balles\+Enchainees@{nb\+Balles\+Enchainees}}
+\index{nb\+Balles\+Enchainees@{nb\+Balles\+Enchainees}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{nb\+Balles\+Enchainees}{nbBallesEnchainees}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::nb\+Balles\+Enchainees\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}{calculer\+Statistiques()}, et \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiser\+Statistiques()}.
+
+\mbox{\Hypertarget{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}\label{class_statistiques_seance_a3e64397e87d453efb42b2545df1a8e90}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!nb\+Balles\+Enchainees\+Max@{nb\+Balles\+Enchainees\+Max}}
+\index{nb\+Balles\+Enchainees\+Max@{nb\+Balles\+Enchainees\+Max}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{nb\+Balles\+Enchainees\+Max}{nbBallesEnchaineesMax}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::nb\+Balles\+Enchainees\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_ad042b683ce7b4db507a443b1b27bfef8}{calculer\+Pourcentage\+Serie\+Max()}, \hyperlink{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}{calculer\+Statistiques()}, \hyperlink{class_statistiques_seance_a1f241d7ef584ebffa2246134c63be53b}{get\+Balles\+Enchainees()}, et \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiser\+Statistiques()}.
+
+\mbox{\Hypertarget{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}\label{class_statistiques_seance_a27eb3965bbe304700d3254534c5e4ed3}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!nb\+Balles\+Totales@{nb\+Balles\+Totales}}
+\index{nb\+Balles\+Totales@{nb\+Balles\+Totales}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{nb\+Balles\+Totales}{nbBallesTotales}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::nb\+Balles\+Totales\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_a67759edd6c296bd6b66f7860dbac130e}{calculer\+Pourcentage()}, \hyperlink{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}{calculer\+Statistiques()}, \hyperlink{class_statistiques_seance_aaefd0b775012ec914a36a262dc14fc66}{get\+Balles\+Total()}, et \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiser\+Statistiques()}.
+
+\mbox{\Hypertarget{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}\label{class_statistiques_seance_aa152a6f154cc832c3355342ecf94162a}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!nb\+Balles\+Totales\+Table@{nb\+Balles\+Totales\+Table}}
+\index{nb\+Balles\+Totales\+Table@{nb\+Balles\+Totales\+Table}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{nb\+Balles\+Totales\+Table}{nbBallesTotalesTable}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::nb\+Balles\+Totales\+Table\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}{calculer\+Statistiques()}, \hyperlink{class_statistiques_seance_a1f956e08733a81d0a86673cae6bc7feb}{getballes\+Touche\+Table()}, et \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiser\+Statistiques()}.
+
+\mbox{\Hypertarget{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}\label{class_statistiques_seance_aa4a040cda282d5b1c250025f8e191e20}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!nb\+Impacts\+Zone@{nb\+Impacts\+Zone}}
+\index{nb\+Impacts\+Zone@{nb\+Impacts\+Zone}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{nb\+Impacts\+Zone}{nbImpactsZone}}
+{\footnotesize\ttfamily Q\+Vector$<$int$>$ Statistiques\+Seance\+::nb\+Impacts\+Zone\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_afd9087c34222c0b2c0db11c5a96459c4}{afficher\+Statistiques\+Zones()}, \hyperlink{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}{calculer\+Statistiques()}, \hyperlink{class_statistiques_seance_a26b717d40065e7afd80465458f3cb6aa}{get\+Balles\+Hors\+Table()}, et \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiser\+Statistiques()}.
+
+\mbox{\Hypertarget{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}\label{class_statistiques_seance_a23226867e4a34cb41f8c07f3d8d42e49}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!numero\+Zone\+Objectif@{numero\+Zone\+Objectif}}
+\index{numero\+Zone\+Objectif@{numero\+Zone\+Objectif}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{numero\+Zone\+Objectif}{numeroZoneObjectif}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::numero\+Zone\+Objectif\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}{calculer\+Statistiques()}, \hyperlink{class_statistiques_seance_a61c01cb1d35cda871e8243658213ee5b}{get\+Zone\+Objectif()}, \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiser\+Statistiques()}, et \hyperlink{class_statistiques_seance_af7c8281e195c0822463e6747bd0695ef}{set\+Zone\+Objectif()}.
+
+\mbox{\Hypertarget{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}\label{class_statistiques_seance_aeea50e7fc9b2308e365f77f27e3f86ee}} 
+\index{Statistiques\+Seance@{Statistiques\+Seance}!numero\+Zone\+Robot@{numero\+Zone\+Robot}}
+\index{numero\+Zone\+Robot@{numero\+Zone\+Robot}!Statistiques\+Seance@{Statistiques\+Seance}}
+\paragraph{\texorpdfstring{numero\+Zone\+Robot}{numeroZoneRobot}}
+{\footnotesize\ttfamily int Statistiques\+Seance\+::numero\+Zone\+Robot\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_statistiques_seance_a8bf60224113e3697adfe0a4f8f22ab7b}{calculer\+Statistiques()}, \hyperlink{class_statistiques_seance_ad1bdc22fbd9f37fab06d9fc24e9f1bc4}{get\+Zone\+Robot()}, \hyperlink{class_statistiques_seance_a17e1c49e2986a8490ff96e4bd7733291}{initialiser\+Statistiques()}, et \hyperlink{class_statistiques_seance_a97a0cf5b45add60d7a3e31207fe360a0}{set\+Zone\+Robot()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{statistiquesseance_8h}{statistiquesseance.\+h}\item 
+\hyperlink{statistiquesseance_8cpp}{statistiquesseance.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\hypertarget{_parametre_8h_source}{}\subsection{Parametre.\+h}
+\label{_parametre_8h_source}\index{Parametre.\+h@{Parametre.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef PARAMETRE\_H}
+00002 \textcolor{preprocessor}{#define PARAMETRE\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QObject>}
+00017 
+\Hypertarget{_parametre_8h_source_l00029}\hyperlink{class_parametre}{00029} \textcolor{keyword}{class }\hyperlink{class_parametre}{Parametre} : \textcolor{keyword}{public} QObject
+00030 \{
+00031     Q\_OBJECT
+\Hypertarget{_parametre_8h_source_l00032}\hyperlink{class_parametre_aa60cee81cf82cba4c7b216f15adf8a80}{00032}     Q\_PROPERTY(QString \textcolor{keywordtype}{id} READ getId NOTIFY idChanged)
+\Hypertarget{_parametre_8h_source_l00033}\hyperlink{class_parametre_a0423730a9146df04ba4de3f733818e45}{00033}     Q\_PROPERTY(QString nbBalles READ getNbBalles NOTIFY nbBallesChanged)
+\Hypertarget{_parametre_8h_source_l00034}\hyperlink{class_parametre_a6d2be86cf41aef4e099b0a7421c735c8}{00034}     Q\_PROPERTY(QString nbBallesMinute READ getNbBallesMinute NOTIFY nbBallesMinuteChanged)
+\Hypertarget{_parametre_8h_source_l00035}\hyperlink{class_parametre_a1ac07f14fbc50b243b57246f662fe67f}{00035}     Q\_PROPERTY(QString effet READ getEffet NOTIFY effetChanged)
+\Hypertarget{_parametre_8h_source_l00036}\hyperlink{class_parametre_aace4f0265742e479043b3e2afa33771e}{00036}     Q\_PROPERTY(QString puissance READ getPuissance NOTIFY puissanceChanged)
+\Hypertarget{_parametre_8h_source_l00037}\hyperlink{class_parametre_ab8cd796bb232cba0abe0aab5b02ae52b}{00037}     Q\_PROPERTY(QString rotation READ getRotation NOTIFY rotationChanged)
+\Hypertarget{_parametre_8h_source_l00038}\hyperlink{class_parametre_a5c1b739e1a70e16ca09e6752743363aa}{00038}     Q\_PROPERTY(QString zoneObjectif READ getZoneObjectif NOTIFY zoneObjectifChanged)
+\Hypertarget{_parametre_8h_source_l00039}\hyperlink{class_parametre_a85c2e24c35cad5304b5e2edf7289c9c3}{00039}     Q\_PROPERTY(QString zoneRobot READ getZoneRobot NOTIFY zoneRobotChanged)
+00040 public:
+00041     explicit \hyperlink{class_parametre}{Parametre}(QString \textcolor{keywordtype}{id}="", QString nbBalles="", QString nbBallesMinute="", QString 
+      effet="", QString puissance="", QString rotation="", QString zoneObjectif="", QString zoneRobot="", QObject *
+      parent = \textcolor{keywordtype}{nullptr});
+00042 
+00043     QString getId();
+00044     QString getNbBalles();
+00045     QString getNbBallesMinute();
+00046     QString getEffet();
+00047     QString getPuissance();
+00048     QString getRotation();
+00049     QString getZoneObjectif();
+00050     QString getZoneRobot();
+00051 
+00052 private:
+00053     QString \textcolor{keywordtype}{id};
+00054     QString nbBalles;
+00055     QString nbBallesMinute;
+00056     QString effet;
+00057     QString puissance;
+00058     QString rotation;
+00059     QString zoneObjectif;
+00060     QString zoneRobot;
+00061 
+00062 
+00063 signals:
+00064     \textcolor{keywordtype}{void} idChanged();
+00065     \textcolor{keywordtype}{void} nbBallesChanged();
+00066     \textcolor{keywordtype}{void} nbBallesMinuteChanged();
+00067     \textcolor{keywordtype}{void} effetChanged();
+00068     \textcolor{keywordtype}{void} puissanceChanged();
+00069     \textcolor{keywordtype}{void} rotationChanged();
+00070     \textcolor{keywordtype}{void} zoneObjectifChanged();
+00071     \textcolor{keywordtype}{void} zoneRobotChanged();
+00072 
+00073 
+00074 public slots:
+00075 \};
+00076 
+00077 \textcolor{preprocessor}{#endif // PARAMETRE\_H}
+\end{DoxyCode}

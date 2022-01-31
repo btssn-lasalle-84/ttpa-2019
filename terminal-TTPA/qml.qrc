@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>FenetreTTPA.qml</file>
+        <file>FenetreAccueil.qml</file>
+        <file>FenetreReglages.qml</file>
+        <file>FenetreStatistiques.qml</file>
+    </qresource>
+</RCC>

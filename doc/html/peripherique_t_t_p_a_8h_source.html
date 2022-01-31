@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet TTPA (Table Tennis Performance Analyser):  Fichier source de peripheriqueTTPA.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-ttpa.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet TTPA (Table Tennis Performance Analyser)
+   &#160;<span id="projectnumber">1.4</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_554556981f9cfcfe8b6f3655d7d61c92.html">terminal-TTPA</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">peripheriqueTTPA.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="peripherique_t_t_p_a_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef PeripheriqueTTPA_H</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define PeripheriqueTTPA_H</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QBluetoothSocket&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;QBluetoothLocalDevice&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_peripherique_t_t_p_a.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_peripherique_t_t_p_a.html">PeripheriqueTTPA</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_peripherique_t_t_p_a.html#afafe3566b4b5357819811218b9a4244f">   33</a></span>&#160;    Q_PROPERTY(QString nom READ <a class="code" href="class_peripherique_t_t_p_a.html#abb04680791a7e778ac3808b5d218421f">getNom</a> NOTIFY peripheriqueTTPAChanged)</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_peripherique_t_t_p_a.html#a444063230c83cf81eff8a3a55736f2cf">   34</a></span>&#160;    Q_PROPERTY(QString adresseMAC READ <a class="code" href="class_peripherique_t_t_p_a.html#a1e828514b4576a87295bb2d9a3d87876">getAdresseMAC</a> NOTIFY peripheriqueTTPAChanged)</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_peripherique_t_t_p_a.html#a3aaac9f045cc038777895afe18411e58">   35</a></span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> etatConnexion MEMBER etatConnexion NOTIFY connecte)</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> etatConnexion MEMBER etatConnexion NOTIFY deconnecte)</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_peripherique_t_t_p_a.html#a9602c4662641984ea44bf6caaac6e94c">   37</a></span>&#160;    Q_PROPERTY(<span class="keywordtype">bool</span> connexionErreur MEMBER connexionErreur NOTIFY erreur)</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;public:</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_peripherique_t_t_p_a.html">PeripheriqueTTPA</a>(QString nom, QString adresseMAC, QObject *parent = <span class="keywordtype">nullptr</span>);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QString <a class="code" href="class_peripherique_t_t_p_a.html#abb04680791a7e778ac3808b5d218421f">getNom</a>() const;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    QString <a class="code" href="class_peripherique_t_t_p_a.html#a1e828514b4576a87295bb2d9a3d87876">getAdresseMAC</a>() const;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Q_INVOKABLE <span class="keywordtype">void</span> connecter();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    Q_INVOKABLE <span class="keywordtype">void</span> deconnecter();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    Q_INVOKABLE <span class="keywordtype">bool</span> <a class="code" href="class_peripherique_t_t_p_a.html#a529048ac8be73560038bbeee0047b634">envoyer</a>(QString trame);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    Q_INVOKABLE <span class="keywordtype">bool</span> estConnecte();</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;private:</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QString nom; </div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QString adresseMAC; </div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">bool</span> etatConnexion; </div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> connexionErreur; </div><div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_peripherique_t_t_p_a.html#ab66f30984a7f9fa17fd28391efe968a9">   82</a></span>&#160;    QBluetoothSocket *socket; </div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;public slots:</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// pour la socket</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> socketConnecte(); </div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> socketDeconnecte(); </div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> socketReadyRead(); </div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_peripherique_t_t_p_a.html#a85811ace874ff7cea3437146511f1b2c">socketErreur</a>(QBluetoothSocket::SocketError erreur); </div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;signals:</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> peripheriqueTTPAChanged(); </div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> connecte(); </div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> deconnecte(); </div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> erreur(); </div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_peripherique_t_t_p_a.html#aaa8699b83c9659c874a0d066ea633e45">trameRecue</a>(QString nomPeripherique, QString trame);  </div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif // PeripheriqueTTPA_H</span></div><div class="ttc" id="class_peripherique_t_t_p_a_html_a529048ac8be73560038bbeee0047b634"><div class="ttname"><a href="class_peripherique_t_t_p_a.html#a529048ac8be73560038bbeee0047b634">PeripheriqueTTPA::envoyer</a></div><div class="ttdeci">Q_INVOKABLE bool envoyer(QString trame)</div><div class="ttdoc">Envoie une trame à l&amp;#39;appareil &quot;TTPA&quot; connecté </div><div class="ttdef"><b>Definition:</b> peripheriqueTTPA.cpp:101</div></div>
+<div class="ttc" id="class_peripherique_t_t_p_a_html"><div class="ttname"><a href="class_peripherique_t_t_p_a.html">PeripheriqueTTPA</a></div><div class="ttdoc">Permet la communication avec les appareils Bluetooth TTPA. </div><div class="ttdef"><b>Definition:</b> peripheriqueTTPA.h:30</div></div>
+<div class="ttc" id="class_peripherique_t_t_p_a_html_a1e828514b4576a87295bb2d9a3d87876"><div class="ttname"><a href="class_peripherique_t_t_p_a.html#a1e828514b4576a87295bb2d9a3d87876">PeripheriqueTTPA::getAdresseMAC</a></div><div class="ttdeci">QString getAdresseMAC() const</div><div class="ttdef"><b>Definition:</b> peripheriqueTTPA.cpp:25</div></div>
+<div class="ttc" id="class_peripherique_t_t_p_a_html_abb04680791a7e778ac3808b5d218421f"><div class="ttname"><a href="class_peripherique_t_t_p_a.html#abb04680791a7e778ac3808b5d218421f">PeripheriqueTTPA::getNom</a></div><div class="ttdeci">QString getNom() const</div><div class="ttdef"><b>Definition:</b> peripheriqueTTPA.cpp:20</div></div>
+<div class="ttc" id="class_peripherique_t_t_p_a_html_a85811ace874ff7cea3437146511f1b2c"><div class="ttname"><a href="class_peripherique_t_t_p_a.html#a85811ace874ff7cea3437146511f1b2c">PeripheriqueTTPA::socketErreur</a></div><div class="ttdeci">void socketErreur(QBluetoothSocket::SocketError erreur)</div><div class="ttdoc">slot exécuté quand la socket est en erreur </div><div class="ttdef"><b>Definition:</b> peripheriqueTTPA.cpp:92</div></div>
+<div class="ttc" id="class_peripherique_t_t_p_a_html_aaa8699b83c9659c874a0d066ea633e45"><div class="ttname"><a href="class_peripherique_t_t_p_a.html#aaa8699b83c9659c874a0d066ea633e45">PeripheriqueTTPA::trameRecue</a></div><div class="ttdeci">void trameRecue(QString nomPeripherique, QString trame)</div><div class="ttdoc">signal indiquant qu&amp;#39;une trame a été recçue </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 19:34:28 pour Projet TTPA (Table Tennis Performance Analyser) par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

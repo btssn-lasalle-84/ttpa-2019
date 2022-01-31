@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet TTPA (Table Tennis Performance Analyser):  Fichier source de Joueurs.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-ttpa.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet TTPA (Table Tennis Performance Analyser)
+   &#160;<span id="projectnumber">1.4</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_554556981f9cfcfe8b6f3655d7d61c92.html">terminal-TTPA</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Joueurs.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_joueurs_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef JOUEURS_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define JOUEURS_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QVariant&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_joueurs.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_joueurs.html">Joueurs</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_joueurs.html#a809d64435e34f4f7f0218d4616b727c0">   35</a></span>&#160;    Q_PROPERTY(QVariant <a class="code" href="class_joueurs.html#a809d64435e34f4f7f0218d4616b727c0">listeJoueurs</a> READ <a class="code" href="class_joueurs.html#aec63d4e2fe1bf7fbf33489c1a8d3bbbf">getListeJoueurs</a> NOTIFY <a class="code" href="class_joueurs.html#a5df3ead7bec2c66c600ec53880afe035">listeJoueursUpdated</a>)</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_joueurs.html#ac0f9bfbacdcda2622d7438d0445200e8">Joueurs</a>(QObject *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_joueurs.html#ab2b4280d9ad7be92ef78c2ca15755318">~Joueurs</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Q_INVOKABLE <span class="keywordtype">bool</span> <a class="code" href="class_joueurs.html#a5bd70438c6624d8dca765e322285eb61">recupererJoueurs</a>();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//Q_INVOKABLE bool recupererJoueursSeance();</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Q_INVOKABLE QString <a class="code" href="class_joueurs.html#ad41325dbd0611773c6e9fd8a814be1b3">insererJoueur</a>(QString nomJoueur);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QVariant <a class="code" href="class_joueurs.html#aec63d4e2fe1bf7fbf33489c1a8d3bbbf">getListeJoueurs</a>();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_joueurs.html#a86c2a21b5a6b83f9a43f9a957a020fd7">   46</a></span>&#160;    QList&lt;QObject*&gt; <a class="code" href="class_joueurs.html#a86c2a21b5a6b83f9a43f9a957a020fd7">joueurs</a>;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_joueurs.html#ac060c3017311b67a97ed488ce2bb2332">   47</a></span>&#160;    <a class="code" href="class_base_de_donnees.html">BaseDeDonnees</a>* <a class="code" href="class_joueurs.html#ac060c3017311b67a97ed488ce2bb2332">bdd</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;signals:</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_joueurs.html#a5df3ead7bec2c66c600ec53880afe035">listeJoueursUpdated</a>();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // JOUEURS_H</span></div><div class="ttc" id="class_joueurs_html_a86c2a21b5a6b83f9a43f9a957a020fd7"><div class="ttname"><a href="class_joueurs.html#a86c2a21b5a6b83f9a43f9a957a020fd7">Joueurs::joueurs</a></div><div class="ttdeci">QList&lt; QObject * &gt; joueurs</div><div class="ttdef"><b>Definition:</b> Joueurs.h:46</div></div>
+<div class="ttc" id="class_joueurs_html"><div class="ttname"><a href="class_joueurs.html">Joueurs</a></div><div class="ttdoc">Déclaration de la classe Joueurs. </div><div class="ttdef"><b>Definition:</b> Joueurs.h:32</div></div>
+<div class="ttc" id="class_joueurs_html_ad41325dbd0611773c6e9fd8a814be1b3"><div class="ttname"><a href="class_joueurs.html#ad41325dbd0611773c6e9fd8a814be1b3">Joueurs::insererJoueur</a></div><div class="ttdeci">Q_INVOKABLE QString insererJoueur(QString nomJoueur)</div><div class="ttdef"><b>Definition:</b> Joueurs.cpp:51</div></div>
+<div class="ttc" id="class_joueurs_html_ac0f9bfbacdcda2622d7438d0445200e8"><div class="ttname"><a href="class_joueurs.html#ac0f9bfbacdcda2622d7438d0445200e8">Joueurs::Joueurs</a></div><div class="ttdeci">Joueurs(QObject *parent=nullptr)</div><div class="ttdef"><b>Definition:</b> Joueurs.cpp:17</div></div>
+<div class="ttc" id="class_base_de_donnees_html"><div class="ttname"><a href="class_base_de_donnees.html">BaseDeDonnees</a></div><div class="ttdoc">Déclaration de la classe BaseDeDonnees pour Android. </div><div class="ttdef"><b>Definition:</b> BaseDeDonnees.h:35</div></div>
+<div class="ttc" id="class_joueurs_html_aec63d4e2fe1bf7fbf33489c1a8d3bbbf"><div class="ttname"><a href="class_joueurs.html#aec63d4e2fe1bf7fbf33489c1a8d3bbbf">Joueurs::getListeJoueurs</a></div><div class="ttdeci">QVariant getListeJoueurs()</div><div class="ttdef"><b>Definition:</b> Joueurs.cpp:66</div></div>
+<div class="ttc" id="class_joueurs_html_a5bd70438c6624d8dca765e322285eb61"><div class="ttname"><a href="class_joueurs.html#a5bd70438c6624d8dca765e322285eb61">Joueurs::recupererJoueurs</a></div><div class="ttdeci">Q_INVOKABLE bool recupererJoueurs()</div><div class="ttdef"><b>Definition:</b> Joueurs.cpp:29</div></div>
+<div class="ttc" id="class_joueurs_html_ab2b4280d9ad7be92ef78c2ca15755318"><div class="ttname"><a href="class_joueurs.html#ab2b4280d9ad7be92ef78c2ca15755318">Joueurs::~Joueurs</a></div><div class="ttdeci">~Joueurs()</div><div class="ttdef"><b>Definition:</b> Joueurs.cpp:24</div></div>
+<div class="ttc" id="class_joueurs_html_a809d64435e34f4f7f0218d4616b727c0"><div class="ttname"><a href="class_joueurs.html#a809d64435e34f4f7f0218d4616b727c0">Joueurs::listeJoueurs</a></div><div class="ttdeci">QVariant listeJoueurs</div><div class="ttdef"><b>Definition:</b> Joueurs.h:35</div></div>
+<div class="ttc" id="class_joueurs_html_ac060c3017311b67a97ed488ce2bb2332"><div class="ttname"><a href="class_joueurs.html#ac060c3017311b67a97ed488ce2bb2332">Joueurs::bdd</a></div><div class="ttdeci">BaseDeDonnees * bdd</div><div class="ttdef"><b>Definition:</b> Joueurs.h:47</div></div>
+<div class="ttc" id="class_joueurs_html_a5df3ead7bec2c66c600ec53880afe035"><div class="ttname"><a href="class_joueurs.html#a5df3ead7bec2c66c600ec53880afe035">Joueurs::listeJoueursUpdated</a></div><div class="ttdeci">void listeJoueursUpdated()</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 19:34:28 pour Projet TTPA (Table Tennis Performance Analyser) par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

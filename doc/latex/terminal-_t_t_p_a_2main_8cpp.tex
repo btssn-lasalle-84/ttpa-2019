@@ -1,0 +1,77 @@
+\hypertarget{terminal-_t_t_p_a_2main_8cpp}{}\subsection{Référence du fichier main.\+cpp}
+\label{terminal-_t_t_p_a_2main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+Programme principal terminal-\/\+T\+T\+PA.  
+
+
+{\ttfamily \#include $<$Q\+Application$>$}\newline
+{\ttfamily \#include $<$Q\+Qml\+Application\+Engine$>$}\newline
+{\ttfamily \#include $<$Q\+Quick\+Style$>$}\newline
+{\ttfamily \#include $<$Q\+Icon$>$}\newline
+{\ttfamily \#include $<$Q\+Qml\+Context$>$}\newline
+{\ttfamily \#include $<$Qt\+Sql/\+Qt\+Sql$>$}\newline
+{\ttfamily \#include \char`\"{}Communication\+Bluetooth.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}peripherique\+T\+T\+P\+A.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Joueurs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Parametres.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Profils.\+h\char`\"{}}\newline
+\subsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{terminal-_t_t_p_a_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Crée et affiche la fenêtre principale de l\textquotesingle{}application
+
+\begin{DoxyAuthor}{Auteur}
+Youssef Hammouma
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+4 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des fonctions}
+\mbox{\Hypertarget{terminal-_t_t_p_a_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{terminal-_t_t_p_a_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{terminal-\/\+T\+T\+P\+A/main.\+cpp@{terminal-\/\+T\+T\+P\+A/main.\+cpp}!main@{main}}
+\index{main@{main}!terminal-\/\+T\+T\+P\+A/main.\+cpp@{terminal-\/\+T\+T\+P\+A/main.\+cpp}}
+\paragraph{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00032 \{
+00033     QCoreApplication::setApplicationName(\textcolor{stringliteral}{"TTPA"});
+00034     QCoreApplication::setAttribute(Qt::AA\_EnableHighDpiScaling);
+00035 
+00036     QApplication app(argc, argv);
+00037     QQmlApplicationEngine engine;
+00038 
+00039     QQuickStyle::setStyle(\textcolor{stringliteral}{"Material"});
+00040     QIcon::setThemeName(\textcolor{stringliteral}{"terminal-TTPA"});
+00041 
+00042     \hyperlink{class_communication_bluetooth}{CommunicationBluetooth} *communicationBluetooth = \textcolor{keyword}{new} 
+      \hyperlink{class_communication_bluetooth}{CommunicationBluetooth};
+00043     engine.rootContext()->setContextProperty(\textcolor{stringliteral}{"communicationBluetooth"}, communicationBluetooth);
+00044     qmlRegisterType<PeripheriqueTTPA>();
+00045 
+00046     \hyperlink{class_joueurs}{Joueurs} *joueurs = \textcolor{keyword}{new} \hyperlink{class_joueurs}{Joueurs};
+00047     engine.rootContext()->setContextProperty(\textcolor{stringliteral}{"joueurs"}, joueurs);
+00048 
+00049     \hyperlink{class_parametres}{Parametres} *parametres = \textcolor{keyword}{new} \hyperlink{class_parametres}{Parametres};
+00050     engine.rootContext()->setContextProperty(\textcolor{stringliteral}{"parametres"}, parametres);
+00051 
+00052     \hyperlink{class_profils}{Profils} *profils = \textcolor{keyword}{new} \hyperlink{class_profils}{Profils};
+00053     engine.rootContext()->setContextProperty(\textcolor{stringliteral}{"profils"}, profils);
+00054 
+00055     engine.load(QUrl(QStringLiteral(\textcolor{stringliteral}{"qrc:/FenetreTTPA.qml"})));
+00056 
+00057     \textcolor{keywordflow}{if} (engine.rootObjects().isEmpty())
+00058         \textcolor{keywordflow}{return} -1;
+00059 
+00060     \textcolor{keywordflow}{return} app.exec();
+00061 \}
+\end{DoxyCode}

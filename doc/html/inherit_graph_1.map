@@ -1,0 +1,5 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node2" href="$class_fenetre_accueil.html" title="La fenêtre d&#39;accueil. " alt="" coords="114,5,223,32"/>
+<area shape="rect" id="node3" href="$class_fenetre_reglages.html" title="La fenêtre de réglages. " alt="" coords="108,56,229,83"/>
+<area shape="rect" id="node4" href="$class_fenetre_statistiques.html" title="La fenêtre de statistiques. " alt="" coords="101,107,236,133"/>
+</map>

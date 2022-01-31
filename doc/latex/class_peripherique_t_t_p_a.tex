@@ -1,0 +1,479 @@
+\hypertarget{class_peripherique_t_t_p_a}{}\subsection{Référence de la classe Peripherique\+T\+T\+PA}
+\label{class_peripherique_t_t_p_a}\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+
+
+Permet la communication avec les appareils Bluetooth T\+T\+PA.  
+
+
+
+
+{\ttfamily \#include $<$peripherique\+T\+T\+P\+A.\+h$>$}
+
+
+
+Graphe de collaboration de Peripherique\+T\+T\+PA\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_peripherique_t_t_p_a__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_peripherique_t_t_p_a_aab23a43f5c9d70c30df3dbf4aeeeff9d}{socket\+Connecte} ()
+\begin{DoxyCompactList}\small\item\em slot exécuté quand la socket de communication est connecté \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_t_t_p_a_adb04c45864ea56a80a0716cde0a31856}{socket\+Deconnecte} ()
+\begin{DoxyCompactList}\small\item\em slot exécuté quand la socket de communication est déconnecté \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_t_t_p_a_a4e1d676e59b293161a40ee6428a79871}{socket\+Ready\+Read} ()
+\begin{DoxyCompactList}\small\item\em slot exécuté quand des données sont prêtes à être lues \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_t_t_p_a_a85811ace874ff7cea3437146511f1b2c}{socket\+Erreur} (Q\+Bluetooth\+Socket\+::\+Socket\+Error \hyperlink{class_peripherique_t_t_p_a_a7a31d9f923cc71a42d0dab80d9332eb6}{erreur})
+\begin{DoxyCompactList}\small\item\em slot exécuté quand la socket est en erreur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_peripherique_t_t_p_a_a5a0a18d25ab4c4b8362a80f215dbfc75}{peripherique\+T\+T\+P\+A\+Changed} ()
+\item 
+void \hyperlink{class_peripherique_t_t_p_a_ae95f1fe6bb1908b5eb2d34a469f7f873}{connecte} ()
+\begin{DoxyCompactList}\small\item\em signal un périphérique est connecté \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_t_t_p_a_a8cb56776db43953cceb04e5f3ee4ca7b}{deconnecte} ()
+\begin{DoxyCompactList}\small\item\em signal un périphérique est déconnecté \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_t_t_p_a_a7a31d9f923cc71a42d0dab80d9332eb6}{erreur} ()
+\begin{DoxyCompactList}\small\item\em signal une erreur \end{DoxyCompactList}\item 
+void \hyperlink{class_peripherique_t_t_p_a_aaa8699b83c9659c874a0d066ea633e45}{trame\+Recue} (Q\+String nom\+Peripherique, Q\+String trame)
+\begin{DoxyCompactList}\small\item\em signal indiquant qu\textquotesingle{}une trame a été recçue \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_peripherique_t_t_p_a_acb4f39a3af94d61dcb673df11bed3a15}{Peripherique\+T\+T\+PA} (Q\+String \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom}, Q\+String \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresse\+M\+AC}, Q\+Object $\ast$parent=nullptr)
+\item 
+Q\+String \hyperlink{class_peripherique_t_t_p_a_abb04680791a7e778ac3808b5d218421f}{get\+Nom} () const
+\item 
+Q\+String \hyperlink{class_peripherique_t_t_p_a_a1e828514b4576a87295bb2d9a3d87876}{get\+Adresse\+M\+AC} () const
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE void \hyperlink{class_peripherique_t_t_p_a_a8afa92f7c3ae6e1edc30f5c8b386af81}{connecter} ()
+\begin{DoxyCompactList}\small\item\em Connecte le terminal mobile à l\textquotesingle{}appareil \char`\"{}\+T\+T\+P\+A\char`\"{}. \end{DoxyCompactList}\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE void \hyperlink{class_peripherique_t_t_p_a_a23bd4f409e6763022807d5b278464328}{deconnecter} ()
+\begin{DoxyCompactList}\small\item\em Deconnecte l\textquotesingle{}appareil \char`\"{}\+T\+T\+P\+A\char`\"{} connecté \end{DoxyCompactList}\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_peripherique_t_t_p_a_a529048ac8be73560038bbeee0047b634}{envoyer} (Q\+String trame)
+\begin{DoxyCompactList}\small\item\em Envoie une trame à l\textquotesingle{}appareil \char`\"{}\+T\+T\+P\+A\char`\"{} connecté \end{DoxyCompactList}\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_peripherique_t_t_p_a_a33991b646ef2a49e79bac478b5f722c7}{est\+Connecte} ()
+\begin{DoxyCompactList}\small\item\em Retourne vrai si l\textquotesingle{}appareil est connecté \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom}
+\begin{DoxyCompactList}\small\item\em nom du périphérique Bluetooth \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresse\+M\+AC}
+\begin{DoxyCompactList}\small\item\em adresse M\+AS du périphérique Bluetooth \end{DoxyCompactList}\item 
+bool \hyperlink{class_peripherique_t_t_p_a_a3aaac9f045cc038777895afe18411e58}{etat\+Connexion}
+\begin{DoxyCompactList}\small\item\em état de connexion périphérique Bluetooth. \end{DoxyCompactList}\item 
+bool \hyperlink{class_peripherique_t_t_p_a_a9602c4662641984ea44bf6caaac6e94c}{connexion\+Erreur}
+\begin{DoxyCompactList}\small\item\em état d\textquotesingle{}erreur du périphérique Bluetooth. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Bluetooth\+Socket $\ast$ \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}
+\begin{DoxyCompactList}\small\item\em une socket de communication \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Hammouma Youssef
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+4 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_acb4f39a3af94d61dcb673df11bed3a15}\label{class_peripherique_t_t_p_a_acb4f39a3af94d61dcb673df11bed3a15}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{Peripherique\+T\+T\+P\+A()}{PeripheriqueTTPA()}}
+{\footnotesize\ttfamily Peripherique\+T\+T\+P\+A\+::\+Peripherique\+T\+T\+PA (\begin{DoxyParamCaption}\item[{Q\+String}]{nom,  }\item[{Q\+String}]{adresse\+M\+AC,  }\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresse\+M\+AC}.
+
+
+\begin{DoxyCode}
+00015                                                                                    : QObject(parent), 
+      \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom}(\hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom}), \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresseMAC}(\hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresseMAC}), \hyperlink{class_peripherique_t_t_p_a_a3aaac9f045cc038777895afe18411e58}{etatConnexion}(\textcolor{keyword}{false}), 
+      \hyperlink{class_peripherique_t_t_p_a_a9602c4662641984ea44bf6caaac6e94c}{connexionErreur}(\textcolor{keyword}{false}), \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}(NULL)
+00016 \{
+00017     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom} << \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresseMAC};
+00018 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_ae95f1fe6bb1908b5eb2d34a469f7f873}\label{class_peripherique_t_t_p_a_ae95f1fe6bb1908b5eb2d34a469f7f873}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!connecte@{connecte}}
+\index{connecte@{connecte}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{connecte}{connecte}}
+{\footnotesize\ttfamily void Peripherique\+T\+T\+P\+A\+::connecte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_t_t_p_a_aab23a43f5c9d70c30df3dbf4aeeeff9d}{socket\+Connecte()}, et \hyperlink{class_peripherique_t_t_p_a_a85811ace874ff7cea3437146511f1b2c}{socket\+Erreur()}.
+
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_a8afa92f7c3ae6e1edc30f5c8b386af81}\label{class_peripherique_t_t_p_a_a8afa92f7c3ae6e1edc30f5c8b386af81}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!connecter@{connecter}}
+\index{connecter@{connecter}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{connecter()}{connecter()}}
+{\footnotesize\ttfamily Peripherique\+T\+T\+P\+A\+::connecter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresse\+M\+AC}, \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom}, \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}, \hyperlink{class_peripherique_t_t_p_a_aab23a43f5c9d70c30df3dbf4aeeeff9d}{socket\+Connecte()}, \hyperlink{class_peripherique_t_t_p_a_adb04c45864ea56a80a0716cde0a31856}{socket\+Deconnecte()}, \hyperlink{class_peripherique_t_t_p_a_a85811ace874ff7cea3437146511f1b2c}{socket\+Erreur()}, et \hyperlink{class_peripherique_t_t_p_a_a4e1d676e59b293161a40ee6428a79871}{socket\+Ready\+Read()}.
+
+
+
+Référencé par \hyperlink{class_communication_bluetooth_a321073d9dc26aad4b34ecf41a1dee8a4}{Communication\+Bluetooth\+::connecter\+Peripheriques\+T\+T\+P\+A()}.
+
+
+\begin{DoxyCode}
+00031 \{
+00032     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom} << \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresseMAC};
+00033 
+00034     \textcolor{keywordflow}{if} (!\hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket})
+00035     \{
+00036         \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket} = \textcolor{keyword}{new} QBluetoothSocket(QBluetoothServiceInfo::RfcommProtocol);
+00037         connect(\hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}, SIGNAL(connected()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_peripherique_t_t_p_a_aab23a43f5c9d70c30df3dbf4aeeeff9d}{socketConnecte}()));
+00038         connect(\hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}, SIGNAL(disconnected()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_peripherique_t_t_p_a_adb04c45864ea56a80a0716cde0a31856}{socketDeconnecte}()));
+00039         connect(\hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}, SIGNAL(readyRead()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_peripherique_t_t_p_a_a4e1d676e59b293161a40ee6428a79871}{socketReadyRead}()));
+00040         connect(\hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}, SIGNAL(error(QBluetoothSocket::SocketError)), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_peripherique_t_t_p_a_a85811ace874ff7cea3437146511f1b2c}{socketErreur}(QBluetoothSocket::SocketError)));
+00041     \}
+00042     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}->isOpen())
+00043     \{
+00044         \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}->close();
+00045     \}
+00046     QBluetoothUuid uuid = QBluetoothUuid(QBluetoothUuid::SerialPort);
+00047     \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}->connectToService(QBluetoothAddress(adresseMAC), uuid);
+00048     \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}->open(QIODevice::ReadWrite);
+00049 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_a8cb56776db43953cceb04e5f3ee4ca7b}\label{class_peripherique_t_t_p_a_a8cb56776db43953cceb04e5f3ee4ca7b}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!deconnecte@{deconnecte}}
+\index{deconnecte@{deconnecte}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{deconnecte}{deconnecte}}
+{\footnotesize\ttfamily void Peripherique\+T\+T\+P\+A\+::deconnecte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_t_t_p_a_adb04c45864ea56a80a0716cde0a31856}{socket\+Deconnecte()}.
+
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_a23bd4f409e6763022807d5b278464328}\label{class_peripherique_t_t_p_a_a23bd4f409e6763022807d5b278464328}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!deconnecter@{deconnecter}}
+\index{deconnecter@{deconnecter}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{deconnecter()}{deconnecter()}}
+{\footnotesize\ttfamily Peripherique\+T\+T\+P\+A\+::deconnecter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresse\+M\+AC}, \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom}, et \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}.
+
+
+
+Référencé par \hyperlink{class_communication_bluetooth_aacfffa47d72f3ab5ab554001d5f38fd1}{Communication\+Bluetooth\+::deconnecter\+Peripheriques\+T\+T\+P\+A()}.
+
+
+\begin{DoxyCode}
+00052 \{
+00053     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom} << \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresseMAC};
+00054 
+00055     \textcolor{keywordflow}{if} (!\hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket})
+00056         \textcolor{keywordflow}{return};
+00057     \textcolor{keywordflow}{if} (\hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}->isOpen())
+00058         \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}->close();
+00059 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_a529048ac8be73560038bbeee0047b634}\label{class_peripherique_t_t_p_a_a529048ac8be73560038bbeee0047b634}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!envoyer@{envoyer}}
+\index{envoyer@{envoyer}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{envoyer()}{envoyer()}}
+{\footnotesize\ttfamily Peripherique\+T\+T\+P\+A\+::envoyer (\begin{DoxyParamCaption}\item[{Q\+String}]{trame }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em trame} & Q\+String Trame à envoyer à l\textquotesingle{}appareil \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresse\+M\+AC}, \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom}, et \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}.
+
+
+
+Référencé par \hyperlink{class_communication_bluetooth_a73d95b841bf64a4463760435a41fc219}{Communication\+Bluetooth\+::envoyer\+Peripherique\+T\+T\+P\+A()}.
+
+
+\begin{DoxyCode}
+00102 \{
+00103     \textcolor{keywordflow}{if} (!\hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket} || !\hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}->isOpen())
+00104     \{
+00105         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00106     \}
+00107     trame = \textcolor{stringliteral}{"$"} + trame;
+00108     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom} << \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresseMAC} << \textcolor{stringliteral}{"trame"} << trame;
+00109     qint64 nbOctets = \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}->write(trame.toLatin1());
+00110     \textcolor{keywordflow}{if}(nbOctets > 0)
+00111         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00112     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00113 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_a7a31d9f923cc71a42d0dab80d9332eb6}\label{class_peripherique_t_t_p_a_a7a31d9f923cc71a42d0dab80d9332eb6}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!erreur@{erreur}}
+\index{erreur@{erreur}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{erreur}{erreur}}
+{\footnotesize\ttfamily void Peripherique\+T\+T\+P\+A\+::erreur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_t_t_p_a_aab23a43f5c9d70c30df3dbf4aeeeff9d}{socket\+Connecte()}, \hyperlink{class_peripherique_t_t_p_a_adb04c45864ea56a80a0716cde0a31856}{socket\+Deconnecte()}, et \hyperlink{class_peripherique_t_t_p_a_a85811ace874ff7cea3437146511f1b2c}{socket\+Erreur()}.
+
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_a33991b646ef2a49e79bac478b5f722c7}\label{class_peripherique_t_t_p_a_a33991b646ef2a49e79bac478b5f722c7}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!est\+Connecte@{est\+Connecte}}
+\index{est\+Connecte@{est\+Connecte}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{est\+Connecte()}{estConnecte()}}
+{\footnotesize\ttfamily bool Peripherique\+T\+T\+P\+A\+::est\+Connecte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+bool L\textquotesingle{}etat de connexion de l\textquotesingle{}appareil 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresse\+M\+AC}, \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom}, et \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}.
+
+
+
+Référencé par \hyperlink{class_communication_bluetooth_a321073d9dc26aad4b34ecf41a1dee8a4}{Communication\+Bluetooth\+::connecter\+Peripheriques\+T\+T\+P\+A()}.
+
+
+\begin{DoxyCode}
+00116 \{    
+00117     \textcolor{keywordflow}{if}(!\hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket})
+00118         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00119     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom} << \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresseMAC} << \textcolor{stringliteral}{"connecte"} << 
+      \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}->isOpen();
+00120     \textcolor{keywordflow}{return} \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}->isOpen();
+00121 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_a1e828514b4576a87295bb2d9a3d87876}\label{class_peripherique_t_t_p_a_a1e828514b4576a87295bb2d9a3d87876}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!get\+Adresse\+M\+AC@{get\+Adresse\+M\+AC}}
+\index{get\+Adresse\+M\+AC@{get\+Adresse\+M\+AC}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{get\+Adresse\+M\+A\+C()}{getAdresseMAC()}}
+{\footnotesize\ttfamily Q\+String Peripherique\+T\+T\+P\+A\+::get\+Adresse\+M\+AC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresse\+M\+AC}.
+
+
+\begin{DoxyCode}
+00026 \{
+00027     \textcolor{keywordflow}{return} \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresseMAC};
+00028 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_abb04680791a7e778ac3808b5d218421f}\label{class_peripherique_t_t_p_a_abb04680791a7e778ac3808b5d218421f}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!get\+Nom@{get\+Nom}}
+\index{get\+Nom@{get\+Nom}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{get\+Nom()}{getNom()}}
+{\footnotesize\ttfamily Q\+String Peripherique\+T\+T\+P\+A\+::get\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom}.
+
+
+
+Référencé par \hyperlink{class_communication_bluetooth_a321073d9dc26aad4b34ecf41a1dee8a4}{Communication\+Bluetooth\+::connecter\+Peripheriques\+T\+T\+P\+A()}, \hyperlink{class_communication_bluetooth_aacfffa47d72f3ab5ab554001d5f38fd1}{Communication\+Bluetooth\+::deconnecter\+Peripheriques\+T\+T\+P\+A()}, \hyperlink{class_communication_bluetooth_a73d95b841bf64a4463760435a41fc219}{Communication\+Bluetooth\+::envoyer\+Peripherique\+T\+T\+P\+A()}, \hyperlink{class_communication_bluetooth_a1baec10cc16afe1a87cbad635a82c323}{Communication\+Bluetooth\+::get\+Peripherique\+T\+T\+P\+A()}, \hyperlink{class_communication_bluetooth_aee7edc20fc1fdfd5a5a1c228c1319531}{Communication\+Bluetooth\+::recevoir\+Connecte()}, et \hyperlink{class_communication_bluetooth_af187cbc294befb656070f9817763104b}{Communication\+Bluetooth\+::recevoir\+Deconnecte()}.
+
+
+\begin{DoxyCode}
+00021 \{
+00022     \textcolor{keywordflow}{return} \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom};
+00023 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_a5a0a18d25ab4c4b8362a80f215dbfc75}\label{class_peripherique_t_t_p_a_a5a0a18d25ab4c4b8362a80f215dbfc75}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!peripherique\+T\+T\+P\+A\+Changed@{peripherique\+T\+T\+P\+A\+Changed}}
+\index{peripherique\+T\+T\+P\+A\+Changed@{peripherique\+T\+T\+P\+A\+Changed}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{peripherique\+T\+T\+P\+A\+Changed}{peripheriqueTTPAChanged}}
+{\footnotesize\ttfamily void Peripherique\+T\+T\+P\+A\+::peripherique\+T\+T\+P\+A\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_aab23a43f5c9d70c30df3dbf4aeeeff9d}\label{class_peripherique_t_t_p_a_aab23a43f5c9d70c30df3dbf4aeeeff9d}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!socket\+Connecte@{socket\+Connecte}}
+\index{socket\+Connecte@{socket\+Connecte}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{socket\+Connecte}{socketConnecte}}
+{\footnotesize\ttfamily void Peripherique\+T\+T\+P\+A\+::socket\+Connecte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresse\+M\+AC}, \hyperlink{class_peripherique_t_t_p_a_ae95f1fe6bb1908b5eb2d34a469f7f873}{connecte()}, \hyperlink{class_peripherique_t_t_p_a_a9602c4662641984ea44bf6caaac6e94c}{connexion\+Erreur}, \hyperlink{class_peripherique_t_t_p_a_a7a31d9f923cc71a42d0dab80d9332eb6}{erreur()}, \hyperlink{class_peripherique_t_t_p_a_a3aaac9f045cc038777895afe18411e58}{etat\+Connexion}, et \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom}.
+
+
+
+Référencé par \hyperlink{class_peripherique_t_t_p_a_a8afa92f7c3ae6e1edc30f5c8b386af81}{connecter()}.
+
+
+\begin{DoxyCode}
+00062 \{
+00063     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom} << \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresseMAC};
+00064     \hyperlink{class_peripherique_t_t_p_a_a3aaac9f045cc038777895afe18411e58}{etatConnexion} = \textcolor{keyword}{true};
+00065     \hyperlink{class_peripherique_t_t_p_a_a9602c4662641984ea44bf6caaac6e94c}{connexionErreur} = \textcolor{keyword}{false};
+00066     emit \hyperlink{class_peripherique_t_t_p_a_ae95f1fe6bb1908b5eb2d34a469f7f873}{connecte}();
+00067     emit \hyperlink{class_peripherique_t_t_p_a_a7a31d9f923cc71a42d0dab80d9332eb6}{erreur}();
+00068 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_adb04c45864ea56a80a0716cde0a31856}\label{class_peripherique_t_t_p_a_adb04c45864ea56a80a0716cde0a31856}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!socket\+Deconnecte@{socket\+Deconnecte}}
+\index{socket\+Deconnecte@{socket\+Deconnecte}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{socket\+Deconnecte}{socketDeconnecte}}
+{\footnotesize\ttfamily void Peripherique\+T\+T\+P\+A\+::socket\+Deconnecte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresse\+M\+AC}, \hyperlink{class_peripherique_t_t_p_a_a9602c4662641984ea44bf6caaac6e94c}{connexion\+Erreur}, \hyperlink{class_peripherique_t_t_p_a_a8cb56776db43953cceb04e5f3ee4ca7b}{deconnecte()}, \hyperlink{class_peripherique_t_t_p_a_a7a31d9f923cc71a42d0dab80d9332eb6}{erreur()}, \hyperlink{class_peripherique_t_t_p_a_a3aaac9f045cc038777895afe18411e58}{etat\+Connexion}, et \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom}.
+
+
+
+Référencé par \hyperlink{class_peripherique_t_t_p_a_a8afa92f7c3ae6e1edc30f5c8b386af81}{connecter()}.
+
+
+\begin{DoxyCode}
+00071 \{
+00072     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom} << \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresseMAC};
+00073     \hyperlink{class_peripherique_t_t_p_a_a3aaac9f045cc038777895afe18411e58}{etatConnexion} = \textcolor{keyword}{false};
+00074     \hyperlink{class_peripherique_t_t_p_a_a9602c4662641984ea44bf6caaac6e94c}{connexionErreur} = \textcolor{keyword}{false};
+00075     emit \hyperlink{class_peripherique_t_t_p_a_a8cb56776db43953cceb04e5f3ee4ca7b}{deconnecte}();
+00076     emit \hyperlink{class_peripherique_t_t_p_a_a7a31d9f923cc71a42d0dab80d9332eb6}{erreur}();
+00077 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_a85811ace874ff7cea3437146511f1b2c}\label{class_peripherique_t_t_p_a_a85811ace874ff7cea3437146511f1b2c}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!socket\+Erreur@{socket\+Erreur}}
+\index{socket\+Erreur@{socket\+Erreur}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{socket\+Erreur}{socketErreur}}
+{\footnotesize\ttfamily void Peripherique\+T\+T\+P\+A\+::socket\+Erreur (\begin{DoxyParamCaption}\item[{Q\+Bluetooth\+Socket\+::\+Socket\+Error}]{erreur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresse\+M\+AC}, \hyperlink{class_peripherique_t_t_p_a_ae95f1fe6bb1908b5eb2d34a469f7f873}{connecte()}, \hyperlink{class_peripherique_t_t_p_a_a9602c4662641984ea44bf6caaac6e94c}{connexion\+Erreur}, \hyperlink{class_peripherique_t_t_p_a_a7a31d9f923cc71a42d0dab80d9332eb6}{erreur()}, \hyperlink{class_peripherique_t_t_p_a_a3aaac9f045cc038777895afe18411e58}{etat\+Connexion}, et \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom}.
+
+
+
+Référencé par \hyperlink{class_peripherique_t_t_p_a_a8afa92f7c3ae6e1edc30f5c8b386af81}{connecter()}.
+
+
+\begin{DoxyCode}
+00093 \{
+00094     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom} << \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresseMAC} << \textcolor{stringliteral}{"erreur"} << error;
+00095     \hyperlink{class_peripherique_t_t_p_a_a3aaac9f045cc038777895afe18411e58}{etatConnexion} = \textcolor{keyword}{false};
+00096     \hyperlink{class_peripherique_t_t_p_a_a9602c4662641984ea44bf6caaac6e94c}{connexionErreur} = \textcolor{keyword}{true};
+00097     emit \hyperlink{class_peripherique_t_t_p_a_ae95f1fe6bb1908b5eb2d34a469f7f873}{connecte}();
+00098     emit \hyperlink{class_peripherique_t_t_p_a_a7a31d9f923cc71a42d0dab80d9332eb6}{erreur}();
+00099 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_a4e1d676e59b293161a40ee6428a79871}\label{class_peripherique_t_t_p_a_a4e1d676e59b293161a40ee6428a79871}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!socket\+Ready\+Read@{socket\+Ready\+Read}}
+\index{socket\+Ready\+Read@{socket\+Ready\+Read}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{socket\+Ready\+Read}{socketReadyRead}}
+{\footnotesize\ttfamily void Peripherique\+T\+T\+P\+A\+::socket\+Ready\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresse\+M\+AC}, \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom}, \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}, et \hyperlink{class_peripherique_t_t_p_a_aaa8699b83c9659c874a0d066ea633e45}{trame\+Recue()}.
+
+
+
+Référencé par \hyperlink{class_peripherique_t_t_p_a_a8afa92f7c3ae6e1edc30f5c8b386af81}{connecter()}.
+
+
+\begin{DoxyCode}
+00080 \{
+00081     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom} << \hyperlink{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}{adresseMAC};
+00082     QByteArray trame;
+00083 
+00084     \textcolor{keywordflow}{while} (\hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}->canReadLine())
+00085     \{
+00086         trame = \hyperlink{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}{socket}->readLine();
+00087         qDebug() << Q\_FUNC\_INFO << \hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom} << adresseMAC << \textcolor{stringliteral}{"trame"} << trame;
+00088         emit \hyperlink{class_peripherique_t_t_p_a_aaa8699b83c9659c874a0d066ea633e45}{trameRecue}(\hyperlink{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}{nom}, QString(trame));
+00089     \}
+00090 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_aaa8699b83c9659c874a0d066ea633e45}\label{class_peripherique_t_t_p_a_aaa8699b83c9659c874a0d066ea633e45}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!trame\+Recue@{trame\+Recue}}
+\index{trame\+Recue@{trame\+Recue}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{trame\+Recue}{trameRecue}}
+{\footnotesize\ttfamily void Peripherique\+T\+T\+P\+A\+::trame\+Recue (\begin{DoxyParamCaption}\item[{Q\+String}]{nom\+Peripherique,  }\item[{Q\+String}]{trame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_t_t_p_a_a4e1d676e59b293161a40ee6428a79871}{socket\+Ready\+Read()}.
+
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}\label{class_peripherique_t_t_p_a_ab66f30984a7f9fa17fd28391efe968a9}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!socket@{socket}}
+\index{socket@{socket}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{socket}{socket}}
+{\footnotesize\ttfamily Q\+Bluetooth\+Socket$\ast$ Peripherique\+T\+T\+P\+A\+::socket\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_t_t_p_a_a8afa92f7c3ae6e1edc30f5c8b386af81}{connecter()}, \hyperlink{class_peripherique_t_t_p_a_a23bd4f409e6763022807d5b278464328}{deconnecter()}, \hyperlink{class_peripherique_t_t_p_a_a529048ac8be73560038bbeee0047b634}{envoyer()}, \hyperlink{class_peripherique_t_t_p_a_a33991b646ef2a49e79bac478b5f722c7}{est\+Connecte()}, et \hyperlink{class_peripherique_t_t_p_a_a4e1d676e59b293161a40ee6428a79871}{socket\+Ready\+Read()}.
+
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}\label{class_peripherique_t_t_p_a_a444063230c83cf81eff8a3a55736f2cf}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!adresse\+M\+AC@{adresse\+M\+AC}}
+\index{adresse\+M\+AC@{adresse\+M\+AC}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{adresse\+M\+AC}{adresseMAC}}
+{\footnotesize\ttfamily Q\+String Peripherique\+T\+T\+P\+A\+::adresse\+M\+AC\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_t_t_p_a_a8afa92f7c3ae6e1edc30f5c8b386af81}{connecter()}, \hyperlink{class_peripherique_t_t_p_a_a23bd4f409e6763022807d5b278464328}{deconnecter()}, \hyperlink{class_peripherique_t_t_p_a_a529048ac8be73560038bbeee0047b634}{envoyer()}, \hyperlink{class_peripherique_t_t_p_a_a33991b646ef2a49e79bac478b5f722c7}{est\+Connecte()}, \hyperlink{class_peripherique_t_t_p_a_a1e828514b4576a87295bb2d9a3d87876}{get\+Adresse\+M\+A\+C()}, \hyperlink{class_peripherique_t_t_p_a_acb4f39a3af94d61dcb673df11bed3a15}{Peripherique\+T\+T\+P\+A()}, \hyperlink{class_peripherique_t_t_p_a_aab23a43f5c9d70c30df3dbf4aeeeff9d}{socket\+Connecte()}, \hyperlink{class_peripherique_t_t_p_a_adb04c45864ea56a80a0716cde0a31856}{socket\+Deconnecte()}, \hyperlink{class_peripherique_t_t_p_a_a85811ace874ff7cea3437146511f1b2c}{socket\+Erreur()}, et \hyperlink{class_peripherique_t_t_p_a_a4e1d676e59b293161a40ee6428a79871}{socket\+Ready\+Read()}.
+
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_a9602c4662641984ea44bf6caaac6e94c}\label{class_peripherique_t_t_p_a_a9602c4662641984ea44bf6caaac6e94c}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!connexion\+Erreur@{connexion\+Erreur}}
+\index{connexion\+Erreur@{connexion\+Erreur}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{connexion\+Erreur}{connexionErreur}}
+{\footnotesize\ttfamily bool Peripherique\+T\+T\+P\+A\+::connexion\+Erreur}
+
+
+
+Référencé par \hyperlink{class_peripherique_t_t_p_a_aab23a43f5c9d70c30df3dbf4aeeeff9d}{socket\+Connecte()}, \hyperlink{class_peripherique_t_t_p_a_adb04c45864ea56a80a0716cde0a31856}{socket\+Deconnecte()}, et \hyperlink{class_peripherique_t_t_p_a_a85811ace874ff7cea3437146511f1b2c}{socket\+Erreur()}.
+
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_a3aaac9f045cc038777895afe18411e58}\label{class_peripherique_t_t_p_a_a3aaac9f045cc038777895afe18411e58}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!etat\+Connexion@{etat\+Connexion}}
+\index{etat\+Connexion@{etat\+Connexion}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{etat\+Connexion}{etatConnexion}}
+{\footnotesize\ttfamily bool Peripherique\+T\+T\+P\+A\+::etat\+Connexion}
+
+
+
+Référencé par \hyperlink{class_peripherique_t_t_p_a_aab23a43f5c9d70c30df3dbf4aeeeff9d}{socket\+Connecte()}, \hyperlink{class_peripherique_t_t_p_a_adb04c45864ea56a80a0716cde0a31856}{socket\+Deconnecte()}, et \hyperlink{class_peripherique_t_t_p_a_a85811ace874ff7cea3437146511f1b2c}{socket\+Erreur()}.
+
+\mbox{\Hypertarget{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}\label{class_peripherique_t_t_p_a_afafe3566b4b5357819811218b9a4244f}} 
+\index{Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}!nom@{nom}}
+\index{nom@{nom}!Peripherique\+T\+T\+PA@{Peripherique\+T\+T\+PA}}
+\paragraph{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily Q\+String Peripherique\+T\+T\+P\+A\+::nom\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+Référencé par \hyperlink{class_peripherique_t_t_p_a_a8afa92f7c3ae6e1edc30f5c8b386af81}{connecter()}, \hyperlink{class_peripherique_t_t_p_a_a23bd4f409e6763022807d5b278464328}{deconnecter()}, \hyperlink{class_peripherique_t_t_p_a_a529048ac8be73560038bbeee0047b634}{envoyer()}, \hyperlink{class_peripherique_t_t_p_a_a33991b646ef2a49e79bac478b5f722c7}{est\+Connecte()}, \hyperlink{class_peripherique_t_t_p_a_abb04680791a7e778ac3808b5d218421f}{get\+Nom()}, \hyperlink{class_peripherique_t_t_p_a_aab23a43f5c9d70c30df3dbf4aeeeff9d}{socket\+Connecte()}, \hyperlink{class_peripherique_t_t_p_a_adb04c45864ea56a80a0716cde0a31856}{socket\+Deconnecte()}, \hyperlink{class_peripherique_t_t_p_a_a85811ace874ff7cea3437146511f1b2c}{socket\+Erreur()}, et \hyperlink{class_peripherique_t_t_p_a_a4e1d676e59b293161a40ee6428a79871}{socket\+Ready\+Read()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{peripherique_t_t_p_a_8h}{peripherique\+T\+T\+P\+A.\+h}\item 
+\hyperlink{peripherique_t_t_p_a_8cpp}{peripherique\+T\+T\+P\+A.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+\hypertarget{_parametres_8h_source}{}\subsection{Parametres.\+h}
+\label{_parametres_8h_source}\index{Parametres.\+h@{Parametres.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef PARAMETRES\_H}
+00002 \textcolor{preprocessor}{#define PARAMETRES\_H}
+00003 
+00015 \textcolor{preprocessor}{#include <QObject>}
+00016 \textcolor{preprocessor}{#include <QVariant>}
+00017 
+00018 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00019 
+\Hypertarget{_parametres_8h_source_l00031}\hyperlink{class_parametres}{00031} \textcolor{keyword}{class }\hyperlink{class_parametres}{Parametres} : \textcolor{keyword}{public} QObject
+00032 \{
+00033     Q\_OBJECT
+\Hypertarget{_parametres_8h_source_l00034}\hyperlink{class_parametres_ab37e24ed02c5ff1ffc7bea41016c93ca}{00034}     Q\_PROPERTY(QVariant \hyperlink{class_parametres_ab37e24ed02c5ff1ffc7bea41016c93ca}{listeParametres} READ \hyperlink{class_parametres_a1cd756fd21518bcec9349c08a2a3b08f}{getListeParametres}  NOTIFY 
+      \hyperlink{class_parametres_aa6649347b6e61f767dc14346f2ea858e}{listeParametresUpdated})
+00035 \textcolor{keyword}{public}:
+00036     \textcolor{keyword}{explicit} \hyperlink{class_parametres_a5197a69e0f07e253e6119b4af95344f4}{Parametres}(QObject *parent = \textcolor{keyword}{nullptr});
+00037     \hyperlink{class_parametres_a83068e95596ef05b4307b43b67ffc24d}{~Parametres}();
+00038 
+00039     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_parametres_a853872796d32655f3f1ffc090b6d076a}{recupererParametres}();
+00040     Q\_INVOKABLE QStringList \hyperlink{class_parametres_ac91b8cb3a293f27eeb7d87673889de15}{recupererParametresProfil}(QString idParametres);
+00041     Q\_INVOKABLE QString \hyperlink{class_parametres_a0102cadfb1bce5a8e82d6c12661fccf8}{insererParametres}(QString nbBalles, QString nbBallesMinute, 
+      QString effet, QString puissance, QString rotation, QString zoneObjectif, QString zoneRobot);
+00042     QVariant \hyperlink{class_parametres_a1cd756fd21518bcec9349c08a2a3b08f}{getListeParametres}();
+00043 
+00044 \textcolor{keyword}{private}:
+\Hypertarget{_parametres_8h_source_l00045}\hyperlink{class_parametres_a3bff192351dd25f4109b258e954cecbf}{00045}     QList<QObject*> \hyperlink{class_parametres_a3bff192351dd25f4109b258e954cecbf}{parametres};
+\Hypertarget{_parametres_8h_source_l00046}\hyperlink{class_parametres_a1e21034f7e758d93974e0dc070d47dee}{00046}     \hyperlink{class_base_de_donnees}{BaseDeDonnees}* \hyperlink{class_parametres_a1e21034f7e758d93974e0dc070d47dee}{bdd};
+00047 
+00048 signals:
+00049     \textcolor{keywordtype}{void} \hyperlink{class_parametres_aa6649347b6e61f767dc14346f2ea858e}{listeParametresUpdated}();
+00050 
+00051 \textcolor{keyword}{public} slots:
+00052 \};
+00053 
+00054 \textcolor{preprocessor}{#endif // PARAMETRES\_H}
+\end{DoxyCode}

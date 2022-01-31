@@ -1,0 +1,43 @@
+\hypertarget{_profil_8h_source}{}\subsection{Profil.\+h}
+\label{_profil_8h_source}\index{Profil.\+h@{Profil.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef PROFIL\_H}
+00002 \textcolor{preprocessor}{#define PROFIL\_H}
+00003 
+00015 \textcolor{preprocessor}{#include <QObject>}
+00016 
+\Hypertarget{_profil_8h_source_l00028}\hyperlink{class_profil}{00028} \textcolor{keyword}{class }\hyperlink{class_profil}{Profil} : \textcolor{keyword}{public} QObject
+00029 \{
+00030     Q\_OBJECT
+\Hypertarget{_profil_8h_source_l00031}\hyperlink{class_profil_ac2a62326a3156d5e67011d3dcc063e40}{00031}     Q\_PROPERTY(QString \textcolor{keywordtype}{id} READ getId NOTIFY idChanged)
+\Hypertarget{_profil_8h_source_l00032}\hyperlink{class_profil_a0d8277364c321a3797f91e3c32dbe47f}{00032}     Q\_PROPERTY(QString idJoueur READ getIdJoueur NOTIFY idJoueurChanged)
+\Hypertarget{_profil_8h_source_l00033}\hyperlink{class_profil_a2cdcb0b7614e783ba20ae93eaefebd0c}{00033}     Q\_PROPERTY(QString idParametres READ getIdParametres NOTIFY idParametresChanged)
+\Hypertarget{_profil_8h_source_l00034}\hyperlink{class_profil_a919585bdd5c7e7382e6a25c5152d0ca3}{00034}     Q\_PROPERTY(QString nom READ getNom NOTIFY nomChanged)
+00035 public:
+00036     explicit \hyperlink{class_profil}{Profil}(QString \textcolor{keywordtype}{id}="", QString idJoueur="", QString idParametres="", QString nom="", 
+      QObject *parent = \textcolor{keywordtype}{nullptr});
+00037 
+00038     QString getId();
+00039     QString getIdJoueur();
+00040     QString getIdParametres();
+00041     QString getNom();
+00042 
+00043 private:
+00044     QString \textcolor{keywordtype}{id};
+00045     QString idJoueur;
+00046     QString idParametres;
+00047     QString nom;
+00048 
+00049 signals:
+00050     \textcolor{keywordtype}{void} idChanged();
+00051     \textcolor{keywordtype}{void} idJoueurChanged();
+00052     \textcolor{keywordtype}{void} idParametresChanged();
+00053     \textcolor{keywordtype}{void} nomChanged();
+00054 
+00055 
+00056 public slots:
+00057 \};
+00058 
+00059 \textcolor{preprocessor}{#endif // PROFIL\_H}
+\end{DoxyCode}

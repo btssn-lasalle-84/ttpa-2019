@@ -1,0 +1,38 @@
+\hypertarget{_joueurs_8h_source}{}\subsection{Joueurs.\+h}
+\label{_joueurs_8h_source}\index{Joueurs.\+h@{Joueurs.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef JOUEURS\_H}
+00002 \textcolor{preprocessor}{#define JOUEURS\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QObject>}
+00017 \textcolor{preprocessor}{#include <QVariant>}
+00018 
+00019 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00020 
+\Hypertarget{_joueurs_8h_source_l00032}\hyperlink{class_joueurs}{00032} \textcolor{keyword}{class }\hyperlink{class_joueurs}{Joueurs} : \textcolor{keyword}{public} QObject
+00033 \{
+00034     Q\_OBJECT
+\Hypertarget{_joueurs_8h_source_l00035}\hyperlink{class_joueurs_a809d64435e34f4f7f0218d4616b727c0}{00035}     Q\_PROPERTY(QVariant \hyperlink{class_joueurs_a809d64435e34f4f7f0218d4616b727c0}{listeJoueurs} READ \hyperlink{class_joueurs_aec63d4e2fe1bf7fbf33489c1a8d3bbbf}{getListeJoueurs} NOTIFY 
+      \hyperlink{class_joueurs_a5df3ead7bec2c66c600ec53880afe035}{listeJoueursUpdated})
+00036 \textcolor{keyword}{public}:
+00037     \textcolor{keyword}{explicit} \hyperlink{class_joueurs_ac0f9bfbacdcda2622d7438d0445200e8}{Joueurs}(QObject *parent = \textcolor{keyword}{nullptr});
+00038     \hyperlink{class_joueurs_ab2b4280d9ad7be92ef78c2ca15755318}{~Joueurs}();
+00039 
+00040     Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_joueurs_a5bd70438c6624d8dca765e322285eb61}{recupererJoueurs}();
+00041     \textcolor{comment}{//Q\_INVOKABLE bool recupererJoueursSeance();}
+00042     Q\_INVOKABLE QString \hyperlink{class_joueurs_ad41325dbd0611773c6e9fd8a814be1b3}{insererJoueur}(QString nomJoueur);
+00043     QVariant \hyperlink{class_joueurs_aec63d4e2fe1bf7fbf33489c1a8d3bbbf}{getListeJoueurs}();
+00044 
+00045 \textcolor{keyword}{private}:
+\Hypertarget{_joueurs_8h_source_l00046}\hyperlink{class_joueurs_a86c2a21b5a6b83f9a43f9a957a020fd7}{00046}     QList<QObject*> \hyperlink{class_joueurs_a86c2a21b5a6b83f9a43f9a957a020fd7}{joueurs};
+\Hypertarget{_joueurs_8h_source_l00047}\hyperlink{class_joueurs_ac060c3017311b67a97ed488ce2bb2332}{00047}     \hyperlink{class_base_de_donnees}{BaseDeDonnees}* \hyperlink{class_joueurs_ac060c3017311b67a97ed488ce2bb2332}{bdd};
+00048 
+00049 signals:
+00050     \textcolor{keywordtype}{void} \hyperlink{class_joueurs_a5df3ead7bec2c66c600ec53880afe035}{listeJoueursUpdated}();
+00051 
+00052 \textcolor{keyword}{public} slots:
+00053 \};
+00054 
+00055 \textcolor{preprocessor}{#endif // JOUEURS\_H}
+\end{DoxyCode}

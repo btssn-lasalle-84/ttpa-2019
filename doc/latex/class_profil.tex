@@ -1,0 +1,227 @@
+\hypertarget{class_profil}{}\subsection{Référence de la classe Profil}
+\label{class_profil}\index{Profil@{Profil}}
+
+
+Déclaration de la classe \hyperlink{class_profil}{Profil}.  
+
+
+
+
+{\ttfamily \#include $<$Profil.\+h$>$}
+
+
+
+Graphe de collaboration de Profil\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_profil__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_profil_a0d67f046b27cfa936590d72a3fef82aa}{id\+Changed} ()
+\item 
+void \hyperlink{class_profil_a92c8857ab2dad933d36e3ab773c7ba80}{id\+Joueur\+Changed} ()
+\item 
+void \hyperlink{class_profil_a4cf050c31e7204366137b7d128c1d5f1}{id\+Parametres\+Changed} ()
+\item 
+void \hyperlink{class_profil_aa55e5770c76e28ab12296e675cc939fe}{nom\+Changed} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_profil_a4a208a6e5cf119025899b4ec1f3a8e08}{Profil} (Q\+String \hyperlink{class_profil_ac2a62326a3156d5e67011d3dcc063e40}{id}=\char`\"{}\char`\"{}, Q\+String \hyperlink{class_profil_a0d8277364c321a3797f91e3c32dbe47f}{id\+Joueur}=\char`\"{}\char`\"{}, Q\+String \hyperlink{class_profil_a2cdcb0b7614e783ba20ae93eaefebd0c}{id\+Parametres}=\char`\"{}\char`\"{}, Q\+String \hyperlink{class_profil_a919585bdd5c7e7382e6a25c5152d0ca3}{nom}=\char`\"{}\char`\"{}, Q\+Object $\ast$parent=nullptr)
+\item 
+Q\+String \hyperlink{class_profil_aa51afb45d2062ef33145b21952e7d32a}{get\+Id} ()
+\item 
+Q\+String \hyperlink{class_profil_aa54d7307013204c361643f019bb924a9}{get\+Id\+Joueur} ()
+\item 
+Q\+String \hyperlink{class_profil_a806de0fed3f11021eb5294b93efd721d}{get\+Id\+Parametres} ()
+\item 
+Q\+String \hyperlink{class_profil_a14d2e1976d9e4f5eecfea9347a7647b0}{get\+Nom} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_profil_ac2a62326a3156d5e67011d3dcc063e40}{id}
+\item 
+Q\+String \hyperlink{class_profil_a0d8277364c321a3797f91e3c32dbe47f}{id\+Joueur}
+\item 
+Q\+String \hyperlink{class_profil_a2cdcb0b7614e783ba20ae93eaefebd0c}{id\+Parametres}
+\item 
+Q\+String \hyperlink{class_profil_a919585bdd5c7e7382e6a25c5152d0ca3}{nom}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Hammouma Youssef
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+4 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_profil_a4a208a6e5cf119025899b4ec1f3a8e08}\label{class_profil_a4a208a6e5cf119025899b4ec1f3a8e08}} 
+\index{Profil@{Profil}!Profil@{Profil}}
+\index{Profil@{Profil}!Profil@{Profil}}
+\paragraph{\texorpdfstring{Profil()}{Profil()}}
+{\footnotesize\ttfamily Profil\+::\+Profil (\begin{DoxyParamCaption}\item[{Q\+String}]{id = {\ttfamily \char`\"{}\char`\"{}},  }\item[{Q\+String}]{id\+Joueur = {\ttfamily \char`\"{}\char`\"{}},  }\item[{Q\+String}]{id\+Parametres = {\ttfamily \char`\"{}\char`\"{}},  }\item[{Q\+String}]{nom = {\ttfamily \char`\"{}\char`\"{}},  }\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Références \hyperlink{class_profil_a919585bdd5c7e7382e6a25c5152d0ca3}{nom}.
+
+
+\begin{DoxyCode}
+00015                                                                                               : QObject(
+      parent), \hyperlink{class_profil_ac2a62326a3156d5e67011d3dcc063e40}{id}(\textcolor{keywordtype}{id}), \hyperlink{class_profil_a0d8277364c321a3797f91e3c32dbe47f}{idJoueur}(\hyperlink{class_profil_a0d8277364c321a3797f91e3c32dbe47f}{idJoueur}), \hyperlink{class_profil_a2cdcb0b7614e783ba20ae93eaefebd0c}{idParametres}(
+      \hyperlink{class_profil_a2cdcb0b7614e783ba20ae93eaefebd0c}{idParametres}), \hyperlink{class_profil_a919585bdd5c7e7382e6a25c5152d0ca3}{nom}(\hyperlink{class_profil_a919585bdd5c7e7382e6a25c5152d0ca3}{nom})
+00016 \{
+00017     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"id"} << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{"idJoueur"} << \hyperlink{class_profil_a0d8277364c321a3797f91e3c32dbe47f}{idJoueur} << \textcolor{stringliteral}{"idParametres"} << 
+      \hyperlink{class_profil_a2cdcb0b7614e783ba20ae93eaefebd0c}{idParametres} << \textcolor{stringliteral}{"nom"} << \hyperlink{class_profil_a919585bdd5c7e7382e6a25c5152d0ca3}{nom};
+00018 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_profil_aa51afb45d2062ef33145b21952e7d32a}\label{class_profil_aa51afb45d2062ef33145b21952e7d32a}} 
+\index{Profil@{Profil}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Profil@{Profil}}
+\paragraph{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily Q\+String Profil\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_profil_ac2a62326a3156d5e67011d3dcc063e40}{id}.
+
+
+\begin{DoxyCode}
+00021 \{
+00022     \textcolor{keywordflow}{return} \hyperlink{class_profil_ac2a62326a3156d5e67011d3dcc063e40}{id};
+00023 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_profil_aa54d7307013204c361643f019bb924a9}\label{class_profil_aa54d7307013204c361643f019bb924a9}} 
+\index{Profil@{Profil}!get\+Id\+Joueur@{get\+Id\+Joueur}}
+\index{get\+Id\+Joueur@{get\+Id\+Joueur}!Profil@{Profil}}
+\paragraph{\texorpdfstring{get\+Id\+Joueur()}{getIdJoueur()}}
+{\footnotesize\ttfamily Q\+String Profil\+::get\+Id\+Joueur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_profil_a0d8277364c321a3797f91e3c32dbe47f}{id\+Joueur}.
+
+
+\begin{DoxyCode}
+00026 \{
+00027     \textcolor{keywordflow}{return} \hyperlink{class_profil_a0d8277364c321a3797f91e3c32dbe47f}{idJoueur};
+00028 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_profil_a806de0fed3f11021eb5294b93efd721d}\label{class_profil_a806de0fed3f11021eb5294b93efd721d}} 
+\index{Profil@{Profil}!get\+Id\+Parametres@{get\+Id\+Parametres}}
+\index{get\+Id\+Parametres@{get\+Id\+Parametres}!Profil@{Profil}}
+\paragraph{\texorpdfstring{get\+Id\+Parametres()}{getIdParametres()}}
+{\footnotesize\ttfamily Q\+String Profil\+::get\+Id\+Parametres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_profil_a2cdcb0b7614e783ba20ae93eaefebd0c}{id\+Parametres}.
+
+
+\begin{DoxyCode}
+00031 \{
+00032     \textcolor{keywordflow}{return} \hyperlink{class_profil_a2cdcb0b7614e783ba20ae93eaefebd0c}{idParametres};
+00033 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_profil_a14d2e1976d9e4f5eecfea9347a7647b0}\label{class_profil_a14d2e1976d9e4f5eecfea9347a7647b0}} 
+\index{Profil@{Profil}!get\+Nom@{get\+Nom}}
+\index{get\+Nom@{get\+Nom}!Profil@{Profil}}
+\paragraph{\texorpdfstring{get\+Nom()}{getNom()}}
+{\footnotesize\ttfamily Q\+String Profil\+::get\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_profil_a919585bdd5c7e7382e6a25c5152d0ca3}{nom}.
+
+
+\begin{DoxyCode}
+00036 \{
+00037     \textcolor{keywordflow}{return} \hyperlink{class_profil_a919585bdd5c7e7382e6a25c5152d0ca3}{nom};
+00038 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_profil_a0d67f046b27cfa936590d72a3fef82aa}\label{class_profil_a0d67f046b27cfa936590d72a3fef82aa}} 
+\index{Profil@{Profil}!id\+Changed@{id\+Changed}}
+\index{id\+Changed@{id\+Changed}!Profil@{Profil}}
+\paragraph{\texorpdfstring{id\+Changed}{idChanged}}
+{\footnotesize\ttfamily void Profil\+::id\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_profil_a92c8857ab2dad933d36e3ab773c7ba80}\label{class_profil_a92c8857ab2dad933d36e3ab773c7ba80}} 
+\index{Profil@{Profil}!id\+Joueur\+Changed@{id\+Joueur\+Changed}}
+\index{id\+Joueur\+Changed@{id\+Joueur\+Changed}!Profil@{Profil}}
+\paragraph{\texorpdfstring{id\+Joueur\+Changed}{idJoueurChanged}}
+{\footnotesize\ttfamily void Profil\+::id\+Joueur\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_profil_a4cf050c31e7204366137b7d128c1d5f1}\label{class_profil_a4cf050c31e7204366137b7d128c1d5f1}} 
+\index{Profil@{Profil}!id\+Parametres\+Changed@{id\+Parametres\+Changed}}
+\index{id\+Parametres\+Changed@{id\+Parametres\+Changed}!Profil@{Profil}}
+\paragraph{\texorpdfstring{id\+Parametres\+Changed}{idParametresChanged}}
+{\footnotesize\ttfamily void Profil\+::id\+Parametres\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_profil_aa55e5770c76e28ab12296e675cc939fe}\label{class_profil_aa55e5770c76e28ab12296e675cc939fe}} 
+\index{Profil@{Profil}!nom\+Changed@{nom\+Changed}}
+\index{nom\+Changed@{nom\+Changed}!Profil@{Profil}}
+\paragraph{\texorpdfstring{nom\+Changed}{nomChanged}}
+{\footnotesize\ttfamily void Profil\+::nom\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_profil_ac2a62326a3156d5e67011d3dcc063e40}\label{class_profil_ac2a62326a3156d5e67011d3dcc063e40}} 
+\index{Profil@{Profil}!id@{id}}
+\index{id@{id}!Profil@{Profil}}
+\paragraph{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily Q\+String Profil\+::id\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+Référencé par \hyperlink{class_profil_aa51afb45d2062ef33145b21952e7d32a}{get\+Id()}.
+
+\mbox{\Hypertarget{class_profil_a0d8277364c321a3797f91e3c32dbe47f}\label{class_profil_a0d8277364c321a3797f91e3c32dbe47f}} 
+\index{Profil@{Profil}!id\+Joueur@{id\+Joueur}}
+\index{id\+Joueur@{id\+Joueur}!Profil@{Profil}}
+\paragraph{\texorpdfstring{id\+Joueur}{idJoueur}}
+{\footnotesize\ttfamily Q\+String Profil\+::id\+Joueur\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+Référencé par \hyperlink{class_profil_aa54d7307013204c361643f019bb924a9}{get\+Id\+Joueur()}.
+
+\mbox{\Hypertarget{class_profil_a2cdcb0b7614e783ba20ae93eaefebd0c}\label{class_profil_a2cdcb0b7614e783ba20ae93eaefebd0c}} 
+\index{Profil@{Profil}!id\+Parametres@{id\+Parametres}}
+\index{id\+Parametres@{id\+Parametres}!Profil@{Profil}}
+\paragraph{\texorpdfstring{id\+Parametres}{idParametres}}
+{\footnotesize\ttfamily Q\+String Profil\+::id\+Parametres\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+Référencé par \hyperlink{class_profil_a806de0fed3f11021eb5294b93efd721d}{get\+Id\+Parametres()}.
+
+\mbox{\Hypertarget{class_profil_a919585bdd5c7e7382e6a25c5152d0ca3}\label{class_profil_a919585bdd5c7e7382e6a25c5152d0ca3}} 
+\index{Profil@{Profil}!nom@{nom}}
+\index{nom@{nom}!Profil@{Profil}}
+\paragraph{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily Q\+String Profil\+::nom\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+Référencé par \hyperlink{class_profil_a14d2e1976d9e4f5eecfea9347a7647b0}{get\+Nom()}, et \hyperlink{class_profil_a4a208a6e5cf119025899b4ec1f3a8e08}{Profil()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_profil_8h}{Profil.\+h}\item 
+\hyperlink{_profil_8cpp}{Profil.\+cpp}\end{DoxyCompactItemize}

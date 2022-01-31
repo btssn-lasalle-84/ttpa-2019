@@ -1,0 +1,227 @@
+\hypertarget{class_joueurs}{}\subsection{Référence de la classe Joueurs}
+\label{class_joueurs}\index{Joueurs@{Joueurs}}
+
+
+Déclaration de la classe \hyperlink{class_joueurs}{Joueurs}.  
+
+
+
+
+{\ttfamily \#include $<$Joueurs.\+h$>$}
+
+
+
+Graphe de collaboration de Joueurs\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{class_joueurs__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_joueurs_a5df3ead7bec2c66c600ec53880afe035}{liste\+Joueurs\+Updated} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_joueurs_ac0f9bfbacdcda2622d7438d0445200e8}{Joueurs} (Q\+Object $\ast$parent=nullptr)
+\item 
+\hyperlink{class_joueurs_ab2b4280d9ad7be92ef78c2ca15755318}{$\sim$\+Joueurs} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE bool \hyperlink{class_joueurs_a5bd70438c6624d8dca765e322285eb61}{recuperer\+Joueurs} ()
+\item 
+Q\+\_\+\+I\+N\+V\+O\+K\+A\+B\+LE Q\+String \hyperlink{class_joueurs_ad41325dbd0611773c6e9fd8a814be1b3}{inserer\+Joueur} (Q\+String nom\+Joueur)
+\item 
+Q\+Variant \hyperlink{class_joueurs_aec63d4e2fe1bf7fbf33489c1a8d3bbbf}{get\+Liste\+Joueurs} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Variant \hyperlink{class_joueurs_a809d64435e34f4f7f0218d4616b727c0}{liste\+Joueurs}
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ Q\+Object $\ast$ $>$ \hyperlink{class_joueurs_a86c2a21b5a6b83f9a43f9a957a020fd7}{joueurs}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_joueurs_ac060c3017311b67a97ed488ce2bb2332}{bdd}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Hammouma Youssef
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+4 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_joueurs_ac0f9bfbacdcda2622d7438d0445200e8}\label{class_joueurs_ac0f9bfbacdcda2622d7438d0445200e8}} 
+\index{Joueurs@{Joueurs}!Joueurs@{Joueurs}}
+\index{Joueurs@{Joueurs}!Joueurs@{Joueurs}}
+\paragraph{\texorpdfstring{Joueurs()}{Joueurs()}}
+{\footnotesize\ttfamily Joueurs\+::\+Joueurs (\begin{DoxyParamCaption}\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Références \hyperlink{class_joueurs_ac060c3017311b67a97ed488ce2bb2332}{bdd}, \hyperlink{class_base_de_donnees_a1cea5a739386ba076c7f265205e82608}{Base\+De\+Donnees\+::get\+Instance()}, \hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{Base\+De\+Donnees\+::ouvrir()}, et \hyperlink{class_joueurs_a5bd70438c6624d8dca765e322285eb61}{recuperer\+Joueurs()}.
+
+
+\begin{DoxyCode}
+00017                                 : QObject(parent)
+00018 \{
+00019     \hyperlink{class_joueurs_ac060c3017311b67a97ed488ce2bb2332}{bdd} = \hyperlink{class_base_de_donnees_a1cea5a739386ba076c7f265205e82608}{BaseDeDonnees::getInstance}();
+00020     \hyperlink{class_joueurs_ac060c3017311b67a97ed488ce2bb2332}{bdd}->\hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{ouvrir}(\textcolor{stringliteral}{"ttpa.sqlite"});
+00021     \hyperlink{class_joueurs_a5bd70438c6624d8dca765e322285eb61}{recupererJoueurs}();
+00022 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_joueurs_ab2b4280d9ad7be92ef78c2ca15755318}\label{class_joueurs_ab2b4280d9ad7be92ef78c2ca15755318}} 
+\index{Joueurs@{Joueurs}!````~Joueurs@{$\sim$\+Joueurs}}
+\index{````~Joueurs@{$\sim$\+Joueurs}!Joueurs@{Joueurs}}
+\paragraph{\texorpdfstring{$\sim$\+Joueurs()}{~Joueurs()}}
+{\footnotesize\ttfamily Joueurs\+::$\sim$\+Joueurs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00025 \{
+00026     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00027 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_joueurs_aec63d4e2fe1bf7fbf33489c1a8d3bbbf}\label{class_joueurs_aec63d4e2fe1bf7fbf33489c1a8d3bbbf}} 
+\index{Joueurs@{Joueurs}!get\+Liste\+Joueurs@{get\+Liste\+Joueurs}}
+\index{get\+Liste\+Joueurs@{get\+Liste\+Joueurs}!Joueurs@{Joueurs}}
+\paragraph{\texorpdfstring{get\+Liste\+Joueurs()}{getListeJoueurs()}}
+{\footnotesize\ttfamily Q\+Variant Joueurs\+::get\+Liste\+Joueurs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_joueurs_a86c2a21b5a6b83f9a43f9a957a020fd7}{joueurs}.
+
+
+\begin{DoxyCode}
+00067 \{
+00068     \textcolor{keywordflow}{return} QVariant::fromValue(\hyperlink{class_joueurs_a86c2a21b5a6b83f9a43f9a957a020fd7}{joueurs});
+00069 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_joueurs_ad41325dbd0611773c6e9fd8a814be1b3}\label{class_joueurs_ad41325dbd0611773c6e9fd8a814be1b3}} 
+\index{Joueurs@{Joueurs}!inserer\+Joueur@{inserer\+Joueur}}
+\index{inserer\+Joueur@{inserer\+Joueur}!Joueurs@{Joueurs}}
+\paragraph{\texorpdfstring{inserer\+Joueur()}{insererJoueur()}}
+{\footnotesize\ttfamily Q\+String Joueurs\+::inserer\+Joueur (\begin{DoxyParamCaption}\item[{Q\+String}]{nom\+Joueur }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_joueurs_ac060c3017311b67a97ed488ce2bb2332}{bdd}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, et \hyperlink{class_joueurs_a5bd70438c6624d8dca765e322285eb61}{recuperer\+Joueurs()}.
+
+
+\begin{DoxyCode}
+00052 \{
+00053     QString idJoueur;
+00054     QString requete = \textcolor{stringliteral}{"INSERT INTO joueurs(nom) VALUES( '"} + nomJoueur + \textcolor{stringliteral}{"')"};
+00055 
+00056     \textcolor{keywordtype}{bool} etat = \hyperlink{class_joueurs_ac060c3017311b67a97ed488ce2bb2332}{bdd}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requete);
+00057     \textcolor{keywordflow}{if}(etat)
+00058     \{
+00059         requete = \textcolor{stringliteral}{"SELECT last\_insert\_rowid() FROM parametres"};
+00060         etat = \hyperlink{class_joueurs_ac060c3017311b67a97ed488ce2bb2332}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, idJoueur);
+00061         \hyperlink{class_joueurs_a5bd70438c6624d8dca765e322285eb61}{recupererJoueurs}();
+00062     \}
+00063     \textcolor{keywordflow}{return} idJoueur;
+00064 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_joueurs_a5df3ead7bec2c66c600ec53880afe035}\label{class_joueurs_a5df3ead7bec2c66c600ec53880afe035}} 
+\index{Joueurs@{Joueurs}!liste\+Joueurs\+Updated@{liste\+Joueurs\+Updated}}
+\index{liste\+Joueurs\+Updated@{liste\+Joueurs\+Updated}!Joueurs@{Joueurs}}
+\paragraph{\texorpdfstring{liste\+Joueurs\+Updated}{listeJoueursUpdated}}
+{\footnotesize\ttfamily void Joueurs\+::liste\+Joueurs\+Updated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_joueurs_a5bd70438c6624d8dca765e322285eb61}{recuperer\+Joueurs()}.
+
+\mbox{\Hypertarget{class_joueurs_a5bd70438c6624d8dca765e322285eb61}\label{class_joueurs_a5bd70438c6624d8dca765e322285eb61}} 
+\index{Joueurs@{Joueurs}!recuperer\+Joueurs@{recuperer\+Joueurs}}
+\index{recuperer\+Joueurs@{recuperer\+Joueurs}!Joueurs@{Joueurs}}
+\paragraph{\texorpdfstring{recuperer\+Joueurs()}{recupererJoueurs()}}
+{\footnotesize\ttfamily bool Joueurs\+::recuperer\+Joueurs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_joueurs_ac060c3017311b67a97ed488ce2bb2332}{bdd}, \hyperlink{class_joueurs_a86c2a21b5a6b83f9a43f9a957a020fd7}{joueurs}, \hyperlink{class_joueurs_a5df3ead7bec2c66c600ec53880afe035}{liste\+Joueurs\+Updated()}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+
+Référencé par \hyperlink{class_joueurs_ad41325dbd0611773c6e9fd8a814be1b3}{inserer\+Joueur()}, et \hyperlink{class_joueurs_ac0f9bfbacdcda2622d7438d0445200e8}{Joueurs()}.
+
+
+\begin{DoxyCode}
+00030 \{
+00031     QString requete = \textcolor{stringliteral}{"SELECT idJoueur, nom FROM joueurs ORDER BY nom ASC"};
+00032     QVector<QStringList> lesJoueurs;
+00033 
+00034     \textcolor{keywordtype}{bool} etat = \hyperlink{class_joueurs_ac060c3017311b67a97ed488ce2bb2332}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, lesJoueurs);
+00035     \textcolor{keywordflow}{if}(etat)
+00036     \{
+00037         qDebug() << Q\_FUNC\_INFO << lesJoueurs;
+00038         \hyperlink{class_joueurs_a86c2a21b5a6b83f9a43f9a957a020fd7}{joueurs}.clear();
+00039         \hyperlink{class_joueurs_a86c2a21b5a6b83f9a43f9a957a020fd7}{joueurs}.append(\textcolor{keyword}{new} \hyperlink{class_joueur}{Joueur}());
+00040         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<lesJoueurs.size();i++)
+00041         \{
+00042             \hyperlink{class_joueur}{Joueur} *joueur = \textcolor{keyword}{new} \hyperlink{class_joueur}{Joueur}(lesJoueurs.at(i).at(0), lesJoueurs.at(i).at(1), \textcolor{keyword}{this});
+00043             \hyperlink{class_joueurs_a86c2a21b5a6b83f9a43f9a957a020fd7}{joueurs}.append(joueur);
+00044         \}
+00045         emit \hyperlink{class_joueurs_a5df3ead7bec2c66c600ec53880afe035}{listeJoueursUpdated}();
+00046         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00047     \}
+00048     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00049 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_joueurs_ac060c3017311b67a97ed488ce2bb2332}\label{class_joueurs_ac060c3017311b67a97ed488ce2bb2332}} 
+\index{Joueurs@{Joueurs}!bdd@{bdd}}
+\index{bdd@{bdd}!Joueurs@{Joueurs}}
+\paragraph{\texorpdfstring{bdd}{bdd}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Joueurs\+::bdd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_joueurs_ad41325dbd0611773c6e9fd8a814be1b3}{inserer\+Joueur()}, \hyperlink{class_joueurs_ac0f9bfbacdcda2622d7438d0445200e8}{Joueurs()}, et \hyperlink{class_joueurs_a5bd70438c6624d8dca765e322285eb61}{recuperer\+Joueurs()}.
+
+\mbox{\Hypertarget{class_joueurs_a86c2a21b5a6b83f9a43f9a957a020fd7}\label{class_joueurs_a86c2a21b5a6b83f9a43f9a957a020fd7}} 
+\index{Joueurs@{Joueurs}!joueurs@{joueurs}}
+\index{joueurs@{joueurs}!Joueurs@{Joueurs}}
+\paragraph{\texorpdfstring{joueurs}{joueurs}}
+{\footnotesize\ttfamily Q\+List$<$Q\+Object$\ast$$>$ Joueurs\+::joueurs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_joueurs_aec63d4e2fe1bf7fbf33489c1a8d3bbbf}{get\+Liste\+Joueurs()}, et \hyperlink{class_joueurs_a5bd70438c6624d8dca765e322285eb61}{recuperer\+Joueurs()}.
+
+
+
+\subsubsection{Documentation des propriétés}
+\mbox{\Hypertarget{class_joueurs_a809d64435e34f4f7f0218d4616b727c0}\label{class_joueurs_a809d64435e34f4f7f0218d4616b727c0}} 
+\index{Joueurs@{Joueurs}!liste\+Joueurs@{liste\+Joueurs}}
+\index{liste\+Joueurs@{liste\+Joueurs}!Joueurs@{Joueurs}}
+\paragraph{\texorpdfstring{liste\+Joueurs}{listeJoueurs}}
+{\footnotesize\ttfamily Q\+Variant Joueurs\+::liste\+Joueurs\hspace{0.3cm}{\ttfamily [read]}}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_joueurs_8h}{Joueurs.\+h}\item 
+\hyperlink{_joueurs_8cpp}{Joueurs.\+cpp}\end{DoxyCompactItemize}

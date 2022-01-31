@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>logo.png</file>
+        <file>background.jpg</file>
+        <file>filet.jpg</file>
+        <file>robot.png</file>
+        <file>logo-la-salle.png</file>
+        <file>pause.png</file>
+        <file>backgroundss.jpg</file>
+    </qresource>
+</RCC>

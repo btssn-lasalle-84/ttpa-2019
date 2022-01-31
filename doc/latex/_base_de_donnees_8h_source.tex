@@ -1,0 +1,52 @@
+\hypertarget{_base_de_donnees_8h_source}{}\subsection{Base\+De\+Donnees.\+h}
+\label{_base_de_donnees_8h_source}\index{Base\+De\+Donnees.\+h@{Base\+De\+Donnees.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef BASEDEDONNEES\_H}
+00002 \textcolor{preprocessor}{#define BASEDEDONNEES\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QObject>}
+00017 \textcolor{preprocessor}{#include <QtSql/QtSql>}
+00018 \textcolor{preprocessor}{#include <QSqlDatabase>}
+00019 \textcolor{preprocessor}{#include <QMutex>}
+00020 \textcolor{preprocessor}{#include <QString>}
+00021 
+00022 \textcolor{comment}{//#define DEBUG\_BASEDEDONNEES}
+00023 
+\Hypertarget{_base_de_donnees_8h_source_l00035}\hyperlink{class_base_de_donnees}{00035} \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees} : \textcolor{keyword}{public} QObject
+00036 \{
+00037     Q\_OBJECT
+00038     \textcolor{keyword}{public}:
+00039         \textcolor{keyword}{static} \hyperlink{class_base_de_donnees}{BaseDeDonnees}* \hyperlink{class_base_de_donnees_a1cea5a739386ba076c7f265205e82608}{getInstance}();
+00040         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{detruireInstance}();
+00041 
+00042         Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}();
+00043         Q\_INVOKABLE \textcolor{keywordtype}{void} \hyperlink{class_base_de_donnees_ae780999d25a26a0e4dbe0706a4785978}{deconnecter}();        
+00044         Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_af9ac332082ffd0dd35e412cefabe5e9c}{estOuvert}();
+00045         Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_a7f6a5510b08017b0d99115a84252f186}{ouvrir}(QString fichierBase);
+00046 
+00047         \textcolor{comment}{/* uniquement pour : UPDATE, INSERT et DELETE */}
+00048         Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(QString requete);
+00049 
+00050         \textcolor{comment}{/* uniquement pour : SELECT */}
+00051         Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString requete, QString &donnees); \textcolor{comment}{// 1 -> 1}
+00052         Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString requete, QStringList &donnees); \textcolor{comment}{// 1 -> 1..*}
+00053         Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString requete, QVector<QString> &donnees); \textcolor{comment}{// 1..* -> 1}
+00054         Q\_INVOKABLE \textcolor{keywordtype}{bool} \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(QString requete, QVector<QStringList> &donnees); \textcolor{comment}{// 1..* ->
+       1..*}
+00055 
+00056     \textcolor{keyword}{private}:
+00057         \hyperlink{class_base_de_donnees_ac4d0c514f439b3a19dc35c159955373a}{BaseDeDonnees}();
+00058         \hyperlink{class_base_de_donnees_a5dc474cdbe003644fb0ca7b8f2ec6b93}{~BaseDeDonnees}();
+00059 
+\Hypertarget{_base_de_donnees_8h_source_l00060}\hyperlink{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}{00060}         \textcolor{keyword}{static} \hyperlink{class_base_de_donnees}{BaseDeDonnees}*  \hyperlink{class_base_de_donnees_a822ba0b7cf85b1e48ced8efd3d65e266}{baseDeDonnees};
+\Hypertarget{_base_de_donnees_8h_source_l00061}\hyperlink{class_base_de_donnees_a5099ecb2922bb31d84cd5d4505298a29}{00061}         \textcolor{keyword}{static} \textcolor{keywordtype}{int}             \hyperlink{class_base_de_donnees_a5099ecb2922bb31d84cd5d4505298a29}{nbAcces};
+\Hypertarget{_base_de_donnees_8h_source_l00062}\hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{00062}         QSqlDatabase           \hyperlink{class_base_de_donnees_a3e738dcf443370c46a541677ab619f06}{db};
+\Hypertarget{_base_de_donnees_8h_source_l00063}\hyperlink{class_base_de_donnees_a67c1d973c267a8f5fd6d7461550faa11}{00063}         QString                \hyperlink{class_base_de_donnees_a67c1d973c267a8f5fd6d7461550faa11}{nomBDD};
+\Hypertarget{_base_de_donnees_8h_source_l00064}\hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{00064}         QMutex                 \hyperlink{class_base_de_donnees_aa1b4696fac87a740f914aa73739086f2}{mutex};
+00065 
+00066         QSqlDatabase           \hyperlink{class_base_de_donnees_a467909531ae3cdebaf173f6e97cdc624}{getNomBDD}();
+00067 \};
+00068 
+00069 \textcolor{preprocessor}{#endif // BASEDEDONNEES\_H}
+\end{DoxyCode}

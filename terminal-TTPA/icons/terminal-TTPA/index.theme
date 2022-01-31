@@ -1,0 +1,25 @@
+[Icon Theme]
+Name=terminal-TTPA
+Comment=Icon Theme
+
+Directories=16px,24px,32px,64px,128px
+
+[16px]
+Size=16
+Type=Fixed
+
+[24px]
+Size=24
+Type=Fixed
+
+[32px]
+Size=32
+Type=Fixed
+
+[64px]
+Size=64
+Type=Fixed
+
+[128px]
+Size=128
+Type=Fixed

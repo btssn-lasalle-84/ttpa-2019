@@ -1,0 +1,72 @@
+\hypertarget{ecran-_t_t_p_a_2main_8cpp}{}\subsection{Référence du fichier main.\+cpp}
+\label{ecran-_t_t_p_a_2main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+Programme principal ecran-\/\+T\+T\+PA.  
+
+
+{\ttfamily \#include \char`\"{}ttpaihm.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Q\+Application$>$}\newline
+\subsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ecran-_t_t_p_a_2main_8cpp_ae0665038b72011f5c680c660fcb59459}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Crée et affiche la fenêtre principale de l\textquotesingle{}application ecran-\/\+T\+T\+PA
+
+\begin{DoxyAuthor}{Auteur}
+Botella-\/\+Broc Yohann
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+4 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des fonctions}
+\mbox{\Hypertarget{ecran-_t_t_p_a_2main_8cpp_ae0665038b72011f5c680c660fcb59459}\label{ecran-_t_t_p_a_2main_8cpp_ae0665038b72011f5c680c660fcb59459}} 
+\index{ecran-\/\+T\+T\+P\+A/main.\+cpp@{ecran-\/\+T\+T\+P\+A/main.\+cpp}!main@{main}}
+\index{main@{main}!ecran-\/\+T\+T\+P\+A/main.\+cpp@{ecran-\/\+T\+T\+P\+A/main.\+cpp}}
+\paragraph{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em argc} & \\
+\hline
+{\em argv\mbox{[}$\,$\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+00023 \{
+00024     QApplication a(argc, argv);
+00025 
+00026     \hyperlink{class_ttpa_ihm}{TtpaIhm} w; \textcolor{comment}{// crée la fenêtre principale de l'application}
+00027     w.show(); \textcolor{comment}{// affiche la fenêtre principale de l'application}
+00028 
+00029     \textcolor{comment}{/*// Le splash}
+00030 \textcolor{comment}{    QSplashScreen splash;}
+00031 \textcolor{comment}{    // En avant-plan et sans décoration (titre ...)}
+00032 \textcolor{comment}{    splash.setWindowFlags(Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint);}
+00033 \textcolor{comment}{    // L'image de l'écran de démarrage}
+00034 \textcolor{comment}{    splash.setPixmap(QPixmap(":logo-la-salle.png"));}
+00035 \textcolor{comment}{    // On affiche}
+00036 \textcolor{comment}{    splash.show();}
+00037 \textcolor{comment}{    // On peut afficher un message sur l'image}
+00038 \textcolor{comment}{    splash.showMessage(QString::fromUtf8("Lancement de l'application ..."), Qt::AlignHCenter |
+       Qt::AlignTop, Qt::black);}
+00039 \textcolor{comment}{    // On ferme le splash après un certain temps (ici 2 s)}
+00040 \textcolor{comment}{    QTimer::singleShot(2000, &splash, SLOT(close()));}
+00041 \textcolor{comment}{    // On affiche l'application}
+00042 \textcolor{comment}{    QTimer::singleShot(2000, &w, SLOT(show()));*/}
+00043 
+00044 
+00045     \textcolor{keywordflow}{return} a.exec();
+00046 \}
+\end{DoxyCode}

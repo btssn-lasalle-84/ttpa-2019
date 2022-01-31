@@ -1,0 +1,221 @@
+\documentclass[twoside]{article}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage[french]{babel}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage[a4paper]{geometry}
+\geometry{vmargin=2cm,hmargin=2cm,lmargin=1.2cm,rmargin=1.2cm}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{\bfseries\scriptsize TTPA}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize BTS SN-IR LaSalle Avignon 2019 }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize BTS SN-IR LaSalle Avignon 2019 }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{\bfseries\scriptsize TTPA}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\LARGE Projet T\+T\+PA (Table Tennis Performance Analyser) \\[1ex]\large 1.\+4 }\\
+\vspace*{1cm}
+{\large HAMMOUMA Youssef}\\
+{\large BOTELLA--BROC Yohan}\\
+\end{center}
+\end{titlepage}
+\pagenumbering{roman}
+\tableofcontents
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\section{Le projet Projet T\+T\+PA (Table Tennis Performance Analyser)}
+\label{index}\hypertarget{index}{}\input{index}
+\section{Changelog}
+\label{page_changelog}
+\Hypertarget{page_changelog}
+\input{page_changelog}
+\section{Installation}
+\label{page_install}
+\Hypertarget{page_install}
+\input{page_install}
+\section{R\+E\+A\+D\+ME}
+\label{page__r_e_a_d_m_e}
+\Hypertarget{page__r_e_a_d_m_e}
+\input{page__r_e_a_d_m_e}
+\section{A propos}
+\label{page_about}
+\Hypertarget{page_about}
+\input{page_about}
+\section{Licence G\+PL}
+\label{page_licence}
+\Hypertarget{page_licence}
+\input{page_licence}
+\section{Liste des choses à faire}
+\label{todo}
+\Hypertarget{todo}
+\input{todo}
+\section{Documentation des espaces de nommage}
+\input{namespace_ui}
+\section{Documentation des classes}
+\input{class_base_de_donnees}
+\input{class_communication_bluetooth}
+\input{class_fenetre_accueil}
+\input{class_fenetre_reglages}
+\input{class_fenetre_statistiques}
+\input{class_fenetre_t_t_p_a}
+\input{class_joueur}
+\input{class_joueurs}
+\input{class_parametre}
+\input{class_parametres}
+\input{class_peripherique_t_t_p_a}
+\input{class_profil}
+\input{class_profils}
+\input{class_statistiques_seance}
+\input{class_ttpa_ihm}
+\section{Documentation des fichiers}
+\input{_base_de_donnees_8cpp}
+\input{_base_de_donnees_8h}
+\input{_changelog_8md}
+\input{ecran-_t_t_p_a_2communicationbluetooth_8cpp}
+\input{terminal-_t_t_p_a_2communicationbluetooth_8cpp}
+\input{ecran-_t_t_p_a_2communicationbluetooth_8h}
+\input{terminal-_t_t_p_a_2communicationbluetooth_8h}
+\input{_fenetre_accueil_8qml}
+\input{_fenetre_reglages_8qml}
+\input{_fenetre_statistiques_8qml}
+\input{_fenetre_t_t_p_a_8qml}
+\input{_i_n_s_t_a_l_l_8md}
+\input{_joueur_8cpp}
+\input{_joueur_8h}
+\input{_joueurs_8cpp}
+\input{_joueurs_8h}
+\input{ecran-_t_t_p_a_2main_8cpp}
+\input{terminal-_t_t_p_a_2main_8cpp}
+\input{_parametre_8cpp}
+\input{_parametre_8h}
+\input{_parametres_8cpp}
+\input{_parametres_8h}
+\input{peripherique_t_t_p_a_8cpp}
+\input{peripherique_t_t_p_a_8h}
+\input{_profil_8cpp}
+\input{_profil_8h}
+\input{_profils_8cpp}
+\input{_profils_8h}
+\input{_r_e_a_d_m_e_8md}
+\input{statistiquesseance_8cpp}
+\input{statistiquesseance_8h}
+\input{ttpaihm_8cpp}
+\input{ttpaihm_8h}
+%--- End generated contents ---
+
+% Index
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{section}{Index}
+\printindex
+
+\end{document}
